@@ -1,0 +1,12 @@
+name: Sample workflow bra1
+on:
+  push:
+jobs:
+  bra1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          ls -a
+          echo "" 
+          git branch -a
