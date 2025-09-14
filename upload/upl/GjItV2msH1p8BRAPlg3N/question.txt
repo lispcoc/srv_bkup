@@ -1,0 +1,375 @@
+UWSCで条件分岐クリックがうまく働かない
+
+こちらの質問をご覧いただきありがとうございます。
+
+上記の通りで条件分岐がうまくいかないため、質問いたします。ご回答を頂けますと大変ありがたく、嬉しいです。
+
+まず、行いたいことを文章化し、その後コードを記述します。問題の、うまく働かない（と思われる）部分は////////////////////で挟んでいます。
+また、uwsファイルを区切って見やすくするため、ファイルとファイルの間には★★★を差し込み、タイトルは『』に入れて記載します。
+私の説明に不十分、疑問な点があれば指摘を頂きたいです。返信または補足に記述いたします。
+
+行いたいこと
+
+『ここから起動.uws』を起動。３秒スリープしている間に実行したいソフトのウィンドウを手動でマウスクリックしてアクティブにする。
+アクティブウィンドウをGETIDし窓内で座標認識するようにする。
+パーフェクト数の吹き出しを出す。
+『5stop.uws』を呼び出す
+★★★
+chkimgXを使う環境設定
+
+手動またはプログラムで１～４エリアに入るのでそこで希に出る蒼鳥がいた場合クリック。
+
+////////////////////　
+５エリアに入ったので最初からいる紅鳥をクリック。紅鳥は不規則に鳴き、鳴いている間はクリック無効のため何度かクリックしたい。クリックできれば
+紅鳥は蒼鳥に変身するが、１～４エリアと違い蒼鳥をクリックしてはいけない。また、紅鳥は一定時間たっても消える（この場合失敗となる）
+////////////////////
+
+紅鳥をクリックできたのでメニュー、諦める、はい、狩場から出るをクリック。『next.uws』を呼び出す
+
+★★★
+chkimgXを使う環境設定
+
+５エリアまですすめた狩場ステージを押す。もしなければ２ページ目に切り替えて５エリアまですすめた狩場ステージを押す。
+狩場に入るをクリック。武器持ち替えクリック、倉庫クリック、右端の所持武器クリック、４段目２の入れ替える武器クリック
+戻るを２回クリック。狩猟開始ボタンをクリック。
+★★★
+
+5エリアの第一地点にいるとき、ショットボタンをクリック
+5エリアの第二地点にいるとき、ショットボタンをクリック
+5エリアの第三最終地点にいるとき、アイテムをクリック、アイテム使用ボタンをクリック。
+メニューをクリックし、鳥の見た目がアイテムで金色に変化していればメニューを閉じるボタンをクリック。perfectを+1する
+
+見た目が変化していなければ、諦める、はい、5エリア第一地点から再挑戦をクリックする
+
+perfectを+1したあと第三最終地点の画像を再度認識し、ショットボタンをクリック
+
+１０秒待ったのち狩場クリア完了ボタンをクリック
+
+『next.uws』を呼び出し、以降狩場をループ。
+
+つづいて、コードを記述します。
+
+『ここから起動.uws』
+
+SLEEP(3)
+winid = getid(GET_ACTIVE_WIN)
+
+mouseorg(winid,1)//窓をクライアント領域の位置を基準にする
+
+perfect=0
+WHILE TRUE
+FUKIDASI("現在のパーフェクト数　"+takara,1200,100,0,20)//色とか位置とか文字サイズは変えられる
+CALL 5stop.uws 
+SLEEP(1)
+// ChkImgX関数をインクルード
+ CALL ChkImgX.uws
+ // 変数の指定
+ ImageName  = "1.bmp" // 発見する画像名(bmp,jpg,png)
+ WindowID   = 0 // 対象Window ID (0は全体,1以上はGETID()関数でとればいいと思う)
+ Region_x1  = 0 // 検出範囲の左上X座標
+ Region_y1  = 0 // 検出範囲の左上Y座標
+ Region_x2  = G_SCREEN_W // 検出範囲の右下X座標 G_SCREEN_Wは特殊関数で画面の横幅
+ Region_y2  = G_SCREEN_H // 検出範囲の右下Y座標 G_SCREEN_Hは特殊関数で画面の縦幅
+ Detect_num = 1 // 何個目に検出した場所を対象にするか、-1を指定すると、返り値に発見個数が帰る
+ Threshold_delta  = 5 // 発見する画像と誤差 n% の指定、95%一致であれば5を指定、80%一致なら20を指定と差を指定する
+ Target_color = -1 // 色相を指定して検出できるが、フルカラー判定なら-1を指定、
+ X=0
+ Y=0
+
+ startup_chkimgx() //CHKIMGX関数開始
+
+
+WHILE TRUE
+
+ImageName  = "1.bmp"
+
+WHILE (ImageName="1.bmp")
+
+IFB CHKIMGX(ImageName, WindowID, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+
+BTN(LEFT, CLICK, 270, 540)　//ショットクリック
+
+SLEEP(2)
+
+else
+
+  ImageName  = "2.bmp"
+
+endif  
+
+Wend
+
+
+
+
+WHILE (ImageName="2.bmp")
+
+IFB CHKIMGX(ImageName, WindowID, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+
+BTN(LEFT, CLICK, 270, 540)　//ショットクリック
+
+SLEEP(2)
+
+else
+
+  ImageName  = "3.bmp"
+
+  endif
+
+Wend
+
+
+SLEEP(3)//2射位置から3射位置への推移時間
+
+
+IFB CHKIMGX(ImageName, WindowID, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+
+ 
+BTN(LEFT, CLICK, 440, 380)　　//アイテムクリック
+SLEEP(1)
+
+ 
+BTN(LEFT, CLICK, 360, 660)　　//アイテム使用ボタンクリック
+SLEEP(1)
+
+
+  endif
+
+SLEEP(1)
+
+
+IFB CHKIMGX("menu.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+ 
+BTN(LEFT, CLICK, 55, 65)　　//メニュークリック
+
+endif
+
+SLEEP(1)
+
+IFB CHKIMGX("perfect.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+
+ 
+BTN(LEFT, CLICK, 425, 710)　　//閉じるボタンクリック
+
+ SLEEP(1)
+ perfect=perfect+1
+ break;endif//ループ終了
+
+IFB CHKIMGX("giv.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった 
+ 
+BTN(LEFT, CLICK, 320, 630)　　//あきらめるクリック
+
+endif
+
+SLEEP(1)
+
+
+IFB CHKIMGX("yes.bmp", WindowID, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+ 
+BTN(LEFT, CLICK, 500, 700)　　//はいクリック
+
+endif
+
+SLEEP(2)
+
+IFB CHKIMGX("rit.bmp", WindowID, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+
+BTN(LEFT, CLICK, 580, 790)　　//再挑戦クリック 
+
+endif
+
+
+SLEEP(8)
+
+WEND
+
+SLEEP(1)
+
+ImageName  = "3.bmp"
+WHILE (ImageName="3.bmp")
+
+IFB CHKIMGX(ImageName, WindowID, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+
+
+BTN(LEFT, CLICK, 270, 540)　//ショットクリック
+
+SLEEP(2)
+
+else
+  break;endif
+
+
+
+Wend
+
+
+
+SLEEP(10)
+ 
+
+IFB CHKIMGX("hunted.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+ SLEEP(1)
+ BTN(Left,Click,G_Imgx_X,G_Imgx_Y)//狩場クリア完了ボタンを押す
+
+endif
+
+SLEEP(1)
+CALL next.uws 
+
+WEND
+
+★★★
+
+『５stop.uws』
+winid = getid(GET_ACTIVE_WIN)
+
+mouseorg(winid,1)//窓を指定 クライアント領域の位置を基準にする
+
+// ChkImgX関数をインクルード
+ CALL ChkImgX.uws
+ // 変数の指定
+ ImageName  = "noauto.bmp" // 発見する画像名(bmp,jpg,png)
+ WindowID   = 0 // 対象Window ID (0は全体,1以上はGETID()関数でとればいいと思う)
+ Region_x1  = 0 // 検出範囲の左上X座標
+ Region_y1  = 0 // 検出範囲の左上Y座標
+ Region_x2  = G_SCREEN_W // 検出範囲の右下X座標 G_SCREEN_Wは特殊関数で画面の横幅
+ Region_y2  = G_SCREEN_H // 検出範囲の右下Y座標 G_SCREEN_Hは特殊関数で画面の縦幅
+ Detect_num = 1 // 何個目に検出した場所を対象にするか、-1を指定すると、返り値に発見個数が帰る
+ Threshold_delta  = 10 // 発見する画像と誤差 n% の指定、95%一致であれば5を指定、80%一致なら20を指定と差を指定する
+ Target_color = -1 // 色相を指定して検出できるが、フルカラー判定なら-1を指定、
+
+
+ startup_chkimgx() //CHKIMGX関数開始
+
+
+WHILE TRUE
+
+IFB CHKIMGX("aoBird.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)
+ 
+BTN(LEFT, CLICK, 200, 300)　　//1～4エリアで希に出る蒼鳥をクリック
+
+ENDIF
+
+
+////////////////////
+
+IFB CHKIMGX("5area.bmp", WindowID, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)
+
+ SLEEP(1.5)
+ BTN(LEFT, CLICK, 695, 30)　//紅鳥が消える前にクリック
+  break;
+ENDIF
+
+///////////////////
+
+Wend
+
+SLEEP(3)
+
+IFB CHKIMGX(ImageName, WindowID, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)
+ SLEEP(1)
+
+BTN(LEFT, CLICK, 55, 65)　　//メニュークリック
+
+SLEEP(1)
+
+BTN(LEFT, CLICK, 320, 630)　　//あきらめるクリック
+
+SLEEP(1)
+
+BTN(LEFT, CLICK, 500, 700)　　//はいクリック
+
+SLEEP(2)
+
+BTN(LEFT, CLICK, 330, 790)　　//狩場から出るクリック
+
+ENDIF
+
+SLEEP(1)
+ImageName  = "1.bmp"
+CALL next.uws
+
+★★★
+
+『next.uws』
+
+winid = getid(GET_ACTIVE_WIN)
+
+mouseorg(winid,1)//窓を指定裏マクロ化 クライアント領域の位置を基準にする
+
+// ChkImgX関数をインクルード
+ CALL ChkImgX.uws
+ // 変数の指定
+ ImageName  = "lgd.bmp" // 発見する画像名(bmp,jpg,png)
+ WindowID   = 0 // 対象Window ID (0は全体,1以上はGETID()関数でとればいいと思う)
+ Region_x1  = 0 // 検出範囲の左上X座標
+ Region_y1  = 0 // 検出範囲の左上Y座標
+ Region_x2  = G_SCREEN_W // 検出範囲の右下X座標 G_SCREEN_Wは特殊関数で画面の横幅
+ Region_y2  = G_SCREEN_H // 検出範囲の右下Y座標 G_SCREEN_Hは特殊関数で画面の縦幅
+ Detect_num = 1 // 何個目に検出した場所を対象にするか、-1を指定すると、返り値に発見個数が帰る
+ Threshold_delta  = 5 // 発見する画像と誤差 n% の指定、95%一致であれば5を指定、80%一致なら20を指定と差を指定する
+ Target_color = -1 // 色相を指定して検出できるが、フルカラー判定なら-1を指定、
+ X=0
+ Y=0
+
+ startup_chkimgx() //CHKIMGX関数開始
+
+SLEEP(1)
+
+IFB CHKIMGX("stage.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+
+ BTN(Left,Click,G_Imgx_X,G_Imgx_Y)//５エリアまで進めた狩場ステージを押す
+
+else
+
+IFB CHKIMGX("stage2p.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+SLEEP(1）
+
+BTN(LEFT, CLICK, 600, 500)　　//2ページ目のステージに切り替えクリック
+
+ENDIF
+ENDIF
+
+SLEEP(1)
+
+IFB CHKIMGX("stage.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+
+ BTN(Left,Click,G_Imgx_X,G_Imgx_Y)//５エリアまで進めた狩場ステージを押す
+
+endif
+
+SLEEP(1)
+
+IFB CHKIMGX("intokariba.bmp", winid, Region_x1, Region_y1, Region_x2, Region_y2, Detect_num, Threshold_delta, Target_color)//画面上に画像があった
+SLEEP(1)
+
+BTN(LEFT, CLICK, 375, 850)　　//狩場に入るクリック
+
+
+endif
+
+SLEEP(1)
+
+BTN(LEFT, CLICK, 600, 420)　//武器持ち替えクリック
+SLEEP(2)
+
+BTN(LEFT, CLICK, 450, 700)　　//武器倉庫クリック
+SLEEP(1)
+
+BTN(LEFT, CLICK, 610, 410)　　//右端の所持武器クリック
+SLEEP(1)
+ 
+BTN(LEFT, CLICK, 340, 930)　　//四段目二番目の入れ替え武器クリック　　
+SLEEP(1)　　　　　　　　
+ 
+BTN(LEFT, CLICK, 60, 50)　　//一つ目の戻るクリック
+SLEEP(1)
+ 
+BTN(LEFT, CLICK, 60, 50)　　//二つ目の戻るクリック
+SLEEP(1)
+ 
+BTN(LEFT, CLICK, 400, 850)　//狩猟開始ボタンクリック
+SLEEP(2)
+
+以上です。長くなりましたが見ていただきありがとうございます。
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>アップローダー</title>
+</head>
+<body>
+
+<div class="panel">
+	<a href="!homepage!" title="TOPへ戻る" target="_top">戻る</a>
+</div>
+<div class="panel">
+	<a href="!upload_cgi!?mode=find">検索</a>
+</div>
+<div class="panel">
+	<a href="!admin_cgi!">管理</a>
+</div>
+<div class="clear"></div>
+
+<h1 id="top">ファイルアップローダー</h1>
+
+<p>・ ご利用において必ず <a href="#rule">「利用規約/使い方」</a> をお読みになってください。</p>
+<form action="!upload_cgi!" method="post" enctype="multipart/form-data">
+<input type="hidden" name="mode" value="regist" />
+<table class="upform">
+<tr>
+	<td>ファイル</td>
+	<td>
+		<input type="file" name="upfile" size="30" />
+		<span>（最大容量: !maxdata!）</span>
+	</td>
+</tr><tr>
+	<td>コメント</td>
+	<td>
+		<input type="text" name="comment" size="40" value="コメント入力" onfocus="if(this.value == 'コメント入力') {this.value = '';}" onblur="if (this.value == '') {this.value = 'コメント入力';}" />
+		<input type="submit" value="送信する" />
+	</td>
+</tr><tr>
+	<td>キー</td>
+	<td>
+		<input type="password" name="up_pass" size="128" maxlength="128" />
+	</td>
+</tr><tr>
+	<td>削除キー</td>
+	<td>
+		<input type="password" name="delkey" size="8" maxlength="8" />
+		<span>（ファイルを削除するためのもの）</span>
+	</td>
+</tr><tr>
+	<td>暗証キー</td>
+	<td>
+		<input type="password" name="pwdkey" size="8" maxlength="8" />
+		<span>（ダウンロードにパスワードをかける場合）</span>
+	</td>
+</tr>
+</table>
+</form>
+
+<table class="list">
+<tr>
+	<th>ファイル</th>
+	<th>容量</th>
+	<th>コメント</th>
+	<th>DL数</th>
+	<th>投稿日</th>
+	<th>MIMEタイプ</th>
+	<th>削除</th>
+</tr>
+
+<!-- loop_begin -->
+<tr>
+	<td class="ta-l">!icon! !fname!</td>
+	<td class="ta-c">!size!</td>
+	<td class="ta-l">!comment!</td>
+	<td class="ta-c">!count!</td>
+	<td class="ta-l">!date!</td>
+	<td class="ta-l">!mime!</td>
+	<td class="ta-c"><a href="!upload_cgi!?del=!num!">!ico_del!</a></td>
+</tr>
+<!-- loop_end -->
+
+</table>
+
+!page_btn!
+
+<div class="pgtop"><a href="#top" title="ページトップへ">pagetop</a></div>
+<div id="rule" class="sub-ttl">■利用規約</div>
+<ul>
+<li>次の要件に該当するファイルのアップロード及びコメント内容は禁止します。
+	<ol>
+	<li>国内の法律に違反するもの（著作権を侵害するもの、猥褻な画像や動画等、不正な薬物に関わるもの、等々）。</li>
+	<li>公序良俗に反する内容。</li>
+	<li>他人の誹謗中傷を意図したもの。</li>
+	<li>その他、管理者が運営上不適当と判断するもの。</li>
+	</ol></li>
+<li>管理者が、上記の禁止要件に該当するものと判断したファイルは予告なく削除することがあります。</li>
+<li>記録する記事データは最大<b>!log_max!</b>件までです。これを超えると古い順に自動削除されます。</li>
+</ul>
+<div class="pgtop"><a href="#top" title="ページトップへ">pagetop</a></div>
+
+<div class="sub-ttl">■使い方</div>
+<ul>
+<li>アップロード可能なファイルサイズは、最大<b>!maxdata!</b>までです。</li>
+<li>コメントの文字数は、全角で最大<b>!maxcom!</b>字までです。</li>
+<li>「削除キー」にパスワードを入力しておくと、後程ご自分で投稿記事を削除することができます。</li>
+<li>「暗証キー」にパスワードを入力しておくと、ダウンロードする場合にその暗証キーが必要となります。</li>
+<li>ファイル先頭のアイコン !ico_lock! は、ダウンロード時に暗証キーが必要です。</li>
+<li>ファイル名は、全文字が「英数字・アンダーバー・ハイフン」の場合のみ、オリジナルのまま保存します。</li>
+<li>使用可能なファイルは次のとおりです。<br /><span class="ext">!ext!</span></li>
+</ul>
+
+<div class="pgtop"><a href="#top" title="ページトップへ">pagetop</a></div>
+<div class="sub-ttl"></div>
+
+</body>
+</html>

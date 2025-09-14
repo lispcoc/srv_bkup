@@ -1,0 +1,1 @@
+javascript:var itemname="";var evoname="";try{itemname = document.getElementsByClassName('txt-item-name')[0].textContent;}catch(error){itemname=""}try{evoname = document.getElementsByClassName('txt-evo-name')[0].textContent;}catch(error){evoname=""}window.open( 'https://www.google.com/search?q='+"ƒOƒ‰ƒuƒ‹ "+evoname+" "+itemname );

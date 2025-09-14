@@ -1,0 +1,102 @@
+Guide on how to connect, geared towards PCSX2 users (credit to Haze1079):
+You need the CLR_DEV9 plugin (CLR DEV9)
+You need an ethernet plug (as far as I'm aware)
+Keep all settings of CTR Dev9 Automatic
+Skip to step #5 or step #6 if your playing on a PS2 
+If you downloaded Kori's PCXS2 Setup, or if you already have your NETWORK File configured for this server, skip to step #37 and choose the "Previous Connection Option" Option 2.
+#0 Boot up PCSX2
+
+#0.1 Go to the Config toolbar near the top of the window and click on it
+
+#0.2 Click on the plugin/BIOS Selector
+
+#1 Use the dev9 plugin listed in the Plugins settings
+
+#2 Make sure you have the proper BIOS selected (JP v01.60 (around 2004 time). I was using a USA v01.60 BIOS (around 2002))
+
+#3 Have a physical copy of MH1 JP PS2
+
+(Optional: Download the English Patch for MH1 JP PS2)
+
+#4 Boot up the game with the proper BIOS
+
+   (If you already have a character skip number 5 and number 6)
+
+#5 Make an offline character
+
+#6 After that is done, save and quit with your new character
+
+#7 Go to the continue screen, choose the memory card that contains the character that you want to go online with.
+
+#8 Choose your character, and then when given the option to go to Village or Town, go to Town
+
+#9 When given the option in the NETWORK.ONLINE screen to load NET data from your memory card keep clicking circle
+#10 Once you get to the screen where you see three options (the bottom two should be blacked out) go to the top option and click it
+#11 When presented with the subsequent menu click the top button
+
+#12 Click the top option given in the next menu
+
+#13 Then click the top option of that menu
+
+Now you should be in a screen with three blank options it is black and blue and the uses of each line is displayed in the top-left
+corner. If you don't have an English Patch just follow context clues.
+
+#14 Pick the very top option
+
+#15 Choose the memory card that contains the character that you want to play online with
+
+#16 When the "Setting Guide Mode" screen appears (the first screen) click right on the Dpad
+#17 On the "Hardware Settings" page click circle (there should only be one option)
+
+#18 Now click right on the Dpad again to continue
+
+#19 Click on the bottom option of the "Use of PPPoE" screen
+
+#20 Click right on the Dpad
+
+#21 On the "IP Address Setup" page click right on the Dpad (as it should be set to automatic by default)
+
+#22 On the "DNS Server Address Setup" choose the bottom option (as you don't want it to be automatic)
+#23 After selecting click right on the Dpad to go to the "DNS Server Address Entry" page
+
+#24 Click circle to enter numbers on this page
+
+#25 You may have to count the numbers manually for the first entry, but make sure it is 185.219.132.136 (the server's current address)
+
+#26 It may say that the number didn't save in the top left corner of the screen (by indicating a different number) but it did.
+
+#27 Now go to the bottom option on the "DNS Server Address Setup" page and repeat what you did in step #25
+
+#28 After doing that click circle to confirm then right on the Dpad
+
+#29 In the "Name the Setting" page click right on the dpad as you can omit it
+
+#30 On the "Confirm and Save the Setting" page double check that everything being displayed in the top right corner is correct
+    (Hardware, Mac Address, and Hardware Operation Mode shouldn't matter. IP Address should be Auto, and both Primary and Secondary
+    DNS should be what you typed in, 185.219.132.136 (the server's current address))
+
+#31 Now once everything is ok click circle again
+
+#32 Once it is done saving, when given the option to test the connection click the right option, which is "No".
+#33 Once you return to the network settings menu click x and quit it by selecting the left option (DO NOT REMOVE YOUR MEMORY CARD
+    DURING THIS ACTION)
+#34 Now click continue and load the memory card that contains your character
+
+#35 Load your character and head online to the Town
+
+#36 Keep clicking circle until you get to the menu with the three options
+
+#37 Choose the top option (first time) (subsequent times you can choose the "Previous Connection Option" Option 2)
+
+#38 When brought up with the options menu that brought you to step #14, you should see a new option at the bottom of the options
+
+#39 Scroll to it and click circle on it
+
+#40 Voila, now if everything went to plan it should connect you to the server
+
+#41 Click circle to agree to the EULA
+
+#42 When brought up with the "Monster Hunter private fan server" page create a new account with whatever name and pass you want. 
+    (or use an existing one if you have done this before)
+    DONT SHARE THIS AS THERE'S NO WAY TO GET YOUR ACCOUNT CHANGED. 
+    Write down your login info.

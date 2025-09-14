@@ -1,0 +1,210 @@
+SLEEP(3)
+winid = getid(GET_ACTIVE_WIN)
+
+mouseorg(winid,1)// アクティブウィンドウを座標領域計算の基準にする
+
+
+ CALL ChkImgX.uws
+
+ Region_x1  = 0 
+ Region_y1  = 0 
+ Region_x2  = G_SCREEN_W 
+ Region_y2  = G_SCREEN_H 
+ Detect_num = 1 
+ Threshold_delta  = 5 
+ Target_color = -1 
+ X=0
+ Y=0
+
+ startup_chkimgx() //CHKIMGX関数開始
+
+
+BTN(LEFT, CLICK, 24, 24)　
+SLEEP(1)
+
+
+while true//特定範囲内で画像があるならTrue。特定範囲外で画像があるならelseif。画像がなければelseで３つの分岐
+
+IFB CHKIMGX("画像.bmp", winid, 140, 260, 510, 530, Detect_num, Threshold_delta, Target_color)//以後winidより右省略
+ 
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+SLEEP(2)
+
+BTN(LEFT, CLICK, 50, 50)
+break
+
+ENDIF
+
+while true//　画像を探すループ
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)//画像クリック
+SLEEP(1)
+
+break//画像を押せたのでループ終了
+
+Else　　　　　　
+
+BTN(LEFT, CLICK, 25, 25)
+SLEEP(1)
+
+ENDIF
+
+WEND//画像を探すループ終了
+
+BTN(LEFT, CLICK, 50, 75)
+SLEEP(1)
+
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+BTN(LEFT, CLICK, 100, 100)//押す
+SLEEP(1)
+
+ENDIF
+
+
+FOR A = 1 TO 3
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+BTN(LEFT, CLICK, 200, 200)　　
+SLEEP(1)
+
+ENDIF
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+SLEEP(1)
+
+Else
+
+BTN(LEFT, CLICK, 250, 250)　
+
+ENDIF
+
+next
+
+for A = 1 to 5
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+
+BTN(LEFT, CLICK, 225, 225)//クリック
+SLEEP(1)
+
+ENDIF
+
+next
+
+IFB CHKIMGX("画像.bmp", winid,略)
+ 
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+SLEEP(1.5)
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+SLEEP(1)
+
+ENDIF
+ENDIF
+
+
+elseif CHKIMGX("画像.bmp", winid, 略)//特定範囲外で画像がある場合のelseif
+
+
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+SLEEP(2)
+break//画像を押せたのでループ終了
+
+BTN(LEFT, CLICK, 250, 250)　
+
+SLEEP(1)
+
+
+while true
+
+IFB CHKIMGX("画像.bmp", winid,略)
+
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+
+SLEEP(1)
+BREAK
+
+Else
+
+BTN(LEFT, CLICK, 275, 275)
+SLEEP(1)
+
+endif
+
+wend
+
+BTN(LEFT, CLICK, 290, 290)
+SLEEP(1)
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+BTN(LEFT, CLICK, 315, 315)
+SLEEP(1)
+
+endif
+
+FOR A = 1 TO 3
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+ 
+BTN(LEFT, CLICK, 425, 425)　　
+SLEEP(0.5)
+ENDIF
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+ BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+SLEEP(1)
+
+Else
+ 
+BTN(LEFT, CLICK, 450, 450)　
+SLEEP(1)
+
+endif
+
+next
+
+for A = 1 to 5
+
+IFB CHKIMGX("画像.bmp", winid, 略)
+
+BTN(LEFT, CLICK, 475, 475)
+SLEEP(1)
+
+endif
+
+next
+
+IFB CHKIMGX("画像.bmp", winid,略)
+ 
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+SLEEP(1.5)
+
+CHKIMGX("画像.bmp", winid, 略)
+
+BTN(Left,Click,G_Imgx_X,G_Imgx_Y)
+SLEEP(1)
+
+ENDIF
+
+
+else//画像がない時のelse
+
+
+call next.uws
+break
+
+ENDIF
+
+WEND//画像の有無により３つの分岐をするループ終了

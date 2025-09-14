@@ -1,0 +1,11247 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='ja'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <title>DX3rd「雪の人形」</title>
+  </head>
+
+<!-- スタイル設定 -->
+<style type="text/css">
+  body {
+    overflow-wrap: break-word;
+  }
+
+  body>div {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 0.15em;
+  }
+
+.box1{
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px #00BFFF;
+    border-bottom: solid 2px #00BFFF;
+}
+.box1:before, .box1:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #00BFFF;
+}
+.box1:before {left: 10px;}
+.box1:after {right: 10px;}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box2 {
+    position: relative;
+    margin: 2em 0;
+    padding: 25px 10px 7px;
+    border: solid 2px #00BFFF;
+}
+.box2 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #00BFFF;
+    color: #ffffff;
+    font-weight: bold;
+}
+.box2 p {
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+  color: #222222;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #00BFFF;/*上線*/
+  border-bottom: solid 3px #00BFFF;/*下線*/
+}
+
+h2 {
+  /*線の種類（実線） 太さ 色*/
+  border-bottom: solid 2px #00BFFF;
+}
+
+h3 {
+  padding: 0.5rem 0.5rem;
+  border-left: 6px solid #00BFFF;
+}
+</style>
+
+<body >
+<br>
+<center>UGNの創始者、コードウェル博士が姿を消してからおよそ10年。</center>
+<center>一時は混迷を極めたUGNの立て直しは、多くの犠牲を払いながらも達成され、</center>
+<center>以前より強固な組織へと成長していった。</center>
+<br>
+<center>ある日、UGN幹部会議を間近に控えたK市。</center>
+<center>そこに、一人の少女が現れた。</center>
+<center>雪の花のような彼女に隠された真実へと迫るとき、</center>
+<center>日常の守護者たちに再び大きな試練が訪れる。</center>
+<br>
+<center>ダブルクロスThe 3rd edition</center>
+<center><font size="6">『雪の人形』</font></center>
+<br>
+<center>ダブルクロス、それは裏切りを意味する言葉。</center>
+
+<br>
+ <div>
+GM:LISP<br>
+メインログ / <a href="../../upload.cgi?get=00738" target="_blank">雑談ログ</a><br>
+<h1><font size="4">キャラシート</font></h1>
+<font color="#ff00ff">PC1：新城りりか　(<u><a href="http://character-sheets.appspot.com/dx3/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEY6KPb0AMM" target="_blank">キャラシート</a></u>)　PL：めい</font><br>
+<font color="#3f51b5">PC2：円藤照　　　(<u><a href="http://character-sheets.appspot.com/dx3/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEYpOHlxgMM" target="_blank">キャラシート</a></u>)　PL：ふろずん</font><br>
+<font color="#4caf50">PC3：蛙御蛇晴　　(<u><a href="https://character-sheets.appspot.com/dx3/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEY08He0QMM" target="_blank">キャラシート</a></u>)　PL：がぶらす</font><br>
+<br>
+<h1><font size="4">目次</font></h1>
+<b><font color="#00BFFF">■オープニングフェイズ</font></b><br>
+<a href="#scene01">01　雪色の花</a><br>
+<a href="#scene02">02　奈落の予感</a><br>
+<a href="#scene03">03　反乱を企らむ者</a><br>
+<br>
+<b><font color="#00BFFF">■ミドルフェイズ</font></b><br>
+<a href="#scene04">04　再開</a><br>
+<a href="#scene05">05　託されたもの</a><br>
+<a href="#scene06">06　深夜の来訪者</a><br>
+<a href="#scene07">07　情報収集1</a><br>
+<a href="#scene08">08　情報収集2</a><br>
+<a href="#scene09">09　つかの間の……</a><br>
+<a href="#scene10">10　立ち去る男</a><br>
+<a href="#scene11">11　情報収集3</a><br>
+<a href="#scene12">12　解き明かされた計画</a><br>
+<a href="#scene13">13　蛙御蛇姉妹</a><br>
+<a href="#scene14">14　cry for the moon</a><br>
+<a href="#scene15">15　存亡を賭けて</a><br>
+
+<br>
+<h1><font size="4">プリプレイ</font></h1>
+
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではPCの紹介から！PC1から順にお願いします！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    はい！
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/xXF88An0aacPPmgehEX4/lilika.png" alt="新城りりか" title="ツインテールメーカー">
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    新城りりか、コードネームはバッドジョーカー！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    ピンク髪ツインテールで制服のスカートを限界まで短くしてる頭ゆるゆるの女子高生です！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    FHチルドレンだったけどわけあって自分のセルをぶち壊してFHを離反した後、霧谷くんに助けられてなんやかんやで恩を返すためにイリーガルになりました！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    UGNからもFHからも恨みを買いまくってるけど、特に気にせずバット振り回して暴れてます！よろしくお願いします
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    顔に似合わず無頼系だ！　今回はUGN存亡の危機なので自慢のバットで頑張ってほしいね…！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    がんばりりか！
+  </span>
+</p>
+
+<div class="box1">
+    <p>
+■PC1：<u><a href="http://character-sheets.appspot.com/dx3/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEY6KPb0AMM" target="_blank">新城りりか</a></u><br>
+ロイス：神崎真白(かんざき・ましろ)　推奨感情：庇護/不安<br>
+カヴァー/ワークス：高校生/指定無し<br>
+友人達と共にある生活を営みながら、UGNイリーガルとして生きるキミに、ひとつの"指令"が下された。<br>
+数日後にパレスＫホテルで開かれるUGN幹部会議を警護せよ、というものだ。<br>
+その中で起こった"彼女"との出会いが、キミを再び非日常の世界へと誘う──。</p></div>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ハンドアウトはこんな感じ！　
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    ましましろーん…どんな感じになるか楽しみしみ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    楽しみね…GMもこれから動かしていく中でキャラを確立していくことになる…と思う！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    じゃあ次いきましょ！　PC2お願いします！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    はいな！
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/br2zuMEVSB5Sy32hRISo/teru.png" alt="円藤照" title="五百式青年メーカー　https://picrew.me/image_maker/625876">
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    円藤支部長は、"エスケープキラー"の異名で恐れられるUGN本部査察部第4課(UG78頁)をかつて束ねていた人物です。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    後の中枢評議員であり、今は査察部部長である"ミリオンサンズ"アッシュ・レドリック(上級91頁/HR36頁)の「UGNには改革が必要である」という考えに賛同し、彼の右腕として数々の離反者たちを裁いてきました。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    しかし、UGN評議員入りを目前にして彼が指示したと思われる「正義のための不正」を認めることができなかったため、彼の下を去りました。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    査察部を辞めた後は、日本のK市を守る支部長として「自分の正義とは何なのか」を考えながら、のんびりと過ごしています。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    戦闘では、自身を中心とした環状に浮かぶ魔眼を高速旋回することで、斬撃を生み出して攻撃します！ データ的には、範囲攻撃と防御反射を主な武器として、クライマックスでは敵の行動封じとか味方の支援とかの様々な切り札を持ってます！！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    RPでは、大人のヨユウで一歩引いたイケメン保護者ムーヴができたらいいなってカンジ！！ 以上！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    かっこいい支部長！　今回K市がいろいろ大変なことになるので…存分にイケメンしてくれ！
+  </span>
+</p>
+
+<div class="box1">
+    <p>
+■PC2：<u><a href="http://character-sheets.appspot.com/dx3/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEYpOHlxgMM" target="_blank">円藤照</a></u><br>
+ロイス："ネームレス"　推奨感情：感服/隔意<br>
+カヴァー/ワークス：指定なし/UGN支部長<br>
+K市のUGN支部長として様々な難題を解決してきたキミは、<br>
+数日後に行われるUGN幹部会議の警備責任者を任された。<br>
+キミは、これまでキミの輝かしい経歴を支えてくれた情報屋……<br>
+コードネーム"ネームレス"に任務をサポートして貰うために連絡をとった。</p></div>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ハンドアウトはこんな感じ！どう見てもただの犬だが凄腕の情報屋につながっている”ネームレス”からタレコミが入るぞ
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    査察部時代から"ネームレス"とは付き合いがある設定にしたので、わんことも仲良くしていきたいね…🐶
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    よろしくだワン…今回は査察部がらみのキャラが多い珍しいセッションだ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では最後！PC3おねがいします！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    へへい！
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/o6DKlUbi093NJS_r0QX_/haru.png" alt="蛙御蛇晴" title="蛙御蛇晴">
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    "天の恵み"(ｳｪｻﾞｰﾄﾗｯﾌﾟ)、蛙御蛇晴(あみだはる)ちゃん！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    FHの活動によって両親は死亡、妹は精神的なショックにより病院を出ることができない体になってしまったよ！<br>
+    その際にこの子も致命傷を負ったけど、オーヴァードに覚醒！一緒に傘とレインコートもレネゲイドに感染して、彼女の体が如く操れるようになったよ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    この武装と、降りしきる魔眼の雨にちなんで"天の恵み"っていうコードネームがついたけど本人は皮肉にしか思ってないよ
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    UGNで査察官として働きつつ、妹の天を助ける方法を模索しているわね。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    普段から朗らかな笑顔だけど、本人曰く「それは傘が代わりに泣いてくれているから」らしいよ
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    FHはキツめに憎んでるよ　
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/lmA2ToDKW0iwra7uriw2/haru2.png" alt="蛙御蛇晴" title="蛙御蛇晴">
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ヒエッ…
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    戦闘では、最速で動いて硬直をかますタイプになるかしら、火力も出す
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    ロールプレイはこう…ちょっと冷たいけどフレンドリーな口調って感じになると思う　
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    以上！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    了解了解！　PC1ともPC2とも絡みが楽しみな設定だ…
+  </span>
+</p>
+
+<div class="box1">
+    <p>
+■PC3：<u><a href="https://character-sheets.appspot.com/dx3/edit.html?key=ahVzfmNoYXJhY3Rlci1zaGVldHMtbXByFwsSDUNoYXJhY3RlckRhdGEY08He0QMM" target="_blank">蛙御蛇晴</a></u><br>
+ロイス：反乱を企む者　推奨感情：好奇心/猜疑心<br>
+カヴァー/ワークス：指定なし/UGNエージェント<br>
+キミはUGNの本部エージェントだ。<br>
+近く行われるUGN幹部会議のため、K市を訪れていたあなたは、<br>
+唐突に同じ本部エージェントである一人の男からの連絡を受ける。<br>
+「重大な情報を入手した。お前に託したい」と。</p></div>
+
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    公式のハンドアウトはこんな感じ。天道は元査察部の同僚で、仕事の合間を縫ってあなたの妹の病気の調査に協力してくれたりしていました。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    感謝しかない
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    元警察官の真面目で面白味に欠ける性格だが、それだけに信用のできる人間という感じですね！　そんな彼から今回は協力を依頼されます
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では自己紹介は以上。オープニングへ入っていきましょう
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    いぇいいぇい！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    ﾖｯｼｬｲｸｿﾞｰ!
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    わあい！
+  </span>
+</p>
+
+<br>
+<p id="scene01"></p>
+<h1><font size="4">メインプレイ</font></h1>
+<h2><font size="4">シーン1　雪色の花</font></h2>
+
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    PC1のオープニングです！登場侵蝕を5点上げてください。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 30 → 35
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">K市</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    冬も近づくある日。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたは、数日後に行われるUGN幹部会議の会場となるパレスKホテルへの道を急いでいた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    複雑な過去から、普段は現地のUGNと協力することも少ないあなただが、重要な会議が行われるという事情もあり、日本支部長たっての希望で今回の会議の警備へ参加することになっていた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    時計を確認すれば、警備隊長である円藤照との打ち合わせ時刻に遅刻しそうだ…！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    しかし、近道である雑木林を抜けて行けばまだ十分間に合うだろう。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、やば～……もうこんな時間じゃん！」　左手につけた腕時計を確認して
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……あ、でもこっち通れば間に合うかな。まあもし間に合わなくても何とかなるっしょ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    そんな風に焦ったりあんまり焦ってなかったりしながら雑木林に走っていきましょ！
+  </span>
+</p>
+
+<h3><font size="4">雑木林</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、あなたが雑木林を駆け抜けていくと……
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    林の深いところから、血の匂いが漂ってくる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ん？……うわ、くさっ！？なにこれ！血！？」　一旦立ち止まって
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、なんか誰か戦ってたりするー……？っていうか死んでるのかなぁ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    気になるので匂いが漂ってくる方を見に行きます。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では匂いの元は、雑木林の開けた部分へとつながっている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そこには、真っ白な和服に身を包んだ、ひとりの少女が倒れている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    少女は怪我を負っており、血が白い服と地面を赤く染め上げていた。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「わ……！やばやばのやばじゃん。なにこれ意味不なんだけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    若干驚きつつ少女の方に近付いて行こう。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では近づくと……その気配を察知したのか、少女が目を開く。
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/NaXib_7OeSTcFSF2xOV7/mashiro.png" alt="神崎真白" title="神崎真白">
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ん……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、なんだー生きてるじゃん。大丈夫そ？」　少女の前に屈んで、安心したように笑いかける
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……だ、大丈夫……だよ。転んだだけだから」　人が通りかかったことに少し戸惑いながら、そう返事をする
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    確かにあたりは血に塗れているが、すでに出血している様子はない
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー！転んだだけでそんな風になるとかある！？ちょっと見してよ、ほらこんなべっとべとでー……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……あれ、別に血が出てるわけじゃないっぽい？」　首を傾げて
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ほ、ほんとに大丈夫だから…！　ほら、この通り」困った風に、ぴょんぴょんと跳ねてみせる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「めっちゃ元気じゃん！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なーんだ、よかったよかったぁ」　笑いながら立ち上がる
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「うん、でも……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「心配、してくれたんだね……ありがとう」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いやそりゃ心配するでしょー、マジ血塗れだし」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「え、そ……そっか、そうだよね……！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    少女はどこか嬉し気な表情を浮かべる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ね……わたし、ましろ。神崎真白。あなたは？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「うん？あたし？新城りりかだよー」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「りりか……新城りりか、それがあなたの名前なんだね……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「うん、覚えた」　雪のような無邪気な笑顔で
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「…………」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、どちゃくそにきゃわじゃん～！めっちゃ血で濡れてるのに笑顔かわいくてワロ～」　口元を手で隠しながら笑って
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「きゃ、きゃわ……？？」　初めて聞く言葉に困惑しているようだ
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジかわいくてびっくりしたって感じ？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ふつーそんな血で濡れて笑ってたらもっとやばい感じに見えるでしょみたいな」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そ、それって褒めてるのかな……よくわからないけど、ありがとう……？」困惑しながらも、なんだか嬉しそうだ
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「褒めてる褒めてる～。ってか真白ちゃん、その服どうするの？なんか着替えとか無い感じ？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ん……大丈夫、着替えなら、帰ったらちゃんとあるから……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そりゃ家ならあるでしょー。でも問題なのは家帰るまでじゃない？そんなかっこじゃ周りびびっちゃうよ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そ、そうだよね……気づかれないように戻らなきゃだよね……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    今着替える服とかはないらしい
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「それな～。あ、でも気付かれないようにって家この辺なわけ？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ち、違うけど……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    言われてみれば確かに……という感じで黙りこくってしまう。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「じゃあ無理じゃん！えー、どうしよっかなー……っていうか……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「この血、どう見ても新しいし絶対なんかこの辺で誰か襲われてたとか戦ってたとかなんよね～……」　血だまりの前で屈んで小声で呟きながら
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「よく考えたらこの辺り留まってるの危険なんじゃね？って感じだしぃ……あんまりだらだら考えてるのもあれかー……」　ぶつぶつ呟きながら思案して
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ねえ真白ちゃん、とりまあたしの行こうとしてるとこ一緒に行かない？雑木林抜けてすぐなんだけど、そこで着替え借りて帰るみたいな」　立ち上がって
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「え、えっと……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ごめん！　私、これからどうしても急がないといけなくて……！」　
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー？急ぐって何！？そんなかっこで！？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「うん、どうしても……！　だから、ちょっと寄り道はしてられないの……気持ちは嬉しいけど……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「じゃあしょうがないかー。通報されそうで心配だけど」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ん、それは大丈夫……！　でも、心配してくれてありがとう……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    真白が急いでいるのは本当なようで、そわそわと今にも走り出しそうにしている。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おけおけ！別にいいけど、じゃあ林から出るまで一緒にいこ！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「どう見ても危険じゃんこれ。ここで暴れた奴絶対まだ近くにいるでしょ」　血だまりを指差して
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いやあたしらずっとここでだらだら喋ってたから今更だけど」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……うん、ありがとう」逡巡しながらも、嬉しいような、不安そうな、複雑な表情で了承する
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってかあたしも一人だと不安みたいな？じゃあ行こ！」　って真白ちゃんの手を引いて歩き出そう
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「（今あたし結構UGNっぽいことしてるんじゃない？分からんけど）」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「う、うん……！」　手を引かれてちょっとびっくりするが、ついていく。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    そんな感じで真白ちゃんが目指してる方角に向けて、林から出ます！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、出れた出れた。何も無くてよかったー」　手を離す
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ふふ……本当にありがとうね、心配してくれて……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いーのいーの」　手を振ってる
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「うん、じゃあ、ね」名残惜しそうに手を振って
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    真白は、あなたと別れて歩き出す。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ん、じゃーね！もう血で滑って転んじゃだめだよ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いや血で滑ることなんてそうそうないわみたいな！とりあえず気を付けてねー」　笑顔で手を振って見送る
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……うん、りりかも気を付けてね！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おけおけ～」　そんな感じで見えなくなるまで手を振って
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってか気を付けるも何も時間ピンチすぎ～……。どうやってもこれ遅刻確定なんですけどー……」　腕時計を青ざめた顔で確認する
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「…………」　腕組して空を仰いで
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「もうゆっくり行っていっか。お腹空いて来たし軽くラーメン食べよ～っと」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    そんな風に林に戻らずぐるっと回る形で待ち合わせ場所まで行きます。寄り道しながら。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、立ち去るあなたの背に声が聞こえる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「りりか……これからしばらく……この町から離れていないと、ダメだよ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え……？」　振り返る
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    声は確かに聞こえたのに、振り返っても、もう真白の姿はない。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、幻聴じゃん、やば～……」　びっくりして固まってる
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    幻聴だったのか？　疑問に答えるものはなく……空からは、はらりと雪が落ちてくる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……でも、なーんか気のせいって感じもしないかも」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「よく分かんないけど、さっきの血のことも気になるし……やっぱ急ごうかなー……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……あっははは！！真面目かって！！」　落ちて来た雪を掌で触れながら、一人で受けたように笑って
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    とりあえずそのまま小走りでそこから立ち去っていきます。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おけおけ、ではシーンエンド！
+  </span>
+</p>
+
+<br>
+<p id="scene02"></p>
+<h2><font size="4">シーン2　奈落の予感</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    円藤さんのシーンです。登場どうぞ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 36 → 41
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">UGN・K市支部ビル内 支部長室</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    君は、ゆったりとした椅子に腰かけ、分厚い参考資料の束に目を通しながら、部下の報告に耳を傾けている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    デスクの横では、一頭の犬が場違いにも昼寝をしている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    議題は、数日後に控えたUGN幹部会議についてだ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>部下</span> :
+  <span>
+    「……以上の事実により、今回の幹部会議においてFHがなんらかの陰謀を企てている、と予想されます」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>部下</span> :
+  <span>
+    「作戦の指揮者のコードネームは……”ロード・オブ・アビス”。それ以上のことは今はわかりません」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「"ロード・オブ・アビス"の陰謀、か。 ……私が警備責任者などというのは人選ミスだと思うが」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「殺ししか能のない男に警備を一任するとは、上層部はいったい何を考えているのやら……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……すまない。 君に愚痴を言っても仕方ないな。 事には全力で当たるだけだ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>部下</span> :
+  <span>
+    「ええ……よろしくお願いします」　元は本部エージェントとして恐れられたあなたを前に、部下もすこし収まりが悪そうだ。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「君たちにも負担を強いることになるかもしれないが、これは幹部たちに実力をアピールする絶好の機会でもある。 よろしく頼むよ」部下たちの緊張をほぐすために、柔和な笑みを浮かべる
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>部下</span> :
+  <span>
+    「はい、心得ています」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    と、そうやって打ち合わせをしていると、デスクの横で寝ていた犬の耳がびくりと動く。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「なかなか大変そうですね、"果ての月"」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ええ。 ネームレス殿のような愛苦しさを持ち合わせていれば、こうした苦労はないのでしょうが、なかなかどうして難しい」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「これだけ重要な会議の警備とあっては、情報屋の手助けが必要なのでは？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    含みを持たせた風に尋ねる。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そうですね。そのつもりでした」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……今すぐに調べてほしいことが二つ。 ひとつは"ロード・オブ・アビス"のこと」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「もうひとつは……、霧谷殿から派遣されてくるUGNイリーガルのことを調べてほしいのです」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「イリーガル……ああ、彼女のことですね。承知いたしました。ふふ、日本支部長はよほど今回の会議に警戒を払っておられるようだ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「さて、"ロード・オブ・アビス"ですが……実は彼奴については私も個人的に調査を進めておりましてね」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「奇妙なことにFHに探りを入れても全く馬脚を現さないのです。よほどガードが固いのか何なのか……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ふむ。 あなたほどの情報屋が尻尾も掴めないと」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「ええ、困ったものです」　尻尾を振りながら
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「これは貧乏クジを引かされましたかな」あくまでヨユウそうに笑う
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「そこでこちらからもお願いなのですが、僭越ながら、この情報屋にお力添えをいただきたいのです」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「力添え、ですか？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「なに、難しいことではありません。ただ……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「ほんの少し、UGNの情報網をお貸しいただけないかと」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「なるほど、いいでしょう。 あなたのことは信頼していますし」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「しかし、ひとつ条件があります」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「ええ、何なりと」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「では、交換条件を」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……そろそろ、オリジナルの貴方とも酒を酌み交わしてみたいのですが、如何でしょう？ 今回の任務が終わった時にでも」小さく笑みを浮かべ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「ふむ……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「……良いでしょう。この件は、その位の価値がある」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふふ。 では、そのように」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「たのしみにしておきますよ、"ネームレス"ではない、名も顔もある貴方と会うのを」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「その情報は墓まで持っていって頂きますがね……では、交渉成立、ということで」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「はい。 ……ああ、UGNイリーガルの少女の情報については、彼女と会う日までに用意しておいていただきたく」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「そちらの情報はすぐに手配します。では、これにて失礼いたします」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ”ネームレス”はそう告げると、気の抜けた表情であくびをしてから、器用に支部長室の扉を開けて去っていく。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    果たして”ロード・オブ・アビス”の思惑とは？　そして、霧谷が手配したというイリーガルとはどのような人物なのか。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いくつもの不確定要素を抱えながらも、幹部会議の日は確実に迫っている……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド
+  </span>
+</p>
+
+<br>
+<p id="scene03"></p>
+<h2><font size="4">シーン3　反乱を企らむ者</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    晴ちゃんのOPだ！登場をどうぞ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 43 → 48
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">K市某所 UGN査察部詰所</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    K市某所、UGN査察部の詰所。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    近く、K市で行われるUGN幹部会議。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    日本支部をはじめとした国内で活動するUGN幹部を集めたこの会議。当然、議論の内容に”不適切”なものがないか本部からの査察が入る。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その大役の一翼を担うのがあなただ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ここのところは連日連夜、事前資料の査読などで資料室にこもり切りになっていることだろう。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「～♪～～♬」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「も～ちょっと～♪、人員割いても～♬、いいんだよ～♫」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……って言っても、日本に精通してる本部職員あんまりだし…しょうがないんだ…」ぶつくさ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……査察部局長、”ミリオンサンズ”ことアッシュ・レドリックの打ち出した「無能はいらん」という方針により、査察部は少数精鋭の体制を取っている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    彼の方針により査察部は大きな成果を上げることになるが、時にそのしわ寄せがこうして現れることもある……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    閑話休題。あなたが仕事をしていると、不意に着信の電子音が鳴る。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ん」電話取る
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    これ仕事用？
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    これは……仕事用の電話ではないよ！プライベートで使ってるやつ
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    了解！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「はいもしもし、蛙御蛇です」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「久しぶりだな。蛙御蛇」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「俺だ。天道だ」
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/roLagZj5a_3Mx1EQ4z87/daichi.png" alt="天道大地" title="天道大地">
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    着信元はかつての同僚、天道大地だ。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「アレ、天道さん！久しぶりです～、今どこ部署にいるんでしたっけ～」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「ああ、いろいろあって、今は長瀬の下だ。そっちはまだ査察部にいるのか？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「あ～長瀬さん。はい、私はまだ査察部にいますよ？割と性に合ってますから」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    長瀬――長瀬明。あまたのUGN幹部の中でも、特筆すべき有力者として、本部の人間ならその名を知らぬものはない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    現在、UGNの意思決定機関である中枢評議会に欠員はないが、一部で引退が囁かれている人物も存在する。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その後開いた枠に入る新たな評議員……その候補として急進派が推しているのは二人。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    査察部局長アッシュ・レドリック。そして、もう一人が長瀬明である。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「そうか……妹さんの様子は、どうだ」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……ううん、進展は無いかな。意識はあるし、会話だってできる。でも…普通の生活に戻るのは厳しそう…」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「そうか……悪いな。異動してからあまり力になれなくて」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    査察部の同僚であった天道は、あなたたち姉妹のことをよく気にかけていた。今もその気持ちに変わりはないようだった。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「…しょうがないよ。長瀬さんの下ってことは、そっちも相応に忙しいだろうし」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    しばらく間があって、天道は話し出す
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「蛙御蛇。忙しいところ、本当に申し訳ないが……ひとつ、頼みを聞いてくれないか」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「んああ、天道さんの頼みなら聞きたいけど…内容だけいいかな？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「ある筋から暗号化されたデータを入手した。それの解析を手伝ってほしい」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「詳しくは明日、会って話す。データはその時に渡す。……お前にしか頼めない仕事だ」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「………わかった」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「……理由を聞かないのか」驚いたように
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「え、掘ってほしかったの？深刻そうだったから…」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「……いや、いいんだ。今はまだ話すべき時ではないからな」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そういうことなんでしょ？…天道さんがそんな…無駄に深刻そうに頼み事なんてしないだろうし。私に協力できることならさせて？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「蛙御蛇……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「……ありがとう。ごめんな」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    天道は、待ち合わせの時刻と場所を告げる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「……積もる話はあるが、こちらも時間が押しててな。じゃあ、切るぞ」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「はい、それじゃぁ明日」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ぷつん、と通話が切れる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    彼の真に迫った様子に、あなたはただならぬものを感じただろう。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    明日、待ち合わせ場所で何が起きるのか？　不安を抱えながらも、今日のところは山積みの仕事に戻るのであった……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    オープニングが終わったのでHOロイスの感情を決定します。決まった人から宣言をお願いします！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    真白ちゃんで、〇好意/不安にしときます！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ネームレスのロイスを信頼/隔意Pで！ 約束通りのサシのみが出来たら隔意がなくなる
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    天道君に信頼/悔悟Pで獲得！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    あれ、『反乱を企む者』と天道君はイコール…であってる…？
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    合ってるよ大丈夫！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではでは、進めていきましょうか
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    はーい
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    へへい
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    はいなな～
+  </span>
+</p>
+
+<br>
+<p id="scene04"></p>
+<h2><font size="4">シーン4　再開</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンプレイヤーはりりかちゃんです。円藤支部長も登場をお願いします。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 35 → 40
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 41 → 46
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">パレスKホテル ロビー</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    幹部会議の会場となるホテルのロビーに君はいた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    リゾート系というよりは、ビジネスマンが利用するような形式ばったホテル。時間を潰すゲームコーナーなどもない質実剛健、悪く言えば面白味のない場所である。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    仕事とはいえ、このような堅苦しい場所でじっとしているのは退屈かもしれない。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「とうちゃーく。ってやっぱまあまあ遅刻じゃん！分かってたけど」　走ってホテルのロビーに入って来る
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えーっと、どうすればいいんだっけ。警備隊長の人とかってどこにいるんだろ？とりあえず上の階？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    そんな風に辺りをきょろきょろしながらロビーを歩いていっている。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    辺りをきょろきょろしている少女の姿を見つけると、憂いを帯びた目で腕時計に目を落としながら、エントランスのソファからスッと立ちあがる。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    そしてコツコツと革靴の音を響かせながら、少女に向かって歩み寄った。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「はじめまして。 ……"バッドジョーカー"新城りりか君」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    少女に声をかけたのは穏やかな笑みを浮かべる美人であり、性別の判別もひとめでは付かないが、180cmはあろうかという長身と落ち着いた低い声が、彼は男性であると教えてくれる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、はじめまして～」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え？ってか誰？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……私は"果ての月"円藤照。 今回のUGN幹部会議の警備責任者を任されている者だ」ネームレスから調べてもらっていたが、この少女が霧谷殿の紹介でか、と内心驚いている。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「円藤照……責任者……って、えー？お兄さんが警備隊長ってこと？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なんか思ってたよりわかーい。もっとおじぴだと思ってた」　意外そうに目を丸くして見つめてる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……おじぴ？ 歳の話なら、今年で33になったが」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうなの！？えー、見えない見えない！二十くらいかと思った！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……よく言われるよ」内心しゅんとしているが、笑顔で返す
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「――それはともかくとして、何かイレギュラーな事態にでもあったのかな？ 十分程度の遅れがあったようだが」腕時計を指して
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あっ、そうなのそうなの！別にあたし単に遅刻してたってわけじゃないから！言い訳させて！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ちょっと人助けしてたんだよね～。そっちの雑木林でさ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「人助けで遅れた、か。 実際にその言い訳を聞くのは初めてかもしれないな」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「とはいえ、特殊任務を負っていないUGNの人間であれば、十二分にありうる話か」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「それで、その人助けは無事に為されたのかな？ 」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「為した為した！ちゃんと無事に林の外までおくってったからね」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「それはよかった」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「だよね～。よく分かんないけどレネゲイド関係っぽかったし、なんかUGNっぽいことした感じで気分良い～」　にへっと笑って
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「レネゲイド関係、か……もう少し詳しく話してもらえるだろうか？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あーね！なんかさ、凄い血の跡があったんだよね。多分誰か戦ってたか襲われてたんじゃないかな～って思うんだけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「詳しくはよく分かんないんだけど、近くに一般人っぽい子がいたからさ、とりあえず危険がないように外まで一緒に出たって感じ！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「その一般人自身が襲われていたのではないのかい？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー？どうなんだろ、そんな感じのことは言ってなかったし分かんないなー」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふむ……。 この時期にそんな事件があったとは」あやしいが、分からないなら仕方ないな、と息をつき
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ともかく、御苦労だったな、りりか君。 あとでその人物の似顔絵作成に付き合ってほしいのだが、構わないね？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「似顔絵？おけおけ～」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「たすかるよ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……さて。 りりか君。 君は本当は遅刻していないから、時間はあるんだ。 というのも、君には早めの集合時間を伝えておいたからな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、マジ！？なんで！？じゃあ全然焦る必要なかったじゃん！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「なんで、という質問に関しては『君のことは調べていたから』という答えで返そう。 しかし、そう思うのならば、次からはもっと早い時間を伝えなければならない」笑って
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、調べていたからって時間にルーズな女だと勝手に思ってた的な？心外なんですけど～」　ちょっとむすってして
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「これは失敬。 だが、実際にこうして十数分の遅刻をしているだろう？ 」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「それはしょうがないじゃん～……だって血の匂いしたんだから気になっちゃったんだし。照くんっていじわるな人～？」両手で指を絡めて弄りながら
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふふ、それは否定しないが」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「と、話を主題に戻そうか。 ――君が時間にルーズだから、というのも早めに呼んだ理由のひとつではあるが、それよりも他の支部員が集まるまでに話しておきたいことがあって、それで早めの時間を伝えさせてもらった」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「何それ、どゆこと？話しておきたいことって警備の打ち合わせ以外にある？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あっ、りりかちゃんのこと個人的に気になってるみたいな？あっははは！だめだよ公私混同じゃーん！」　けらけら笑ってる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「私が、君を？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ふふ、そうだな。 そうかもしれない。 実は君のことが気になってな」くすくすと笑って
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、マジ！？冗談のつもりだったのに！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「本当だよ。 それで……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「いささか礼を失しているとは思うが、君の過去も調査させてもらった」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あたしの過去？あー、ってことはFHにいたってこととか？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……かつてはFHチルドレンとして数々のUGNエージェントを始末し、しかし諸事情からFHに反旗を翻すことになったFH側の離反者(ダブルクロス)」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そして、今も少なくない数のUGNエージェントたちに恨みを持たれているUGNイリーガル。 それが君という人間だ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「それな～……。でもそれがどうかしたの？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「どうかしたの、か。 意外にもそこに忌避感などは抱かないのだな。 こういった過去を探られた人間は、あまりよくない顔を見せるものだが」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いやー、別に隠してないしね。それにあたしのこと警戒して調べてても仕方ないんじゃないかなー的な？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「照くん警備隊長なわけだし、やっぱ知っときたかったんじゃないのみたいな」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「理解を得られてうれしいよ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……さて。 そこでひとつ聞いておきたいことがあるのだが、いいだろうか？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ん、おけおけ。３サイズとかこの前のテストの点とかは無理みだけど、他のことなら聞いてもいーよ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふふ、そんなことには興味がないから安心してほしい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……では、質問だ。 君がUGNに力を貸すのは、霧谷殿に対する義理から来るものなのだろうか？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうなるかな！霧谷さんに助けられなかったらあたしふつーに死んでたわけだし」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「他にすることとか何もないし、働いて返そーみたいな」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そうか」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……君を疑ったこと、今一度詫びよう。 済まなかった。 これは私に染み付いたクセのようなもので」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そして、りりか君。 改めて君に助力をよろしくおねがいしたい」少し屈んで、すっと手を差し出す
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「何それ謝られたんだけど！いーよいーよ、あたし疑われるとかもう慣れっこだし！っていうか憎まれて追い返されないだけ今回は全然マシみたいな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ふふっ、じゃあ全力でがんばるから任せてよね。こっちこそヨロ～」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    握手に応じて嬉しそうにウインクする。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「それと……」しばらく握手した後、ぐっと手を引いて近寄る。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え？」　引っ張られ
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「あまり大きな声では言えないが、私だけが君の事を知ってるのはフェアではないため、これも伝えておくことにする」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「私はかつてUGNで離反者(ダブルクロス)を始末する仕事についていた」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「UGNエージェントを始末したことがあるのは、キミだけではない。 ……そういった視線に晒されるという点でも、君より先輩という訳だ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「困ったことがあったら、相談しに来るといい。 霧谷殿に頼るのが一番だとは思うが、彼は忙しいからな」すっと離れて背を向けながら、そう言う
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー！マジか！ってかUGNにもそういうのあるんだ！」　と驚いて大きな声を上げかけて口元を抑えて
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おっけおっけ！ふふっ、なんだ優しいじゃん照くん！もー！ありがとー！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    えへえへ笑いながら軽く背中をぺちぺち叩いてる。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「まったく物怖じしないな、君は……。 これは心配無用だったかな」静かに笑う
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    照くんに〇好意/劣等感でロイス取ります！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    りりかちゃんに好意/苦手Pでロイス取ります！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OKだぜ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] ロイス : 3 → 4
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] ロイス : 3 → 4
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、二人は和やかに接触をすることができた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そのまま本題の打ち合わせに入ろうかという、その時。突然、ラウンジの空気が何の前触れもなく塗り替わる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ホテルの一般客たちが、次々にざわつき始めたのである。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……あれ？なんだろ、なんか騒がしくない？」　一般客の方へ顔を向けて
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そうだな、様子を見てこようか」と言って、一般客たちの方に歩いていこう
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、じゃああたしも見に行こー」　ついていく
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、喧噪の起きている場所を確認する。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その中心には、ミラノ製のスーツに身を包んだサングラスの男。
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/lwr7tL0ZiURG9UYLakUD/kanzaki.png" alt="神崎高明" title="神崎高明">
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そして――その傍らにひっそりと立つ、幽霊を思わせる白い和服を纏った少女がいた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「ほぉら見てみろ真白ぉ？　みぃんなお前に注目してるぞ？　げはははは」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    男の方は何が面白いのか、周囲の反応を見て下品な笑みを浮かべているようだ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    明らかに異様な光景だが、少女……真白のほうは、いたって落ち着いているようで、寂しげな表情をしてはいるが、特に助けを求めたり取り乱したりといった様子はない。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あっ、真白ちゃんじゃん！何でここいるのー？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    おーいって笑顔で真白に手を振る
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    寂しげな表情をしていた真白だが、りりかの視線に気づくと、一瞬だけ薄い笑顔を浮かべる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「あ……りりか……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    しかし、直後にハッとした表情で口元に手を当て黙り込む。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「りりかぁ……？　おい、あれほど他人と喋るな、と言っただろうが、真白ぉ！？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    男はその視線に気づくと、わざとらしく大勢の前で真白を怒鳴りつける。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「(……不愉快な男だな)」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えっ、なになにびっくりした！なんで怒られてるの！？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    男のほうは何が気に食わないのかすごい剣幕で、今にもこちらに向かって飛び出してきかねない様子だが、真白がそれを制止する。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「お父さん……言うこと聞くから……りりかとは、さっきお外で少し会っただけだから……！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「チッ……お前、姉に会いたいんだろうがぁ？　言う事を聞かない悪い娘には、会わせられんなぁ？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    父親がそう言うと、真白のほうは完全にしゅんとして黙ってしまう。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なんか複雑な家庭な感じ……？父親ってあたしいたことないからよく分かんないんだけど……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「とりまパパさんさ、あんま騒がしくしない方が良いんじゃない？ほら、他の人とかびっくりしちゃってるし」近づきながら困ったように笑って周りを手で示す
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「ああん？　人んちの教育方針に口出すってのか？　いい度胸してるじゃねぇか嬢ちゃん」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「……まあいい、その度胸に免じて今回はこのくらいにしといてやる」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    冷静に対処するあなたを見て興が覚めたのだろうか、父親はそれ以上ヒートアップはしない。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、なんだー良い人じゃん！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……本気で言っているのなら、君は道徳を習った方がいいだろうな」小声
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、だってなんかよく分かんないけどこのまま喧嘩になったりしそうって思ったし……」　小声で
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「この場は確かに収まったが、こういった家庭が外出先で出すトラブルは氷山の一角でしかない可能性が高い。 つまり、家ではこれ以上に酷いと考えられるぞ、この男……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「かといって、我々UGNが関与するような話ではないが……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「んー……それはそうかも……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「（ってか、うわ偶然って思って話しかけちゃったけど、さっきの見た感じ迷惑だったりする的な……？）」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    真白ちゃんの方を見つめて、なんかごめんねって風に小さく手を合わせてる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……」　それを見て何を言うでもなく、しかし申し訳なさそうな表情をしている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「あぁ、興が醒めちまったな。おい、行くぞ真白」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「ああ、それから嬢ちゃん……二度と真白に近づくんじゃねぇぞ？　あ？　げははははは」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    父親は再び下品な笑みを浮かべながら、真白を連れてエレベーターの中へと消えていく。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……な、なんか……」　呆然とエレベーターを眺めて
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「や、やば～～～～～～～～……！え、あれ親子！？一瞬過保護かな？って思ったけど謎の犯罪臭が凄いんですけど！やっば……！！」　口元を手で覆って
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「あれが親子だとはとても思いたくないほど酷かったな」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……確認しておきたいのだが、さきほどの白装束の少女の話から察するに、彼女が君が助けたという一般人で間違いないだろうか？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、それな！そうなんだよね、真白ちゃんっていうの」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「真白、か。 このパレスKホテルの宿泊者だったらしいが、なんらかの因果を感じるよ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「うーん、偶然かと思ったけど、そう言われるとそんな気もする……。単になんか心配になってきちゃっただけかもしれないけど……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……行っちゃったし、とりま打ち合わせの続きする？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    でも考えても仕方ない問題かもだし、と切り替える。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そうだな。 この時代に白装束の少女を『一般人』と称した君の言語能力に対して異議を唱えるのは後に回すとしよう」笑って
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えぇ～？そこ別に弄らなくてもいいじゃん、も～」　笑い返して
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふふ。 では、気を取り直して打ち合わせ室まで案内(エスコート)するかな」とエレベーターに向かおう
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「は～い」　ついていく
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    白装束の少女……真白と、その父親らしき男。謎を残しながらも、あなたたちは幹部会議の打ち合わせへと向かっていった。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</p>
+
+<br>
+<p id="scene05"></p>
+<h2><font size="4">シーン5　託されたもの</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンプレイヤーは晴ちゃんだ！登場どうぞ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 48 → 53
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">K市 路地裏</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    深夜、K市の路地裏。あなたは壁にもたれかかったまま、天道のことをひとり待っていた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いつもは待ち合わせの30分は前に現れるはずの天道が、今日は一向に現れない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    時計の針は、じきに約束の時刻を指そうとしている。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……遅いな」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    電話してみよう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、電話をかけようと端末を手に取る。時刻は、ちょうど約束の時間を指した。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その時だ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    路地裏に、真っ黒い人影が現れる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    天道だ、と背格好からあなたは瞬時に判別する。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    しかし……何か様子がおかしい。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「ぐ……」　どこからか風音を立てながら、よろよろとこちらに歩みよってくる。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「天道さん…？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    可能なら受け止めよう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    よく見れば、黒のコートの下に覗くワイシャツが、赤黒く染まっている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    天道はあなたの姿を認めると、力尽きるように、あなたの胸の中へと倒れ込む。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「えっ、天道さん？何、血……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「す……まん……とんだドジを……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    喉元からヒューヒューと風音を立てながら、聞き取れるか聞き取れないかくらいの声を必死に出している。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「いいです、喋らないで。今すぐ治療に向かうから」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「……めだ……時……が……無……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    震える手でポケットから何かを取り出し、あなたに渡そうとしている。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ねぇ何してるの？馬鹿、早くいかなきゃ、時間が無いなんて…」それはすぐに受け取るけど…
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    天道が取り出したのは、一枚のメモリーカードだ。弱弱しく、しかし、確かにあなたに手渡す。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>天道 大地</span> :
+  <span>
+    「これを……K市……長へ……！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「わかった、わかったから！もう喋らないで！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    天道は言われた通り喋るのをやめ、すぐに気を失う。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「っ、死なないで…死なないで…！」〈ディメンジョンゲート〉でK支部へ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ゲートを展開する。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 53 → 56
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    展開しながら、その場に接近する殺気に気づく。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    一人ではない、最低でも数人、おそらくは数十……夥しい数の殺気が、その場に迫っているのを感じる！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「は…？何この数……とにかく！」天道君を引きずって逃げられるかしらね
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    逃げられます！支部に移動したらこのシーンは終了になる！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    殺気が到達する前に、ゲートが現れる。あなたは天道を引きずって間一髪、そこに駆け込む。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    閉じていくゲートの隙間から一瞬だけ、淡く白い光を放つ異形が、こちらを睨んでいるのを見た……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</p>
+
+<br>
+<p id="scene06"></p>
+<h2><font size="4">シーン6　深夜の来訪者</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンプレイヤーは支部長！必須の登場は晴ちゃん。りりかちゃんも登場推奨です。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    登場どうぞ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 40 → 45
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 46 → 51
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 56 → 61
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">K市支部</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    朝……と呼ぶにはあまりにも早すぎる時間。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    K市支部で睡眠をとっていた円藤支部長のもとに、突然の来訪者が現れる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    それは、怪我人を抱えたUGN査察部のエージェント……蛙御蛇晴であった。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ハァッ、よし、ここなら…」 
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そこの守衛さん！こちら査察部"天の恵み"、ホワイトハンドの要請をお願いします！」腕章を見せて行動させよう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    「はっ、はいっ！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    腕章を見た支部員は、事情を察し慌てて医療チームに連絡を入れる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    静かだった支部内が、慌ただしく動き出す……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その喧噪は、やがて仮眠室にも届く。
+  </span>
+</p>
+
+<h3><font size="4">K市支部 仮眠室</font></h3>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ん……。 こんな夜更けに、何事だ……？」浅い眠りだったため、すぐに目を覚ましてベッドから這い出す。この支部は前支部長の意向で寝具に資金を使っていたため、ベッドと布団はふかふかだ。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「りりか君は……、うん。 しっかりと眠れているな。 支部の事情で起こすのも悪いか」近くのベッドにある寝顔を見て、布団をかけなおして微笑んでから仮眠室を出る。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    そして、扉を出てすぐ傍にいた忙しそうな支部員に声をかける。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「こんな時間に何事だ？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>支部員</span> :
+  <span>
+    「そ、それが……査察部のエージェントが怪我人を連れて飛び込んできまして……！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    支部員は医療チームの分室がある方を指さして言う。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「査察部の……？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……まったく今月はよくないことが続くな」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「すぐに私もそちらの様子を見に行くとするよ。 手間を取ったな」そう言って支部員を解放しよう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>支部員</span> :
+  <span>
+    「はい、お手数おかけします」そう言って支部員は仕事に戻っていく。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……え～、なんかやばそうな感じ～？」　今ので起きたのか寝ぼけ眼擦りながら仮眠室の扉から顔を出す
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……りりか君。 済まない、起こしてしまっただろうか？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「起きた起きた、騒がしくなってたっぽいし」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「でも別に謝んなくていーよ。ってか行かなくていいの？」　靴を履いて何となくついていく様子
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そうだったな。 ……君には存分に寝ていてもらって構わないのだが」ついてくるのか？ って顔
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「目覚めちゃったし、ってかこんな忙しそうにしてる中で寝てたらなんかこいつめっちゃ図太いって感じじゃん！ほら行こ！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ん、そうか。 では共に行くとしよう。 ホワイトハンドの医務室はこちらだ」そう言って先導して早歩きしていこう
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「は～い」　ついてくついてく
+  </span>
+</p>
+
+<h3><font size="4">K市支部 医務室</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    医務室は、急患の受け入れに大わらわの様子だ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    奥にある集中治療室は扉が閉ざされランプが点灯しており、天道はこの中で治療を受けていることがうかがえる。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    集中治療室の手前の長椅子に、傘を差した少女が座っている。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    傘の内側では黒い雨が絶えず降り注ぎ、床に着いた時点で消滅している。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ああ、支部長さん…夜分遅くにごめんなさい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    その様子を見て、予想外の来客に驚きながら
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……久方振りだな、晴君。 願わくばもっと別のカタチで再会を祝いたかった」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、知り合いなんだー。ってめっちゃ雨降ってるけど、どうなってるのこれ？」　来客というより傘の中で黒い雨が降ってることにびっくりしてる
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「仕組みは後で教えたげるね。私もこんな形でここに来たくはなかったんだけど…」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ケガ人は誰だ？ 誰に襲われた？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「私の元同僚で、天道って人。相手はわからない…多分大勢」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「で、彼から言われたんだけど…これを貴方にって」メモリだし
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「天道君から、私に贈り物…？」受け取る
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「パソコンとかに挿すやつじゃん」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「恐らくは情報が入っているのだろうが、しかし何故、私に…？ 他に適任は山ほどいるハズ…。 それこそ、晴君も信頼に足る優秀なエージェントだ」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「わかんない…喋るなって言ってんのにどうしてもここにって…死なないで…」雨足は強くなる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いや適任も何も、ふつーに照くんに見せたい情報ってだけじゃん？わざわざ持ってきたってことはさ～」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「それは……おそらく私の存在を踏まえてのことでしょうね」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    医務室に、突然場違いな犬が現れる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なにこれわんこいるし喋ってる！やば、かわいいけどなんで？」　屈んで犬を見る
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ネームレス殿。いつの間に」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ネームレス…貴方が？」きょとん
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「今回の事件がK市という地に関するものだったこと、元監査部で一定の信頼がおける人間を頼りたかったこと、そういった要因もあるとは思いますが」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「一番は、外部の情報屋と強いコネクションを持つ人間を頼りたかったのではないかと。あくまで推測ですが」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「はぇー、よく分かんないけどかしこいわんちゃん」　勝手に頭撫でてる
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……すごい有名な情報屋さん、だよ(チルドレンの子かな…？)」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    夢を壊したくないから、この犬はアニマルテイマーで操っているだけということは黙っておこうという顔
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「新城りりかさん、ですね。よろしくお願いします」尻尾を振りながら
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジ？情報屋さんなんだ！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、そうそう、そうなの！言いそびれてたけど新城りりかでーす。イリーガルだけどヨロ～」　ネームレスわんこを撫でながらゆるい笑顔で晴ちゃんに名乗る
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「こう見えてその筋では少しは名が通っているのですよ。名無しですが」撫でられて気持ちよさそうにしている
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「私はUGN本部査察部一課、”天の恵み”蛙御蛇晴。よろしくね、りりかちゃん」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「晴ちゃんかー……って、本部ってことはめっちゃ偉い感じじゃない？えー、ちっちゃいのにえら！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ふふ、実はこれでも成人済みなんだ。レネゲイドの影響で成長しなくなっちゃったみたいでね？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー！！そうなの？じゃあ古代種的なやつじゃん！すご～。あんまり見たことな～い」　立ち上がって晴ちゃんをすげーって目で眺めてる
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ん～、そこはどうなんだろうね？ああ、それで…支部長さん、データの方はよろしくね。天道さん曰く、暗号…だとからしいんだけど」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふむ、暗号化……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「見るのにも時間がかかりそうだな。 解読を待つ間、天道君が巻き込まれた事件についても調べた方がいいだろう」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ネームレス殿、さきほど『今回の事件がK市という地に関するものだったこと』と仰っていましたが、彼が巻き込まれた事情をなにか御存知で？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「此度、K市で開かれるUGN幹部会議。それをターゲットに、”ロード・オブ・アビス”が何らかの企てをしていることはご存じでしょう」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ええ、もちろん。 二人には説明が必要なところですが」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「…？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「ああ、お二人はK市の支部員ではないからご存じありませんでしたね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「打ち合わせの時になんか危ない的なことは聞いたけど、そいえば詳しくは知らないかも」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「”ロード・オブ・アビス”…現在のところ、すべてが謎に包まれた存在です。現時点で、私が彼について把握しているのはただ二つ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「ひとつは、彼がFHエージェントであること。もうひとつは……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「天道大地、彼が”ロード・オブ・アビス”に内通していたこと。このふたつだけです」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「は………？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「幹部会議なんだからそりゃ狙うのはFHだよね～……でも内通？って何？その人UGNエージェントとかじゃないの？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「恥ずかしながら、支部長殿にお力添えを頂きながら、判明したのはこれだけで……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふむ。 天道君は"ロード・オブ・アビス"とつながっていた……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いやわんちゃんがそんな調べてるだけで十分って感じだけど～……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え～、よく分かんない～。なんでそんな人が怪我負ってて、情報入ったメモリ渡してるの？」　天道のこともよく知らないから余計に分かっていない様子
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「いや、いや…そう、それなら、その通りで…天道さんはどう…なんで攻撃を…？その…"ロード・オブ・アビス"から逃れて来たとかじゃないの？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「彼が"ロード・オブ・アビス"と共謀してUGNを滅ぼそうとしているのだとしたら、私にメモリチップを預ける理由もない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「つまり、彼は"ロード・オブ・アビス"に協力しているように見せかけ、その実、計画を阻止するために動いていた二重スパイだったのでは？ ――そして、その事実がバレて、狙われることになったと」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なるほどね！絶対そういうことじゃん！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……………いえ、いえ…梯子を外すようでごめんなさい、支部長さん。そのデータの解析が終わるまで…答えは出せない。そうだよね、ネームレスさん？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「少し、取り乱しちゃった」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「流石査察部のエージェント殿。その通りです」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「ただ、まあ、情報屋からは、安易に希望的観測は申し上げられませんが……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「……彼があなたに対して示していた友情、そこに嘘はなかっただろうと、そう推測します」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「それから、メモリの解析についてですが……こちらに預けて頂いてもかまいませんか？　支部長殿」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ええ。 そちらにおねがいします」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えっ、出来るの？天才犬じゃん」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「(天才犬…)」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「世界は広いのだよ、りりか君」ふふと笑い
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジかー、やばいなー……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「専門外ではありますが、K市支部内で解析するよりは早いかと」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「しかも専門外だし。偉すぎ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……それはそれとして、晴君」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「…なに？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「アッシュ・レドリック殿の方針で、優秀な人間しかいない査察部の一員である天道君がこうも容易く再起不能に追い込まれるというのは、思っているよりもずっと深刻な事態が水面下で進行しているのかもしれない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「だから、信頼できる優秀なエージェントである貴方にも、是非とも力を貸してほしい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……と思うのですが、今の私は貴方よりも立場が下。 もちろん断っていただいても構いません」笑って
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「はは……もちろん。むしろこっちからお願いしてたかも。天道さんをあのままになんてできない。裏切り者だったとしても、そうじゃなくても」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「これ以上私から奪わせない。FHを、FHであることを許さない。絶対に…絶対に…絶対に…」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なんか……なんか顔怖くない？晴ちゃん顔怖くない！？」　ぎょっとして
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……………」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「よし、ちょっと上向けたかも」頬ぺしぺし
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「(今はこうして感情の捌け口を作って、仕事量で悲しみなどを忘れるようにするべきだと思ったのだが、これが正解だったかはまだ分からないな……)」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「では、改めてよろしくたの……お願いしますね、晴君。……晴殿？ 」元部下の上司という関係になったことがないので、口調が定まらないまま右手を差し出す。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「晴君でも晴ちゃんでも何でもいいよ別に。立場が上って言ったって、直属の上司とかそういうんでもないしね？」手を取る
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「それなら、遠慮なく晴君と呼ばせてもらおう。 そちらの方が私としては好ましい」握手して笑う
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「はーい、よろしくね！りりかちゃんも調査には関わるの？」手を差し出しながら
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー！！！」　びくって肩震わせて
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    ここにいるけどそこんとこどうなん？の顔
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「（これあたし握手してもいい感じ？FHのことすっごい憎んでるっぽいんですけどー……）」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えーっとね……」　視線が泳いで
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「（ま、いっか！！）」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「もちもち！元々あたし幹部会議の警備するために呼ばれたから！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    どうしようもないことだし深く考えなくてもいっかと思い、笑顔で握手に応じる。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「はい、よろしく～！」握った手を軽く振ってこたえる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「うぇいうぇ～い！」　合わせて楽し気に手を振り振りしてる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「(晴君の侵蝕値などのデータは、査察部時代に目にした覚えがある。 確か平均よりも高かった。 また激しく感情が揺さぶられるような出来事は避けたい。 この二人の関係については、私が見ておかなければな…… )」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    K市内で立て続けに起こる、不可思議な出来事。偶然にも引き寄せられた三人は、幹部会議を狙うロード・オブ・アビス”の謎に挑むことになる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    一体、彼は何を企てているのだろうか……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</p>
+
+<br>
+<p id="scene07"></p>
+<h2><font size="4">シーン7　情報収集1</font></h2>
+
+<div class="box2">
+    <span class="box-title">調査項目</span>
+    <p>
+<b>神崎高明について</b><br>
+　<情報:UGN、裏社会> 6
+<hr color="#00BFFF">
+<b>長瀬明について</b><br>
+　<情報:UGN、裏社会> 8
+<hr color="#00BFFF">
+<b>ロード・オブ・アビスについて</b><br>
+　<情報:UGN、裏社会> 7
+<hr color="#00BFFF">
+<b>神崎真白について</b><br>
+　<情報:UGN、K市> 7
+</p>
+</div>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    調査する方、登場をお願いします！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 45 → 50
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 51 → 56
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 61 → 66
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではHO順に判定していきましょう、りりかちゃんからお願いします！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    真白ちゃんについて調べます！技能どっちも無いので関係無いけどK市の方で調べましょ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    2dx(2DX10) ＞ 6[3,6] ＞ 6
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    財産点一点使いましょ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では1点消費して成功！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 財産点 : 9 → 8
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    演出とかするかな？
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    演出とかはとりあえず無いけど、購入判定しときます！応急手当キット狙いで！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おっけおっけ、そちらもどうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    2dx　目標値は８(2DX10) ＞ 5[2,5] ＞ 5
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    とどかんかった！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    足りない！けどまだ情報判定に使うかもしれないので財産点は使わずそのまま失敗で！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OKです、では開示
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    わぁい
+  </span>
+</p>
+
+<div class="box2">
+    <span class="box-title">神崎真白について</span>
+    <p>
+    神崎高明の娘。年齢は16～17歳。<br>
+    高明は結婚していない。にも関わらず、彼には幾人かの娘がいることが知られている。<br>
+    真白は高明の実験によって創られたクローンの可能性が高い。
+</p>
+</div>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    こんな感じ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    血が…繋がってない！！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    似てないと思ったのよあたしは
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    演出とかは特に無しで！次の人いってもらいましょ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    了解！では次は支部長の番だね
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ◆長瀬明について を〈情報：UGN〉で調べます！ コネ：情報収集チームも使っていきまし！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    判定どぞ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    2dx＋3　難易度8(2DX10+3) ＞ 3[2,3]+3 ＞ 6
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    出目しょっぱ。財産点2点使いますよ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    みんな出目がきびしい、では2点消費して成功
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ついでに購入判定で応急手当キットも狙っておきまし！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どぞ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    2dx+1　難易度8(2DX10+1) ＞ 7[1,7]+1 ＞ 8
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    買えたじゃん！成功です
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ぴったり賞で応急手当キットを入手やよ～
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    調査などの演出はないですが、りりかちゃんとちょっと話したいことがあります！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おっけ、とりあえず開示します
+  </span>
+</p>
+
+<div class="box2">
+    <span class="box-title">長瀬明について</span>
+    <p>
+    今、最も力のあるUGN幹部のひとり。<br>
+    北海道のS市に拠点を持っており、普段はそこを中心に活動している。<br>
+    10年前にUGNに入って以来、その抜きん出た能力とカリスマでさまざまな事件に対処してきた。<br>
+    だが、最近は黒い噂もつきまとう。<br>
+    K市で行われる幹部会議にも参加する予定。
+</p>
+</div>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    話すっていうのはふたりで話す？晴ちゃんとかNPCもいたほうがいいのかな
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    二人きりが望ましいですね！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おけおけ
+  </span>
+</p>
+
+<h3><font size="4">K市</font></h3>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……お」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    翌日、調査のために一人K市の街に出ていた新城りりかはある店の前で足を止める。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え～、タピオカじゃ～ん。こんなとこにもあったんだ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なんか最近潰れがちだったから見たの久々な気がするー。やばー」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    そこはタピオカ屋だった。数ヵ月前までは友達と割とよく行っていたが、ここ最近はあまり立ち寄ることが無かった。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「たこ焼きとかの気分だったけどせっかくだし買おっと。すみませーん」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    調査の途中だったが寄り道し、適当に注文する。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、うまー。美味すぎて美味いしか出てこな～い」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    太いストローに口を咥えてミルクティーを味わいながら、店からふらふらと出ていく。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    にこにこと笑顔を浮かべており、調査中ということも忘れてしまってるかのようだった。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    新城りりかはタピオカを片手に店を出ると、そこから出てすぐのところにあるベンチに、見覚えのある人影を見つける。 酷く場違いなかっちりしたスーツ姿の男だ。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ん？ りりか君か？ 」その男もタピオカを片手に持ちながら、新城りりかに声をかけてくる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あれ、照くんじゃん。ってかタピオカ買ってるし」　笑顔のままそちらへと歩んでいく
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふふ、奇遇だな。 君もタピオカが好きなのか？」なお支部長のタピオカは抹茶ミルク味
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「好きと言えば好きな方！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふむ。 ハッキリしないが、『大好物というほどではないがあったらうれしい程度の好き』ということだろうか」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうそう、多分そんな感じ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「なるほど。 段々と君の言葉も読み取れるようになってきたらしい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ああ、そうだ。 これは丁度いい機会か。 君にしておきたい話があったんだ」と隣の席の汚れを払う。 ここに座れ、ということらしい。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、なになに？何の話？」　隣に勢いよく座る
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……それはだな」勢いよく座ったからベンチが揺れてちょっと驚きながら
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「晴君のことだよ」真剣なトーンで話しはじめる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「晴ちゃん？……が、どうしたの？」　そちらの顔を見つめて
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「彼女、『FHを許さない』と言っていただろう？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ～、言ってた言ってた」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「あれは大事な人をFHに奪われた過去に起因するものだ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「事件の詳細についてはプライバシーの観点から伏せさせてくれ。 ――それでだ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……これは話というよりも、おねがいだな」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「彼女には、りりか君が元FHであることを伏せておいてほしい」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、なんで？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あー、やっぱあれ？任務に支障が出るからみたいな？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「それもあるが、それより彼女の精神状態が心配でな……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「大事な人を失い、今度は友人である天道君を失いかけ、彼女の精神は不安定な状態にある。 ……そんな不安定な精神に追い打ちをかけるような事は避けたいのだ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「追い打ちかー……。まああたしも昨日の感じ見て言い出すタイミング無くした感じだけど……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「でもあたし別に隠してるわけじゃないしなー。ってか伏せててもその内ばれるんじゃない？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「りりか君のことを怪しむようなことがあれば、彼女の能力を考えれば、バレるのも時間の問題だとは思う。 が、"ロード・オブ・アビス"の調査に心が向いている今なら、君のことを積極的に調査しようとは思わないハズ。 怪しまれなければ、時間は稼げるだろう」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……少なくとも、心の支えである天道君が回復するまでは伏せておきたい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……だから、極力でいい。 おねがいできないだろうか？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ん～～～～～……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    自分の胸の上にタピオカのボトルを置いて、ストローを咥えて虚空を眺めながら少し考えた後、
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……おけおけー。分かったよ、とりま伏せてればいいのね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってか、あたし別に晴ちゃんの大事な人殺して直接恨み買ってるわけじゃないし、知られてても案外大丈夫なんじゃね？って気もしてるんだけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「照くんがそこまで気にしてるなら、じゃあ言う通りにしとくよ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「理解に感謝する。 ……君の言う通り、晴君ならば君の境遇に理解を示してくれるだろうとも思うのだが、不安な要素は取り除いておきたい質でな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いーよいーよ。あ、でもじゃああたしのお願いも聞いてくれない？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ。 私だけ個人的な願いを聞いてもらうのはフェアではない。 叶えられるかは分からないが、なんでも言ってみるといい」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「やった！じゃあそれ一口飲んでもいい？あたしそっちも飲みたくなってきたんだよね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    と、照が持っている抹茶のタピオカを指差す。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ。勿論、そんなことなら構わないが、それなら新しいものを……」と立ち上がる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いや買う程はいらんみたいな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    そう言ってすぐに立ち上がって、顔を近づけて照くんの持っているタピオカのストローを勝手に咥える。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「それならストローを拭……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    その行動に驚いて、一瞬だけ目を見開き
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……君は細かい事を気にしない人間なのだな」と困ったように笑う
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「こっちもおいし～。めっちゃ抹茶でしかなくて笑う～」　一口吸ってから口を離す
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え？何？ほんとに一口しか飲んでないから安心してって！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「いや、そういうことではなく……とわざわざ説明するのも可笑しいか」と苦笑
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……りりか君さえよければ、このまま一緒に支部に帰るとしようか？ 天道くんの一件もある。 ≪ディメンジョンゲート≫が使える私と戻る方が安心だろう」ふっと小さくため息をつきながら
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジ？ってか照くんバロールなんだ！いいなー、それめっちゃ便利なやつでしょ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ラッキーすぎ～、じゃあ軽率に一緒に行っちゃう～☆」　ゆるく敬礼して
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そうか。 ……ああ、寄り道はあまりしないでくれよ？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おけおけ～！」　割と歩き疲れちゃってるしお願いして後でゲート使ってもらおうとか考えてる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    そんなカンジで、二人で一緒に支部に帰りました！！ ディメンジョンゲートは使わせなかったです！！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    けち！！！（当たり前）
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    高度な心理戦だ！徒歩で帰ろうね…
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    侵蝕3は高いよ、りりかchang…
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    それな
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    じゃあ次の調査行ってもらおうもらおう！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    じゃあラスト！晴ちゃんの番だ
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    行くぜ行くぜ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    宣言して判定どぞ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    ロードオブアビスについてUGNで調査、コネも使用しちゃうよ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうぞ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    4dx+1  調査ァ！(4DX10+1) ＞ 5[2,2,5,5]+1 ＞ 6
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    財産Pを1使ってターンエンドです！！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    あ、買い物しよ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    3人調査して1回も素で成功しないことある？買い物もどうぞ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    みんなで買おう応急キット
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    1dx+1 の前に忘れてたもう1ダイス！(1DX10+1) ＞ 7[7]+1 ＞ 8
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    やるじゃん…財産Pは撤回！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    節約できたね！じゃあ買い物のほうへ
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    3dx+2 改めて応急(3DX10+2) ＞ 9[1,7,9]+2 ＞ 11
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いけんじゃん
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では開示！
+  </span>
+</p>
+
+<div class="box2">
+    <span class="box-title">ロード・オブ・アビスについて</span>
+    <p>
+    10年ほど前から活動を始めたFHエージェント。<br>
+    UGNの要注意リストの上位に挙げられているが、その正体は掴めていない。<br>
+    ネームレスの分析によれば、FHの情報網を徹底的に調べても全く馬脚を現さないことから、<br>
+    その正体はUGN内部のダブルクロスではないかと考えられている。
+</p>
+</div>
+
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    演出あるかな？
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    どうしよっかな
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    んない！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    了解！ではこのシーンは締めましょう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド
+  </span>
+</p>
+
+
+<br>
+<p id="scene08"></p>
+<h2><font size="4">シーン8　情報収集2</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    引き続き情報収集です。登場どうぞ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 50 → 55
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    神崎高明について、裏社会で調べます！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    2dx+1　目標値6(2DX10+1) ＞ 2[2,2]+1 ＞ 3
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ！？
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    くそざこすぎない！？！？
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    怒りの財産点3使用！！！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 財産点 : 8 → 5
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ギャル怒りの投入だ、では成功！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    買い物もあればどうぞ
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    じゃあUGNボディアーマーとかいっちゃお（無謀）
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    挑戦するだけ得というやつじゃ…どうぞどうぞ
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    2dx　目標値12(2DX10) ＞ 9[8,9] ＞ 9
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    財産点使ってもいい感じな気がするな？
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    それも…アリ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    3点使って購入しちゃう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 財産点 : 5 → 2
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    ここで装備もしちゃう～装甲値が8になっちゃう～
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あげぽよ～
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    ギャルだから制服装備は外せないから、セーラー服の下に着こんだりしました！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    こんな感じで、情報！来い！！
+  </span>
+</p>
+
+<div class="box2">
+    <span class="box-title">神崎高明について</span>
+    <p>
+    UGNの高位研究員。クローニング技術の研究が専門。<br>
+    以前からUGNの在り方について批判的だった。<br>
+    "スノーホワイト"というコードネームの強力なオーヴァードを造り出したと研究者の間で噂になっている。<br>
+    高明自身もオーヴァードであり、コードネームは"ドールアーティスト"を名乗っている。<br>
+    <br>
+    →◆スノーホワイトについて〈情報：UGN、裏社会 11〉が調査可能
+</p>
+</div>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    こんな感じです！演出などあれば！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    なるなるほどね～！？ってお前かドールアーティスト！！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    演出とかは無しでいきます！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おっけ！ではシーンをいったん締めましょう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド
+  </span>
+</p>
+
+<br>
+<p id="scene09"></p>
+<h2><font size="4">シーン9　つかの間の……</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    トリガーシーンになります。登場はりりかちゃんだ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    登場どうぞ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 55 → 60
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">パレスKホテル</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    幹部会議の警護を明日にひかえた夜。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたはひとり、何をするでもなく、ホテルの廊下の壁にもたれかかっていた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……ふいに、目の前にジュースの缶が差し出される……！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……ん？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    だらだらとスマホ弄ってSNSとか見てたけど、突然のジュースの缶にびっくりして顔を上げる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……まだこの街にいる……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「早く離れないと、危ないよ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そこにいたのは、神崎真白だ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    間近に見れば、彼女の頬には痣ができており、それを化粧で隠している…。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「真白ちゃんじゃん、びっくりしたー」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「早く離れないとって、もしかしてやっぱあの時の幻聴って幻聴じゃ無かった感じ？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……」無言でうなずく。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうなんだ。でもなー、あたしも仕事……ってかバイトとかあるし……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いや、バイトっていうか……あれなんだよね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あたしね、UGNの幹部会議の警備すんの！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    イェイってピースを作って笑う。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「！？　そ、そうなんだ……？」突然の発表に驚きながら
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「でも、どんな理由があっても……離れたほうがいいよ、仕事を投げ出してでも……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    真白は本気で心配しているようだ。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、なんで？あたし久々のお仕事だからはりきってるんだけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なんでそんな離れた方が良いって言うわけー？なんか理由あんの？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「それは……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「理由は、言えないの。でも、今晩中に街を出たほうがいいよ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おけおけー、気が向いたらね」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「んんー、絶対だよ……！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってかさ、それはそうとあたし真白ちゃんに謝んなきゃいけないんだよね」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「え……？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あたしさっき警備するって言ったでしょ？だからちょっとこの辺りで色々危険がないかとか調べてて～……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そのついでで真白ちゃんのこととかお父さんのこととかちょっと調べちゃったんだよね、ごめーん！」　手を合わせて
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そ、そっか……そうなんだ……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「別に、いいよ。そのくらい……」少し驚いたが、特に気にしていないようだ
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジ？良かった～。なんか勝手にこそこそしてて悪いかなって思ったんだよね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってか、なんかびっくりしたよね。あのお父さんUGNの人だし、真白ちゃんはクローンなんでしょ？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そこまで知ってるんだ……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そう、クローンのオリジナル……お姉ちゃんが、私にはいるらしいんだけど……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「あったことはないんだけどね。お父さんと、その人だけが、私の家族」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「お姉ちゃんか～……。あ、そういえばあの時言ってたよね、姉に会わせるとか会わせないとか」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってかマジ偶然～。あたしもお姉ちゃんいたんだよね～」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そうなの……？」ちょっと興味を見せる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「真白ちゃんみたいにオリジナルとかじゃなくて、双子の姉なんだけどね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「まあもう死んでるんだけど！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    笑顔でさらっと言っている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そっか……それは、悲しいね……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    なんと言っていいのかわからず、黙っている。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「まーねー。真白ちゃんのお姉ちゃんはちゃんと生きてるんだよね？いやどんな物騒な質問だよって感じなんだけど」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「えーと……うん。生きてるって聞いてる」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「よかった～、ってかそりゃそうか！……じゃあ、ちゃんと会えると良いよね」　笑いかけて
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……うん、ありがとう……」　素直にうれしかったのか、薄く笑って
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「どういたしまして～、ってなんもしてないけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……そういえば話逸らしちゃってかんっぜんにスルーしかけてたんだけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「これどうしたん？なんか痣なってるじゃん」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    そう言って真白ちゃんの頬に触れる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「あっ……これは……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「お父さんにぶたれちゃって……でも、私が悪いの。約束守らなかったから……」物憂げな表情
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジ！？ってか約束守らなかったからって……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あー！他の人と話すな的なやつ！？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……」無言でうなずく
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「じゃあそれあたしのせいじゃーん……。なんかマジごめんね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってか、そもそもその約束自体意味不なんだけど。なんで話しちゃだめなわけ？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「わからない……けど、お父さんは私が周りに影響されるのをよく思ってないみたい」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ほかの家がどうなのか知らないから、普通の家庭がどのようなものなのかもわからない。そんな様子が見て取れる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「変なの、人なんて影響されてさられてふつーなんですけどー」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そう、なのかな……？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうでしょー」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いや……まあ……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ふつーって言われても、分かんない感じあるよね～……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あたしも前はFHチルドレンだったわけだし、そこでの普通と世間一般的な普通って違ったしね～」　色々と省みるように遠い目をしながら
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「しれっとすごいこと言うね……！？　でも、なんだかわかる……かも」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー？いや隠してるわけじゃないし、ってか真白ちゃんのこと一方的に調べたわけだから言っててもむしろフェアみたいな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あっ、なんか照くんの受け売りになっちゃっててウケる！」　思い出したように笑う
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「ん、ふふ……」意味はあまりわかってないようだが、その様子がおかしかったのかつられて笑う
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えっへへへー……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……ん？ってかさ、てかさ、今あたしと話してたらまずくない？約束破ったら殴られるのになんでまた話しかけて」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あー！！あたしが町から出てないからか！！」　一人で合点がいって自分を指差す
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「そ、そうだよ！　ちゃんと出て行かなきゃだめだからね……！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「私も、もう行かなきゃ。あんまり遅くなるとまた怒られちゃう」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうだよね、あの親ならその辺も厳しそうな感じする～……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……でもなー、出て行かなきゃ駄目か～……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「（せっかく任された仕事なんだから、マジちゃんとやりたいんだよね～……わけもわからんまま放り出すとかありえんし……）」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「（でもなんでか分からないけど、真白ちゃんは出た方が良いって言うんだよな～……やばやばな親から殴られるかもしれないのにめっちゃ心配してくれてるし……）」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……まー、これからどうするかはちゃんと考えとくわ！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「事情はよくわっかんないけど、ありがと！心配してくれてて！」　明るく笑顔を見せる
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「うん、どういたしまして……？」ちょっと言いなれてない感じで、笑顔を返しながら
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「じゃあね……本当に、出て行かなきゃだめだからね……！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「は～い、分かったから急いで急いで！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    笑顔で大丈夫だからはよはよと手で仰いで急かしてる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    急かされるままに、真白はその場を去る。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    真白ちゃんのロイスのP感情を好意から誠意に変えときます、以上で！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OKです！ではシーンエンド！
+  </span>
+</p>
+
+
+<br>
+<p id="scene10"></p>
+<h2><font size="4">シーン10　立ち去る男</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    登場は支部長です
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 56 → 61
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    先ほどの場面とちょうど同じ頃。
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">パレスKホテル ロビー</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ホテルのロビーに待機していたあなたは、ひとりの男とすれ違う。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その男……長瀬明は、あなたに気づき、言葉をかけた。
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/XwbVbIqmoiKpBhprNXsh/nagase.png" alt="長瀬明" title="長瀬明">
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「君は……円藤君か。任務、ご苦労」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「お久し振りです。長瀬殿。 お噂はかねがね伺っております」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「君が本部を去って以来か。明日の幹部会議、よろしく頼むよ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「私は、少し要件ができて参加できなくなってしまったが……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ホテルの外に迎えのハイヤーが止まっている。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「要件、ですか？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「ああ、幹部会議以上に大事な要件だ。私は、S市に向かう」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「そういうわけで、こちらのことは頼んだよ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ええ、もちろん。 ……ああ、そこまで送りますよ。 今のK市はいろいろと物騒ですから」と外にとめてある迎えの車までついていこう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「ああ、ありがとう」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そのままハイヤーのところまで歩いていく
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……この街で本部エージェントの一人、あなたの部下である天道君が殺された、という話は御存知ですよね？」歩きながら他愛もない話のような声色で言う。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    『天道大地は殺された』というのは嘘だが、公には真実。 "ロード・オブ・アビス"が内部犯だと分かった時点で、追撃を避けるために誤情報を報告したからだ。 今も生きているというのはK市支部内の人間しか知らない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「……さすがに知っていたか。ああ、とても……残念だよ」少し俯きながら
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ええ。 彼は優秀なエージェントでしたから、残念でならない。 ……それで、ここだけの話なのですが」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「彼を殺した犯人は、どうやらUGN内部の人間らしいのです」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「ふむ……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「UGN内部に、本部エージェントを殺す事ができるほどの離反者(ダブルクロス)がいるということ……査察部の『星』であるあなたには伝えておいた方がいいだろうと思いまして」ミリオンサンズ=太陽には比肩しえない、という皮肉も込めて、星と呼ぶ。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「わたくしなどが忠告するのもおこがましいとは思いますが、どうか『飼い犬に手を噛まれる』などと言うことがなきよう」そう言って微笑む
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「忠告ありがとう。肝に銘じておくよ」　笑顔で返す
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「……やはり君は優秀だ。K市支部に収まらず、本部に戻ってくる気はないのかな？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「もったいない御言葉。 ……そうですね、本部が白くなったら戻ろうと思います」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「……そうか。わかったよ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>長瀬明</span> :
+  <span>
+    「ではまた。どこかで会おう」そう言ってハイヤーに乗り込む。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「はい。 ではまた」見送ろう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ハイヤーは、繁華街の喧噪の中へと消えていく。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    S市へ向かった彼の動向は気になるが……今のあなたはK市支部長。この街のことが先決だ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    つかの間の休息を終え、再び調査へと戻っていく……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</p>
+
+<br>
+<p id="scene11"></p>
+<h2><font size="4">シーン11　情報収集3</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    登場どうぞ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 61 → 66
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    項目は残りひとつだ
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ◆スノーホワイトについて を〈情報：UGN〉で調べます！ コネ：情報収集チームも使っていきまし！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうぞ～～
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    3dx+3 難易度11(3DX10+3) ＞ 10[4,5,10]+4[4]+3 ＞ 17
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    さすが支部長！ 優秀！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ついでに応急手当キットを調達します！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    さすしぶ、どうぞどうぞ
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    3dx+1 難易度8(3DX10+1) ＞ 4[1,2,4]+1 ＞ 5
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ほにゅ…？
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    買えん！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    医療用品は天道くんの治療に回してたんちぇな…仕方ないちぇ…
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    それは仕方ないちぇ…必ず助けるから許してほしいちぇ…
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では開示
+  </span>
+</p>
+
+<div class="box2">
+    <span class="box-title">スノーホワイト</span>
+    <p>
+    人間をジャームに変化させ、それを操る能力を持つと言われるオーヴァードの少女。<br>
+    クローン人間であり、製作者は神崎高明。<br>
+    素体となる少女はUGNから高明と同時に失踪したが、長瀬明と一緒にいるところを見たという情報もある。<br>
+    <br>
+    なお「任意で人間を覚醒させる」という能力は、実在すれば既存の秩序を破壊しかねない危険極まりない存在であり、<br>
+    UGN結成当初からその対策について議論が重ねられているが、いまだ有効な対処プランを打ち出せていないのが実情である。
+</p>
+</div>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    やば～～～～ 調査描写とかはないよ！！ りりかちゃんと一緒に帰るときにちょっと二人の話を聞いて、気になってネームレスと調べたカンジ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おけおけ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではシーンエンド！
+  </span>
+</p>
+
+<br>
+<p id="scene12"></p>
+<h2><font size="4">シーン12　解き明かされた計画</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    トリガーシーンです。全員登場お願いします！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 60 → 65
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 66 → 71
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 66 → 71
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">パレスKホテル 404号室</font></h3>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ――パレスKホテル。 404号室。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    平時であれば他の部屋と同じように寝具等が置かれているこの一室には、警備に使う機材や装備等が置かれていた。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    フツウなら警備本部として使えるようなスペースはないが、そこはオーヴァード。 蛙御蛇晴のエフェクト≪ポケットディメンジョン≫の力で部屋を拡張。<br>
+    円藤照、新城りりか、蛙御蛇晴の三人の他に戦闘員など詰めているが、それでも十分な広さを確保できている。 
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    なお、こうして皆が集まっているのは、この街を取り巻いている状況に関する情報を共有しておくためだ。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なんかめっちゃひろ～。マジびっくりしちゃった」　拡張された部屋を落ち着きなく見渡してる
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そう驚くことでもないよ～、バロールのオーヴァードが作戦にいたらたまに活用される方法だし」座席を譲るために浮いてる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうなんだ！今までそういうの無かったから知らなかった～」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「でもでかいベッドとか無いのなんか寂しーなー、仕方ないけど。あたしふかふかのベッドとかにダイブするの好きなんだよね」　その辺に適当に座る
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ベッドなら立てかけてある。 必要なら下ろして使うといいだろう」キュマイラだし、できるでしょの精神
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え～、わざわざホテルまで来てベッド下ろすのめんどくない？」　それならいいやって笑ってる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってかあたしらなんで集まってたんだっけ？あ、調査のこととかか！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そーそー、情報共有な訳なんだな」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……りりか君がちゃんと調査できていたか、少し心配になってきたな」苦笑
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いやしたし！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、でもゆーてあんまり関係無い情報だったりしたかなぁ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふむ？ では、りりか君の情報から教えてもらうとしよう」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「りょ～☆」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「照くんにはちらっと話したっけ、神崎高明って人と、真白ちゃんって女の子のことなんだけどさ～」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    神崎真白と、神崎高明についての情報を話す。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「晴ちゃんはあの時いなかったから誰それって感じなんだけど、こんな感じの人らがいたんだよね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「多分まだこのホテルいるんじゃないかな、さっきもちょっと真白ちゃんと会ったし」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「その人のこと私見てないんだよね。監視カメラの映像とかある？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「情報班に頼んで、二人のスケッチを取ってある。とはいえ、見たことがなくても一目で分かるだろう」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「冬がはじまるというのに小さいサングラスをかけている男も、白装束の少女も、他にはいないからな。 少なくとも、この街には」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「言われてみれば珍しい方かも」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「雪の照り返しがキツいからとか…………」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「冗談」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「積もる程降ってないし！」　笑ってる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふふ。情報共有が済んだら、二人のスケッチはプリントして警備隊全体に共有する。 詳細はそこで確認してほしい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「次の情報は……晴君、おねがいできるかな？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「はいはーい、……と言っても、量は無くて…ロード・オブ・アビスについて」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ネームレスの手を借りても情報が集まらないけど…」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ただ一つ。UGN内部のダブルクロスじゃないか、とは」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「UGNに？ローアビがいるの？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ローアビ…一瞬何かと思った」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、分かるでしょ！長いから言いづらい的な」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「なんかこう…低い何かかと思っちゃって」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「全然意味違うくなっててウケるんですけど！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ろーあび……？」まだ分かってない顔
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってか照くん分かってないし～。ロード・オブ・アビスのこと～。略してローアビ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ、なるほど。 私もまだまだだな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ちゃんとしてよねー」　何故か偉そう
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「善処しよう」笑う
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってか、誰がローアビなのかまでは分かってないんだよね？それってガチでやばくない？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「後ろからぐさっと行かれちゃうじゃん」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ、やばいとも」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「…！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「(ﾔﾊﾞ)」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「よな～……でも分からんなら仕方ないか」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「とりま内側に警戒しまくっとけば良いってわけだし！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ま、まぁね…常に気を抜かないようにしようってことで」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おけおけ！めっちゃ気抜かない！」　グッと両手で握りこぶしを作る
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ、油断せずに行こう」手塚国光
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「では、最後に私だな。 離反者に関する決定的な情報、という訳ではないのだが」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ◆長瀬明について を情報共有します！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「さきほど長瀬殿と会ってな。 離反者がいるということは、晴君と協力していたネームレス殿に聞いていたから揺さぶってみたのだが……キレイにかわされてしまった」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「え、それで長瀬さんどっかいっちゃったの？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ。 『幹部会議よりも重要な案件があるからS市に帰る』と言ってな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうなの？でも会議より重要なこととかあるー？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そ～れは…あるかなぁ…それこそご家族に何かあったとかならわかるけど…」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「別にそんな様子もなかったろうし、そんな情報あるぅ？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ。自身の拠点が襲われていて急がなければならなかった、としても、それにしては落ち着き払っていたように感じる」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー、何だろ……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「偉い人の考えることは分かんないね！まあガチでなんかあったんでしょ！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってか照くん、話したんだったらその時聞けば良かったのに～」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「う～む、失敗したかな」と笑う
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そういう人って得も言われぬ圧があるからね～、私だって裏ではいくらでも言えるけど、面と向かって"ミリオンサンズ"の悪口は言えないし」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あぁ～、怖い先生みたいな感じ？それならしょーがないかも」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「本人に聞いても真実が出るとは限らない。 今からS市の方に緊急事態があったか確認を取る、という手はあるが」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「まあ、それも無意味だろう。 優秀な彼が"ロード・オブ・アビス"だとするなら、少し確認を取った程度でバレるような虚偽はつくらないハズだ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「"ロード・オブ・アビス"の活動開始時期と同じ10年前にUGNに加入した点。 このタイミングで幹部会を欠席した点。 最近になって黒い噂が流れている点など、アヤしいとは思うが、決定的な証拠というと、ない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……と、彼は要注意人物として記憶してもらうとして、次だな」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ◆スノーホワイトについて を情報共有します！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「任意での覚醒…？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「スノーホワイトって、えぇ？ジャーム化させれるってやばいじゃん」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「何だっけ、何とかトランスみたいな薬とか使わなくても覚醒させれるってことでしょ？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「その通り。 アルファトランス等の薬品等にある様々な課題を無視して、制限などなく一般人をジャーム化。さらにはそのジャームを戦力に加えることができると考えられる」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「それは…あってはならない…」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジかー……やばやばのやばじゃん」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「"スノーホワイト"の管理…というか…保護？はそのまま"ドールアーティスト"が担ってるってこと？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「もしそうならなんていうか…危険がすぎない？どっちかというと改革派みたいな人なんでしょ？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「UGNの在り方に批判的ってあたしは聞いたけどー……」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「全ての人間をジャームとして戦力に加えることができるというのは、個人としての戦力が無限に補充できると言いかえてもいい。 "スノーホワイト"を使ってUGNに革命をもたらそうとしているのなら、危険極まりない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「"スノーホワイト"の戦力としての使用は、それだけで一般人に無数の犠牲が出るということでもある。UGNだけの問題には留まらないだろうな……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なるー。じゃあとりま神崎さん見つけて捕まえといたほうがいいんじゃない？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「真白ちゃんがさっきいたし、お父さんもこのホテル普通にいるでしょ！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ローアビに繋がってるかはわかんないけど…気にはなるよね」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ。 "スノーホワイト"であると思われる神崎真白の確保は重要案件だ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……え！？なんで真白ちゃんがスノーホワイトになるん！？意味不なんだけど」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……気付いていなかったのか」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「神崎高明が造ったクローン……。 我々が知っているのは一人しかいないだろう？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いやでも、クローンって他にもいるんでしょ？だからふつーに別の人だと思ったんだよね」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ちなみに真白ちゃんてどんな子？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ちょっと不思議な感じの子っていうか、穏やかな感じで心配性みたいな？そんな誰彼構わずジャームにするような子には見えないよ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「能力と性格の不一致は十分に考えられる話だろう」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「だからこそ、"ドールアーティスト"は自分の命令には逆らわないよう。 兵器として運用できるよう。 あのような態度を取っていたとも考えられる」少しバイアスがかかっているかもしれないが、と付け足す
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「うーん、そうなのかなー……そう言われてみればそんな気もするけど……」　腕組して目を閉じて考える
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「もしそうだとしたら失敗じゃーない？普通に女の子してたんでしょ？ほかに真白ちゃんから何か聞いた？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あーね、この町から早く離れた方が良いって言ってたかなー」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「理由は教えてくんなかったけど」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふむ……。 "ロード・オブ・アビス"の計画のためにジャーム化の能力を使うから逃げた方がいい、という風にも取れるが」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「少なくとも、スノウホワイト側でもこの街で何か起こそうとしてるのは自明だね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「んー……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「んん～……」　眉間に皺を寄せて目を瞑って、唸りながら考えて
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「よし！じゃあやっぱ真白ちゃんに会いにいくか～！」　勢いよく立ち上がる
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「勝手にあれこれ考えてても分からんし！本人から聞くのが一番早いっしょ！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ふふ、そうだな。 元々、彼女の確保は予定にあったのだしそうしよう」愉快そうに微笑んで
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「よねよね～？」　笑い返す
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「(そして、いざとなれば……私が手を汚そう)」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そういうことならそれで～。連絡取れるかな～？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「電話番号とかは知らんのよね、ってかケータイ持ってるかどうかも分からんし！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「だからもう手当たり次第にホテルの部屋しらべよっかなみたいな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、でもホテル側に聞けば何とかなる？こういうのって教えてくれるのかなー、普通なら無理みな気もするけどUGNが圧かければいける？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……そうして、一通りの情報共有を行い、今後について議論を重ねていると
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    やがて部屋に、新たな来訪者が現れる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「お疲れ様です、皆さん」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、霧谷さんじゃん！どうしたのいきなり」　びっくりしながらも嬉しそうに笑顔を向ける
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「はえー霧谷さん！会議だしいるのはわかってたけど…」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「霧谷殿には、流石にさん付けなのだな…」驚き
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そりゃまー、借りとかあるしね！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「私は霧谷殿と同い年なのだが、くん呼びか……」しゅん
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「照くんには借りとかないし別に良くない？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「明日の警備について状況を伺いに。新城さんも、上手くやれているようでなによりです」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「でしょ～？上手くやれてるやれてる～。ヨユ～」　ピースして
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「最初はどうなることかと思いましたが、よくやってくれています。 優秀ですね、りりか君は。 流石、日本支部長殿はいい部下をお持ちだ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「それは、よかった」穏やかな笑顔で
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「霧谷さんとりりかちゃん、何か繋がりが？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「前に死にかけてたとこ助けられたりしたんだよね～。命の恩人的なやつ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「だから今イリーガルやってる理由の一つみたいな感じ」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「お～なるほど、それで霧谷さん直属の…だから今回みたいな大きい仕事にも出張ってるんだねえりりかちゃん」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「それそれ！すごいっしょ！」　両手でピースしてる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「(きちんと元FHだったことは伏せてくれていて、安心したな……)」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ていうか警備の状況だっけ？何て言えばいいのかなー、あんま良くない感じ？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「ふむ……そうなのですか」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そうなんだよね～。今一まだ分かんないけど……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    って、皆と一緒に霧谷くんに今の状況を説明しましょ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OKOK、では共有できます。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……って感じ～。とりま今から真白ちゃん探して話してみよかなって！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……あなたらしいですね。探すのは、簡単ではないかもしれませんが……」　情報の深刻さに、少し苦い表情をしながらも微笑んで
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、そう？このホテルにいるなら割といけるんじゃね？みたいな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あっ、もしかしたらもういない可能性もあるのかなー。さっき会ったばっかだからいけると勝手に思ってたけど」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「さっき会ったってことは、意外と自由行動自体はできるのか、お父さんの目を盗んで会いに来たのか…」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あんまり遅くなると怒られるって言ってたよ。だからちょっとくらいなら自由行動しても良い感じと思い～」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「ホテルを全室調べるとなると、かなりの騒ぎになりますからね……それを神崎高明に察知されずにやるのは、簡単ではないかと」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なるー……そういうことか、盲点だったわー……。いや盲点ってか冷静に考えればそりゃそうだわ！どうしよ！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「りりか君は耳がいい、と聞きました。 晴君の≪ポケットディメンジョン≫を使って人目につかないように各階を移動しながら、その耳で探すというのは？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あー、ありよりかも！なんか喋ってたら声で分かるもんね」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ん～、それか私が壁抜けで目視確認してくる？下手したらこのホテルの都市伝説に昇華されるけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「都市伝説って、それUGN的に良いのって感じ！」　ツボに入ってるのかけらけら笑ってる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「≪壁抜け≫はいいのですが、どうしても単独行動になるためにリスクが高いような気も」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そうして、あなたたちが次の算段を立てていると……ドアをノックする音が聞こえる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「じゃーとりまこそこそっと行く感じで……あれ？誰？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    扉の方近付いてみようか。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    扉のずいぶんと下のほうを叩いているように聞こえる…
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……？低くない？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ああ、なるほど。誰かと思えば」警戒をといて、ふわりと笑う
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「開けてあげてもらえるかな、りりか君」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「りょ～」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    言われるままに扉を開ける。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    扉を開けると、部屋に一匹の犬が飛び込んでくる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「不躾で失礼、緊急でしたので」走ってきたのか、息を切らしている
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、わんこじゃーん。来客多すぎワロ～」　屈んで頭撫でてる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「このホテルはペットNGですが、急用ならば仕方ないですね。 して、要件とは？」息を切らしているところを見て、再度、気を引き締める
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「とんでもないことがわかりました。背中のバッグに書類が入っているので、それを開いてください」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、なになに？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「例のメモリーカードの解析結果です」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジ？やったじゃん天才！」　立ち上がって、玄関から部屋の奥にネームレス入れながら
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「メモリーカードの…！ それはおつかれさまでした」と部屋に入ってきたネームレスのバッグから書類を出そう
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「っ、み、見せてください」緊張した面持ちで
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    その書類を開いて、すぐにみんなに見えるように広げますよ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    "ネームレス"の持参した書類に書かれていた情報……それは……
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――UGNを内部から乗っ取るクーデター計画のあらましであった。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「計画の首謀者は……UGN幹部、長瀬明。コードネームは……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「"ロード・オブ・アビス"」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……ガチで？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「……嘘だったらどれだけ良かったことか」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「───この情報を持ち帰った天道さんは、では」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「シロである、と考えてよいかと。 よかったな、晴君」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ローアビの仲間なら、わざわざこんな情報渡してこないもんね」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「──ハッ、ハッ、はぁ…！けほ、あぁ…よかった…」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「晴ちゃん大丈夫？ほんとよかったよかったじゃん！」　晴ちゃんの背中ぽんぽんと優しく叩いて
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ごめんなｓ…ああ、ごめんね、ちょっと…やっぱり長い付き合いの人だったから心配で…」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「別に謝んなくて良いし～」　微笑んでる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「しかし、長瀬殿のことを怪しんではいたものの、まさか本当にUGN幹部に……しかも組織の道を正すハズの査察部に離反者がいるなんて……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「何でなんだろね～。長瀬って大分昔からUGNにいた人なんでしょ？やばいでしょ、どうしちゃったのって感じ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「最初から組織を崩すためにUGNに入ったのではないかと……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なる～……。え、やば、じゃあそんな前から計画してたってこと？やばすぎ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「彼は加入当初から、FHとの戦いで相当な戦果を挙げ続けてきましたからね。彼を疑うのが遅れたのも無理はありません」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「しかし、それらの戦果すべてが、彼がUGNに加入する以前からのマッチポンプだったとしたら……」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「…………UGNを崩すために同組織の人間を仕留めてまわってたってこと？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「おそらくは」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「それもこれも、すべてはUGNの重役へと上り詰め、世界中に自分の育て上げた反乱分子を送り込むため」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「世界中！？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「もはや、UGNの中の誰が敵で、誰が味方なのかすらもわからない状況です」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「現状、確実にシロなのは、私にこのメモリーカードを託した天道さんと、円藤支部長だけ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「極端な話……日本支部長、あなたのことも、私は疑わしいと考えています」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「じゃあ晴ちゃんとか霧谷さんも……えー！そんなこという！？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ロード・オブ・アビス……外道が…」 
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……私が以前いた日本支部の監査局は、本部の査察部と強いつながりを持つ組織です。あなたが疑うのも無理はありません」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「(ああ、確かに査察部が一番疑わしくなっちゃうのか)」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……すみません、今は弁解する術を持ちません。私はこの計画には一切関わっていません。これは、みなさんに信じていただくしかありません」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そりゃあたしは信じるけど～……」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「あ、私も私も」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふむ。 では、私は全て疑うとしましょう。 ひとりは疑う人間がいた方がよいですし。 ……なにより、私は疑念の先にこそ、本当の信頼があると信じていますから」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「……私の意見は、今申し上げた通りです」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「まぁ…霧谷さんがあっち側だったらここに潜り込まれてる時点でほぼ負けってことでね。査察部的にはそこまで秘匿されたらこちら側の非になっちゃうから」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「それ！それな！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「……その通りです。この状況で日本支部長が敵だとすれば、我々にもう勝ち目はありません」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「よねー。ってか、これからどうするわけ？天道さんのおかげで計画書はこっちにあるわけだけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    と、書類を見て今計画のどの段階とかどう動けばいいかとか考えたい。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、計画の概要を公開します！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    わぁい！
+  </span>
+</p>
+
+<div class="box2">
+    <span class="box-title">計画のあらまし</span>
+    <p>
+    K市で極秘裏に行われるUGN幹部会議の当日、"ロード・オブ・アビス"の指揮により、日本五大都市にあるUGN支部で同時にクーデターを起こす。<br>
+    地域間の主要通信網はすでに"ロード・オブ・アビス"が掌握しており、各支部は互いに何が起きているのかわからないまま無意味な救援要請を送り付けあう結果となる。<br>
+    次に同日、UGN幹部会議を襲撃することで指揮系統を混乱させ、主要通信網が奪還されることを防止する。<br>
+    襲撃の中心になるのは、神崎高明と"スノーホワイト"。<br>
+    計画の実行にあたっては、"スノーホワイト"が前日までに造り出した数百体のジャームを投入予定である。
+</p>
+</div>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……計画の内容は一見するとシンプルだが、その実、10年の歳月をかけ各所に反乱分子を送り込むことで、細部に渡るまで実に強固に仕上げられていた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    事実、この計画書を読んだUGNきっての切れ者・霧谷雄吾の顔からは血の気が引いているように見える……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    確かに、この計画の全容が事前に把握できたのは非常に大きなことだ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    もしこのメモリーカードが手に入らなければ、UGN日本支部はなすすべもなく"ロード・オブ・アビス"の手に落ちていたことは想像に難くない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    しかし、それがわかってなお、この計画を阻止するのは蜘蛛の糸を上るようなものに思えた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    特に問題になるのは、幹部会議の襲撃計画に投入されるという数百体のジャーム。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    通信網が掌握されている状態から、これを鎮圧する戦力を調達することなどできるのだろうか……？
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そういうことかー……んー……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「げきやばすぎるけど、数百体のジャームとかどうこう出来る気がしないしー……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「スノーホワイト探してそこから止めるくらいしか思いつかないんですけどー……ってか、どこにいるかわからんわけだけど」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「んん……そこだね。ちょっと知り合っただけの女の子に注意喚起する程度に人の心があるなら、まだその子を…」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「まだ真白ちゃん確定ってわけじゃないし！いやもうこうなったら真白ちゃんだった方が全然やめてくれそうな気もするのは分かるんだけど！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……ひとつだけ……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「ひとつだけ、確実にスノーホワイトに会う方法があります」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なになに、なんで方法あるの霧谷さん！？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「それは……神崎高明の狙いが、明日の幹部会議だからです」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「明日の幹部会議を予定通り実施すれば、神崎高明とスノーホワイトは、確実にその場に現れます」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そういうことー……？じゃあもうそのままおびき寄せて返り打ちにする的な……？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……ええ、数百体のジャームを、返り討ちにしなければなりません」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「それが可能ならば苦労はありませんが」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「おお…霧谷さんの口から出たとは思えない作戦だ…」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……私とて、口にしたくはありません」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    霧谷の表情に苦悶の色が浮かぶ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    この作戦への参加を命じる……それは、半ば死ねと言うのも同義であるからだ。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「無理み度が高い～……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……まー、でも。じゃあそれで行くか～！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    と、全く緊張感のない笑顔で言う。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「新城さん……！？」　本気か、と言いたげに驚き
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「戦力差は歴然。 K市支部の戦闘部隊を総動員しても、まったく足りない。 あちらと違って補充もできない。 ……それでも行くと言うのだろうか、りりか君」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジマジ、行くよ～。ってか、あたしが行くしか無いでしょ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「だって、スノーホワイトがとりあえずみんなの予想通り真白ちゃんだとしたらさ～」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あたしが会うしかないじゃん。もう実質友達みたいなもんだしね」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「…そっかぁ、それはそうかもね～…そこだけは…誰が会うよりいいかもね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「でしょ～？さっき晴ちゃんが言ってたしね、人の心があるならまだその子を止めた方が良い的な」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「っていうかまあ、止めれる止めれない以前に、あたしもう一回真白ちゃんと会いたいんだよね」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あんな会ったばかりのあたしのこと心配してくれてるような良い子なのにさー、そんなUGN反乱の中心みたいなとこにいるとかさー」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いや逆にあたしが心配なるわみたいな。ちょっと話そ的な」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「だからあたしは行くでもう決定的な感じ～。誰に言われてもそうするつもりだからヨロ～」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    そんな風にふわふわ言って、緩く敬礼しながらウインクしてる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「新城さん……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「このような事態に巻き込んでしまい……申し訳ありません。ですが……感謝いたします」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    霧谷は頭を下げる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    かつて傷だらけのりりかを拾い上げ、FHからUGNへと引き入れた。そのことすら、今となっては間違いだったのかもしれない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そんな状況でありながら、希望に向かって進むあなたを見て、霧谷も希望を取り戻したようだ。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いやあたしがそうしたいって感じだから、別に謝る必要ないんじゃね～？感謝はされるだけ嬉しい方だけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ！でもここまで言っといて結局真白ちゃんがスノーホワイトじゃなかったらウケる！その時は土壇場だけど逃げるわ！」　けらけら笑いながら
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「やぁ……頭の中で色々弄してたのがちょっと恥ずかしいかも」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「査察部としてはそーだなぁ…4課じゃないけど、まぁ…」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「裏切り者は切除しなきゃねぇ、支部長さん？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ふふ、そうだな。 その通りだ」微笑む
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……あれ？何この流れ？ってかさ、あたしも難易度無理みっていうのは分かってるから、あたし一人で行く感じかな～って思ってたんだけど」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「晴ちゃんと照くんも会議参加する系？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「流石にはいそうですかってここ投げ出せないから！それに、じゃぁここから逃れたところで、どうするの？ってなるしね」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ。 しかし、まったく心外だな。 私は仕事を投げ出して逃げ出すような男に見えるのだろうか？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えー？マー？いや二人共投げ出すようにも逃げ出すようにも見えないけど～……」　と言いながらにやついてきて
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なーんだ！照くん晴ちゃんも来てくれるなら全然勝てるじゃーん！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジ感謝の極み～！じゃあ一緒にがんばろ～！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    今まで一番嬉しそうな明るい笑顔を二人に向ける。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……ふふ。 まったく、本当に現状がわかっているのだろうか。 三人集まった程度では、数百のジャームはどうにもならんのだが」笑顔で返す
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「年下の子に元気づけられるの面目ないな～～……頑張ろうね？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「分かってる分かってる、けど一人より全然ヨユーかなって！えっへへ、がんばろがんばろ！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えい、えい、おー！ってね！」　笑顔で拳を上げてる
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「おーっ、ふふ、ありがとね。……そういう方針に固まったけど、霧谷さん？」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「元気がよくてなによりだ。 まあ、ジャームの対処はともかく、真白君の元までは届けて見せよう」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「みなさん……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「ありがとうございます……私も……ギリギリまで手を尽くして、兵力の調達に回ります」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    霧谷は深く一礼する。その目は、覚悟の炎で静かに燃えている。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……これは……可能性の話なのですが」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「もし、ここからほど近い首都圏のどこかに、長瀬明のような大幹部ですら力の及ばない……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「例えば……UGNの最高幹部が直接指揮する、前線支部」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「そんな夢のようなものがあったとすれば……この戦力差を覆すことができるかもしれません」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジ？あるの？あ、可能性か！じゃあ探した方がいいじゃん！探そ探そ！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そんなものがあったとしたら、とてつもない"幸運"ですね」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「……そのような破天荒な最高幹部がいるとは思えませんが」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「……わかりません。ただ、信じなければ可能性はありませんから」イエスともノーとも言えない顔をして
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おけおけ～。あたしは分かんないから、とりま霧谷さんに任せる～。やるだけやってみ！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「はい……それでは、お互い力を尽くしましょう」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「はい」と答えながら、傍にいる柴犬を撫でて
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……約束、叶えられないかもしれません。 その時は骨は拾っていただければ」と囁いて笑う
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「……その時は、あなたの骨を肴に呑ませていただきましょう」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「織田信長のようなことを言いますね。 そうならないようにがんばりますよ」とヨユウそうに笑う
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>"ネームレス"</span> :
+  <span>
+    「ええ、あなたが倒れては、こちらも商売あがったりですから……よろしくお願いします」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ふふ。心得ました」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――こうして、UGNの存亡を賭けた無謀な作戦が始まった。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    失敗は許されない。あなたたちは士気を高め、戦いに臨む――。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ロイス取得の宣言をお願いします！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    晴ちゃんに〇好意/不安でロイス取ります！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] ロイス : 4 → 5
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    "ロード・オブ・アビス"に感服/脅威Pでロイス取りますの！ 憤りとかもあるハズなんだけど、そっちの気持ちの方がつよかった
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] ロイス : 4 → 5
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OKです！
+  </span>
+</p>
+
+<br>
+<p id="scene13"></p>
+<h2><font size="4">シーン13　蛙御蛇姉妹</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    晴ちゃんのシーンです。登場どうぞ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 71 → 76
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">病院</font></h3>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 71 → 76
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    人知れず…超越者達が秩序の守護を賭け、決意を固めたその夜。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    別所、UGNの息がかかった病院にて。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    ある病室に、雨音が入り込む。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そーらっ」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    天が横になっているベッドのそばに腰かける
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その病室の患者……蛙御蛇天は静かに寝息を立てている……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    これから起こる事態など、知る由もないだろう。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    雨の日に窓を開けているかのような。そんな音に蛙御蛇天は目を覚ます。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「んん……お姉ちゃん……？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    深夜の来訪者に、少し驚いて目を覚ます。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ん、こんな遅くに…ごめんね？…ちょっと、お話がしたくって」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「ん、いいよ。ちょっとびっくりしたけど……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ただならぬ様子をどこか感じながらも、いつものように応じる。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ありがと。それで………えーと…」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「…………、…」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「天は…ほら、私が…ちょっと危ない仕事やってるの、知ってるじゃない？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「うん、本当は……やめてほしいけどね」ちょっと苦笑い
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そこはまぁほら…ね」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「あー、それで…今度、参加する作戦がね、普段よりずっと…危険で」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「それで…………………」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「……」心配そうな顔をして話を聞いている
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「っ………………ッ…」何度も言葉を発しようとするが、次が続かない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「お姉ちゃん……本当に大丈夫……？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    何度も戦地に向かう姉を見届けてきた彼女も、ここまで苦しそうな姿を見るのは初めてだろう。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ねぇ、天……私、皆の為に…それに、誰よりも天のために頑張ってくる」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「だから、天…少しだけ、こうさせて？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    蛙御蛇天に体を寄せ、強く抱き着く。病室においても差したままの傘から、なおさら強く黒い雨が降り注ぐ。服もベッドのシーツも濡らさない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「お姉ちゃん……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    入院生活で衰えた筋力からか、力は弱いが、無言で抱き締め返す。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「どうしても、いかなきゃいけないんだね……」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「うん」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「わかった……」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「帰ってきてね……絶対だよ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    家族を失う恐怖を知る彼女にとって、それはとても恐ろしいことに違いないが……重大な任務に向かう姉を余計に心配させまいと、つとめて気丈に。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    そっと手を離し、あくまでにこやかに彼女は言う。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「それじゃ、天の応援ももらえたし…お姉ちゃん頑張ってくるよ！起こしちゃってごめんね！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>蛙御蛇 天</span> :
+  <span>
+    「うん……またね！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    帰ってくることを信じ、いつも通りの挨拶で送り出す。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    また、今日と同じ明日を迎えられることを信じて。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド
+  </span>
+</p>
+
+<br>
+<p id="scene14"></p>
+<h2><font size="4">シーン14　cry for the moon</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    支部長のシーンですね！登場どうぞ
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 71 → 76
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">パレスKホテル 404号室</font></h3>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ――パレスKホテル。 404号室。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    とある姉妹の別れから、時はしばらく遡る。 
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    UGNの存亡を担うことになってしまった人間たち(と犬一匹)が部屋を去った後、円藤支部長はこの警備本部に医療班・研究班・情報班・戦闘班などK市の支部員全員を招集していた。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「――ここに集まってもらったのは、他でもない。 "ロード・オブ・アビス"のクーデター計画に関連して、大事な話があるからだ」支部員たちの前に立つと、いつもの笑みは消え、真剣な面持ちで話し始める。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「今回のクーデター計画からの警護には、UGNの存亡がかかっている。 しかし、現実的に見るならば、もはや打開は絶望的。 首の皮一枚でつながっているような状態と言っていい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「数百体のジャームから幹部会議を守ると言いきれるほど、私は夢想家ではない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……そして、ジャームたちが幹部会議の次に狙っているのは、おそらくはK市の守りの要たる君たちだ。 ここに留まっていれば、君たちもまた為す術なく蹂躙されてしまうだろう」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「…………」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「今は、戦力は少しでも欲しい状況……。 このような事を言うのは、合理的ではないのだが言っておく」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「私から君たちに『作戦に参加しろ』と命じることはない。 それは『心中しろ』と命じるに等しいからだ。 私は"ロード・オブ・アビス"のように同胞をコマとして使うようなマネはしたくない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……恐らくは我々は敗北し、UGNはひとり残らず狩りつくされ、FHが牛耳る世界になってしまうだろう。 そうなる前に身を隠せ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「逆らう気のない人間を探し出して始末するほど、FHもヒマではないだろう。 UGNだったことを隠してさえいれば、FHの管理下でも人並みの生活が送れるハズだ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「――私は誤った賢者よりも正しい愚者として死にたい。 正しいと思った道を歩んでいたい。 この道に先がないとしても、正しいと確信しているこの道を歩いていたい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「だから、計画を阻止する。 それだけだ。 君たちまで私の個人的な正義感に巻き込まれる必要はない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「もはや後悔のない選択肢というのは残されていない。 だが、選んでほしい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「今すぐに身を隠すか。 私と死ぬ覚悟を決めるか。 ……誰もその選択を咎めることはしない」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたの呼びかけに、支部のメンバーはどよめく。多くはこの状況で市内に留まるか迷っていただろう。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    しかし……守護の要たる戦闘班、そして医療班の覚悟は決まっているようだった。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>支部員</span> :
+  <span>
+    「支部長。今ここに残っているものは、みな何かしらの形で戦う覚悟を決めたもののみです」戦闘班のひとりが前に出て。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>支部員</span> :
+  <span>
+    「……我々、後方支援部隊は少しでも生き延びる確率を上げるために市を出ます、が、その先で力になれることを探します。必ず……」情報班のひとりが言う。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうやら、あなたの呼びかけに先駆けて、支部員たちの腹は決まっていたようだった。それも、あなたがK市に来てからの行いの賜物ということだろう。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「いまの私の双肩には、UGNという世界秩序の存亡が掛かっている。 何処に離反者がいるか分からないこの状況で、万が一にも失敗する訳にはいかない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……故に、こうしてまだ戦うと言ってくれた君たちのことも、私はまだ完全に信頼することができない」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「――そのようなリーダーでも、共に戦うという意思は変わらないと？ 」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>支部員</span> :
+  <span>
+    「もちろんです……信頼は重要ですが、疑うことと信頼することは表裏一体ですから」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    自分たちを疑い、誤ったときには正してくれる、そんなあなたのことを、支部員たちは信頼しているのだ。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「そうか……。 ふふ。 霧谷殿に劣らず、私もよい部下を持っていたらしい。 私にはもったいないほどだ」いつものように笑みを浮かべる。 
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「君たちの覚悟は受け取った」かみしめるように
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「絶望的な状況とは言ったが、死ぬことは許さん。 必ず生きて戻るぞ。 いいな？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>支部員</span> :
+  <span>
+    「はい！」残留組から力強い返答が返る。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「いい返事だ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「――K市支部内に離反者がいた場合、集合場所が狙われてしまうことなどを考慮して、集合場所および集合時間は追って連絡するものとする」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「話は以上だ。 解散。 ……また明日会おう、諸君」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    突如訪れた絶体絶命のピンチ……それでも、K市支部は揺るがない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    逃げ出すしかないように見える絶望的な状況、しかし、そこに本当に希望はないのか？　諦めず疑問を持ち続けた人間にしか、真相はわからないのだ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    決戦の時まで、およそ半日――。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド
+  </span>
+</p>
+
+<br>
+<p id="scene15"></p>
+<h2><font size="4">シーン15　存亡を賭けて</font></h2>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    全員登場をお願いします！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 65 → 70
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 76 → 81
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 76 → 81
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<h3><font size="4">パレスKホテル 会議室</font></h3>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    UGN幹部会議、当日。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    予定通り現れるであろう、神崎高明とスノーホワイトを仕留めるため、あなたたちは会議室の守りを固めていた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    もし、ここで神崎らを逃がせば、相手がスノーホワイトを擁する以上、その後の展開はUGNにとって非常に厳しいものになるだろう。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    絶望的な状況であるが……これは最後のチャンスでもあるのだ。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「まだかな～。真白ちゃんと神崎高明」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    バットの入ったアイテムケースを背負いながら、窓の外を眺めてる。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「予定通りノコノコ出てきてくれるといいけどねぇ」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「(二人とも心の準備は既にできているようで安心したな)」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「敵の襲来を待ち遠しく感じるのは初めてだな。 来ないのなら、来なくともいいが」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「かも～……いややっぱ来なかったら来なかったで逆に不安！天道さんの持ち出した計画とは別のことされちゃいそうだし！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「それもそうか」と笑う。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「でしょ～？……あれ？ってかさ」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「晴ちゃんの傘なんか雨やんでない？いつも黒いの降ってたじゃん」　晴ちゃんを覗き込んで
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ん？あぁ…条件がいろいろあってね。能力を使ってる時とかは絶対降ってるよ」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「これ、実は魔眼なの。変わってるでしょ？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「へぇ～、変わってる！ってか、魔眼のことはようわからんけどカエルのレインコートじゃん！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「今まで黒い雨でよく見えなかったけどどちゃかわいい～。似合ってて良き良きって感じ」　緊張感のないいつもの笑顔で
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「今更！？って思ったけどそういうことね。ありがと。これね…大事なものだし、相棒でもあるんだ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「だからいつも着てる感じ？相棒ってことはなんか強そうかも。見た目はきゃわだけど」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「そうそう、少なくともお仕事の時はこの傘にこのレインコート。りりかちゃんは何使うの？素手派？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あたし？これこれ」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    アイテムケースの中から金属バットを取り出して見せる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「これで殴る感じ！」　笑顔でバットを構えるがあんまり似合ってない
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「おお…なんというか…ワイルドって感じ」ちょっと驚いた感じで
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「可愛らしいりりか君と無骨なバットという取り合わせはアンバランスにも見えるが、シンプルな所はりりか君らしいな」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「マジ？じゃあワイルドでシンプル感じ？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「まー頼りにしててよね！あたしめっちゃ強いから！」　バットを右手に下げる
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「もちろん。 頼りにしているとも」この状況でもいつも通りなりりかちゃんを見て和みながら
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「もっちろん！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    為すべきことを双肩に背負った強さとでもいうのか、絶望的な決戦を前にして、あなたたちの士気は高かった。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……やがて、幹部会議の開始時刻となる。天道の持ち出した計画の通りなら、5分後に神崎は現れるはずだ……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    チック、タックと時を刻み……まさに、時計がその時刻を告げたその瞬間。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    会議室のドアが蹴破られ、部屋を埋め尽くさんばかりの、白く淡い光を放つ異形が現れる……！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「っ！来た！！」　身構える
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そして……異形たちの隙間から除く、ふたりの影。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    それは……予告通り神崎高明。そして――。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    神崎真白。やはり彼女であった。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あっ、真白ちゃん……ガチでいるじゃん！」　驚きつつもそちらに顔を向けて
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「ビンゴだねぇ、私は初めましてだ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    真白はりりかの姿を認めると、哀しそうな顔を見せる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「結局……逃げなかったんだね……りりか……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そりゃね～。だって真白ちゃんが来るかもって聞いたからね」　正反対に笑みを浮かべる
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……」思うところはあるようだが、やはり父親のいいつけなのか、それ以上は何も言わない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「UGNのみなさん、ようやくこの時が来ました。今日まで長かったぜぇ」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「ちょっと、死んでいただきましょうか？」　あなたたちを見下すように、下品な笑みを浮かべ言う。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「うわ笑い方キモッ、ってか死ねって言われて死ぬわけないじゃん。何このおじさん」　嫌そうな顔して
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「似合ってないよ、その下手な敬語」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「ああん！？　なんだ、誰かと思えばこないだのガキじゃねえか」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「人がせっかく見逃してやったってのに、哀れなもんだなぁ！？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「なんか勝手に見逃されたり哀れまれてるし～……」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってかあたしが用あるの真白ちゃんなんですけど！割り込んでこないでほしいみたいな！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「なんだぁ、この期におよんで真白と話したいってのか？　えらい呑気なもんだなぁ！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「そんなに話したいなら話させてやる。ただし……この兵隊の攻撃を受けて生きていたらなぁ！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    神崎が腕で指示を出せば、無数のジャームが一斉に動き出す……！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ、OKって言ったなおじさん～？じゃあとりまそこで待っててよね真白ちゃん！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あたし達がぱぱっと全部返り打ちにしてあげるから！」　バットを構え、先端をジャームに向けて不敵に笑う
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「りりか……」複雑そうな表情で、しかしただ見守るしかできない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    戦闘を開始します。
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<p style="color:#222222;">
+  <span>
+    【行動値】<br>
+    <font color="#3f51b5">09 円藤 照</font><br>
+    <font color="#4caf50">08 蛙御蛇 晴</font><br>
+    <font color="#ff00ff">06 新城 りりか</font><br>
+    <font color="#222222">03 ジャームA,B,C<br>
+<br>
+    【戦場図】<br>
+     　　　　　　 ジャームC<br>
+     　　　　　　　 　↑<br>
+     　　　　　　　　 5m<br>
+     　　　　　　　　 ↓<br>
+    ジャームA←5m→PC←5m→ジャームB<br>
+    <br>
+    備考：ラウンド終了時、A,B,Cの位置に増援が1トループずつ現れる。<br>
+<br>
+    【戦闘勝利条件】<br>
+    ？？？
+  </span>
+</p>
+
+<hr style="border:0;border-top:1px dashed #222222;">
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    りりかちゃんに憧憬/嫉妬P、円藤支部長に尊敬/劣等感Pで取っちゃうよん！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] ロイス : 3 → 5
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    了解！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    じゃあ、わたしも、晴ちゃんに庇護/不安Pでロイス取りましょ！  成人だとは分かっているけど、外見年齢的に庇護対象として見てしまうカンジで！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] ロイス : 5 → 6
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    こちらも取得だ！了解了解
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では戦闘処理に入っていきます！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    セットアッププロセスから
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    わたしは無いです！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    PCで持ってるのは晴ちゃんだけかな
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    同じくない！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    使わないわ～
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    了解！敵側ですが、全員フルパワーアタックを使用します！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    おわー！！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    これはジャーム
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    強力な一撃…というよりは圧倒的物量でこちらを押しつぶしてきそうな勢いだ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    イニシアチブで特になければ支部長から行動どうぞ
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    では、行きますの！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    マイナーアクションで、戦闘移動！ 左方向に5m動いてジャームAとエンゲージ！！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    メジャーアクションで、既望の月輪(コンセントレイト＋災厄の炎)！ 対象はジャームA！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 81 → 87
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    14dx8＋8　命中！(14DX8+8) ＞ 10[1,2,2,4,5,6,6,7,7,7,9,9,10,10]+10[1,7,7,8]+2[2]+8 ＞ 30
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    出目が……結構いい！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    出目としては22なので、固定値に救われているだけともいう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    まだガード値ないな、ドッジしましょう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    9dx&gt;=30(9DX10&gt;=30) ＞ 10[2,2,3,4,7,7,8,9,10]+9[9] ＞ 19 ＞ 失敗
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    命中です！ダメージと演出あればどうぞよ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    4d10＋12　装甲ガード有効ダメージ！！(4D10+12) ＞ 18[2,9,1,6]+12 ＞ 30
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    これは……まだ倒れませんが演出どうぞ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ここにいるジャームの全てが一般人。 ……分かっていたことだが、こうして実際に対峙するのは、思っていたよりずっと気が重い」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「だが、ここで始末してやるのが、せめてもの手向けというもの、か」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    剣客さながらの音のない深い踏み込み。 その静けさとは裏腹に、約五メートルあったジャームとの間合いを一息に詰める。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ――それと同時、足元からは音の代わりに三つの輪と八つの魔眼が浮かびあがった。 いざよいの月を思わせる白い魔眼たちは、三つの輪が生み出す重力場のレールで瞬いている。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    その内のひとつ。 左脇に浮かぶ魔眼に、右手でそっと触れると、輪の楕円軌道をなぞるように滑らせる。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    すると、右手から放たれた魔眼は軌道上で高速旋回をはじめ、その相互作用によって他七つの魔眼も回りはじめた。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    三つの輪は魔眼の刃になり、ブオンブオンと空間を切りながらジャームの身体に次々と風穴を開けていく。 ……しかし、全滅には至らない。 六体のジャームが斃れたころ、月の魔眼はゆっくりとその動きをとめた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ジャームの一団をすべて倒しきることはできないまでも、かなりダメージを与えたようだ…！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    というところで、次は晴ちゃんの手番ですね！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    はーい、マイナーでジャームAのエンゲージに移動！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    コンボ『天宿り』(コンセレ＋カスタマイズ＋瞬速＋魔王の腕)を撃つわね
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 81 → 90
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OKです、判定どうぞ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    10dx+5(10DX7+5) ＞ 10[1,1,2,2,2,3,4,7,9,10]+10[3,10,10]+10[6,10]+2[2]+5 ＞ 37
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    出目がいい！ドッジしましょう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    9dx&gt;=37(9DX10&gt;=37) ＞ 9[2,2,2,2,3,6,6,6,9] ＞ 9 ＞ 失敗
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    命中ですの、ダメージどうぞ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    4d10+16  ダメージと硬直(4D10+16) ＞ 19[5,9,1,4]+16 ＞ 35
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いいダメージ！これで倒れますの
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    演出あればどうぞ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    蛙御蛇晴は滑るように、黒い水しぶきを上げながらジャームの背後に回る。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「この人たちも、奪われる必要のない生を奪われた」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……貴方は誰の意思でその力を使うの？」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    "スノーホワイト"、"ドールアーティスト"を順に睨み、次いですぐ目の前のジャーム達を見据える。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「……私にはこれしかできないから。ごめんね」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    今なお黒い雨が滲み出る傘を閉じ、大きく振り払う。たちまち周囲のジャームは砂となり崩れ去る。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    先ほどの攻防で打ち漏らしたジャームたちは、砂となり一団の鎮圧に成功します！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では次はりりかちゃんの手番だ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    うぇーい
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    分かりやすくアルファベット順に行っとこう。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    マイナーで戦闘移動、ジャームBにエンゲージ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    メジャーでフルスイング（パワースイング+コンセントレイト）、ジャームBを攻撃します！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 70 → 75
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    判定どうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    7dx+5(7DX7+5) ＞ 10[1,3,6,6,7,8,9]+10[2,4,8]+3[3]+5 ＞ 28
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではドッジ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    9dx&gt;=28(9DX10&gt;=28) ＞ 10[1,2,4,5,5,6,6,8,10]+6[6] ＞ 16 ＞ 失敗
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ちょっとヒヤっとした、ダメージどうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    こわこわ、当たれば良いのだ
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    3d10+23　装甲無視(3D10+23) ＞ 20[4,6,10]+23 ＞ 43
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    しねおらー！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    これは……一撃で殲滅だ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    さすりり
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    やったわ！演出いきます
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ギャルつよい！演出どうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「よっし、じゃああたしはこっちね！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    床を蹴り、ハヌマーンの身軽な体を跳び上がらせる。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    二人とは反対方向にいるジャーム達へと高速で迫ったりりかは、両手で持った金属バットを大きく振りかぶり──
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「えいやー！！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    という掛け声と共に、加速をつけたバットを横薙ぎに振りきる！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    可愛らしい声に反して超人的な力で繰り出されたフルスイングは、ジャームの体をまるでボールのように軽く叩き飛ばした！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おらおらおらー！とりま峰打ち？にしとくから眠っててよね！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    さらに乱暴にバットを振り回し、もしくは足で雑に蹴り飛ばしながら、ジャームの大軍を一気に蹴散らしていく！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    恐るべきそのスイングは、圧倒的物量差をものともせず、ジャームを次々吹き飛ばしていき……なんと一団を撃破した！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では残ったジャームCの行動ですが、戦闘移動ではPCたちに追いつけないので
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    全力移動を使用してりりかちゃんにエンゲージします。以上！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    こいよこいよ～！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    床に倒れたジャームを踏みながら、バットを肩に担いで迎え撃とうとしてる。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではでは、全員の行動が終わったのでクリンナップ……は特にないかな！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    ないない！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    ないよー
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ないやよ～
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、ラウンド終了時、各持ち場に増援が現れます
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ◆戦場図<br>
+    　　　　　　　　　敵F<br>
+    　　　　　　　　　↑<br>
+    　　　　　　　　　5m<br>
+    　　　　　　　　　↓<br>
+    晴、照、敵D←5m→　←5m→りりか、敵C,E
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたたちは、順調に現れたジャームを倒して行く。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……しかし、その奮戦も圧倒的物量を覆すにはまだ足りない。ほかのK市支部員は、ひとり、またひとりとジャームの猛攻の中に飲み込まれていく……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    すでに、UGN側で戦場に立っているのを確認できるのは、あなたたち3人の姿だけであった。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「……キリがないな。 こちらはもう片手で数えられる人間しか残っていないというのに」ふっと息をつきながら、額には焦りをにじませる
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「…………ッ、本当に多い…」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「分かってたことだけどやば～……！結構倒したのに真白ちゃんのとこまで行けないし……！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「――霧谷殿は、間に合わなかったか」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「いやまだ分かんないじゃん！とにかく今は倒しまくっていくしかないって！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    もー！とりりかの姿はそちらからは見えないが、ジャームの群れの中からバットを上に突き出して怒ってるのが分かる。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「まだ行けるけど…信じさせて欲しいよね…ッと」モブジャームを殴りつつ
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「私は元より我々だけで打開するしかないだろうと思っていたが……、そうだな、人事を尽くして天命を待つとしよう」立ちあがろうとしていたジャームの手足の関節を切りながら
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「そう、それな！天命……？うん、天命な！待つよ！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    最初から絶望的な戦いであることは知って臨んだ。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたたちの心は、決して折れることはない。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――そして、天使は最後まで諦めなかったものに、微笑む。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    バンッ！！　と、突然、別の部屋から閃光とともに炸裂音が聞こえる！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「――ッ！？」身構える
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    次に聞こえたのは、数多のジャームが倒れる音だ。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「何！？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    それは――この戦場に増援が現れたことを意味していた。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「え、マジ！？これって……！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ！ 援軍だ……！！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「間に合わせてくれた？」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>エージェント</span> :
+  <span>
+    「K市支部！　遅れてすまない。無事か！？」
+  </span>
+</p>
+
+<img src="../../../upload_image/upl/eButgaolZDM_Vo_39mPK/keigo.png" alt="少年" title="作：LISP">
+<img src="../../../upload_image/upl/ofMeWV115BrYsA6CfJk_/asuha.png" alt="少女" title="好きな顔メーカー　https://picrew.me/image_maker/41709">
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ジャームたちの隙間から、日本支部長・霧谷雄吾の姿と……少年少女の2人組、そしてそれに連れられた戦闘員の姿が見える。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    数はわからないが、おそらく数十人はいるだろう。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「首の皮一枚……と言ったところかな。 そのまま喉元に食らいついてやるつもりではあったが」首に手をあてるジェスチャーをしながら、ふっと息をはく
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「すみません、遅くなりましたが……なんとか間に合ったようですね……！」　霧谷本人も、血を流しながらジャームと戦っている
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「間に合ってる間に合ってる～！マジありがたみ！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いったい、これだけの数の戦力をどこからどうやって集めてきたのか？　そんなことは、もはやどうでも良い。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    神崎高明を追い詰める千載一遇のチャンスが、そこにはあった。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「こんなんもう全然マジいけるっしょ！行くよ行くよみんな～！」　援軍にまで聞こえる大声で叫びながら戦闘を続けていく
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「元気な子が一人いると全然違うよね…よし、もうひと踏ん張り！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「ああ！ 必ずこの場を切り抜け、"ドールアーティスト"を仕留めてみせよう！！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    戦場の情報が更新されます！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ◆戦闘勝利条件<br>
+    敵の数がこちらより少なくなる(2体以下)
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    また、このラウンドからは敵の増援が戦場に現れなくなります。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    なるほどね！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    増援部隊が引き付けて道を開けてくれる感じだ
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    ありがたみ、上手くいけば相手に手番回すことなくいけそう
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    一撃で終わらせていきたい
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    がんばるぞ～
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    サクッと
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではでは、2ラウンド目に入っていきましょう！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    セットアップあるひと！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    ないない！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ないやよ～
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    なし！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では支部長の手番からだ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    マイナーアクションは放棄！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    メジャーアクションで、居待月の輪(コンセントレイト＋災厄の炎)！ 対象はジャームD！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 円藤 照 ] 侵蝕値 : 87 → 93
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    判定どぞ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    14dx8＋8　命中！(14DX8+8) ＞ 10[1,1,2,4,5,6,7,7,7,7,7,7,9,9]+6[2,6]+8 ＞ 24
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    出目さん
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    C値8のおつらみを感じる、ドッジしましょう
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    9dx&gt;=24(9DX10&gt;=24) ＞ 10[1,1,4,5,6,6,7,10,10]+8[4,8] ＞ 18 ＞ 失敗
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    こわ～
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    セーフセーフ！ダメージどうぞ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    3d10＋12　装甲ガード有効ダメージ！！(3D10+12) ＞ 19[10,7,2]+12 ＞ 31
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ダメージはなかなか！　まだ倒しきれませんが
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    演出はあるかな？
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ちょっとだけ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうぞどうぞ！
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    迫ってきた増援のジャームたちを見据えると、居合抜きの要領で月の刃を三本走らせる。
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    ジャームはこれを避けようとするが……
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「これが最期の月見だ。 もっと近くに寄って見るといい」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    その行為も虚しく、魔眼の刃が生み出している重力に引き寄せられて、一団のほとんどが両断されてしまった。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ジャームはまだわずかであるが残っている…！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    次は晴ちゃんの手番ですの！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    同じく天宿り打ちまーす！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 蛙御蛇 晴 ] 侵蝕値 : 90 → 99
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうぞ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    10dx+5(10DX7+5) ＞ 10[1,1,2,3,3,4,7,7,9,10]+10[1,4,5,10]+10[8]+1[1]+5 ＞ 36
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いい出目だ、ドッジしましょう！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    9dx&gt;=36(9DX10&gt;=36) ＞ 5[2,2,2,3,3,4,4,4,5] ＞ 5 ＞ 失敗
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    すげー低い！ダメージどうぞ
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    4d10+16 くらえい！(4D10+16) ＞ 26[6,1,10,9]+16 ＞ 42
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    強い！　ではジャームはこれで倒れます！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    演出あればどうぞ！
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    勢いづいた緑の影が、無茶な重力操作を伴って縦横無尽に動き回る。
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「貴方達の大事な人に、どうか心休まる時がありますように」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    彼女は次々と、黒の溢れる傘を突き刺す。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    突き刺されたジャームは倒れていき……身体を動かす隙間もないほど敵があふれていた戦場には、大きな空間ができ始めていた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    次はりりかちゃん！どうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    うぇーい
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    マイナー無し！メジャーでフルスイング（パワースイング+コンセントレイト）
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 新城りりか ] 侵蝕値 : 75 → 80
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    対象はジャームCで攻撃します！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    7dx+5(7DX7+5) ＞ 10[3,5,6,9,9,10,10]+10[1,3,4,8]+5[5]+5 ＞ 30
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ドッジします！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    9dx&gt;=30(9DX10&gt;=30) ＞ 9[1,3,4,4,5,6,7,7,9] ＞ 9 ＞ 失敗
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    お見事命中！ダメージをどうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    4d10+23　装甲無視(4D10+23) ＞ 24[3,9,2,10]+23 ＞ 47
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    いけたな！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    これは……ジャストミートです！　ジャームの一団は殲滅！！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    演出あればどうぞ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「行くよ～……！？」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    ギリリ、と軋む音が出る程に両手でバットを強く握りしめて、迫りくるジャームを見据える。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    彼女の瞳は希望に満ち溢れて星のように輝き、その口元は勝利への強い確信で笑みが浮かべられていた。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「……全力で！！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    宣言通り、ジャームへと全力でバットを振り切る。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    バットは一本、打つことが出来るジャームは一体。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    しかしキュマイラの超パワーによるスイングは、強力な衝撃波を発生させていた。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「吹っ飛べー！！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    爆音と共に巻き起こった衝撃波が、周囲に迫ってきていたジャーム達を纏めて吹き飛ばす！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    衝撃波はジャームを吹き飛ばし、砂埃が舞う……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    やがて埃が落ちると、戦場に神崎高明と真白への道が開く！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「な……何だとぉ！！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「どーだ！これがあたし達UGNの底力みたいな！」　バットを神崎に向けて笑う
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「……！」　その状況を見ていて、驚いたような表情をする。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 高明</span> :
+  <span>
+    「話が違うじゃねえか……！　クソ……おい、真白ぉ、ここは一旦退くぞ！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>神崎 真白</span> :
+  <span>
+    「あ……！　お父さん……！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    高明は真白の手を引き、ビルの下階へと向かっていく。
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「あ！ちょっと！待ってよ、勝手に逃げられたら困るんだけど！！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「待ちなさい！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「ってかここで逃げられたらやばやばのやばじゃん、追いかけて良い！？良いよね！？」　この場を援軍に任せてもいいかと悩む
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「ええ、新城さん。あなたはふたりを追ってください……！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「ここは、我々で制圧します！」
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「了解です！私達もアイツらを追います！」ダッシュ！
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「おけおけ～！こっちはあたし達に任せてよね！」　走って行く
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「矢張り、私は守るよりも追う方が性に合っていますし、二人についていくことにします。 護衛の方はそちらに御任せしました」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「わかりました……お二人のサポートをお願いします！」
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>霧谷 雄吾</span> :
+  <span>
+    「神崎は、S市行きの飛行機に乗って長瀬と合流するつもりです。必ず、仕留めてください……！」
+  </span>
+</p>
+
+<p style="color:#ff00ff;">
+  <span>新城りりか</span> :
+  <span>
+    「りょ～！！」　大きな声で返事をしながら駆け抜ける
+  </span>
+</p>
+
+<p style="color:#4caf50;">
+  <span>蛙御蛇 晴</span> :
+  <span>
+    「了解！」
+  </span>
+</p>
+
+<p style="color:#3f51b5;">
+  <span>円藤 照</span> :
+  <span>
+    「勿論。 "スノーホワイト"の件についても、御任せ下さい」こういった忙しい時には断れないだろう、とそれだけ言い残して階段を飛び降りていく
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、あなたたちは逃げる高明を追ってホテルKパレスを後にする……。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたたちの信念は絶望的な状況を覆し、ついに希望に手が届くところまできた。
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あとは……神崎高明、そして真白との直接対決を残すのみだ！
+  </span>
+</p>
+
+<p style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</p>
+
+</div>
+</body></html>

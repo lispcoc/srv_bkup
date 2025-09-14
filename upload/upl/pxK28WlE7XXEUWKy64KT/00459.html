@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+
+<script type="text/javascript">
+  // 各ページのタイトルとページ数（手動で入力・追加等してね！）
+  const pageTitleList = {
+    1: 'プリプレイ',
+    2: 'オープニング',
+    3: 'ミドルシーン1',
+    4: '情報収集１',
+    5: 'ミドルシーン2',
+    6: 'ミドルシーン3',
+    7: 'ミドルシーン4',
+    8: '情報収集２',
+  };
+</script>
+
+
+<html xmlns='http://www.w3.org/1999/xhtml' lang='ja'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <title>[タイトル]</title>
+    <!-- スタイル設定 -->
+    <style type="text/css">
+      /* 全体 */
+      body{
+        overflow-wrap: break-word;
+      }
+      /* ログ本文 */
+      .mainLog {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 100px;
+        font-size: 1rem;
+      }
+      /* 共通の非表示クラス */
+      .hidden {
+        display: none !important;
+      }
+      /* 指定ページへ移動するボタン */
+      .pageJumpBtn {
+          color: #00f;
+          text-decoration: underline;
+          cursor: pointer;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      /* 次に進む/戻るボタン共通 */
+      .prevBtn, .nextBtn {
+        color: #00f;
+        text-decoration: underline;
+        text-align: center;
+        cursor: pointer;
+        background-color: #f2f1f0;
+        display: inline-block; 
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 48%;
+        font-size: 2rem;
+        -webkit-appearance: none;
+        border-radius: 0;
+      }
+      /* 戻るボタン個別 */
+      .prevBtn {
+        left: 0;
+      }
+      /* 次へボタン個別 */
+      .nextBtn {
+        right: 0;
+      }
+      /* 非活性のボタンクラス */
+      .disabledBtn {
+          text-decoration: none;
+          cursor: none;
+      }
+      /* 最下部の次ページ移動ボタン */
+      .footerNextBtn {
+          width: 100%;
+          height: 300px;
+          text-align: center;
+          margin-top: 80px;
+          padding-top: 30px;
+          background-color: #f2f1f0;
+          font-size: 1.5em;
+      }
+      /* モーダル */
+      .modal {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+        /* スマホ対応 */
+        cursor: pointer;
+      }
+      /* モーダル内容 */
+      .modalContent {
+        background-color: white;
+        width: 40%;
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: auto;
+        padding: 2%;
+        font-size: 1rem;
+      }
+      /* ページャー全体 */
+      .pagerWrap {
+        display: inline-block;
+        position: relative;
+      }
+      .pagers {
+        padding: 0;
+      }
+      .pagers li {
+          width: auto;
+          border: 1px solid #aaa;
+          list-style: none;
+          text-align: center;
+          margin-top: 10px;
+      }
+      /* 現在表示中のページ */
+      .isCurrentPage {
+        background-color: gray !important;
+      }
+      .isCurrentPage > .pageJumpBtn {
+        color:white !important;
+      }
+      /* モーダル開くボタン */
+      .openBtnWrap {
+        display:inline-flex;
+        height: 100px;
+        width: 30% !important;
+      }
+      .openBtn {
+        height: 100px;
+        background: white;
+        padding-left: 20px;
+        font-size: 1rem;
+        color: blue;
+        font-weight: bold;
+        box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+        white-space: normal;
+        /* スマートフォンのデフォルトスタイルをリセット */
+        -webkit-appearance: none;
+        border-radius: 0;
+        border-left: solid 10px #668ad8;
+        display: inline-block;
+      }
+      /* 画面全体で固定位置 */
+      .unFixed {
+        position: absolute;
+        top: 52px;
+        right: 2px;
+        width: 100%;
+      }
+      /* 表示画面内で固定位置 */
+      .fixed {
+        position: fixed;
+        top: 2px;
+        right: 2px;
+        width: 30%;
+      }
+      /* 各ページタイトル */
+      .pageTitle {
+        margin-top: 150px;
+        margin-bottom: 20px;
+        margin-left: -10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        font-size: 1rem;
+        background-color: #4169e1;
+        color: #ffffff;
+        padding: 5px;
+        border: double 3px #000000;
+      }
+      /* 情報項目 */
+      .infoBox {
+        width: 90%;
+        color: #e3e3e3;
+        background-color: #364549;
+        border: double 3px #e3e3e3;
+        border-radius: 5px;
+        padding: 1em 32px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .infoBox > .title {
+        color: #ccc;
+        display: inline-block;
+        border: double 1px #e3e3e3;
+        margin-left: -32px;
+        background-color: #777;
+        padding: 4px 6px;
+        -webkit-transform: translateY(-1em);
+        transform: translateY(-1em);
+        word-break: break-all;
+      }
+    </style>
+    <!-- jquery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+<body>
+
+<!-- 進む/戻るボタン -->
+<div>
+  <input type="button" class="prevBtn disabledBtn" onclick="pagePrev(this)" value="<<">
+  <input type="button" class="nextBtn" onclick="pageNext(this)" value=">>">
+</div>
+<div id="currentPageNum" value="1" style="clear:left;"></div>
+
+<!-- モーダル開くボタン -->
+<!-- 開いてる時 -->
+<div class="openBtnWrap unFixed">
+  <input type="button" class="openBtn unFixed" value="一覧" onclick="openModal()">
+</div>
+
+<!-- モーダル本体 -->
+<div class="modal hidden">
+  <div class="modalContent">
+    <div class="modalBody">
+      <span class="pagerWrap"></span>
+    </div>
+  </div>
+</div>
+
+<!-- 本文（ここにログ本文をコピペしてね） -->
+<div class="mainLog page_1">
+  本文1ページ
+  <!-- 情報系テンプレート（コピペして使ってね） -->
+  <div class="infoBox">
+    <div class="title">ここにタイトル</div>
+    <div class="content">
+      ここに本文<br>
+    </div>
+  </div>
+</div>
+</div>
+<div class="mainLog page_2 hidden">
+  本文2ページ
+</div>
+<div class="mainLog page_3 hidden">
+  本文3ページ
+</div>
+<div class="mainLog page_4 hidden">
+  本文4ページ
+</div>
+<div class="mainLog page_5 hidden">
+  本文5ページ
+</div>
+<div class="mainLog page_6 hidden">
+  本文6ページ
+</div>
+<div class="mainLog page_7 hidden">
+  本文7ページ
+</div>
+<div class="mainLog page_8 hidden">
+  本文8ページ
+</div>
+
+
+<div class="footerNextBtn" onclick="pageNext(this), goTop()">次のページへ</div>
+
+
+<script type="text/javascript">
+  // 最大ページ数
+  const pageCount = Object.keys(pageTitleList).length;
+
+  // 読み込んだら実行するやつ
+  $(function(){
+    // ページャー作成
+    makePager();
+    // 各ページタイトル自動生成
+    makePageTitles();
+  });
+
+  // 関数
+  // モーダル内部ページャー作成
+  function makePager() {
+    // html生成
+    let pager = "";
+    pager += ``;
+    pager += `<ul class="pagers"><li class="pageJumpBtnWrap_1 isCurrentPage" onclick="pageJump(1)"><span class="pageJumpBtn">1:${pageTitleList[1]}</span></li>`;
+    for (i = 2; i <= pageCount; i++) {
+      pager += `<li class="pageJumpBtnWrap_${i}" onclick="pageJump(${i})"><span class="pageJumpBtn">${i}:${pageTitleList[i]}</span></li>`;
+    }
+    pager += `</ul>`;
+    // モーダル内にappend
+    $(".pagerWrap").append(pager);
+  }
+  // 各ページタイトル作成
+  function makePageTitles() {
+    for (i=1; i<=pageCount; i++) {
+      $(`.mainLog.page_${i}`).prepend(`<h1 class="pageTitle">${pageTitleList[i]}</h1>`);
+    }
+  }
+  // ページ切替（数値指定）
+  function pageJump(pageTo) {
+    // コンテンツ表示切替
+    $(".mainLog").addClass("hidden");
+    $(`.page_${pageTo}`).removeClass("hidden");
+    // ボタン情報切替
+    $(".isCurrentPage").removeClass("isCurrentPage");
+    $(`.pageJumpBtnWrap_${pageTo}`).addClass("isCurrentPage");
+    // 現在のページ情報を更新
+    $("#currentPageNum").attr("value", pageTo);
+    // 1ページ目に戻る場合、戻るボタンをdisabledする
+    if (pageTo === 1) {
+      $(".prevBtn").addClass("disabledBtn");
+    } else {
+      $(".prevBtn").removeClass("disabledBtn");
+    }
+    // 最終ページに戻る場合、進むボタンをdisabledする
+    if (pageTo === pageCount) {
+      $(".nextBtn").addClass("disabledBtn");
+      $(".footerNextBtn").hide();
+    } else {
+      $(".nextBtn").removeClass("disabledBtn");
+      $(".footerNextBtn").show();
+    }
+    // ページ移動と同時に一番上へ
+    goTop();
+  }
+  // ページ切替（次のページ）
+  function pageNext() {
+    const lastPage = pageCount;
+    const currentPage = parseInt($("#currentPageNum").attr("value"));
+    if (currentPage == lastPage) {
+      return false;
+    }
+    const nextPage = currentPage + 1;
+    pageJump(nextPage);
+  }
+  // ページ切替（前のページ）
+  function pagePrev() {
+    const lastPage = pageCount;
+    const currentPage = parseInt($("#currentPageNum").attr("value"));
+    if (currentPage == 1) {
+      return false;
+    }
+    const prevPage = currentPage - 1;
+    pageJump(prevPage);
+  }
+  // 一番上へ
+  function goTop() {
+    window.scrollTo(0, 0);
+  }
+  // モーダルを開く
+  function openModal() {
+    $(".modal").removeClass("hidden");
+  }
+  // モーダルを閉じる
+  $(document).click(function(event) {
+    // 全てのクリックイベントに対して検知
+    const $target = $(event.target);
+    if (!$target.closest('.modalContent').length && !$target.closest('.openBtn').length) {
+      // モーダルの外側をクリックした場合
+      $(".modal").addClass("hidden");
+    }
+  });
+  $(window).on( 'scroll', function() {
+    // スクロール100pxより下の場合に固定
+    if (100 < $(this).scrollTop()) {
+      $('.unFixed').addClass('fixed');
+      $('.unFixed').removeClass('unFixed');
+    } else {
+      $('.fixed').addClass('unFixed');
+      $('.fixed').removeClass('fixed');
+    }
+  });
+</script>
+</body>
+</html>

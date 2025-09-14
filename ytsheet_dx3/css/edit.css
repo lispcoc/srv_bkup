@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+a { cursor:pointer; }
+#base .table a   { color:#bbccff; }
+#base .table td a{ color:#4455aa; }
+a:hover          { color:#ffffff; }
+
+.table{
+	background-color:#555555;
+	border-color:#888888 #222222 #222222 #888888;
+	color:#dddddd;
+}
+.table h2 { margin:1px 0px; padding:0; color:#dddddd; font-size:12px; font-weight:normal; text-align:left; font-family:"メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro","Osaka"; }
+.table hr {
+	margin:1px 2px 0px 2px;
+	border-width:1px 0px;
+	border-style:solid;
+	border-color:#222222 #888888 #888888 #222222;
+}
+.table hr.dot {
+	margin:1px 2px;
+	border-width:1px 0px 0px;
+	border-style:dotted;
+	border-color:#000000;
+}
+#base .table th {
+	background-color:#555555;
+	color:#dddddd;
+}
+
+#base .table td {
+	padding:3px 5px;
+	background-color:#c0c0c0;
+	color:#000000;
+	border-width:1px;
+	border-style:solid;
+	border-color:#222222 #888888 #888888 #222222;
+	font-size:12px;
+	text-align:center;
+	font-family:"Arial","ＭＳ Ｐゴシック","MS PGothic",Osaka;
+}
+#base .table td.inp{
+	padding:0px;
+}
+#base .table .rv td { background-color:#9d9d9d; }
+
+#base td.non  {
+	padding:1px 0 0;
+	margin:0px;
+	border:0;
+	font-size:12px;
+	line-height:12px;
+	text-align:center;
+	background-color:transparent;
+	color:#dddddd;
+}
+
+#base input[type="text"],
+#base input[type="password"],
+#base textarea,
+#base select {
+	border-radius:3px;
+	font-family:"Arial","ＭＳ Ｐゴシック","MS PGothic",Osaka;
+}
+
+#base .table input[type="text"],
+#base .table textarea,
+#base .table select {
+	width:100%;
+	padding:0px;
+	background-color:#ccd4dd;
+	border:1px solid;
+	border-color:#000000 #ffffff #ffffff #000000;
+	color:#000000;
+}
+#base .table .rv input[type="text"],
+#base .table .rv textarea,
+#base .table .rv select { background-color:#bbc4cc; }
+
+#base .table input[type="text"]:focus,
+#base .table textarea:focus,
+#base .table select:focus {
+	background-color:#dde5ee;
+	border-color:#ffaa77;
+}
+
+#base .table input[type="text"] {
+	line-height:1;
+	font-size:13px;
+}
+#base .table textarea {
+	font-size:12px;
+	line-height:13px;
+	font-family:"ＭＳ ゴシック","Osaka-等幅",monospace;
+}
+#base .table input[type="text"],
+#base .table textarea {
+	margin:0px;
+	padding:1px 1px;
+}
+#base .table input.auto{
+	margin:0px;
+	padding:1px 1px;
+	font-size:13px;
+	text-align:center;
+	color:inherit;
+	background-color:inherit;
+	border:0px;
+}
+#base .table .check {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+#base #Exp { float:none; width:100%; }
+#base #Exp td.C { padding:0px; font-size:16px; }
+#base #Exp td input { text-align:center; }
+
+#base #Spec { width:100%; }
+
+#base #Status td.C { padding:1px; font-size:14px; }
+#base #Status #SttBody,
+#base #Status #SttSense,
+#base #Status #SttSpirit,
+#base #Status #SttSocial { font-size:16px; }
+#base #Status input { text-align:center; }
+#base #Status input[type="radio"] { width:40px; height:20px; cursor:pointer; }
+
+#base #Skill td { white-space:nowrap; }
+#base #Skill td.C { text-align:left !important; }
+#base #Skill td.B { padding:1px; text-align:center !important; font-size:16px; font-weight:normal; }
+#base #Skill input { text-align:left; }
+#base #Skill td.C input { text-align:center; }
+
+#base #Lifepath td.B { padding:1px; text-align:center; font-size:16px; font-weight:normal; }
+#base #Lifepath td.C input { text-align:center; }
+
+#base #Effect td.C { padding:2px 0px; }
+#base #Effect td.B { padding:0px; font-size:14px; }
+#base #Effect td.lv input { text-align:center; }
+
+#base #Combo td.num input { text-align:center; }
+
+#base #Item td.C input { text-align:center; }
+
+#base input.link {
+	padding:0px;
+	cursor:pointer;
+	border:0px;
+	background-color:transparent;
+	font-size:12px;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Verdana","Arial","Helvetica","ＭＳ Ｐゴシック","MS PGothic","Osaka",sans-serif;
+}
+#base input.link:hover {
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+.message {
+	width:330px;
+	margin:0px auto 3px;
+	padding:2px 5px;
+	border:1px solid #777777;
+	text-align:center;
+	line-height:16px;
+}
+.error {
+	width:400px;
+	margin:0px auto 3px;
+	padding:2px 5px;
+	border:1px solid #777777;
+	background-color:#111111;
+	color:#ee0000;
+	text-align:left;
+}

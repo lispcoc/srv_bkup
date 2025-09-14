@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a33ae4dad7bd472881270707683c7228 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a33ae4dad7bd472881270707683c7228" ></div>
+        
+</body>
+<script>    
+    
+            var map_a33ae4dad7bd472881270707683c7228 = L.map(
+                "map_a33ae4dad7bd472881270707683c7228",
+                {
+                    center: [34.6594, 135.4996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c063145d53b645818d2062ed63704807 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            var marker_a4c9614f7d2440daab74ab9876b6d175 = L.marker(
+                [34.702944, 135.499194],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_a4c9614f7d2440daab74ab9876b6d175.bindTooltip(
+                `<div>
+                     阪急グランドビル25献血ルーム　受付時間:10:00~18:00<br/>JR大阪駅・大阪メトロ梅田駅(東梅田駅）・阪急梅田駅・阪神梅田駅下車すぐ350m 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba7a13157eff480d9ebaeef947b1403f = L.marker(
+                [34.682194, 135.538167],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_ba7a13157eff480d9ebaeef947b1403f.bindTooltip(
+                `<div>
+                     大阪府赤十字血液センター　受付時間:9:00~17:00<br/>　JR大阪環状線・大阪メトロ中央線・大阪メトロ長堀鶴見緑地線、森ノ宮駅下車東へ350ｍ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c7e954b3de64053a32df98c7a4a3665 = L.marker(
+                [34.789862, 135.577815],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_5c7e954b3de64053a32df98c7a4a3665.bindTooltip(
+                `<div>
+                     大阪府北大阪赤十字血液センター<br/>大阪モノレールおりて徒歩18分 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ce2e063651d429ea8d173eac13ecc60 = L.marker(
+                [34.672861, 135.5],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_3ce2e063651d429ea8d173eac13ecc60.bindTooltip(
+                `<div>
+                     御堂筋献血ルーム CROSS CAFE　受付時間:10:00~18:00<br/> 大阪メトロ御堂筋線・大阪メトロ長堀鶴見緑地線「心斎橋」駅 7号出口より南へすぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9af8e9313f84402e9e75c3804d15b60f = L.marker(
+                [34.699971999999995, 135.49525],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_9af8e9313f84402e9e75c3804d15b60f.bindTooltip(
+                `<div>
+                     西梅田献血ルーム　受付時間:10:00~18:00<br/>  JR大阪駅・大阪メトロ四ツ橋線西梅田駅・阪神梅田駅・JR北新地駅下車すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5b8e2f6661f4937aa8c75d6e5771f52 = L.marker(
+                [34.665278, 135.49991699999998],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_b5b8e2f6661f4937aa8c75d6e5771f52.bindTooltip(
+                `<div>
+                     まいどなんば献血ルーム　受付時間:10:00~18:30<br/> JR難波駅下車すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c10f1e40fe54a9ab9cd9f44eda700b6 = L.marker(
+                [34.645472, 135.513083],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_4c10f1e40fe54a9ab9cd9f44eda700b6.bindTooltip(
+                `<div>
+                     あべの献血ルーム KiZooNa　受付時間:10:00~18:00<br/> R天王寺駅南口・大阪メトロ天王寺駅9号出口・近鉄大阪阿部野橋駅西改札口すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ef0b8e35d964657a770b0154097f8f6 = L.marker(
+                [34.7285, 135.592806],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_6ef0b8e35d964657a770b0154097f8f6.bindTooltip(
+                `<div>
+                     門真献血ルーム　受付時間:9:00~12:00 13:00~16:30<br/> 京阪古川橋駅下車後、京阪バス試験場前または徒歩で約1.2km 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3aa744d77d3848389ac09d319c5b5f25 = L.marker(
+                [34.575889000000004, 135.483917],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_3aa744d77d3848389ac09d319c5b5f25.bindTooltip(
+                `<div>
+                     堺東献血ルーム　受付時間:10:00~13:00 14:00~18:00<br/> 南海高野線　堺東駅下車すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bb3938b4c8044f883030f3c48cf3a39 = L.marker(
+                [34.816028, 135.575389],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_7bb3938b4c8044f883030f3c48cf3a39.bindTooltip(
+                `<div>
+                     阪急茨木市駅献血ルーム　受付時間:10:00~13:00 14:00~18:00<br/> 阪急茨木市駅下車、東出口よりすぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28fa86fcc93f40d18a3e4c7234323cbf = L.marker(
+                [34.816528000000005, 135.64902800000002],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_28fa86fcc93f40d18a3e4c7234323cbf.bindTooltip(
+                `<div>
+                     京阪枚方市駅献血ルーム　受付時間:10:00~13:00 14:00~18:00<br/> 京阪本線枚方市駅東口1階5号階段横 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56d4b1d740494773b17de8799294bada = L.marker(
+                [34.751652, 135.416547],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_56d4b1d740494773b17de8799294bada.bindTooltip(
+                `<div>
+                     塚口さんさんタウン献血ルーム　受付時間:10:00~13:00 14:00~17:30<br/> 阪急塚口駅下すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04456e4db2754f6aa3e3c5750a335d67 = L.marker(
+                [34.434028000000005, 135.335028],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_04456e4db2754f6aa3e3c5750a335d67.bindTooltip(
+                `<div>
+                     大阪府赤十字血液センター 南大阪事業所　受付時間:9:00~17:00<br/> 南海本線二色浜駅下車西へ徒歩15分 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a988c1923be4b3eabe2f2024bf4be12 = L.marker(
+                [34.858159, 135.52650400000002],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_1a988c1923be4b3eabe2f2024bf4be12.bindTooltip(
+                `<div>
+                     日本赤十字社 近畿ブロック血液センター　受付時間:9:00~17:30<br/> 大阪モノレール彩都西駅下車、徒歩9分 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3aed7158046d457e9983f4a1e47f85ee = L.marker(
+                [34.747363799999995, 135.3573063],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_3aed7158046d457e9983f4a1e47f85ee.bindTooltip(
+                `<div>
+                     にしきた献血ルーム　受付時間:10:00~13:00 14:00~17:30<br/> 阪急西宮北口下車すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92280e7cd9764331a6436336ed04446d = L.marker(
+                [34.659524, 135.011778],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_92280e7cd9764331a6436336ed04446d.bindTooltip(
+                `<div>
+                     明石献血ルーム　受付時間:9:00~12:45 13:45~16:30<br/> JR明石駅下車後、神姫バスに乗り、運転免許試験場前にて、下車すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c726609cb554470b8d2a13c80a7864b = L.marker(
+                [34.694666999999995, 135.196],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_6c726609cb554470b8d2a13c80a7864b.bindTooltip(
+                `<div>
+                     ミント神戸15献血ルーム　受付時間:平日10:00~13:00 14:00~18:00<br/> 土日 JR三ノ宮駅（東口）・阪神神戸三宮駅（東口）・神戸ポートライナー下車すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f119851be114a0f8bdd2fe489cd5e9b = L.marker(
+                [34.690889, 135.190833],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_0f119851be114a0f8bdd2fe489cd5e9b.bindTooltip(
+                `<div>
+                     三宮センタープラザ献血ルーム　受付時間:11:00~13:00 14:00~18:30<br/> JR元町駅・阪神元町駅降りて徒歩約10分 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d891f8c08e143bf872ec33a79f996e3 = L.marker(
+                [34.655694, 135.145139],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_3d891f8c08e143bf872ec33a79f996e3.bindTooltip(
+                `<div>
+                     新長田鉄人前献血ルーム　受付時間:10:00~13:00 14:00~17:30<br/> JR新長田駅・地下鉄新長田駅下車すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e3cfbc5c1ce44dda378e2eded659e38 = L.marker(
+                [34.828306, 134.69091699999998],
+                {}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            marker_1e3cfbc5c1ce44dda378e2eded659e38.bindTooltip(
+                `<div>
+                     姫路みゆき献血ルーム　受付時間10:00~12:00 13:00~17:30<br/> JR姫路駅・山電姫路駅下車すぐ 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_8d41de6155ce43f58f8d6562c53bc2ec = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            var tile_layer_6fccdc40ecdc416d9e053bcdcfa4959f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            var tile_layer_81725c0af4664838a6b7a6d650f471f0 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+        
+    
+            var layer_control_3e980e42dd104925b42deabfcc1ed710 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8d41de6155ce43f58f8d6562c53bc2ec,
+                    "stamenterrain" : tile_layer_6fccdc40ecdc416d9e053bcdcfa4959f,
+                    "stamentoner" : tile_layer_81725c0af4664838a6b7a6d650f471f0,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_3e980e42dd104925b42deabfcc1ed710.base_layers,
+                layer_control_3e980e42dd104925b42deabfcc1ed710.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a33ae4dad7bd472881270707683c7228);
+            tile_layer_6fccdc40ecdc416d9e053bcdcfa4959f.remove();
+            tile_layer_81725c0af4664838a6b7a6d650f471f0.remove();
+        
+</script>

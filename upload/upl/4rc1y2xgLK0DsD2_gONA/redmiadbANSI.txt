@@ -1,0 +1,56 @@
+◆リスト出力
+adb shell pm list packages
+
+◆grep方法
+adb shell pm list packages [文字列]
+adb shell pm list packages anal　といった具合に
+
+
+◆無効化一覧
+adb shell pm disable-user --user 0 [パッケージ名]
+adb shell pm disable-user --user 0 com.google.android.marvin.talkback	障害者モード
+adb shell pm disable-user --user 0 com.caf.fmradio			使えないほうのFMラジオ
+adb shell pm disable-user --user 0 com.miui.backup			しゃおみバックアップ
+adb shell pm disable-user --user 0 com.miui.powerkeeper			バッテリー最適化
+adb shell pm disable-user --user 0 com.miui.calculator			しゃおみ電卓、権限いらない電卓いれる
+adb shell pm disable-user --user 0 com.miui.cleanmaster			怪しいクリーナー
+adb shell pm disable-user --user 0 com.miui.freeform			フリーフォーム？
+adb shell pm disable-user --user 0 com.miui.phrase			Frequent phrasesってなに
+adb shell pm disable-user --user 0 com.google.android.feedback		ぐぐるにフィードバック送る
+adb shell pm disable-user --user 0 com.mi.health			体重とか
+adb shell pm disable-user --user 0 com.miui.huanji			多分万歩計
+adb shell pm disable-user --user 0 com.miui.mishare.connectivity	MiShare関連
+adb shell pm disable-user --user 0 com.miui.player			音楽のほう
+adb shell pm disable-user --user 0 com.miui.videoplayer			動画のほう
+adb shell pm disable-user --user 0 com.miui.miwallpaper			MiWallpaper
+adb shell pm disable-user --user 0 com.xiaomi.mi_connect_service	Miconnectservice
+adb shell pm disable-user --user 0 com.xiaomi.miplay_client		MiPlay(´・ω・｀)？
+adb shell pm disable-user --user 0 com.miui.touchassistant		Quickball
+adb shell pm disable-user --user 0 com.miui.miservice			Miフィードバック関連
+
+
+◆アンインストール一覧
+adb shell pm uninstall --user 0 [パッケージ名]
+adb shell pm uninstall --user 0 com.google.android.apps.wellbeing	パフォーマンス向上らしいので
+adb shell pm uninstall --user 0 com.miui.hybrid.accessory		Quickapps関連、肝心のQuickappsのパッケージどれ？
+adb shell pm uninstall --user 0 com.android.providers.partnerbookmarks	パートナーブックマークってなんだよ
+adb shell pm uninstall --user 0 com.miui.daemon				広告
+adb shell pm uninstall --user 0 com.xiaomi.joyose			広告
+adb shell pm uninstall --user 0 com.miui.wmsvc				広告
+adb shell pm uninstall --user 0 com.miui.bugreport			バグレポート
+adb shell pm uninstall --user 0 com.xiaomi.simactivate.service		あくちべーとさーびす？
+adb shell pm uninstall --user 0 com.xiaomi.xmsf				サービスフレームワーク関連
+adb shell pm uninstall --user 0 com.xiaomi.xmsfkeeper			サービスフレームワーク関連
+adb shell pm uninstall --user 0 com.miui.msa.global			広告司令塔らしい
+adb shell pm uninstall --user 0 com.miui.micloudsync			Miクラウド
+adb shell pm uninstall --user 0 com.miui.cloudbackup			Miクラウド
+adb shell pm uninstall --user 0 com.miui.cloudservice			Miクラウド
+adb shell pm uninstall --user 0 com.miui.cloudservice.sysbase		Miクラウド
+adb shell pm uninstall --user 0 com.miui.vsimcore			消していいらしい
+adb shell pm uninstall --user 0 com.facebook.services			FB関連
+adb shell pm uninstall --user 0 com.facebook.system			FB関連
+adb shell pm uninstall --user 0 com.facebook.appmanager			FB関連
+adb shell pm uninstall --user 0 com.miui.notes				Miノート
+adb shell pm uninstall --user 0 com.xiaomi.payment			ウォレット系
+adb shell pm uninstall --user 0 com.mipay.wallet.id			ウォレット系
+adb shell pm uninstall --user 0 com.mipay.wallet.in			ウォレット系

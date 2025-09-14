@@ -1,0 +1,9463 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='ja'>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <title>DX3rd「The Perfect Storm」</title>
+  </head>
+
+<!-- スタイル設定 -->
+<style type="text/css">
+  body {
+    overflow-wrap: break-word;
+  }
+
+  body>div {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 0.15em;
+  }
+
+<!--
+body {line-height: 210%;}
+-->
+
+<!--
+.gyo {line-height: 150%;}
+-->
+
+.box1{
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px #DD0000;
+    border-bottom: solid 2px #DD0000;
+}
+.box1:before, .box1:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #DD0000;
+}
+.box1:before {left: 10px;}
+.box1:after {right: 10px;}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box2 {
+    position: relative;
+    margin: 1em 0;
+    padding: 25px 10px 7px;
+    border: solid 2px #DD0000;
+}
+.box2 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #DD0000;
+    color: #ffffff;
+    font-weight: bold;
+}
+.box2 p {
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+  color: #222222;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #DD0000;/*上線*/
+  border-bottom: solid 3px #DD0000;/*下線*/
+}
+
+h2 {
+  /*線の種類（実線） 太さ 色*/
+  border-bottom: solid 2px #DD0000;
+}
+
+h3 {
+  padding: 0.5rem 0.5rem;
+  border-left: 6px solid #DD0000;
+}
+</style>
+
+<body >
+<br>
+<span class="gyo">
+
+<center>東京近郊n市。</center>
+<center>世界の真実を知るものの間でも、</center>
+<center>特に話題に上がるような事件の起こらない平和な街。</center>
+<span style="line-height:125%">　</span>
+<center>とはいえ完璧に平穏な場所などこの世にはないようで、</center>
+<center>近くの市で大事件の火種がくすぶる中、</center>
+<center>この街にもその余波がやってくることになった。</center>
+<span style="line-height:125%">　</span>
+<center>これは後に分厚い報告書の1ページを飾ることになる、</center>
+<center>熱きオーヴァードたちの密かな戦いの物語である。</center>
+<br>
+<center>ダブルクロスThe 3rd edition</center>
+</span>
+<center><font size="6">『The Perfect Storm』</font></center>
+<span class="gyo">
+<br>
+<center>ダブルクロス────</center>
+<center>それは裏切りを意味する言葉。</center>
+</span>
+<br>
+ <div>
+
+<span class="gyo">
+GM:LISP<br>
+</span>
+メインログ / <a href="../../upload.cgi?get=00886" target="_blank">雑談ログ</a><br>
+<h1><font size="4">Character Sheet</font></h1>
+<span class="gyo">
+<font color="#e91e63">PC1：赤鷺緋鷺　　　(<u><a href="https://yutorize.2-d.jp/ytsheet/dx3rd/?id=7fe1i4" target="_blank">キャラシート</a></u>)　PL：ふろずん</font><br>
+<font color="#8bc34a">PC2：紡木林檎　　　(<u><a href="https://yutorize.2-d.jp/ytsheet/dx3rd/?id=VD0cA9" target="_blank">キャラシート</a></u>)　PL：タンゴ</font><br>
+<font color="#3f51b5">PC3：R.O.S.A. -P.　 (<u><a href="https://yutorize.2-d.jp/ytsheet/dx3rd/?id=VE4VXF" target="_blank">キャラシート</a></u>)　PL：カピバラ</font><br>
+<font color="#ff44ff">PC4：天道恋花　　　(<u><a href="https://yutorize.2-d.jp/ytsheet/dx3rd/?id=OyVwoP" target="_blank">キャラシート</a></u>)　PL：めい</font><br>
+</span>
+<br>
+<h1><font size="4">Index</font></h1>
+<span class="gyo">
+<b><font color="#DD0000">◆Pre play◆</font></b><br>
+<a href="#scene00">HO&PC紹介</a><br>
+<br>
+<b><font color="#DD0000">◆Opening Phase◆</font></b><br>
+<a href="#scene01">01 作り物のヒーロー</a><br>
+<a href="#scene02">02 24時間働けますか？</a><br>
+<a href="#scene03">03 無知の代償</a><br>
+<a href="#scene04">04 捜査は躍る</a><br>
+<br>
+<b><font color="#DD0000">◆Middle Phase◆</font></b><br>
+<a href="#scene05">05 嵐の襲来</a><br>
+<a href="#scene06">06 奇妙な共闘</a><br>
+<a href="#scene07">07 メン・イン・ブラック(企業)</a><br>
+
+<br>
+<a href="#scene10">第5回目開始ポイント</a><br>
+
+</span>
+
+<br>
+<p id="scene00"></p>
+<h1><font size="4">Pre play</font></h1>
+<h2><font size="4">HO&PC紹介</font></h2>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    本シナリオは次のオリジナルルール：一般オーヴァードを採用します。
+  </span>
+</div>
+
+<span class="gyo">
+<div class="box1">
+    <p>
+    通常のルールで作成されるキャラクター（以下、エリート級オーヴァード）に対し、本ルールで作成されるキャラクターを一般オーヴァードと呼ぶ。<br>
+    一般オーヴァードは、覚醒したてで戦闘経験が浅かったり、かつては一線級のエージェントだったが病で力を失ったり、レネゲイドへの適合が進んでいなかったり、そもそも能力が戦闘向きではなく別分野のスペシャリストだったりするキャラクターである。<br>
+    一般オーヴァードはエリート級オーヴァードとエキストラの中間のような存在として扱う。<br>
+    ・一般オーヴァードがエリート級と戦闘を行った場合、判定なしで戦闘不能となる。<br>
+    ・一般オーヴァード同士の戦闘はエリート級オーヴァード同士と同様に処理する。<br>
+    ・エキストラはエリート級と同様に演出で倒すことができる。<br>
+    ・戦闘以外の判定はエリート級と同様に行うことができる。
+</p></div>
+</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    こんな感じです。誰が一般で誰がエリートなのかはGMに聞いてくれれば適宜回答します。強者に踏みにじられないよう強く生きていこうな……
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    ざぁこ♡　ざこざこ♡　ざこオーヴァード♡
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    歯を食いしばれよ、<ruby>最強<rt>エリート</rt></ruby>！俺の最弱はちっとばっか響くぞ！！してくぜ！！(死)
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    雑魚ですみません…………強く生きます……
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    逃げるは恥だが役に立つという言葉が染みる...
+  </span>
+</div>
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではでは、PC1から順に自己紹介を簡単にお願いします～。ひとことくらいでも全然大丈夫です。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    おう！了解だぜ！！
+  </span>
+</div>
+
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/F87qfmB7G990yMc1vTe6/hiro.png" alt="赤鷺ヒロ" title="赤鷺ヒロ"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    PC1の「赤鷺ヒロ」だぜッ！よろしくなッ！！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ヒロは人気ヒーロー番組の主役を演じてるが、当人は”ヒーローらしからぬ性格”なんだぜッ！詳細は公式サイトをチェックしてくれよなッ！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    過去、FHのモルモットになっていた時期があって、<br>
+    PC4の天道恋花ちゃんさんの夫、先代”閃光戦輝サンブレイザー”天道翼さんに助けられてるぜッ！！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    だが、ヒロを助けるため、天道翼さんは「天下爆散！」してしまってッ……<br>
+    うう……その事件がヒロのトラウマになってるぜ……！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    基本、危なくなったら「逃げる」以外のコマンドがなくなるぜッ……！！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    戦闘スタイルは《一閃》を使用した白兵スタイル！ ラ〇ダーキックで怪人どもをやっつけてやるぜッ！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ウソだぜ！ 《一閃》の全力移動で逃げてやるぜ！！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    以上！ちなみにヒロ本人はこんな話し方しないぜッ！！よろしくなッ！！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    <u><a href="https://yutorize.2-d.jp/ytsheet/dx3rd/?id=7fe1i4" target="_blank">キャラシート</a></u>
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ありがとう！　モラルが終わってる撮影現場（※本編とは関係ない）にも負けず頑張って欲しいぜ！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    PC1のHOはこちら
+  </span>
+</div>
+
+<span class="gyo">
+<div class="box1">
+    <p>
+<b>◆PC1用ハンドアウト◆</b><br>
+    <b>創作の世界だけでない、本物のヒーローを目指すアクション俳優</b><br>
+    ・ロイス：葵カヤ<br>
+    あなたはこの春から人気特撮アニメシリーズに出演中の俳優だ。<br>
+    シリーズ常連のベテラン俳優からドラマ初挑戦のアイドルまで様々なキャストを交えて撮影は順調。<br>
+    今日も普段通り撮影が始まるはずだったが、あなたは体調の異常で医務室に運ばれる。<br>
+    目を覚ますと、他のスタッフも次々倒れ撮影は中断していた。一体スタジオに何が起きたのか？
+</p></div>
+</span>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    シナリオロイスは同じく終わってる撮影現場に投入されたアイドルです。よろしくね。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/UkS8pNFI6RwRxuvzfIBT/kaya.png" alt="葵カヤ" title="葵カヤ"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    うおおおおおおッ！アイドルだぜッ！！生で初めて見るぜッ！！肌きれーだぜッ！！よ～～し、一緒に火だるまになって撮影がんばろうなッ！！
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    よろしくお願いしますね。でも火だるまはちょっと……（遠慮）
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    炎慮だなんて……クッ、奥ゆかしい女の子だぜッッ……
+  </span>
+</div>
+
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではつぎはPC2、お願いします！
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/bikBX939MDlbQaEDB3in/ringo.png" alt="紡木林檎" title="紡木林檎"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    <ruby>紡木 林檎<rt>つむぎ りんご</rt></ruby>、17歳のUGN情報工作エージェントです！<br>
+    花の青春時代をブラック労働につぎ込む、哀れな隠キャ女学生です……
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    性格の指針は卑屈/悲観的だけど正直/強気。<br>
+    自分は弱いしUGNの仕事も好きじゃないけど、やらないといけないという使命感だけは強固。<br>
+    正直すぎて思ってることを口にしがちです。ウソがそもそも下手。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    能力は心の関係性を糸に見立て、糸を引けば引力を発生させることができます。<br>
+    物体のみならず精神も引っ張ることが出来るが、一般人ならともかくオーヴァードを動かす為には大きな「<ruby>想い<rt>重い</rt></ruby>」が必要で普段は出来ません。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    情報工作も戦闘も三流のエージェント。<br>
+    一般人相手なら薬剤も駆使してなんとかやれているという具合。<br>
+    仕事にはうんざりしているが、それでも誰かがやらないといけない事というのも理解しているので渋々やってます。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    以上！
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    <u><a href="https://yutorize.2-d.jp/ytsheet/dx3rd/?id=VD0cA9" target="_blank">キャラシート</a></u>
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    つむりんありがとう！HOはこんな感じ。
+  </span>
+</div>
+
+<span class="gyo">
+<div class="box1">
+    <p>
+<b>◆PC2用ハンドアウト◆</b><br>
+    <b>UGNの裏方として人知れず働く苦労人</b><br>
+    ・ロイス："<ruby>編集長<rt>チーフエディター</rt></ruby>"碓井幸一<br>
+    あなたは記憶処理を得意とするUGNの一員だ。特に大きな事件もない比較的平和なn市。<br>
+    とはいってもUGNが暇なはずもなく、近隣支部から押し付けられた記憶処理に日々奔走。<br>
+    早くも今月の過労死ラインを超えた頃、あなたの元へ日本支部長から事件発生の報が入った。
+</p></div>
+</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    職場がヤバいことになってヤバい上司から追加の仕事が来ます。強く生きましょう。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    いつものだね
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    雑草魂見せましょう！
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    そして今回の支部長はこの人です。頼りになりそうだね。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/QXmn3styWIIaWQAOAm0y/koichi.png" alt="碓井幸一" title="碓井幸一"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    頼りない……ひょろひょろなよなよだ……(クソ正直)
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    そ、そんな本当のことを言わなくてもいいじゃないか……！
+  </span>
+</div>
+
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ではつぎ！PC3よろしくお願いします！
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/fRXI10OVbXhWlimbudlO/rosa.png" alt="R.O.S.A" title="R.O.S.A"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    フルネームはR.O.S.A -P.<br>
+    n市に居ついてるはぐれアンドロイドです<br>
+    「人の代替として活動する自動人形を作成する」ことを目的のUGNのプロジェクトの一環として作られました！<br>
+    この個体は初期のプロトタイプ版なのでオーヴァードとしての力はよわよわです<br>
+    プロトタイプが製品版より性能がいいわけないだろ！！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    色々あってプロジェクトが頓挫したので、n市に打ち捨てられました。<br>
+    しかしX-PROUDに拾われた後に再起動を果たしました！<br>
+<span style="line-height:60%">　</span><br>
+    その後、X-PROUDでガキどもをカモにしてひと財産築き上げることに成功、やったね
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    やったね！　本当にいいのか？？
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    しかし、オーヴァードとしての実力を看過されたのか貸した金がほとんど帰ってこない状況に陥ってます<br>
+    ガキがよ...
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    <u><a href="https://yutorize.2-d.jp/ytsheet/dx3rd/?id=VE4VXF" target="_blank">キャラシート</a></u>
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    実にFHらしいロボだ……HOはこちら！
+  </span>
+</div>
+
+<span class="gyo">
+<div class="box1">
+    <p>
+<b>◆PC3用ハンドアウト◆</b><br>
+    <b>自覚なくFHに加担する、世界の真実を知らないオーヴァード</b><br>
+    ・ロイス："<ruby>教授<rt>プロフェッサー</rt></ruby>"<br>
+    あなたは東京を根城とする不良グループ「X-PLODE」n市支部の一員だ。<br>
+    最近リーダーが良い取引先を見つけてきたらしく、裏ルートから超能力が身につくという怪しいクスリや抗争に使える武器を大量に入手しグループは急激に勢力を拡大、独立の噂も出てきている。<br>
+    今日は荷物を下水道に運び込む仕事を頼まれた。<br>
+    なんでも取引先の"教授"とかいう顧客の依頼で簡単な生物実験に協力するとのことだが……。
+</p></div>
+</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ロマサガ以来の下水道で金策スタートです。3Kに負けず頑張っていこうな
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    こき使いやがって...人権問題ですよ！
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    ロイスの教授についてはまだ秘密ですが、OPでは代わりに小間使いとしてこのねーちゃんが現れます。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/0HKubCwR3ziXDat2sVFI/samurai.png" alt="小間使い" title="小間使い"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    まったく金とはいいものでござるなぁ！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    むむっ、侍風の見た目に似合わぬ守銭奴の予感！
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    武士も食わねど高楊枝というやつでござるよ～
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    ほんとうでござるかぁ～？
+  </span>
+</div>
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では最後！PC4お願いします！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    はーい
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    だが、しかし
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    PCの紹介をする前に、まずはこの男について語らなければならない……。 
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/qazL2Bo2cnpddwfaywVe/sun_breather.png" alt="閃光戦輝サンブレイザー" title="閃光戦輝サンブレイザー"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    そう、彼の名は<ruby>天道翼<rt>てんどうつばさ</rt></ruby>────閃光戦輝サンブレイザーの変身者だ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    説明しよう！　閃光戦輝サンブレイザーとは！！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    UGNに所属する特撮オタクの天才科学者・<ruby>東映<rt>あずまあきら</rt></ruby>が作ったアーマメントベルト・ブレイザーライザーで変身する、紅蓮の超戦士のことである！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    十年前、サンブレイザーの変身者に任命された翼は、UGNのエージェントとして悪のFHエージェントやジャームと熾烈な戦いを繰り広げて来た！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    しかし彼の戦いの日々は一年前に終わりを告げる！　赤鷺ヒロを捕えていたFHの施設での戦いで、敵のボスと相打ちになってしまったのだ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    だが……サンブレイザーの魂は、新たな変身者へと受け継がれていた！！
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/lTKOYSVgRetTm3Rv7Ofk/renka.png" alt="天道恋花" title="天道恋花"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    彼女は天の道を行き恋の花を咲かせる女、<ruby>天道恋花<rt>てんどうれんか</rt></ruby>！　何を隠そう、翼の嫁である！！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    女子中学生程度にしか見えない幼い見た目！　元気で明るいギャル！　だが実は今年で三十歳！　しかもレネゲイド関連事件担当独立捜査課、通称R担に所属する刑事だ！！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    恋花は元々は普通の人間で、生活安全課少年係所属だった！　しかし、一年前の翼の死を引き金にオーヴァードに覚醒してしまう！！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    彼女は凹んだ！　愛する旦那の死！　そして今まで知らなかった、レネゲイドに侵された世界で少年少女が日常を守るために戦っていたという現実！！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    こんなの少年達を守るお巡りさんとしていつまでも落ち込んではいられない！　翼の死を振り切り、恋花はレネゲイド事件に関われるR担に移動！！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    そして映に駄々をこねまくってブレイザーライザーを譲って貰い────サンブレイザーの二代目変身者となったのだ！！！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    最後に、恋花の力について解説しておこう！　まず、シンドロームはサラマンダー/バロールのクロスブリード！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    その性能は防御に特化しており、《炎陣》でカバーリング！　《孤独の魔眼》で範囲攻撃の対象を単体化！　そして《時の棺》で敵の判定を自動失敗！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    しかし攻撃エフェクトは一切ない！　サンブレイザーの正規変身者である翼と違い、適合率の低い恋花はその力を完全には引き出せていないからだ！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    だがそれでも戦え、天道恋花！　愛する旦那への想いを力に変えて、子供達の未来を守るのだ！！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    閃光戦輝サンブレイザー！　日曜午後九時から放送中！！ 
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    ～おしまい～　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    <u><a href="https://yutorize.2-d.jp/ytsheet/dx3rd/?id=OyVwoP" target="_blank">キャラシート</a></u>
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いまから始まるよ！！！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    この卓のオーヴァードは戦いでは弱ェかもしれないが激アツなハートは他の卓の奴らにも負けないぜ、ハンドアウトはこんな感じ！
+  </span>
+</div>
+
+<span class="gyo">
+<div class="box1">
+    <p>
+<b>◆PC4用ハンドアウト◆</b><br>
+    <b>R担の刑事（庶務係）</b><br>
+    ・ロイス："アルジャーノン"<br>
+    あなたは警視庁のR担に所属する刑事だ。とはいっても荒事に直接関わることは少なく、事件発生時の道路封鎖や自治体・企業との調整が主なあなたの役目だ。<br>
+    今日はFHが放ったとみられる生物兵器、コードネーム"アルジャーノン"による被害を抑えるため道路封鎖と対象の確保にあたっていた。<br>
+    何としても被害を最小限に留めなければ。
+</p></div>
+</span>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    アルジャーノン、明らかに…ボス枠なのだ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    頑張って確保します、例え相手がエリートでも　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その心意気、ヒーロー！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>武者小路英貴</span> :
+  <span>
+    HOロイスのアルジャーノンとの邂逅は先の話になりますが、OPでは道案内役として年下の上司、武者小路英貴警部が登場します。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/SqQBm40cb87czEWcCjw7/eiki.png" alt="武者小路英貴" title="武者小路英貴"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    え、かわいい～！
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    よろしくぅ～★
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    陽キャの警察だ、よろしくよろしく！　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    自己紹介ありがとう！　ではでは、オープニングフェイズに入っていきます！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    わぁい、よろしくおねがいします！
+  </span>
+</div>
+
+<br>
+<p id="scene01"></p>
+<h1><font size="4">Main play</font></h1>
+<h2><font size="4">Scene01 作り物のヒーロー</font></h2>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    PC1のオープニングです。登場はヒロくんのみ！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    1d10+39 登場侵蝕(1D10+39) ＞ 9[9]+39 ＞ 48
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    結構飛ばしてるぜ～
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ヒーローだからね
+  </span>
+</div>
+
+<hr style="border:0;border-top:4px double #DD0000;">
+
+<span style="line-height:125%">　</span><br>
+<h3><font size="4">控室</font></h3>
+<img src="../../../upload_image/upl/a_gde3tN1pZqelpAFfaP/office.jpg" alt="控室" title="控室"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    某日、東京近郊n市、某スタジオ控室。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    多くのドラマが利用するこのスタジオで、今日は人気特撮アニメ「真心ヴァイザーライジング」の撮影が行われようとしている。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    番組の主なターゲットは未就学児から小学生ほどの低年齢層。しかし娯楽の多様化したこの時代、一緒に観る父親母親も退屈させないような迫真のクオリティが求められるのはどの業界も同様だ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたも気を引き締めてスタジオに入る……と、そこには先客。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/UkS8pNFI6RwRxuvzfIBT/kaya.png" alt="葵カヤ" title="葵カヤ"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    誰より早くスタジオ入りしていたのはイヤホンで音楽を聴きリラックスする凛とした黒髪の少女。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    正統派のオーラを纏いながら、誰も聞いたこともないバンドの曲を好んで聞き、お昼になれば並べられたロケ弁の中から一番人気のない助六弁当をいつも取っていく、そんなどこかズレた感性が共演者には印象的だろう。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    ヒロインのひとりとしてレギュラー出演中のアイドル、葵カヤだ。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/DuFzw5NoNI7a7hCpdhCo/hiro2.png" alt="赤鷺ヒロ" title="赤鷺ヒロ"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(挨拶……はしないほうがいいか……リラックスしてるみたいだし……)」軽く会釈だけして、部屋に入る。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(あいかわらず綺麗な顔してるな……アイドルって言ってたっけ……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(共演している相手のリサーチくらいはするべきなんだろうけど……撮影期間は忙しすぎて、まだチェックできてないんだよなあ……)」撮影の過酷さの反動で、休日は爆睡してたら終わるヒロであった。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    人気番組の主演らしからぬ態度で、気付かれないようにコソコソと隅の方に座る。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    そんなあなたの気配を察知してか、イヤホンを外して後ろを向く。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「赤鷺さん、おはようございます。いつも早いですね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……あ、おはようございます」完璧に気配を殺したつもりだったのだが、すぐ気付かれたことに少し驚きながら、挨拶を返す。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「早いって言っても、葵さんほどじゃないですよ、これくらいは普通です」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「赤鷺さん……本当にこの作品に対して真剣なんですね。いえ、みんな同じなんだと思いますけれど」　どこか嬉しそうに
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「私も、負けないようにしないと」　しばらく芸能界の一線を離れていた彼女にとってこの作品は復帰作、気合いの入れようが違うというものだ。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    それゆえに、演技のときは表情の硬さがなかなか抜けないのかもしれないが。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「撮影始まってしばらく経ちますけど……そういえば、こうやって落ち着いて話すのって初めてかもしれないですね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ……そういえば、そうですね……？ 二人となると初めてかも……？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(え、現役アイドルと二人で何を話せばいいんだ、おれ……！？)」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「今では慣れましたけど最初、ビックリしましたよ。ヴァイザーの俳優さんってスーツでの演技も自分でこなされるんですね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(あっ、そっかそっか、演技について話せばいいよな普通に)」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「てっきり専門のアクターさんが入ってるものかと……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ、ビックリですよね、俺もスーツアクターの方がやってるのかと思ってましたよ」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「でも『真心ヴァイザーシリーズでは、俳優がすべて兼任してるぞ』って監督が」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ※そんなことはない。普通ならCGで演出するところを、リアリティ至上主義の監督に騙され、危険なスタントを強いられているのであった。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「え！？　本当ですか……？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ええ、前シーズンの真心ヴァイザーの飛行機上で戦うシーンも、勿論そうっていう話です」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「一体どうやって撮ったんですかね……やっぱり偉大だな、先輩たち……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「……そ、そうなんですか」　何か釈然としない顔をしている。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……？」監督のホラ話を信じきっているので、カヤの態度に首を傾げる。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「あの、私、お父さんがヴァイザーの俳優だったんですけれど……」　いわゆる2世タレント
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「そんなことあったかなあ……って。でも、子供には大変なところを見せないようにしてたのかもしれないですね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「それはそうですよ」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「俺だったら、もし子供がいたら"ブレイバードフォーム"の撮影の裏話とかしません」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……ほら、あのフォームって、スーツを燃やしながら撮るじゃないですか」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「そうですね。最初見たときは目を疑いました」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「監督が『初回変身は派手に』って爆薬を盛りすぎたせいで、誘爆して吹き飛びましたからね、セットごと」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「そ、そんなことが……！？　私、初回は登場していなかったら居なかったんですけど……それってよくあることなんですか？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「いえ……よくはないですね、流石に……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「撮影現場の地形まで変わったせいで、観光業界からクレームが入って、めっちゃ怒られたらしいです監督」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「ああ……それで初回以降は遠征ロケないんですね……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「そういう、やりすぎちゃうのは良くないですけど……みなさん、いいものを作るために一所懸命に頑張ってるんですよね」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「私も負けていられないですね。今日もアクションシーン、頑張ります」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「今日は確か、怪人プルトンと徒手格闘するシーンでしたよね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「火だるまになりつつ肺を焼かず呼吸する方法とか、溺れながら生きのびる方法とか、いろいろアドバイスできると思うんで、何か困ったときはいつでも相談してください」笑顔で
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「た、頼りにさせて貰いますね……」　さすがに洒落にならなすぎてちょっと引いている
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>スタッフ</span> :
+  <span>
+    そうして演技についての話題に花を咲かせていると
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>スタッフ</span> :
+  <span>
+    「おはようございまーす。葵さーん、メイクの時間ですー」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「あ、もうそんな時間でしたね。では撮影でまた」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ええ、また」背中を見送る
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そうしてカヤは部屋を出て行く。気づけば集合時間になり、スタッフも別室に揃っているようだ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    入れ替わりで控室に見慣れた顔の男が入ってくる。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「よーヒロちゃん。調子どーよ？　スタジオの方は火薬マシマシで準備万端だからさ、今日もお茶の間の子供たちに向けてバシっと頼むわ！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ぁ……え……？ 火薬マシマシ……？ ブレイバードフォームの撮影あるんですか、今日……？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「いや本当は来週の予定だったんだけどさー。急にスポーツチームとのコラボ回が企画されてどーーしても一週ぶん詰めないといけなくなったみたいでね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……ま、待ってください監督、おれにも心の準備ってものが」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「お、いいねその感じ！　いや最近余裕が出てきて落ち着いちゃったかなと思ってたところなんだよね。やっぱりヒーローは追い詰められてこそ真価を発揮するものだよ！」　聞いてるけど聞いていない
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「な、何を言って……！？ 美術さんから火薬は控えめにって言われてましたよね……！？ どうして逆に盛ってるんですか……！？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「おれ、あの世の翼さんとコラボしたくないですよ、まだ……！？！？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「翼さん？？　誰のことか知らないけど、美術さんには僕から言っておくから君は心配せず生き残ることだけ考えてくれれば大丈夫だって」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「…………」絶句
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「じゃあそういう感じで、今日はちょっと忙しくなるからね。ああ、そういえばさっきカヤちゃんと二人で話してた？　脚本さんが珍しいねーって言ってたけど」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「え、あ……いや、はい……まあ、話してましたけど……」あまりの衝撃に、しどろもどろになっている。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「カヤちゃんねぇ。ルックスよくてアクションも出来る子連れてきてって紹介で来てくれて、そこはバッチリなんだけどねぇ」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「やられるときとか、男の子とちょっといい感じになるときの演技が守りに入っちゃってるっていうか……あのくらいの年の女の子にはそのへん難しいのかねぇ？　どう思うよ、ヒロちゃんはー」　監督的には納得行っていないらしい
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(こっちの生死がかかっている状況でそんな質問する……！？)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「演技はおれも経験なかったから、よく分かんないですけど……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「あの子、アイドルなんですよね……？ 応援してくれてる人達とか考えたら、ある程度は仕方ないんじゃないですか……？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「おー、正論！　まあそれもそうかあ。いや勿体ないなあ、アクション俳優専任になってくれんかなあ」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「たしかに才能はあると思いますけど……、やりたいコトかどうかは別ですから……」少なくとも自分には、この道を勧めるコトは出来ない。普通に危険すぎるからだ。この監督の下での撮影では、命がいくつあってもたりない。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    監督と話し終え、スタッフ一同本番へと準備を進めて行く。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……撮影開始の時刻も迫ってきたところで、急に女性スタッフが叫ぶ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    「キャー！！！ ネズミ！ 　赤鷺さん、背中にネズミが！！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「キャーーッ！？！？ ネズミ！？！？！？！？」生死がかかった撮影で緊張状態だったこともあり、猫型ロボットのように取り乱す。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    チクっ、と首元に痛みが走る。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    振り返ると、一匹のまるまると太った大きなネズミが梱包された大道具の山に逃げ込んで行くのが見えるだろう。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「は、はあはあ……ふう……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「こ、コホンコホン……初めて見ましたね、あんなに大きいネズミ……」何事もなかったように平静を装う。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    衛生管理に気を使っているスタジオに珍しい……と驚くスタッフ一同。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    しばらく駆除の時間をとってから撮影に入ることがキャストへ告げられた。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……キャストが続々と控え室に戻っていく中、カヤは思案顔で現場を確認している。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……どうしました？監督の爆薬のことで心配でも？」声を掛ける
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「いえ、それも心配ですけど……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……？」それ以上に心配することなどあるだろうか。いや、ない。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「あの、ネズミに噛まれて……何ともないですか？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    言われてみれば……何だか熱っぽいような気がする。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「え、ああ……そういえば、身体が熱いような……？」極度の緊張のせいだと思っていたが……
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……徐々に違和感に気づく。あなたはこの感覚に覚えがある。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    これはレネゲイドを用いた攻撃だ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    みるみるうちに全身に焼けるようなダメージが回っていき、やがてそれは意識を保っていられないほどに強くなる。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「あ、れ……おかしい、な……まだ撮影はじまってもないのに、身体が燃えている、みたいに……」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    何かがおかしい。本来ならこの程度のダメージはオーヴァードの再生能力で回復できるはずだ。だが、今はそれができない。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「赤鷺さん？　……赤鷺さん！　大丈夫ですか！？　赤鷺さんッ！！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    転がる視界。カヤの呼ぶ声が遠くに聞こえ、それきりあなたの意識は暗闇に落ちて行く……。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ロイス取得・変更などあればお願いします！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    HOロイスのカヤちゃんを憧憬/不安のN表で取得！監督の魔の手にかからないか不安です
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    了解です！真っ当な不安。
+  </span>
+</div>
+
+<br>
+<p id="scene02"></p>
+<h2><font size="4">Scene02 24時間働けますか？</font></h2>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    PC2のオープニングです。登場はつむりんのみ！
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    31+1d10(31+1D10) ＞ 31+7[7] ＞ 38
+  </span>
+</div>
+
+<hr style="border:0;border-top:4px double #DD0000;">
+
+<span style="line-height:125%">　</span><br>
+<h3><font size="4">N市 市街地</font></h3>
+<img src="../../../upload_image/upl/RGm73UJXhZ06ey_83Drh/railroad_crossing.jpg" alt="踏切" title="踏切"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    N市(n市ではない)某所。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    動揺しながらまくしたてる青年に、あなたは上司である記者風の男とともに"取材"を試みていた。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>青年</span> :
+  <span>
+    「お、俺は見たんだ！　オールバックのオッサンが悪魔みたいな爪で少年を引き裂いて――」
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/QXmn3styWIIaWQAOAm0y/koichi.png" alt="碓井幸一" title="碓井幸一"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「なるほど。それは大変でしたね。もういいですよ」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    記者風の男は、ボールペンの後端を彼に向けると取りつけられたスイッチを押す。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ピカッ、と一瞬眩しくボールペンが光ると、青年は電池が切れたロボットのようにバタリとその場に倒れた。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ふう、これで一通り済んだかな」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「紡木さん、”後処理”を頼むよ」　何事もなかったように、ひどく疲れた様子であなたにそう命じる
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/bikBX939MDlbQaEDB3in/ringo.png" alt="紡木林檎" title="紡木林檎"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「はぁい……」<br>
+    あからさまに嫌そうな声で、渋々男の胸に触れる
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    男の胸から見えない糸を手繰り寄せて、近くにあった電柱へ結びつけた。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「終わりです。………しばらく、この人の関心はこっちの電柱に向かいますよ……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「直に"眼鏡の男"のことも忘れていくんじゃないでしょうか……」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「あー、やっぱり君もそう思う？　この件またアイツの仕業なんだろうな……今期に入って3回目だよ」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「まあ、彼の話はもうやめよう。疲労が増すだけだから。しかし悪いね、こんな朝まで付き合わせてしまって」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    目の下にクマを作り、栄養ドリンクをぐっと飲み干しながら言う。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    時刻は深夜30時。とっくの昔に日は登り、駅は都心へと出勤するサラリーマンでごった返し始める頃。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたと”支部長”の碓氷はようやく業務を終えた。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「悪いと思うなら、呼ばないでくださいよぉ……」<br>
+    諦めきったため息で喉を震わせる。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「僕のガジェットで記憶を強制処理するとどうしても前後の文脈に不自然さが生まれるからね、念には念を入れろと日本支部長からの指示だよ」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「なんせ今回はコトがコトだからね……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「いいんです、いいんです……分かってますから。」<br>
+    「豪奢なカーペットも、破れるのは小さなほつれからですから……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「…………はあ〜〜。」<br>
+    そうしなければならないとは頭では分かっていても、徹夜明けの疲労感が陰鬱な音色を立てる。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    先日、N市にて大規模なアウトブレイク――凍結されたジャームたちの脱走事案が発生。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    逃げ出したジャームが次々に事件を起こし、UGNはその対応に奔走、この有様というわけだ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    本日、UGNは電波ジャックを目論むFHエージェントと市内のランドマークでもある電波塔で交戦。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    派手なエフェクトの応酬になった末に塔は大破し、FHの目論見は防いだもののその光景を推定200の市民が目撃することとなり、しわ寄せは隣のn市まで及んだ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたたちの懸命の記憶処理により、明日の学校で電波塔で大立ち回りを繰り広げるヒーローが話題になることもないはずだ……多分。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……支部員一同、身も心もへとへとだが、一応は学生の身のあなたはまだある程度配慮されているようで
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ともかく今日は休みにしよう。いくら僕がオーヴァードだからってさすがに7徹は洒落にならないよ……」　支部長などこの有様である。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「うぇ………風呂とか入れてるんですか……？」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「いやいや休憩時間でシャワーくらいは浴びてるよ！　だからそんな反応しないでくれ！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………ほんとですかね……ちょっと臭うような……」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ぐ……最近娘も僕の服を一緒に洗濯するのを気にするようになってきたし……世知辛いぞ」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………パパくさい………」<br>
+    碓井には気安いのか、冗談めかして
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ンン゛！！」　さすがにダメージが大きかったのか、沈む
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あっ、すみません……クリティカル入っちゃった」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ふ、不幸だ……とにかく今日はお疲れ様」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「次はいつ休めるかわからないから、せめてしっかり休養を取ることにしよう」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………ウチ、この後学校です……」<br>
+    「シャワーしか浴びれない………」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「そっそれは……その、UGNの傘下の学校だったりは……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あはっ、あははっ……それなら情報処理担当のウチが常駐する理由なくないですか……？」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ま、まあ……今日くらい行かなくてもどうにかなるんじゃないか。僕もあんまり学校行ってなかったし……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「たしかに……サボる、その手があったか……！」<br>
+    一筋の光明が差し込む
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「青春時代をドブに捨てた僕に教えられることは多くないけど、単位を落とさないサボり方なら……」良くない大人
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……と、あなたたちがなんとか休息を立てる算段を立てているところ、悲劇は起こる。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    UGNの端末が着信のアラームを鳴らす。日本支部長からの直電だ。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「」　あまりのショックに駅のほうを向いたまま固まる。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「うわぁ…………その、電話、出ないんですか？」<br>
+    こんな時間に上から電話が掛かってくる事態そのものに背筋が凍るが、流石に放置はいただけない。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「だ……」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「だって出たら絶対ロクなことにならないじゃないか！！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「知ってますよそんなの……！ もう掛かってきてるんですから、さっさと出てあげてよ……！」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「嫌だ！嫌だ嫌だ嫌だ！」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「今日は一日中ゴロゴロして何も考えずに15年くらい前の深夜アニメ見て懐かしさで気持ちよくなるって決めてるんだ！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    大の大人の駄々こね……こうなった支部長は梃子でも聞かないということは支部員にはよく知られている……。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「中学生かよぉ……！ 」<br>
+    「最高の計画だと思いますけど……もう終わりなんですって……！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    とにかく、こうなってしまった以上、選択はふたつにひとつ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    無理やり端末を奪い取って通話に出るか、ふたりで何も見なかったフリをして家に帰るかである。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    そりゃ当然、何も見なかったフリをして帰りたいのは林檎も同じである。<br>
+    しかし、悲しい事に林檎はすべき事を棚上げ出来ない人間なのであった。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いい子だぁ……こんな支部長なのに
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「もういいです、ウチが出ます。」<br>
+    氷のように冷ややかな声で宣告し、碓井のズボンの尻ポケットから端末をもぎ取る。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「あーーーーー」　魂の抜ける音
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「もしもし……碓井支部長の代理で出てます、紡木ですが。」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ビデオ通話画面に日本支部長、霧谷雄吾の見慣れた顔が映る……。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「うへぇ、出た……じゃない、お疲れ様でーす……」
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/XoJnlHZQJoZPNztnYYXu/kiritani.png" alt="霧谷雄吾" title="霧谷雄吾"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「朝早くに申し訳ありません。お疲れ様です、紡木さん」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「……碓井支部長はいまどちらに？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ウチの足元に転がってます……」<br>
+    取り繕おうという意思すらみせない。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    床に転がって泡を吹いている碓井の姿が映る。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「何とか言ってくださいよ……駄々っ子支部長」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「……やはりこうなってしまいましたか。参りましたね。昔から碓井支部長はこうなると私が手を尽くしてもどうにもこうにも……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「なんでこの人支部長なんです……？？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「情報処理能力だけは他の追随を許さないからです。が、n市が比較的平和とはいえ今回は荷が重かったようですね……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………はぁ………とりあえず…ウチでいいなら用件を聞いておきますけど……」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「……仕方ありません。代わりの人材が到着するまで、申し訳ありませんが紡木さんをn市の臨時支部長に任命します」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………んぇ？ 今なんて……？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「あなたをn市の臨時支部長に任命します」　淀みない発音
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あの……ウチ、ペーペーのクソ雑魚エージェントなんですけどぉ……？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「無理を言っているのは承知しています。本来なら近隣の支部から援軍を招集したいのですが……」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「先日、N市にて大規模なアウトブレイクが発生しまして、関東各支部の戦力はその対処で出尽くしている状態です」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「東北や九州の支部に応援を呼べないか掛け合ってみるので、それまでの間、なんとか持ちこたえてください」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「持ちこたえて……って……何、から？」<br>
+    持ちこたえろということは、持ちこたえないといけないということ。暗に示された脅威を問う。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「そうですね。本題に入りましょう」　なし崩し的に話を進める。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あっ……ちょ……ま……」<br>
+    自分が霧谷のペースに飲まれたことを察してあわあわ何か切り替えそうとするが、林檎はそこまで話術に秀でておらず、言いかけた言葉の端っこが漏れただけだった。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「現在、n市内でFHによる生物テロと思われる動きが観測されています」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「どうやら地元の不良グループ……いわゆる半グレ集団のような足がつきにくいルートを使って被害を拡大しているようです」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「今はまだ感染症で病院に運ばれる人が増えたりする程度でそれほど大ごとになってはいませんが、いつ重大な事件に発展するか予断を許さない状況です」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「N市から逃げ出した強力なオーヴァードが潜伏している可能性も否定できません。現有戦力では戦闘行為は難しいかもしれませんが、情報収集と、被害拡大の際には救助活動をお願いします」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………ぐえぇ……荷が重すぎるよぉ………」<br>
+    「というか霧谷さんならウチの実績データくらい把握してますよね……！？ ………無茶が過ぎるのでは……？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「もちろん、可及的速やかに応援を寄こすつもりです。明日か、明後日か……三日後までには必ず！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………全然来ないやつじゃないですかぁ……！」<br>
+    「………クスリでもキメてるんです……！？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「…………ぅぐぁ〜……」<br>
+    言いたい事を言い放って、天を仰ぐ。<br>
+    「………ホントにウチしか居ないんですね……。」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「……そうですね」　少しだけ口ごもってから答える。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「ですが、本件はUGNだけでなくR担も同時に調査に乗り出してくれています。彼らと連携を取って効率的に調査を進めることも可能でしょう」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「私のほうから根回しをしておきます。遠慮なく頼ってみてください」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………援軍、あるじゃないですか……ウチの冷や汗を増やさないでくださいょ……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「どうあれ、ウチがやらないといけないことなら……。」<br>
+    「……結果はともかく、努力はします。」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「こちらも無理を言っていることは承知の上です。もちろんできる範囲で構いません」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>霧谷雄吾</span> :
+  <span>
+    「それでは、私はこれからゼノスとの会合に出席しなければなりませんので……申し訳ありませんが、よろしくお願いします」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    プツン、と通信が途切れる。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………ウチのサボり計画………短い夢だったなぁ……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「目ぇ覚ませ、バカ支部長……！」<br>
+    碓井の頬を怒りのままにべちべちと叩き、起こして歩かせる。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「う、うーん……」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「そうだ。これは夢なんだ。ぼくは今、夢を見ているんだ……」<br>
+    
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「目が覚めたとき、ぼくはまだ17歳」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「起きたら朝ご飯を食べて、クーラーがガンガンに効いた部屋で録画した深夜アニメを見ながら匿名掲示板のスレを巡回したりして、おもいっきり遊ぶんだ……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「というか、今はウチが支部長なんだった……！」<br>
+    「上官命令！二度寝禁止……！」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「アッハイ、すいません、真面目にやりまｽｩｩｩ……」　消え入るような声で
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………碓井さんが電話に出ないから、ウチが支部長になったので。」<br>
+    「ウチの言う事、絶対服従してもらいますからね……！」<br>
+    毒を食らわば皿まで、ということらしい
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「うーん……やっぱりまだ悪夢かもしれない……」　死んだ目で付いていく。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「キリキリ歩いてくださいっ……！ 入れる余裕があるうちに……シャワーだけでも浴びたい……」<br>
+    碓井のネクタイを引っ掴んで、早足で歩き出す。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    やはり自分がやらねばどうしようもないようだ。あなたたちは重い身体を引きずって、n市行きの電車に乗り込んだ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    揺られることしばらく、支部に戻ったあなたの耳に、さっそく支部員からの調査第一報が届く。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    『市内北のスタジオでドラマの撮影中にスタッフ、キャスト一行を狙った生物テロが発生。現場で怪しい人影を見たとの情報あり。オーヴァード潜伏の疑いが強いため民間医療機関は出動見合わせ中』
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    碓井元支部長にロイス取ります！<br>
+    庇護/憤懣のNで！大人げないぞ！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    把握です、残念でもないし当然！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では、次のシーンへ！
+  </span>
+</div>
+
+<br>
+<p id="scene03"></p>
+<h2><font size="4">Scene03 無知の代償</font></h2>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    PC3のオープニングです。登場はロサぴのみ！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    侵蝕どうぞ～
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    1d10+47(1D10+47) ＞ 5[5]+47 ＞ 52
+  </span>
+</div>
+
+<hr style="border:0;border-top:4px double #DD0000;">
+
+<span style="line-height:125%">　</span><br>
+<h3><font size="4">路地裏</font></h3>
+<img src="../../../upload_image/upl/5jqO8bipbj77MqLk8222/back_alley.jpg" alt="路地裏" title="路地裏"><br>
+<span style="line-height:125%">　</span>
+
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    東京を中心に活動する不良グループ「X-PLODE」。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    なんの因果かそこに流れ着いたあなたは世の中の仕組みを知らない少年たちをカモに荒稼ぎしていた……！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そう、まさに完璧だった……肝心の現金が回収できていないという事実を除けば、だが。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    本日、「X-PLODE」のn市支部の一行……あなたと数人の少年たちは、「取引」の遂行のため依頼人の指定した人気のない路地裏に集まっていた。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    発端はあなたがメンバーの少年たちに貸した金である。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その回収が滞っていたことを支部のリーダーに相談したところ、返済の立て替えと引き換えに仕事を紹介されたのだ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そして、あなたは少年たちの目付け役として同行しているというわけだ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    待ち合わせの時間に少し遅れて、時代錯誤なコスプレをした女が目の前に現れる。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/0HKubCwR3ziXDat2sVFI/samurai.png" alt="小間使い" title="小間使い"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「やあやあ。君たちがX-PLODEの一行でござるか？」　冗談みたいな口調でいかにも軽薄そうにあなたたちに確認する。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/fRXI10OVbXhWlimbudlO/rosa.png" alt="R.O.S.A" title="R.O.S.A"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「その認識であっているわ」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「それにしても、このあたりでそんな目立つような恰好をしてるとはよほど物好きな人ね」　やってきた人物に対してまじまじと観察しながら、彼女に関しての情報に心当たりがないか考えを巡らせている
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「お～合ってた合ってた。拙者は"教授"の使いをやってるケチな傭兵にござる。いや何を隠そう、拙者刀剣の類に目がござらんでな～」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「この格好も仕事に入り込むための"こだわり"というやつでござる！　短い付き合いになるが、よろしく頼むでござるよ～」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「傭兵ね...雇い主の教授とやらが引っかかるけど余分な詮索はお互いなしにしまよう」<br>
+    「よろしく頼むわよ、”先生”」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「"先生"！　うっへっへ、痺れる呼び方でござるなぁ～」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    リーダーから詳細について聞かされたあなたは、この仕事の依頼元について知っている。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ”<ruby>教授<rt>プロフェッサー</rt></ruby>”とかいう、裏社会では少しばかり名の知られた悪党だ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    風の噂では、UGNに倒されたという話もあったはずだが……なににせよ、ちゃんと金を出す客であることはリーダーのお墨付き。重要なのはそれだけである。
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「さて、依頼の本題に入るでござるよ」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「事前に伝えた通り、君たちにはこのケースの中身を下水道の指定した場所にバラ撒いてほしいでござる」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「まあ簡単な仕事でござるな。これであの破格の依頼料とは”教授”も太っ腹よ！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そういって、女はジェラルミン製のケースを差し出す。見た目からは何が入っているのか、想像も付かない。
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「目標の位置に着くまでは絶対に開けちゃならんでござるよ。それとハイ、これは前金の50万円」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    現ナマをポンとあなたに差し出す。
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「これはどうも。私、ルールを守ってくれる人は好きよ」　周りに言い聞かせるように言葉を発しながら、ケースと現金を受け取る
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「いや～、しかし金というのはいいものでござるな」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「拙者も能力に目覚めたての頃は自分をカツアゲしていた不良から逆に財布を分捕ったりしたものでござる」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>少年たち</span> :
+  <span>
+    「……」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    冗談なのか本気なのか、そんなことを言って笑う女を見て少年たちは顔を見合わせる。
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「オーヴァードだろうと、頼らざるを得ないモノ。それに重きを置くのは当然の帰結ね」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ただ利益を上げるなら、無理やりではなく、”理由があって仕方なく頂く”ほうが得意だったわね」　
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「むっふっふ、お主もなかなかのワルでござるなぁ」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「じゃあ、よろしく頼むでござるよー」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    女と別れ、あなたたちは下水道へ移動する。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<h3><font size="4">下水道</font></h3>
+<img src="../../../upload_image/upl/6pjAp0b9UUL1bALdqJhg/gesuidou.png" alt="下水道" title="下水道"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    「……それにしてもロサよォ、この仕事大丈夫なのかよォ～」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    光が届かない下水道。鼻が曲がるような悪臭の中、懐中電灯の明かりだけを頼りにあなた達は指定された場所を目指していく。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    「なんかケース渡しに現れたねーちゃんもちょっとネジ外れてそうな感じだったぜ……思ったよりヤベェ案件なんじゃねェのか？」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「その考えがもっと早くできていれば、その大丈夫じゃなさそうな案件に手を出す羽目にはならなかったんじゃない？」　心配する声を聞き流しながら前に進んでいく
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「それに、ここまで来てやっぱりなしというのも出来るわけないでしょう」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年B</span> :
+  <span>
+    「はーっ、たく、返す言葉もねえや……」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「それに...」　手に持っているスーツケースを目の前に掲げる
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「本当に危険かどうか心配なら確認してみればいいのよ」　スーツケースを何回か叩き、耳の部分を当て中身の様子を探ろうとする
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……ケースに耳を当てると、中から微かな声でチュウチュウと甲高い鳴き声が聞こえる。
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「なるほどね、下水道にふさわしいお届物じゃないの」<br>
+    内容に合点がいき、歩みを再開する　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「安心しなさい、即時に身体に影響を及ぼすものではないわ」　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    「本当かよぉ？　まあロサがそういうならそうなんだろうな」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そんなやりとりをしながら、特に何事もなく目的地へと到達する。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年B</span> :
+  <span>
+    「いいか、開けるぜ？」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ええ、問題ないわ」　返事しつつこっそりとスマホのカメラを起動する
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    少年がケースを開くと、中から数匹の白いネズミが現れた。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    普通のネズミに比べればかなりのサイズだ。だが、目に付く違いといえばその程度だろう。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    「なんだァ？ どんなバケモンが入ってるかと思えば随分カワイイもんじゃねえか」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「あれだけ秘密にして、中身がこれだけと...」　現れたネズミの姿を撮影している　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「（教授のことだから、何か裏はあるのでしょうけれど、現時点で私が止める理由もないわね）」　気にかかることはあれど些細なこととしてスルー
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ケースから放たれ、自由になったネズミたちは散り散りに散会していく。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    「こんな簡単で本当にいいのかァ？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……と、一行が油断していたそのとき。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年B</span> :
+  <span>
+    「痛ってーーー！！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>ネズミ</span> :
+  <span>
+    がぶり。ひっそりとその場に留まり潜伏していた一匹のネズミが少年のひとりの脚に噛みつく。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    「おい、大丈夫か！？　このネズ公、俺達のこと舐めやがって……ブッ殺してやる！」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「あらら、どうやら嫌われたらしいみたいね。ご愁傷様」　心にもないことを口にしつつ撤収準備
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    声を荒げても、すでにネズミの姿はない。どうやら逃げ去られたようだ……。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    さて、あなたが撤収の準備を始め、一行もそれに渋々と従ったところ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年B</span> :
+  <span>
+    「っ……」　先ほど噛まれた少年の顔色が変わり、息を荒げ床に膝をつく。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    「おい、どうした？　変な病気でも貰ったってのかァ？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年B</span> :
+  <span>
+    「……お」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年B</span> :
+  <span>
+    「俺の傍から離れろ……今すぐだ……！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――この場にいる中で、レネゲイドのことを知るあなただけが瞬時に状況を正しく理解する。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    これは、”オーヴァードの暴走”だ。
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「チッ...！損切りか！」　おぼつかない少年に対して持っていたケースで殴りかかる
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ケースは少年の頭を確かに直撃する。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    普段ならこれで倒れるはずだが、様子がおかしい。まるで効いていないように一歩、また一歩と暗闇に真っ赤な瞳をぎらぎら光らせあなたたちに迫ってくる。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年B</span> :
+  <span>
+    「ぐ、ぉ……グォォォォォォ！！！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    突然、少年の身体がブクブクと膨れ上がったかと思うと、あっという間に巨大な白いワニにその姿を変貌させてしまった……！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    「ひ、ひーーーーー！！！？？？　お助けーーー！！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>少年A</span> :
+  <span>
+    残された少年たちは一目散に下水道から逃走する……あなたが何を言っても、もはや聞く耳を持たないだろう。
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「なにか裏があるとは思ってはいたけど、この状況は織り込み済...とは言い難いか...」　逃げ惑う周囲の様子をうかがう
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「...一旦引けとしましょう。損は出たけど後から取り返せばいいもの」　追跡から逃れるように下水道の出口を目指す
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    少年……白いワニは力強く下水道を踏破しながらあなたを追跡するものの、さすがに大きな図体ではあなたのスピードには追いつけず、離されていく。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    やがて無事に、あなたは出口へと辿りつくだろう。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    …………
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「おー、これは当たりにござるかあ？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたたちが下水道を去って間もなく。白いワニを見つけ、女は刀を抜く。
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「さー。早速試させて貰うでござるよ」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「――秘剣・一の太刀！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    女が刀を一閃すると、その一撃は分厚い皮を貫いてワニは大きな悲鳴を上げる。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……あっけなくワニは少年の姿に戻り、力なく下水道を流されていった。
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「うーん、スカ！　こんなのでは"教授"のお眼鏡には適わんでござるなぁ」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「……しかし、臭いし汚いし酷い場所でござるな。彼らも金のためとはいえこんなところまで来るとは……」
+  </span>
+</div>
+
+<div style="color:#9c27b0;">
+  <span>？</span> :
+  <span>
+    「まっこと弱者に厳しき世の中よなぁ！　ハーッハッハッハ！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――誰も知らぬ下水道に高笑いを響かせ、女は闇へと消えていった。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ロイスの取得などあればどうぞ！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    今は特になしで！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おけおけ！では以上で！
+  </span>
+</div>
+
+
+<br>
+<p id="scene04"></p>
+<h2><font size="4">Scene04 捜査は踊る</font></h2>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    PC4のオープニング！たいへんお待たせしました！シーンプレイヤーは恋花ちゃんです！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    登場侵蝕どうぞ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    1d10+37(1D10+37) ＞ 10[10]+37 ＞ 47
+  </span>
+</div>
+
+<hr style="border:0;border-top:4px double #DD0000;">
+
+<span style="line-height:125%">　</span><br>
+<h3><font size="4">n市 橋上</font></h3>
+<img src="../../../upload_image/upl/ipSpKcX9PVsgeBUipRtL/bridge.jpg" alt="橋" title="橋"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    警視庁R担、n市分室。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    政府のレネゲイド対策の最前線で日夜戦うあなたたちの今日の仕事は、n市の北地区と中心街を繋ぐ橋の検問だ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    なんでも各地でFHの動きが活発なようで、普段事件のターゲットになることが少ないn市にも"アルジャーノン"という生物兵器が放たれたという。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ほかの市に比べれば今の所被害は小さいが、なるだけ拡散は防がねばならない。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――警視庁の主力たる戦闘オーヴァード部隊は目下N市をはじめとした激戦区に全集中の状況であり、戦力としては心もとない。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    それでも、主力が不在のいまだからこそやれることをやる。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    バリケードをがっちり固めた橋の入口で、あなたたちの上司である<ruby>武者小路英貴<rt>むしゃのこうじえいき</rt></ruby>警部が自ら陣頭指揮を執り、マイクで指示を出す。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/SqQBm40cb87czEWcCjw7/eiki.png" alt="武者小路英貴" title="武者小路英貴"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「みんな～。今日のあたしたちの仕事は事件の影響範囲を最小限に留めること！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「珍しく降って湧いた大きい事件だけど、浮足立たないでいつも通り落ち着いて対処！　よろしくね～」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    せっかくなんで、英貴ちゃんにロイス取るのでまあまあ親しい間柄ってことにしてもいいですか？　仕事の時はちゃんと敬語使うけど、オフの時はタメ口で友達みたいに接せれるみたいな
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    ダメなら全然大丈夫！
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    もちもち！いいよ～
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    やったー！　では武者小路英貴にロイス取ります！　感情は〇友情/劣等感！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 天道恋花 ] ロイス : 3 → 4
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    ロイス取ってくれた！ありがたいね了解です！
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/lTKOYSVgRetTm3Rv7Ofk/renka.png" alt="天道恋花" title="天道恋花"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「はーい！　了解でーす！！」　笑顔で一際大きな声で返事をする。気合十分といった感じだ　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「レン姉センパイ、元気いいね～！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「今日はレン姉しか出れるオーヴァードいなくてマジヤバいから頼りにしてるよ！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「もちろん！　ばっちり頼りにしちゃって！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あたしだけでも何とか出来るってとこ、見せてあげますから！」　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「おっけー！　ここで荒事もいけるってとこ見せられれば、上の態度も変わって来るっしょ」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「まずはみんな、全通行車両のレネゲイド反応を隈なくチェックして！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「野生動物も例外じゃない。猫一匹通しちゃダメだよ！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「はい！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「よーし、やるぞ……！」　ポケットに入っている小さなガラスを握り、気合を入れ直してから動き出す
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    じゃあ指示の通り、車両のチェックしていきます！　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では……そのまま特に何も起きず一時間ほどが経過します！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    本当に事件とか起きてるのか？　とみんなが思い始めた頃……。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    『ビー！！ビー！！ビー！！ビー！！』
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ついにレネゲイドチェッカーが一台の車に反応する！！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……！　これって！」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「反応、ありました！　この車です！」　英貴や他の警官達に大声で知らせる　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「ナイスッ！！　すいません、検問です！　車調べさせてくださーい！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>おじいさん</span> :
+  <span>
+    「あの～～何かマズいことがありましたかな？」　車両に乗っているのは年配の男性だ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    まさかこの人が生物兵器……なんてことはないだろうが。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……どうする？　ワーディング、かけてみます？」　小声で英貴に聞いてみる
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「ないとは思うけど……一応お願い！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「了解ですっ」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    《ワーディング》を使用します！　恋花を中心に小さな火の粉が静かに舞って行って、非オーヴァードが無力化される結界を作り出すよ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    お洒落だ……！　ではでは、運転席のおじいさんはそのまま気を失う。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……と、同時にボンネットを突き破り一匹の巨大なネズミが道路に飛び出す！！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「えっ！？　ネズミ！？　デカくない！？」　そちらに顔を向ける
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>ネズミ</span> :
+  <span>
+    「チュウ～～～！！！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    呆気にとられるあなたたちをしり目に、ネズミはまるで自動車かと思うほどの爆速で警備の隙間を駆け抜けていく……！
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「あ～～コラ！！　逃げちゃダメ！！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「総員、確保ーッ！！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「待ちなさーい！！」　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    待機していたパトカー部隊がネズミの追跡を開始する。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    武者小路警部も自らバイクに跨りエンジンを吹かす。
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「追いかけるよ！　レン姉、後ろ乗って！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そっちの方が良さそうですね、了解！」　少し離れた位置にある自分のパトカーを一瞥して、すぐに後ろに乗って英貴に掴まる　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「よーし、出撃！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    警察車両とネズミの、世にも奇妙な一大チェイスが幕を開ける。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ネズミも信じられないくらい速いが、警察車両の性能は伊達ではない。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    まもなく一台のパトカーがネズミに接近する。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>ネズミ</span> :
+  <span>
+    「チュウ……！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ネズミは逃げ切れないことを悟ったのか、《ワーディング》を展開。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    この状況で《ワーディング》を使ってしまえば居場所バレは避けられない、文字通り袋のネズミとなるわけだが、もはやなりふり構っていられないということだろう。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    先頭のパトカーは即座に異変を察知し急ブレーキで停止。それを確認して他のパトカーも速度を緩める。
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「《ワーディング》確認！　ドローンでエフェクト痕の追跡を開始！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「どうする？　レン姉？　ここまでやったら後はUGNに任せてもいいって上からは言われてるけど……！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「それなら、そうしてもいいのかもしれないけど……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「だけど言ったじゃん、あたしにばっちり任せてって！」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「だからあたしが捕まえます！　いいですか！？」　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「…………」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「おっけー。そうこなくっちゃ……！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「えーき号、いっきまーす！！」　一段とバイクのアクセルを踏み込み、《ワーディング》の圏内に突入する。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……本来なら非オーヴァードはこの時点で無力化されてしまうが……。
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「…………っ！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「効かないねぇ！　あーしら最強だから！！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ワーディングを無効化する特異体質を買われ、過酷な世界の裏側に放り込まれた若き警部がその宿命を呪うことなく吠える。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    貸し切りの橋を猛スピードで駆け抜け、あなたたちはついにネズミに追いつく！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「この距離なら……！　よし、そのまま速度を維持してください！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「まかせろ～！！」　風圧に耐えながら力強く返答！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「…………」　後部座席から立ち上がって、
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    ポケットから円形状のガラス片────ブレイズエナジーレンズを取り出し、その側面に付けられたスイッチを押し込む。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/tNDasrwI0U54WkDkf8hp/lens.png" alt="ブレイズエナジーレンズ" title="ブレイズエナジーレンズ"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#ff44ff;">
+  <span>システム音声</span> :
+  <span>
+    「ブレイズエナジー！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    高らかに鳴り響く起動音声。それと同時に発せられたレネゲイドの波動が、恋花の体内のレネゲイドと共振する！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    説明しよう！　恋花は自分の力だけではエフェクトをまともに扱えないが、エナジーレンズの影響を受けた時は変身せずとも一時的にその力の一端を借りることが出来るのだ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    イージーエフェクトの《アップドラフト》を使用！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    背中に炎の翼を纏って、バイクよりも速く飛翔し、ネズミに飛び掛かります！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>ネズミ</span> :
+  <span>
+    「ヂュウッ！！！」　まさかの上から飛行しての攻撃……警察がここまでやってくるとは予想外だったのか、ネズミは意表を突かれ反応が遅れる！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「つーかーまーえ……たっ！！！」　両腕でネズミを抱え取る！　その後地面をごろごろ転がることになっても気にしない　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>ネズミ</span> :
+  <span>
+    「ヂュゥゥゥゥッ！！！」　ネズミはあなたの腕の中でじたばたと暴れる……！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    が、抵抗もここまで！　ついに諦めたようで、そのまま到着した危険物取扱班が身柄を確保する……。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うへ～……きちゃなかったぁ……」　ばっちそうに両手をぱたぱた振って　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「レン姉ぇお手柄！！　……だけど、身体は大丈夫！？」　　バイクを止め、駆け寄る。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「大丈夫大丈夫！　これくらいヘーキですから！」　地面を転がった際に制服が少し擦り切れたりしたが無傷だ
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「おー、あんなスピードから行ってちゃんと受け身取れるなんて……オーヴァードの力もだけど、訓練の成果って奴？」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「なんにせよ大手柄！　これをUGNに持ってけば調査は進展しそうだね」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「毎日鍛えてるかいがあったってわけ！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……にしても、アルジャーノンってネズミだったんですね。もしかして他にもいるのかな……」　うじゃうじゃといるネズミをイメージする　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「だね～、名前からイメージド正面だし、考えなくはなかったけど」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「レン姉の言う通りたぶん群体型のオーヴァードで、本体は別にいるんじゃないかなあ」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あ、やっぱり？　じゃあまだまだ気は抜けないね……！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「よーし、このまま本体もあたしが捕まえてあげますよ！」　調子に乗ったように笑う　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「おー！　その意気だ！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……と、英貴が拳を振り上げたそのとき、彼女の持っていたデコレーションシールだらけの端末が鳴る。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「お、電話」　一緒になって拳を上げてた
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「あ～、上からだわ。ちょっと出るね。ハイもしもし、こちらR担」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「……はい、はい」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「……え、支援要請？　いやウチも人カツカツで借りたいくらいなんですけどー……」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「支援って内部？　外部？　え、UGN？」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「UGNには潤沢に人員居るって先週の会議で言ってましたよね？　それは先週までの話？」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「じゃあなんですか？　UGNの力をアテにしてたあたしらの計画は組みなおしってことですか？」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「……そんなのどうでもいいー！？　いや良くはない……はあ、もういいです、わかりましたよ！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「あ～～～もう、いっつもこうなんだから～～～！！　■■■■－－－－ッ！！！」　音割れするぐらいの暴言を上げて端末をブチ切る
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あははっ、英貴ちゃんすっごい声！！」　暴言が面白くてついオフの時の呼び方をして笑ってしまう　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「もー、笑いごっちゃないんだけど～……」　がっくりと肩を落とす
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「……UGNが危機的な人手不足で、誰でもいいからオーヴァードをよこしてくれって……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「何となく察せたけど、やっぱりそういう感じだったんですね～」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「でも、今動けるオーヴァードってあたししかいませんよね？　あたしがここ離れても大丈夫なんです？」　すでに行く気は満々ではあるが、少し心配そうに訊ねる
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「うん、悪いけどレン姉行ってきてくれる？　大変かもしれないけど……ピンチはチャンス、とも言うしね」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「もちろん！　全然悪いなんて思わないで！」　笑顔で承諾する　
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「ありがと！　こっちはこっちでなんとかする！」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「あーしら最強、だからね！」　上層部へのやり場のない怒りに拳を上へ突き上げ、不安そうな周囲の部下たちを鼓舞する。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「最強！　最強！」　乗っかって拳を上げて
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「よーし、じゃあ早速向かわなくちゃ！　あたしが行くのは、この街の支部……でいいんです？」
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    「そーそ、n市支部！　小さいビルに入ってるメディア企業に擬態してるから見落とさないでね～」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「りょーかい！　場所は前に聞いたことあるし、大丈夫大丈夫！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「では、天道恋花！　行ってきます！！」　英貴達に敬礼する　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    R担のみんなに暖かく送り出され、あなたはn市支部へと向かう。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    "<ruby>Perfect Storm <rt>最悪の一日</rt></ruby>"が待って居ようとも知らずに……。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド
+  </span>
+</div>
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ロイス取得などあればどうぞ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    ハンドアウトロイスのアルジャーノンの感情を決定しときましょ、〇執着/脅威で！　あっさり一匹捕まえられたけど本体はまだだし何が起こるか分からない、油断せずにいきます
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おけおけ！では次のシーンへ！
+  </span>
+</div>
+
+<br>
+<p id="scene05"></p>
+<h2><font size="4">Scene05 嵐の襲来</font></h2>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ここからミドルフェイズになります。シーンプレイヤーはヒロくん
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    つむりんも後で登場してもらうので、登場時には侵蝕ダイスをお願いします！
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    はーい！後で出てくるタイミングでだね！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    1d10+48(1D10+48) ＞ 7[7]+48 ＞ 55
+  </span>
+</div>
+
+<hr style="border:0;border-top:4px double #DD0000;">
+
+<span style="line-height:125%">　</span><br>
+<h3><font size="4">医務室</font></h3>
+<img src="../../../upload_image/upl/a_gde3tN1pZqelpAFfaP/office.jpg" alt="医務室" title="医務室"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――目を覚ますと、あなたは医務室にいた。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    時計を見ればとっくに撮影は始まっているはずの時間……だというのに、スタジオ内は不気味なほどに静かだ。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「あ、れ……？ 知らない天井……じゃなくて、親の顔より見た天井だ……」ヒロは医務室の常連客であった。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(レネゲイドビーイングだし、親の顔とかよく分かんないけど……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ええっと、確か……監督から『命綱ナシで高層ビルの壁面を駆け下りろ』って……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「いや、それは先々週の話か……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「とにかく、急がないと……！もう撮影はじまってる……ハズだし……？」人気が無いコトを不気味に感じながらも、ひとまずベッドから這い出し、撮影現場に急ぐ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    撮影現場に向かうと……そこにはぐったりと気を失ったスタッフ達が綺麗に並べて寝かされている。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……っ！？」その光景に息を呑む。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「な、なんでみんな倒れて……？ もしかして、死んで……？」おそるおそるスタッフ達に近付いていく。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    近づいてもみんなうわごとばかりで一向に起きる気配がない……が、死んだりはしていないようだ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>監督</span> :
+  <span>
+    「う、う～ん……大道具さん、次は坂の角度を75度に……」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……案外元気なのかもしれない。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「い、生きてる……良かった……」ホッと胸を撫でおろす。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「いや、良かったのか……？」監督のような人間が生きていて。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたが撮影現場の様子を確認していると、廊下のほうからカツカツカツカツと速い靴音が聞こえる。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    誰かがいるようだ……！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「えっ、誰か来る！？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「この状況で起きている人……！ 即ち、この惨状を生みだした何者かの可能性……！？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「こうなったら覚悟を決める、しかないか……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ヒロはおもむろに寝転ぶと、これまでの俳優人生の全てを懸けた全力の"死んだふり"を決行する。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    普通に死にたくないからである。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>ネズミ</span> :
+  <span>
+    「チュウウウ！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    まず部屋に飛び込んできたのは、先ほどあなたに噛みついたあのネズミ、そして――。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/rkSI6zTgxm7oRb1Djpsm/kaya2.png" alt="マスカレイド" title="マスカレイド"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「はぁ…はぁ……やっと追い詰めた！」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「これで、最後！！」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    仮面にボディスーツを着込んだ何者かが、刃渡り数十センチの剣を片手に猛追し、一気に突き刺す！！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>ネズミ</span> :
+  <span>
+    「ッヂュゥゥゥゥゥッ！！！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    金切り声のような断末魔を上げ、ネズミは塵となって消えていった……。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(えッ、何か凄い恰好の害獣駆除業者が来てるッッ！？！？)」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「やっと終わった、あとは支部からの救援を……」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ボディスーツの不審者は、一息をつくときょろきょろと周囲を見渡し……あなたの姿を見て愕然とする。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「――えっ、何で！？　さっきまで医務室で寝てたはずなのに……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「…………」死んだふりは継続しているが、冷や汗が滝のようにダラダラと垂れている。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「もしかして赤鷺さんじゃない……偽物？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「……だとしたら、狸寝入りをしても無駄。正体を現しなさい！」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    そのまま威嚇するように剣の切っ先をあなたの頭の上に突き出す……！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「う、ああ……バ、バレた……」観念して両手を上げる
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「毎日のように『今日が命日か』って思ってきたけど、撮影中以外で死ぬコトになるなんて思わなかったな……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「嗚呼、短い人生だった……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「ま、まるで本物のような台詞、大した演技だけど……」　さすがに逡巡する
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ほ、本物です……ワシは本物の赤鷺ヒロです……」一人称がおかしくなっている。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「……えっ、本物？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「……一応確認する」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    ボディスーツの女は《ワーディング》を展開する。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    一瞬、存在しないはずのスポットライトが彼女だけを照らし、その周囲は闇に包まれる。彼女だけのステージを周囲は幻視するだろう。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    当然、あなたはオーヴァードなので何も起きない。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「わ、わあ……ただでさえテカテカのボディスーツが、スポットライトで更になんか凄いコトに……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「《ワーディング》が……効かない！？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「や……やっぱり偽物ッ！！」　再び剣を抜く
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「え、ええッ！？ちゃ、ちゃうで！！ワイは正真正銘、本物の赤鷺ヒロや！！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ～～事情説明中～～
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>不審者？</span> :
+  <span>
+    「す、すみません。あなたがオーヴァードだなんて知らなくて、つい……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「い、いやいや……こちらこそなんか怪しくてすみません……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「え、ええっと……あなたは……？」本物の赤鷺ヒロだと気付いた途端、相手の物腰が柔らかくなったので、敵ではないだろうと判断する。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「UGNはご存知ですよね？　私はUGN新道市支部のエージェント"マスカレイド"です」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ええ、UGNのことはよく……」エージェントに志望して、落ちた経験があるので知っている。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「ちょっと……偶然、近くを通りかかったんですが、この建物に文字通りFHのネズミが入り込んでいたようで」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「みなさん、そのネズミのオーヴァードにやられて気を失ってしまったようです」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「問題のネズミは私が対処しましたし、もうすぐこの市のUGNが救助に来るはずです」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「すみませんが、スタッフのみなさんの救助を手伝っていただいても構いませんか？　一人だと意外と大変で……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「も、もちろん……頼まれなくても手伝いますよ、おれの大事な仕事仲間たちですから……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「！　そうですよね。ふふ、ありがとうございます」　正体を隠すための変声期を通した無機質な声だが、どこか感情が乗っているように聞こえるかもしれない。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……？」その様子に首を傾げる。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「感謝なら、こっちがするのがスジで……ああ、いや、ともかくみんなを運びましょうか……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「ええ」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――と、あなたたちが動き出そうとしたその瞬間のことだった。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    突然、全身に強烈な悪寒が走る。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    誰かが《ワーディング》を使用した……オーヴァードの本能がそれを理解する！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ま、また≪ワーディング≫……！？ 今度はマスカレイドさんじゃない……！！ どこから誰が……！？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……敵襲です」　すっと剣を抜き、臨戦態勢に入る。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「敵襲……！？ え、あの鼠は退治したんじゃ……！？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「それとは比較にならない相手です……！」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「一応、聞かせて頂きます。戦えますか？」　まだ無防備に寝転がっているスタッフ達を一瞥する。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「お、おれには……おれには、戦えな……っ」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「いや、戦わないと……ですよね……」同じようにスタッフ達を見る。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    撮影の度に死にかける自分に、親切にしてくれた人達が危険に晒されている。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「あ、あの、無理をなさらなくても……！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「…………」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ここにいる人達を守るくらいなら……なんとか……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……わかりました。その覚悟を尊重します」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「でも、絶対に無理だと思ったらすぐに退いて、私に任せてください」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「は、はい……！お、おねがいします……！！」へっぴり腰で、倒れているスタッフ達の前に立つ。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……来ます！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……まもなく、気配の主が現れる。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/zlpo8EOe0EMlLlwVx_M5/military.png" alt="軍服の男" title="軍服の男"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「…………」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    軍服に身を包んだ、大柄なヒロよりもさらに一回り大きなシルエット。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    鍛え上げられたまさに軍人というその肉体に反して顔色は死人のように青白く、目は不気味に紅くぎらついている。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「――なるほど」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「君がUGNにその名高き騎士、"マスカレイド"か」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……っ」　唾を飲む
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(ハッ、あの男の目……！ 見覚えがある……！！)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(撮影つづきで何日も眠れなかったときのスタッフ達と同じ……血走った目だ……！！)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(それにしても、このプレッシャー……膝がガクガク震えて、正直、立ってるだけで精一杯……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(情けないけど、マスカレイドさんに期待するしか……)」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「この軟弱者ばかりのつまらん街を面白くしてやろうと極寒の地獄から這い上がってきてみれば、君のような異分子が紛れているとはな」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「……面白くなってきたよ」　殺気剥き出しの眼のまま、不自然に口角を上げる。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(おれのことは眼中にもないみたいだな……くそ……)」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……面白くなってきた？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「ふざけるのは大概にしてもらおう……！！」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    ――"マスカレイド"は目にも止まらぬスピードで飛び掛かり、男に斬りかかる！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――しかし、男もどこかから軍刀を取り出すと、事も無げにそれを受け止めた。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「良い太刀筋だ」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「っ……！　貴様ッ……！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    何度も互いに剣を打ち付けあい、その度に金属音が部屋に響く。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「なるほど評判通り。平和ボケした現代の若者にしてはまあまあの腕前だ」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「もっとも、自分の持ち味であるしなやかな動きを阻害するような重い仮面をわざわざ着ける理由は、私には分かり兼ねるがね」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「っ……」　ボディスーツと仮面の隙間……首から汗が滲む。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「まあいい。まずはその下の素顔を確認させて貰おう」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    男は距離をとり、軍刀を上段に構えると、"マスカレイド"に向けて鞭のように一気に振り下ろす。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    空中を漂うレネゲイドが剣圧で激しい化学反応を起こし、強酸の雨となって"マスカレイド"に降りかかる！
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「きっ、汚……きゃっ、溶けてる！！？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    仮面は猛烈な勢いで腐食してひび割れ――その素顔が白日にさらされる。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/vVbzCmZ3TyikN5ARt8NL/kaya3.png" alt="葵カヤ" title="葵カヤ"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    そこに現れたのは……紛れもなく葵カヤの顔だ！！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「なっ、あ、葵さん……ッ！？」あたりをキョロキョロと見回す。たしかに倒れているスタッフの中に、葵カヤの姿は無い。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「しまっ……顔、見られ……ッ！」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    それは彼女の癖……というよりは、幼い頃から芸能の世界とオーヴァードの世界の二重生活を続けてきたが故の呪い、一種のトラウマと言ってもよいだろう。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    "マスカレイド"――カヤは反射的に顔を隠そうとしてしまう。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「隙あり」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    その一瞬を突き、男が接近し下腹部に蹴りを入れ……カヤは凄まじい勢いで後ろに吹き飛び壁に叩きつけられる！
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「ぐっ、あぁっ！！！」　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    過酷な撮影に耐えうる超硬度の壁に叩きつけられ、反動で前のめりに倒れるが、すぐに起き上がる。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    よろよろとカヤは立ち上がり、再び剣を向けるがそのダメージは小さくないようだ。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「あ、ああ……！ 葵さんッ……！！」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「っ………」　ぱくぱくと口を動かし、相手に悟られないよう声なき声を伝える。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    『逃げて……っ』
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「…………っ」たしかに戦局は絶望的だ。何も出来ない無力な自分には、逃げる以外の選択肢はない。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「く、くそッ……くそォッ……！！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    無謀だと誰より分かっていながら、葵カヤの言葉を無視して、軍服の男の前に立ちはだかる。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「あかさぎ……さんっ」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「お前は……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「お、お前ッ、いい加減にしろよッ……！！」震える手で変身ガジェット”ライジングライザー”に触れながら、叫ぶ。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    真心ヴァイザーライジングは────赤鷺ヒロは、子供たちのヒーローである。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    その道の先に、破滅の未来しか待っていないとして。女の子を見捨てて一人で逃げ出すなんて、無様なマネは出来ない。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「お、おれはっ"真心ヴァイザーライジング"赤鷺ヒロだ……！！ これ以上、その子に手を出そうって言うのなら、まずおれが相手してやる……！！」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「入口の張り紙で見たぞ。張子の英雄が超人でもあるとはな」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「面白い。相手をしてやる」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「えッ」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「どうした。俺は逃げも隠れもしないぞ」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「それとも、先手は譲ってやるという余裕か？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「…………」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(意味不明の状況……！！ 一体どうやって戦えばいいんだ……！！)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    このまま挑めば、自分は死ぬ。<br>
+    撮影のアクシデントとは訳が違う。目の前にあるのは『絶対の死』だ。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ────以前、まったく同じ状況に置かれたことがある。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    あのとき、同じように「逃げろ！」といわれた自分は、<br>
+    頭が真っ白になって、『彼』の言葉に従ってしまった。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ……その結果。<br>
+    彼はたったひとりで戦い続け、遂には命を散らしてしまった。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    彼に、『翼さん』に譲ってもらった命。<br>
+    こんなかたちで使って良いのだろうか。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「スゥーッ……」深呼吸する。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    赤鷺ヒロには、かつてと違う点がひとつある。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ────それは、自分が”ヒーロー”であること。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    真心ヴァイザー役の自分が死ねば、多くの子ども達が悲しむだろう。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    ……だが、それ以上に。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    また恩人を見捨てて、一人で助かるだなんて。<br>
+    その無様な後ろ姿を、ヒーローを慕っている子供に見せるだなんて。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    そんなことは、やっぱりできない。死んでも許せない。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    作り物だとしても、今の自分はやはり────<br>
+    ”閃光戦輝サンブレイザー”天道翼と同じく『ヒーロー』なのだから。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……葵さん」背後の少女に語りかける。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「なんとか時間を稼ぐ、そのうちに逃げてくれ」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……！　で……できません、そんなこと！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……もう、おれのことはいい」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「おれはどうも、足が震えて逃げられそうにないからな」台詞とは裏腹に、前に踏み出す。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(ライジングライザー……！ 臆病なおれに、勇気を……！！)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(翼さん……！ 無力なおれに、力を貸してくれ……！！)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    右腕につけたブレスレット型の変身ガジェット、ライジングライザーの起動スイッチを押し込む。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>システム音声</span> :
+  <span>
+    「Ready for Transformation！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    カシャン、とライジングライザー内部に格納されていた両翼が展開。<br>
+    こうした戦場には場違いな────いや、ピッタリの”音楽”が流れ出す。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「い、行くぞ怪人ッ……！！」ライジングライザーを天高く掲げる。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    どこからともなく一陣の風が舞い込み、<br>
+    ライジングライザーの両翼に取りつけられた”風車ダイナモ”が回転。バチバチと放電を始める。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「へ、変身……ッ！！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>システム音声</span> :
+  <span>
+    「RISE UP！！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    迸る雷と一握りの勇気が、ヒロを包む鎧となって────
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/F64CdSIWmsfiYAfnRAoT/mashin_visor_rising.png" alt="真心ヴァイザーライジング" title="真心ヴァイザーライジング"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    舞い散る光の中から現れたのは、翼を持つ仮面の戦士。<br>
+    真の平和を取り戻すために戦い続ける国民的ヒーロー。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    この日本において、知らぬ人間のいないその名は────
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    『真心ヴァイザーライジング』！！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    光る!!鳴る!!DXライジングライザーは税込6600円。大好評発売中。<br>
+    ※映像はイメージです。変身はRBとしての能力によるものです。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>真心ヴァイザーライジング？</span> :
+  <span>
+    「え、あれ……！？ な、何コレ……！？ おれ、真心ヴァイザーに変身して……！？！？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>真心ヴァイザーライジング？</span> :
+  <span>
+    「何が何だか分かんないけど……こ、これなら────！！」拳を握り締める。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「赤鷺さん……！」　見事な変身フォームを見て、驚く
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「来い」　仁王立ちで、攻撃を待つ
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>真心ヴァイザーライジング？</span> :
+  <span>
+    「うおおおおおおッ！！！！」雄叫びを上げ、
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>真心ヴァイザーライジング？</span> :
+  <span>
+    「なんとかなれ～～～～ッ」ただただ無我夢中で拳を突き出す。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――男の眼前に熱い拳が迫る。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「なるほど」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    男は瞬時に軍刀を投げ捨てると、拳が鼻先に届こうかというタイミングで手首をひっつかみ、すさまじい握力でその勢いを止め……そのままヒロの身体ごと投げ飛ばした。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>真心ヴァイザーライジング？</span> :
+  <span>
+    「ぬわーーっっ！？」撮影の殺陣と実戦はまるで別物。ヒロは受け身を取ることも出来ず、マスカレイドと同じように壁に叩きつけられる。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「あ、赤鷺さーーーん！！！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「あ、が……ッ」奇跡にも見えた"真心ヴァイザー"への変身はあっけなく解除され、生身に戻ったヒロは、先程の衝撃で崩落した壁の下敷きになってしまう。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「君の実力はわかった。もう充分だ」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「さて"マスカレイド"。決着を付けよう」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……っ」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    カヤが覚悟を決め唾を飲み込んだ、その時だった。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――突然、ふたりの間に割り込むようにローブを纏った怪しい影が現れた。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span><br>
+<img src="../../../upload_image/upl/sgeHkydtCayTXC4wTJpk/algernon.png" alt="アルジャーノン" title="アルジャーノン"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#00bcd4;">
+  <span>フードの男</span> :
+  <span>
+    「主よ。残念だがそこまでだ」
+  </span>
+</div>
+
+<div style="color:#00bcd4;">
+  <span>フードの男</span> :
+  <span>
+    「少し、戯れが過ぎるのではないか？」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「……」　男は肩をすくめる
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「"アルジャーノン"。何があった」
+  </span>
+</div>
+
+<div style="color:#00bcd4;">
+  <span>フードの男</span> :
+  <span>
+    「それはこちらの台詞だ。もとよりこの施設を制圧したのは物資の確保が目的だったはず」
+  </span>
+</div>
+
+<div style="color:#00bcd4;">
+  <span>フードの男</span> :
+  <span>
+    「その目的はすでに完了した。あなたの戦闘の後始末をする私の身にもなってくれ」
+  </span>
+</div>
+
+<div style="color:#00bcd4;">
+  <span>フードの男</span> :
+  <span>
+    「それに何より……」
+  </span>
+</div>
+
+<div style="color:#00bcd4;">
+  <span>フードの男</span> :
+  <span>
+    「この場には"UGNの救援"が迫っている。本命の作戦のためにはここが引き際だろう」　窓の外に目をやる
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「……全員、斬ればよかろう」
+  </span>
+</div>
+
+<div style="color:#00bcd4;">
+  <span>フードの男</span> :
+  <span>
+    「そう言ってUGNエージェントを10人動員されてつまらん敗北をしたことを忘れたのか？」
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「主に向かってずいぶんな物言いだな。だがわかった。正論だ」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    男は軍刀を収める。
+  </span>
+</div>
+
+<div style="color:#795548;">
+  <span>軍服の男</span> :
+  <span>
+    「"マスカレイド"。この決着はいずれ付けさせて貰う」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……！」　逃げるな、と言いかけるが、倒れているヒロを見て逡巡する。
+  </span>
+</div>
+
+<div style="color:#00bcd4;">
+  <span>フードの男</span> :
+  <span>
+    「……人の子らよ、命拾いしたな。長生きしたければ、この件には関わらないことだ」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ふたりは《瞬間退場》で姿を消します。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「…………っ」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……赤鷺さん、大丈夫ですか？　今救助が来ますから！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「へんじはない ただのしかばねのようだ」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……もしかして、意外と余裕ですか？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「いや……いやいや……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「さっきの状況からして、今頃しかばねになっている方がリアリティあるというか……え、ほんとに生きてます……？ おれ……？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「ええ、ちょっと呆れるくらいには……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「まわりのみんなも無事……？」キョロキョロ見回して
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「……赤鷺さんが時間を稼いでくれたお陰、かもしれないですね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「よ、よかった……本当に……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「時間を稼ぐなんて強がっておいて、あっけなく一撃でやられちゃった時は、もうダメかと……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>"マスカレイド"</span> :
+  <span>
+    「ええ、無駄なんかじゃありませんでしたよ」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「は、はは……おれなんかが出ていかなくても、葵さんが何とかしてたような気もしますけどね……」はにかんで
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    まもなく、n市支部から駆けつけたメンバーが部屋へと入って来る……！
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    38+1d10(38+1D10) ＞ 38+8[8] ＞ 46
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「失礼します………うわっ、めっちゃ荒れてる……？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    室内は荒れているものの、会話する2人を見て安全と判断。僅かな支部員を部屋へ招き入れる。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「えっと、こんにちは〜……。あっ、あっ、んん！？」<br>
+    「赤鷺ヒロに葵カヤ！？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ほわっ、呼び捨てしちゃった、すすすすみません……！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「え、ええっと、キミは……？」どうやら顔を知られているらしい。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「アッ、ウチから名乗らないと…、えっと……？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ついさっきUGNのn市支部の臨時支部長になった、ペーペーのエージェント……"<ruby>綴る重心<rt>タペストリー</rt></ruby>"紡木林檎と申します……申します、でいいんでしたっけ、こういう場合。」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「あなたがn市の……臨時？　支部長ですか。よろしくお願いします。ええと私は……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「……こうなってしまった以上、隠すのは無理がありますね。葵カヤです。別の市の支部に所属するエージェントで、コードネームは"マスカレイド"」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    そう言いながら、ヒロに圧し掛かる瓦礫をぐいと持ち上げる。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「あ、すみません、葵さん……何から何まで……」女の子に助けてもらうなんて情けないな、と思いながら。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「────わざわざ名乗らなくても知ってるかもしれないけど、俺は赤鷺ヒロ」林檎ちゃんに向き直り
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「一応、ヒーローやってる者です」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「一応……？ 真心ヴァイザーライジングの1号ヴァイザーが……？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「国民的！ ヒーローじゃないですか！」<br>
+    おどおどした態度から急にはっきりとした声で
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「……大人気ですね」　緊張を解いて、笑顔で
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「状況を見れば分かります、赤鷺さんも俳優というだけでなく、真のヒーローだったということが！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「え……！？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「葵さんを守り、敵と戦って退け、その反動で傷つき埋もれていたんですよね！？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ええ……！？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(こ、この子……！！ 何か盛大に勘違いしている……！？)」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あっ！ 傷の手当てをしないといけないですね……」<br>
+    「ほらっ、碓井さん……そこで突っ立ってないでこっち来て手伝ってくださいよ。」<br>
+    「ヴァイザーライジング、もとい赤鷺さんを治療するので。」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「い、いや、あの……」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「はいはい……えっ！？　真心ヴァイザー！？」　死んだ魚の眼をしてよろよろと寄って来たが、急に眼を見開く。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「そうですよ！ スタジオと聞いてもしやと思いましたが……！」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「マジか～。いやうちの娘が大ファンなんですよ！　ふだんスマホゲームばっかりでテレビとかあんまり見ないんだけど、日曜の朝だけは茶の間に来て齧りつくように見てるって妻が……」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「父さん仕事でヴァイザーに会ったぞ～って自慢できちゃうなーこりゃ」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ウチはニチアサだけは根性で予定ねじ空けてリアタイしてます……！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(う、うう……この子、熱心な真心ヴァイザーファンだ……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「「(敵を戦って退けたのは、全て葵さんのおかげなんだけど……)」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「？」　ニコニコその様子を見守っている
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(でも『さっきから助けてもらいっぱなしで、俺は”ヒーロー”とは呼べないんです』なんて真実を告げたら、この子の”夢”を壊すことになるんじゃあ……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(でもでも、真実を告げないのも良くないような……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(ど、どうしよう……！？)」とカヤちゃんに視線を送る。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「…………？」<br>
+    ヒロの様子や"糸"の動きから、何やら焦っているのだろうかと感じるが、敵を逃した後なのだから無理もないと考える。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「結果的に敵は逃しましたけど、赤鷺さんは勇敢でしたよ。おかげで、みんなが助かりました」　※まだUGNの状況を知らないので撤退されなければ勝っていたと思っている
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(え、ええ～～ッ！？ 真実を告げるどころか、そんなに持ちあげられたら────)」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「おお、これは修羅場のn市支部に救世主が……って、天下のヴァイザーを軽々しく当てにするのはよくないか」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………やはり………！」<br>
+    「ウチらはそもそもまともに戦えないんですし、救世主で間違いないですよ！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「いや、大したコトは……してないんだけど……」本当に大したコトはしていないのである。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「豪快な作中とは違って謙虚なんですね、赤鷺さん」<br>
+    「…………それもアリ、です」<br>
+    ぐっ、と小さく親指を立てる。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「…………」絶句。いよいよ打ち明けるタイミングを逃してしまった。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「そ、それより、葵さん」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……ひとまず、コレを」先程の戦闘でハンガーから外れかかっていた、自分のジャケットを手渡す。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「あ……ありがとうございます」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(うん……人目あるところで、この服装は恥ずかしいよな、多分……)」戦闘で役立つ機能があって着てるんだろうけど、と考えながら。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「さて、和やかな空気になったところ申し訳ありませんが、一見落着とはいきません」　ジャケットで上半身を隠す。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(ヘンな期待かけられたおれの心中は、まったく"和やか"じゃないけど……！！)」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「そもそも、誰と戦ったのかとか……生物兵器が使われた情報は本当なのかとか……UGN"支部長"として色々と確認したいことがありますね……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「そうですね。みなさんの手当の区切りがつき次第、支部でお話しましょう」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「私、実はUGNは休職中なんですが……今回の事件、協力させていただいても構いませんか？　何だか、そう簡単にはいかないような気がして……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………ももも、もちろんです喜んで！ というより協力してもらえないとウチら死んじゃいそうなのでぇ……」<br>
+    拝み倒すように両手を掲げる
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「そ、そんなに拝まなくても……！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「葵さん、おれよりずっと強いから、頼りになりますよ」まぎれもない真実である。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「……そう、ですかね」　少し自信なさげに笑顔で
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ええ、自信を持って良いと思いますよ」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「赤鷺さんがそう言うなら、自信を持って頑張ってみます」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「励ましも一流……やはりヴァイザーに選ばれる人は違いますねぇ……」<br>
+    しみじみと
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「…………」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「それでは、俺はこれで」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「事件解決、頑張ってください」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………んぇえ！？ なんでぇ！？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「いや……、申し訳ないけど、俺は大した戦力になれないし……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「もう出来るコトないかな～～って……」先程の戦闘で、自分の実力は実感したところだ。足手まといにしかならない。あと怖い。死にたくない。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「謙虚が過ぎて自己否定！？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「いやホントに助けてくださいウチら記憶とか動機をいじいじするくらいしか能の無いへなちょこ共なんです死んじゃう死にたくなぁい……！！」<br>
+    ヒロの足元に齧りつく勢いで懇願する
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「う、うう～ん……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(さらっと"記憶いじいじ"とか出るの、怖……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(謙虚というか……出来るコトないのは、紛れもない事実なんだけど……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「あ゛あ゛～～、わかった……わかったから……もう縋りつくのはやめて……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あっ……ずびばせんっ……」<br>
+    途中から泣いていたのか、林檎の顔の色んな汁がヒロのズボンに染みを作っている
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「わ、わあ……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「とにかく、涙拭いて……俺も、微力ながらお手伝いするから……」ハンカチを差し出す。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「すびーっ……すみません、ごめんなさい……」<br>
+    「本当に心強いです、戦えるオーヴァードってだけじゃなくて、<ruby>真心<rt>まごころ</rt></ruby>持った<ruby>真心<rt>マシン</rt></ruby>ヴァイザーが味方してくれるんですから……。」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(本当に泣きたいのは、こっちなんだけど……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(ああ、もうヤケだ！ やれるところまで"ヒーロー"やってやる！！)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「────安心して。いつも応援してくれてるキミの信頼は、決して裏切ったりしない」一転して爽やか笑顔に。もう完全にヤケだ。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「俺は、真心ヴァイザーだからね」自分に言い聞かせるように。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「わぁっ……！ 3話の締めのセリフのアレンジだぁっ……！」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「……ふふ。赤鷺さん」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「昔、お父さんがよく言っていたことを思い出しました」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「『カヤ、ヴァイザーは舞台を降りてもヴァイザーなんだよ』って……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(うう、さっきの醜態を思いだすと、耳が痛い……)」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……なにはともあれ、二人はUGNの戦線に加わった。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    嵐はすぐにまた現れる。奴らの好きなようにはさせない。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    救助を終えたあなたたちは、n市支部へと向かうのだった……。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</div>
+
+<br>
+<p id="scene06"></p>
+<h2><font size="4">Scene06 奇妙な共闘</font></h2>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンプレイヤーは恋花ちゃん！　ロサぴも登場して合流します。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    登場お願いします！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    はーい
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    1d10+47(1D10+47) ＞ 2[2]+47 ＞ 49
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    1d10+52(1D10+52) ＞ 2[2]+52 ＞ 54
+  </span>
+</div>
+
+<hr style="border:0;border-top:4px double #DD0000;">
+
+<span style="line-height:125%">　</span><br>
+<h3><font size="4">n市 市街地</font></h3>
+<img src="../../../upload_image/upl/KTZVY9RFibhCccDym1x0/city.jpg" alt="市街地" title="市街地"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    UGN、n市支部へ向かう道すがら。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    平日午前中、登校や出社の時間も過ぎたということで人も車もまばらだ。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたは空いている道をパトカーでスムーズに道を走っていく。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ……と、突然、目の前のマンホールの蓋が開く！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うわっ！？」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    慌てて急ブレーキをかけます！　マンホールの目の前でギリ停車！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「（はぁ...損な立ち回りさせられたわ）」　不機嫌そうにマンホールの穴から昇ってくる
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「（それにしてもこの状況...逆に考えれば押し目か...？）」　這い出てその場で考えこむ
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「（ほっといても時が解決するでしょうけど、この状況を覆せば、周りに恩を売り込むことが出来て私の影響力もあがるはずね）」　損得を考えていて周りの状況に気づいていない
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ちょ……ちょっと、きみ！　なんてとこから出てきてるの！？」　窓から顔を出して
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「む、貴方は...」　声をかけられたので思案をやめ、そちらに反応する
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「もう、びっくりした～！　あとちょっとで轢いちゃうとこだったじゃん！」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「とにかく、歩道に行って！　その蓋はあたしが戻すから！」　車から降りて
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「...分かったわ」　ここで逃げ出しても状況がややこしくなりそうと判断して指示に従う
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ん、いい子だね。じゃあちょっと待っててねー」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    車の通りが少ないうちに素早くマンホールの蓋を元に戻し、パトカーに乗り直して歩道に寄せる。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「それで、どうしてあんなとこから出てきたの？」　再び車から降りる
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「......（さてどう仕掛けましょうか）」　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「（一旦、空で様子見かしら）」　あまり状況を把握してなさそうな景観の様子を見る
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「あの...実はわたし、下水道にいったトモダチが心配で追いかけていて...」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「そうやって、みんなに追い付いたと思ったら...」<br>
+    「その中の一人が化け物になって襲って来たんです...！」　俯き少し怯えたようなフリをする
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「そこからわたし、必死になって逃げてきて...」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……！？　化け物……！？」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「それってまさか……。ううん、そうだったんだ……」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「それは、怖かったね……怪我はない？」　心配そうに優しく聞く　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「はい...わたしは...アンドロイドなので多少の無茶は少々できるので...」　生身のものとは違う構造をした腕を見せつける
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「打ち捨てられていたところを、えくすぷろーど？の子たちに拾われてお世話になって、いい思いさせてもらったから...」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「今回の件も放っておけなくて...」　反省するような態度を見せる
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「（実際カモとしていい稼ぎにはなってるわ...だからこそ末永くお付き合いしたいのは本当よ）」　そんなことを思っているが態度にはおくびにも出さない
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うん……うん……！？！？！？」　聞き間違いか、それとも見間違いか、差し出された腕を見て何度も瞬きして　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……ごめん、ちょっと確認！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    《ワーディング》を使用します！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いいよ！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    結果どうなるかは任せますが……当然ロサには効きません！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    そりゃそうじゃ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……いや、オーヴァードじゃん！！」　普通に立っているロサを見て　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「...そうだけど、何か問題でも？」　ワーディングを感知して向かい合っている相手もオーヴァードだと認識する
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「問題大有りでしょ！　知らない人にいきなり自分のことアンドロイドって言ったり、生身じゃない肌を簡単に見せたりしちゃダメ！」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「今回はあたしだったから良いけど、これがもしファルスハーツとかの悪いオーヴァードが相手だったら何されちゃうか分かんないよ！？」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「あら、ずいぶんお優しいわね、お巡りさん」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ただFHだろうと、相手が誰であっても私はこの態度で臨んでいたわ」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「結果、貴方のようなUGNだったかしら？信用できる存在に出会えた。それでこの話はおしまい」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うーん、それはそうかもしれないけど、あたしとしては危なっかしくて見てらんないというか……」　困ったように見て　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「でもまあ、確かにこのことを言い続けても仕方ないか」　《ワーディング》を解除して
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「とりあえず、自己紹介しよっか。あたしは天道恋花」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「UGNじゃなくて、R担の刑事なの。知ってる？　警察のレネゲイドに関わる部署なんだけど～」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ご忠告感謝するわ。でも私、勝負勘はある方だと思っているわ」　不安の目を気にしていない
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「恋花ね...覚えておくわ。」<br>
+    「呼び方に困るだろうから名前を伝えておくわ。<ruby>R.O.S.A<rt>ロサ</rt></ruby>よ」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「申し訳ないけど、組織の辺りは詳しくないのよ。いろいろあって棄てられたから」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「とりあえず、正義の味方と認識して問題ないかしら？」わざとらしく手を差し出す
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「もちろん。お巡りさんが正義の味方じゃないとうそだからね」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「よろしく、ロサちゃん！　かわいい名前じゃんね！」　笑顔で躊躇いなく握手する
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「...危なっかしいのはお互い様に見えるけど」　躊躇ない対応にそっぽを向きつつ小声で呟く
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「とりあえず、しばらくはビジネスパートナーとしてよろしく頼むわね」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ビジネス……？　あははっ、面白い言葉使うな～ロサちゃんは」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「だけどそれなら、さっき言ってたお友達が化け物になって襲われたって話……詳しく聞かせてもらってもいい？」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「もしかしたら、あたしが今追ってる事件に関係あるかもしれないし！　そうでなくても見過ごせないから！」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「そうね、鼠が人に噛みついて...」　かくかくしかじかで自分が持ち込んだことを隠しつつ情報を共有するよ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……そっか、ネズミが……」　説明を聞き終わり　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うん、もしかしたらと思ったけど……やっぱり関係あるかも。今あたし達が追っている事件もね……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    こちらの情報も共有！　特に隠さずそのまま教えます！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「地上にも鼠が...確かに関連があるとみて間違いなさそうね」　二人の情報を整理して納得がいったように
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うんうん」　こくこく頷いて
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「それと、あたしはこれからこの街のUGN支部に救援に行くんだけど、ロサちゃんはどうする？」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あたしとしては、一緒についてきて欲しいんだけど……きみ一人じゃ危ないし」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「そうね...」少しの間考えこむ
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「あまり、自らの手を汚す方法は取らないのだけれども...こちらにも事情というものが存在しているのでね」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「私も同行しましょう、ただあまり期待はしないことね」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「へ？　期待って何の？」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あたしはロサちゃんを保護したいだけだよ。今さっきも言ったけど、一人でいたら危ないじゃん」　不思議そうに
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「お気遣いどうも、ただ私もその救援の手助けをしたいと思ってるんだけど...構わないよね」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「やられっぱなしってのも私の信条ではないの」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そっか……友達が大変なことになってるんだし、そりゃそうなっちゃうか……」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うーん、UGNもR担も人手不足だから、きっと嬉しい申し出なんだけど……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「…………」　心配そうにロサを見ながら少し考えて
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……うん、分かった、いいよ。でも、無理はしないって約束してくれる？」　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「言われなくても、残念なことに私は争いごとが得意ではないのよ」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そっか！　じゃあ安心……ん？　安心？　安心かな……？」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ともかく、約束してくれるんだよね？　無理しないってちゃんとはっきり言って！」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ぁー...」　心底うんざりしたような溜息をつく
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「分かったわ、無理はしない」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「これで十分？」
+  </span>
+</div>
+
+<p id="scene10"></p>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ん、おっけー！　いい子いい子！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「きみのことは、あたしがちゃんと守ってあげるから！」　満足そうに笑って、ロサの肩をぽんぽんと優しく叩く
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    R.O.S.Aにロイス取りましょう！　感情は〇庇護/不安です。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 天道恋花 ] ロイス : 4 → 5
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OKです！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    自分もロイス取ろうかな<br>
+    恋花ちゃんに好意/〇食傷で！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    わーい
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ R.O.S.A ] ロイス : 2 → 3
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OK!
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「...ほどほどに期待しておくわ」　うざったそうに振り払いはする
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「じゃあ、あたしは期待以上の活躍を見せちゃおっと！」　にひひ、と笑って
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    ここでちょっと英貴ちゃんに手短に連絡したいんですけど、電話してもいいかしら
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    いいよ！出ましょう！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    ありがた！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「よーし、じゃあちょっと待ってね……」　とロサに断ってからスマホを取り出し
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「もしもし、武者小路警部？　さっきぶりでーす」　英貴に電話をかける。
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    『もしもーし。こちらR担。あ、レン姉？　何かあった？』
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うん。まだ支部にはついてないんだけど、実はアルジャーノンの被害に遭った子がいて～……」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    と、ここまでの情報を共有。暴走した子を見つけて欲しいので出来るなら下水道の捜索や、ロサちゃんの仲間を見つけたら保護してもらえるように頼みます。
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    『なるほどねー。下水道経由で不良グループの子たちが……』
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    『わかった！　こっちもそういう子を見つけたら保護させてもらうね！』
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ありがとうございまーす！　それじゃまた！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    そんな感じで電話を切ります！
+  </span>
+</div>
+
+<div style="color:#ff5722;">
+  <span>武者小路英貴</span> :
+  <span>
+    はいはーい
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「よーし、じゃああたし達も行こっか！　乗ってロサぴ！」　パトカーの助手席側のドアを開ける　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「そうね、事業開始といきましょうか」　我が物顔かのように助手席に座り込む
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「はーい」　ロサが乗った後、運転席の方に乗り込む
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「それじゃーれんか号、発進！」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「（...ダサいわね）」　窓の外を見つめている
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    アクセルを踏み、パトカーを走らせます！向かうはn市支部！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    あなたたちはパトカーに乗り込み、n市支部へと向かう……！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    この偶然の出会いが、嵐の一日に一石を投じることになるのかもしれない。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    改めてロイス取得・購入などあれば可能です。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    購入が出来る！？
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    このシーンから…できます！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    やったー！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    応急手当てキットを購入します！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうぞ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    2dx 目標8(2DX10) ＞ 4[2,4] ＞ 4
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    全然ダメ！終わりです
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    にゃ～ん
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    高性能治療キット買います！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    どうぞ！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    2dx　目標9(2DX10) ＞ 8[7,8] ＞ 8
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    財産ポイント1使って成功にしよう
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    OKです！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ R.O.S.A ] 財産 : 31 → 30
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    では次のシーンへ！
+  </span>
+</div>
+
+<br>
+<p id="scene07"></p>
+<h2><font size="4">Scene07 メン・イン・ブラック(企業)</font></h2>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンプレイヤーはつむりんでPCは全員登場です。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    登場侵蝕お願いします！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    1d10+55(1D10+55) ＞ 5[5]+55 ＞ 60
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    46+1d10(46+1D10) ＞ 46+4[4] ＞ 50
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    1d10+54(1D10+54) ＞ 2[2]+54 ＞ 56
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    1d10+49(1D10+49) ＞ 9[9]+49 ＞ 58
+  </span>
+</div>
+
+<hr style="border:0;border-top:4px double #DD0000;">
+
+<span style="line-height:125%">　</span><br>
+<h3><font size="4">UGN n市支部</font></h3>
+<img src="../../../upload_image/upl/TSgm7s9jacXkFvGQaC9E/building_corridor.jpg" alt="UGN n市支部" title="UGN n市支部"><br>
+<span style="line-height:125%">　</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ――UGN n市支部。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    表向きは海外の可愛い動物のニュースから怪しい都市伝説まで幅広く取り扱う、小規模Webメディアを運営する広告会社。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    記憶処理や清掃など近隣都市で起こった事件の後始末が主要業務だが、一応医療関連などひととおりの設備は揃っている。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    救援活動を終えた紡木臨時支部長ら一行は情報共有や、今後の方針について話し合うためここに戻っていた。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「や、やっと帰ってこれたぁ………」<br>
+    こじんまりとしたオフィスの中央に置かれたソファへ雪崩れこむ。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ここがn市支部……UGNみたいな秘密結社は、てっきりデカいビルを貸し切ってるものだとばかり……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「あまり大きな建物だと簡単に場所が割れてしまうので、このほうが都合が良いんです。たくさんの戦力が集まってる支部はまた別ですけど……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「戦闘訓練もしないし、チルドレンの専用寮があるわけでもなし……これで十分、だそうで……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「なるほど……日本支部しか入ったコトないので、知りませんでした……」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>一般支部員</span> :
+  <span>
+    「お帰りなさい、紡木臨時支部長。碓井し……碓井さん」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「（し、支部長じゃなくなってる……）」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ただいま〜。………ひひ、悪くないですね支部長の座……」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>一般支部員</span> :
+  <span>
+    「お疲れのところ恐縮ですが、R担から協力者として派遣された方たちがいらっしゃっています。合流頂いても構いませんか？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「え、もう！？ 先にお風呂とか……うぅ、待たせちゃ失礼かなぁ……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「お願いしまーす……連れてきてもらえます……？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>一般支部員</span> :
+  <span>
+    「かしこまりました」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    こうして応接間で待機していた恋花、ロサも作戦室へと合流する。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「こんにちは～R担で～す」　ゆるゆる敬礼しながら入って来る
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あっ、えっと……こんにちは、よろしくお願いします。」<br>
+    2人を見て、ロサの方が年上、つまり刑事だろうと判断する。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「そっちの子は……助手さんですか？」<br>
+    恋花に向けて
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「違うわよ」　そっけなく対応する
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「……んぇ？ あれ？」<br>
+    ロサにあっさり否定され
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そう、あたしの方が……デカです！！！」　慣れてるので楽しそうに言う
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「で……デッカ……！？！？」<br>
+    「いや小さいのでは……？」<br>
+    つむりんは　こんらんしている！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「えっ、デカって……”協力者”って女の子……！？」頼りになる協力者がいるなら、任せておけば勝手に解決してくれるかも！といった淡い期待が壊れる音を聞いた。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「刑事と書いてデカと読むよ～。あたしこれでも警察！　お巡りさん！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「え……えぇ……？」<br>
+    「おいくつ……？ いや初対面で聞いちゃダメかなぁ……」<br>
+    恋花の圧倒的な陽のオーラに気圧され始めた
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そうだよ、女の子に失礼だよ！」　
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「すっ、すみませんっ……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あははっ、うそうそ！　三十歳でーす」　けろっと笑って
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あ、これ証拠ねっ」　警察手帳を見せる
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「答えちゃうんだ……しかもホントにR担刑事だし……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「R担の天道恋花、さん……」警察手帳を見て
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「天道……いや、気のせいだよな……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あれ？　ライジングいるじゃん！　すご～」　
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あっ、そうなんです、色々ありまして……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「初めまして、ヒーローの……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ、いや、"アクション俳優"の赤鷺ヒロです」これ以上、ヒーローの肩書きでヘンな勘違いをされては困る。タダの俳優だと思ってもらわなければ。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「わー、本物だ！」　
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「そう、みんな大好き、真心ヴァイザーライジング！主役たる伊達英雄役にしてライジングを演じているスーパースター！赤鷺ヒロさんです！！」<br>
+    目が見開かれ、拳を握り謳い上げる。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「は、はは……スーパースターなんてそんな……まだ駆けだしの新人ですから……」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ふぅん、ヒーローねぇ」　値踏みするようにヒロを観察する
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そういえばああいうのってみんな新人さんなんだっけ。友達が言ってたな～」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………あ、ウチも名乗らないとですね。」<br>
+    「<ruby>紡木 林檎<rt>つむぎ りんご</rt></ruby>、"<ruby>綴る重心<rt>タペストリー</rt></ruby>"ってコードネームでUGN情報工作エージェントやってました。」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「今は……n市臨時支部長やってます。……誰かさんの職務怠慢で。」<br>
+    碓井の方をじろっと見て
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「支部長さんなんだ！　若いのに凄いな～」　
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「あっはははは……今は支部員の碓井です。微力ながら頑張ります……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ、臨時支部長ってそういう……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「え？　もしかして降格されたってこと？」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ｳｯ」　致命傷
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「霧谷さん直々の電話をブッチした結果です……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ええ……社会人としてどうなんですか流石に……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ダメダメじゃん！」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ロクでもない人物ね」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「そういうわけで、ウチも碓井さんもあんまり頼りになるオーヴァードじゃないんです……。」<br>
+    「……皆さんにお力を貸していただければ。」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「うう、いいんだ……どうせもともと僕なんか他に誰もいないからって理由でよくわからないまま支部長にされただけの人材だし……」　ソファの上でシャクトリムシみたいになっている
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「すっごい凹んでる」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………もしかして碓井さんがこのままだと、ウチがああなる番……！？」<br>
+    よく似た経緯で臨時支部長になったことを思い出す
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「一度暴落したら、しばらくそのままのタイプでしょうね。さっさと損切りするのも選択肢ね」　流石にちょっと紡木に同情する
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うーん……だけど責任ある立場や大人でも、弱っちゃうときもあるよ。聞いた感じだと、UGNも最近大変だったんでしょ？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「確かに徹夜続きだったそうですが……幼児退行されるのはちょっと……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「流石に捨てるのはちょっと可哀想かも……？」<br>
+    「………というかやたらサバサバしたあなたは結局誰なんです……？」<br>
+    名乗りを上げないロサに問う
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「私？名前はロサよ」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「今回の事件の被害者で協力者。これで十分かしら？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あっ、はい……ロサさん………あの、刑事さんではないんですよね……？」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あたしがさっきそこで拾って来たアンドロイドちゃんだよ」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「刑事さんが連れてきたんだし、ひとまず怪しい人じゃない、か……」ヒーローのカンで、FH側の人間のような気がしたのだが。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「そんな、野良猫みたいに……」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ええ、色々あって刑事さんと一緒に行動することになっただけよ」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「勝手に思い込むと、いつか悪い人に騙されるから気を付けなさい」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(悪い人……監督みたいな人かな……)」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ううっ、そうですけど……」<br>
+    「所属不明の怪しいオーヴァードさんに言われたくないぃ……！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ロサぴ、それじゃまだちょっと不十分じゃないかな～。あたしが説明するね」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「……ロサぴ……」<br>
+    彼女の冷たい態度を恐れない恋花のコミュ力に驚愕する
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    ロサを連れて来た経緯を簡単にまとめて説明する。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……というわけで、協力してもらうことになりました。無理はさせないって約束してるし、あたしが責任持ってみてるから安心して！」　
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………拾った野良猫を飼うみたいなノリで……？？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「う、うう〜ん………でも猫の手も借りたいのはホントだし………」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「そういうわけよ、刑事さんが信用している私を信用しなさい」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「言い方が胡散臭いし……！ "糸"も素直な感じしないし……！」<br>
+    「…………こういう時、ヴァイザーなら……！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「『裏切られても、その時考えればいいさ』……！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「よし……！採用……！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(その時、考えればいいのかな～～……)」当のヒーロー本人が疑っていた……
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ご理解いただけて感謝しまーす」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ、あの……信用するのはいいんですけど……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「さっきのロサさんの仲間が化け物になったって話、ちょっと良いですか……？」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ネズミのこと？」　
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「そ、そうです……鼠……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ネズミに噛まれたらワニになった……のくだりですか？」<br>
+    「なんでネズミなのにワニになるんだろう……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「お、おれ……おれも、実は……その鼠に噛まれてるんですよぉ……」青ざめた顔で言う
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そうなの！？」　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「あら、ご愁傷様」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………んぇっ」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「でもワニっぽい顔じゃないな～」　ヒロの顔をまじまじと見てる
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「…………隔離！？ こういう時って隔離、ですよね……！？」<br>
+    テンパって碓井に指示を仰いでしまう
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「え、隔離されるの！？ おれ、ワニじゃないよ！？」まだ、と小さく足して
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「おおお落ち着いて！　まずは検査から……！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あわわ、この人役に立たない……！ と、とりあえずぐるぐる巻き……！？」<br>
+    林檎の能力の見えない"糸"でぐるぐる巻きにしてみる。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    とはいえ現状ではあまり拘束力がない、弱いぐるぐる巻きである。
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ……鎖で縛られたまま海に沈められたシーンの<ruby>思い出<rt>トラウマ</rt></ruby>がフラッシュバックしてきた……」無抵抗に縛られている。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「そういう変化が起こる気配はまったくありませんでしたけど……」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ネズミか噛まれた対象に個人差があるのかもしれないわね」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あはは、何そのぐるぐる巻き！　でもまあまあ、つむりん落ち着きなって～。ヒロちゃんは暴走してる感じじゃないでしょ？」　
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………あ、それもそうですね……」<br>
+    「ヴァイザーの赤鷺さんがネズミに噛まれたくらいじゃヤラれたりしませんよね！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ヴッ……」鼠に噛まれたくらいで気絶していた。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………ん？つむりん？」<br>
+    「………もうあだ名をつけられてる……！？」<br>
+    陽キャ、おそるべし
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「略してみました」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「つむりんは可愛らしくて良いと思うんですが、その……ヒロちゃんは……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あ、いや？　じゃあヒロっちにする？」　
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ～～……じゃあ、ヒロっちの方で……」あんまり変わらない気もするが、ヒロちゃんと呼ばれると、あの監督の顔を思い出してしまう。ヒロっちのほうが、いくらかマシかもしれない。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「了解了解！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「逆にあたしのことも好きに呼んでいいから！　って、まだちゃんと名乗ってなかったっけ」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あたしの名前は天道恋花でーす。救援要請で来たレネゲイド関連事件担当独立捜査課でーす。みんなよろしくね～」ウインクしてみせて
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「よろしくお願いします。頼りにしていますよ」　ウィンクで返す。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「改めて、よろしくお願いします……！ 応援要請に応じてくれて感謝感激雨あられおかきってくらいで……！」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「よろしくおねがいします……ええ～と、恋花さん……」天道さん、と呼ぶのは躊躇われた。大恩人たる"天道翼"の名前と被ってしまうからだ。
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「しばらくの間頼むわ」　さっき挨拶したのでここではあっさりと流す
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うんうん、頼りにして！　元支部長が弱ってる分、大人のあたしががんばるから！」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ﾖﾛｼｸｵﾈｶﾞｲｼﾏｽ」　芋虫になりながら
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あっはははは！　芋虫か～？」　おかしそうに笑ってる
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(学生の紡木さんはともかく、いつのまにか子供あつかいされているな、おれ達……)」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「また碓井さんが死んでる………とりあえず、応援も来ましたし、順番に休憩行きましょう……」<br>
+    碓井に休憩を促す
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あ、待って待って？　休むのはいいんだけど、先にそっちのおねーさんも紹介してほしいな～って」　カヤを見る
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あ………えっと………紹介していいんでしょうか……」<br>
+    初対面の時、カヤが本名を名乗るのを躊躇ったのを思い返して
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「大丈夫です。みなさん、信頼できる方だと思いますから……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「あとマスク壊れちゃって、替えもないですしね」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「葵カヤ、UGNエージェントでコードネームは"マスカレイド"。表の仕事はアイドルで、俳優のお仕事もさせていただいてます」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「別の支部の所属なんですが、ヴァイザーの撮影で偶然現場に来ていて……今回の事件に参加させていただくことになりました。よろしくお願いしますね」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あ、やっぱり！　そうだと思った～！　っていうか、UGNのエージェントなんだ？　ヒロっちもそうだけど、誰がオーヴァードなのか分からないもんだね～」　
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「可愛らしいように見えて、凄く強いんですよ葵さん」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「スタジオの鼠を殲滅して、謎のジャームと"アルジャーノン"を追い払えたのも、葵さんのおかげですから」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「確かに、あの情けない人よりは頼りがいがありそうね」　
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「赤鷺さんは謙虚なので、こう言ってますけど、葵さんと赤鷺さん二人の活躍あってこその撃退だったかと……！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そっかそっか……。ん？　アルジャーノンって、ネズミ？」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「確か、生物兵器の名前だったよねそれ」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「え……？」思わぬ角度から飛んできた疑問に、首を傾げる。
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「人を怪物にするネズミはアルジャーノンとは別の存在ってわけ？」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「俺が見た"アルジャーノン"は、フードを被った人間で……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ、いや……もしかしたらクソデカい鼠か何かだったのか……？」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………えっ、それは流石に気持ち悪い……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「その言い方だと、姿はちゃんと見れなかった感じ？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「フードで全身を覆っていたので、中身はまったく……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「それに、情報が錯綜しているのかもしれませんね。UGN、今大変なことになっているみたいですから……」　休職中なのでちょっと責任を感じている
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うーん、じゃあヒロっち達が遭遇したそのアルジャーノンが本体なのかな。英貴ちゃん……うちの警部の見立てでは、ネズミ達を統率する存在がいるかもって話だったから」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あとでちゃんと洗い直した方がいいかもね」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「かれこれ30時間は寝てませーん………」<br>
+    それでも碓井に比べるとマシな方なのだが。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「そ、そんなに……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「それはちょっとでも寝た方がいいかも！」　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「労働は大変ね」　不労所得メインの方
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……情報収集なら俺達が頑張るから、いったん仮眠は取った方がいいよ」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「徹夜で記憶処理作業した明け方に霧谷さんからの電話があり……スタジオに行ったりして……お風呂と歯磨きと食事もしたい……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「赤鷺さぁん……！ お優しすぎる……！」<br>
+    「皆が来てくれたので、一旦休めそうでとても嬉しいですぅ……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「子供にその仕事量は酷いなあ……」　
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「過労は……大変だからね……」次々と倒れていくスタッフの顔を覚えている。
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「酷いと思いますけど、放り出していい事でも無かったので……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「だけど、それできみが体を壊したら何の意味もないでしょ？」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「ここからはあたし達でカバーできるようにがんばるよ」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「そうね、恋花の言っていることは正しいわ」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「め、女神……？ いやママか……？」<br>
+    恋花の背に光輪が見える、気がする
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あははっ、まだ子供は産んでないんだけどな～……！」　少し困ったように笑う　
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「私もしばらく休んでいたぶん、力になりますね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「……少なくとも、週末の真心ヴァイザーライジングを、リアルタイムで心おきなく見られるようにしてみせる」グッと拳を握り込む。
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「おっ、さすが子供達のヒーローだ！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「皆さんのお気遣い、ありがたく頂きます……！」<br>
+    「英気を取り戻したら、ニチアサまでに解決出来るよう僅かながらでもお手伝いします……！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うんうん！」　少し安心したように微笑む
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(威勢よく言ってみたけど、おれにできるコトなんてあるかなあ……)」内心は弱気なヒロであった。
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「では一通り顔合わせも済みましたし、これから情報収集するにあたって調査すべきことをまとめていきませんか？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「事件の登場人物……ちょうど”アルジャーノン”という名前が出ましたが、それと一緒に現れた謎の男の存在も気になります」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「そうですね……ウチも休憩入る前に、情報整理はさせてください。」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「謎の男……『この軟弱者ばかりのつまらん街を面白くしてやろうと極寒の地獄から這い上がってきてみれば……(モノマネ)』とか言っていた、おそろしく強い男のことですね……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そんなこと言ってたんだ。こわいな～」　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「賛成ね、個人も企業も方針が決まっていないと活動が不明慮になるわ」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「んぇ、"極寒の地獄"……？」<br>
+    碓井と顔を見合わせる。<br>
+    そもそも最初の徹夜の原因は、凍結ジャームの大量脱走事件からだ。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「……ちょうど今、N市で冷凍保存されてたジャーム達が逃げ出して各地で暴れまわってますね……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「えっ、極寒ってそういうこと！？」　
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「本当なら、相当やばい相手じゃん！」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ウチや碓井さんでは秒殺されちゃう……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「それって大事件なんじゃ……」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ちょっとした恐慌と見ていいわね」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「なのでUGNの皆さんが各地でてんやわんや、というわけなのです……」<br>
+    「ある程度は収拾ついたらしいとはいえ……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そんなことこっちは全然知らされてなかったよ～……いきなり人手不足ってなったのも納得だわ」　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「...ひとつ聞きたいのだけれど、冷凍保存というのはUGNがおこなっているのかしら」<br>
+    「私、そういうのあまり詳しくないの」　オーヴァード社会のシステムよく分かっていないウーマン
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そのはずだよ、ロサぴ。捕まえたジャームを凍結してるって話」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ロサさん、今まで何してた人なの……？」<br>
+    「はい、UGNで凍結業務にあたる人たちがいます……」<br>
+    「ウチらとあんまり関わること無いですけど……」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ご丁寧にありがとう、私が聞いた噂の中にUGNに倒されたはずの人物が復活したって話があるわ」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「その人物がX-PROUDのガｋ...子供たちを使って何やら動いているらしいの」<br>
+    「通り名は確か...”教授”だったかしら」　
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「あ、そういえば……『UGNエージェントを10人動員されてつまらん敗北をしたことを忘れたのか？』みたいなコトも言ってたな……」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「ま、ヒロが出会った人物が必ずしも教授というわけではないかもね」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「”教授”……ですか！？」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「え、知ってるの？」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「あら？」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「あ、はい。私がUGNに入った頃からずっと要注意ジャームのリストにいたので、名前だけは……」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「んぇ、そうなんですか………ウチあんまり覚えてなかった……」
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「まあ……戦闘要員以外は基本見ないですからね、あのリスト」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「UGNデータベースに詳しく載ってそうですし、碓井さんに資料室の鍵渡しときますね。」<br>
+    「調べる時はそちらに声をかけてもらえれば。」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そうだったんだ……。子供を利用するジャームなんて絶対許せないね……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「俺の所感ですけど、少なくともフードじゃない方は、子供を利用するようなタイプには見えなかったな……」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「UGNの応援が来る、って知った時『全員を斬れば済む』とか言ってたし……」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「そうなの？　じゃあ、別人なのかな……脱走したジャームは一人じゃないって話だったし」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………んえぇ、ウチがタイミング間違えたら膾にされてた……？」<br>
+    身震いする
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ライジングな赤鷺さんがいてくれて良かった………」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(相手は勝手に逃げただけなんだけどな……あんまり期待しないでほしいんだけどな……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「ああ、でも、"アルジャーノン"って呼ばれてたフードの方は、本命の作戦があるとか言ってたような……」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「そう、賛同者が何人かいても不思議じゃないわ」　あの胡散臭い侍を思い出す
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「……何にせよ、やっぱり今のままじゃ情報が全然足りなさそうだね」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「でも、何が足りてないのかはちょっと分かったかも……です」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「うんっ。手がかりは掴めて来たし、きっと調べて行けるよ！」　
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(うう～ん……どれだけ調べたところで……あの男を相手に、俺達に何かできるコトなんてあるんだろうか……)」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「なんだかやばそうな敵だけど、きっと大丈夫！　何もここにいるあたし達だけで全部解決しろってわけじゃないんだから！」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「あたし達に出来ることを頑張って行こ！　みんな！」　ヒロの不安な心中を察してるのかいないのか、笑顔で鼓舞する
+  </span>
+</div>
+
+<div style="color:#2196f3;">
+  <span>葵カヤ</span> :
+  <span>
+    「はい！　きっと大丈夫ですよ。赤鷺さん」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「おっ、お〜〜………！」<br>
+    若干乗り切れていない半端な掛け声を上げる
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「そ、そうですね！ 出来るコトをやるしかない、か！！」
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「荒れた相場でも利益を出してこそ、ね」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(勇気づけなきゃいけないハズが、逆に勇気づけられてしまった……)」
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    「(けど、本当に似てるな恋花さん……、苗字が同じだから、無意識に重ねてしまってるだけだろうか、翼さんと……)」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「あ、みなさん出かける感じですか？」　毛布から顔だけ出して
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「碓井！　いたのか！」　
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「できればいたくなかった……それならこれ、なんか役に立つかもしれないから人数分渡しておきますね」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「………何です？これ？」
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    碓井は内ポケットからボールペンのような何かを取り出して渡す。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「ちょっとした護身用アイテムです。ボタンを押すと特殊な光で相手を無力化します。まあ、どの程度有効か微妙ですが……」
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「にっちもさっちもいかなくなったら祈りながら使ってください」
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「あ、いつもの記憶いじいじペンの予備……？」
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    「え、すご～！　じゃあ、ありがたく借りとくね！」　
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    「いい優待じゃない、貰っておくわ」　
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    というわけで、このシナリオ中使えるアイテムのデータを開示します。
+  </span>
+</div>
+
+<span class="gyo">
+<div class="box2">
+    <span class="box-title">アイテム</span>
+    <p>
+    <b>◆ニューラライザー</b><br>
+    正式名称：エレクトロバイオメカニカルニュートラルトランスミッティングゼロシナプスレポジショナー。<br>
+    一見ただのボールペンだが、ボタンを押すと強烈な光で目にした者のシナプスに作用し気絶させるとともに一定期間の記憶を消去する支部長謹製ガジェット。<br>
+    なんらかの理由でワーディングが効かない相手にも有効だが、オーヴァードには効かない。<br>
+    使用する場合は〈RC〉で判定する。
+</div>
+</span>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ついでにこの後のシーンでは碓井が申し訳程度に手伝ってくれますのでそのデータも開示！
+  </span>
+</div>
+
+<span class="gyo">
+<div class="box2">
+    <span class="box-title">NPCカード</span>
+    <p>
+    <b>◆碓井幸一</b><br>
+<span style="line-height:60%">　</span><br>
+    ▼明日から本気出す<br>
+    PCをひとり選択する。このシナリオ中、選択されたPCは情報判定を1シーンで2回行うことができる。<br>
+<span style="line-height:60%">　</span><br>
+    ▼ちょっとだけ本気出す<br>
+    〈情報〉の判定に自動成功する。1シナリオ1回まで。
+</div>
+</span>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    碓井！　やれば出来るじゃん！！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    霧谷くんが能力で支部長に選んだだけある
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    本人は適当に選んだ的なこと言ってたけど全然そんなことないんですね
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ちゃんと選ばれるだけの理由はあるよ！　そんな感じです！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    了解了解！頼もしいね
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    自動成功ありがたいぜ...
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    「ありがとうございます、碓井さん………ひとまず休んで……それからまた頑張りましょう。」<br>
+    ここまで長い長い一日を超えて、ようやくの休息。<br>
+    駄々をこねられたりもしたけれど、ここで一度ねぎらってもいいだろう。
+  </span>
+</div>
+
+<div style="color:#607d8b;">
+  <span>碓井幸一</span> :
+  <span>
+    「う、ぉぉぉ……ありがとう紡木さん……。この後また大変そうだし、少しだけ仮眠を取らせて貰うよ……」　そのままノータイムで死んだように眠る
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    未曽有のUGNの危機、その一端としてn市に現れた怪しいオーヴァードたち……。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    n市の乏しい戦力で立ち向かうことができるのだろうか？　現状を知るため、あなたたちは調査へと向かう。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    シーンエンド。
+  </span>
+</div>
+
+<span style="line-height:125%">　</span>
+<hr style="border:0;border-top:1px solid #DD0000;">
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    ロイス取得と購入判定があればどうぞ！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    取るか…PC間ロイス！
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    ロイス……めっちゃ取るよ！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おねげえします！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    わたしはヒロくんだったね、赤鷺ヒロに取得！　感情は〇親近感/不安。テレビで馴染み深いのと自分のアイテムが特撮パロディなので二重の親近感を得ています。
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 天道恋花 ] ロイス : 5 → 6
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    林檎ちゃんに庇護/過大評価のN表で、恋花ちゃんに憧憬/嫉妬のP表でロイス取得しますよ！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 赤鷺ヒロ ] ロイス : 3 → 5
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    赤鷺ヒロに憧憬/疎外感のP！<br>
+    天道恋花に感服/不快感のP！<br>
+    ロサに好奇心/不信感のN！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ 紡木 林檎 ] ロイス : 3 → 6
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    一気に3つ取り！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    ヒロ君に連帯感/〇隔意と紡木ちゃんに同情/〇憐憫で！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>system</span> :
+  <span>
+    [ R.O.S.A ] ロイス : 3 → 5
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    購入判定は、高性能治療キットで！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    はいな！購入ある人は各自判定どうぞ！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    2dx 目標9(2DX10) ＞ 10[4,10]+10[10]+6[6] ＞ 26
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    つ、つよ！？
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    すごい
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    さすがヴァイザー！　普段から怪我してるからどこに救急箱があるか熟知している！
+  </span>
+</div>
+
+<div style="color:#e91e63;">
+  <span>赤鷺ヒロ</span> :
+  <span>
+    うう……ありそうなイヤなリアリティだ……
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    わたしも高性能医療キットを狙ってみよう。社会雑魚だけど
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    2dx　目標9(2DX10) ＞ 8[2,8] ＞ 8
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    うわーん！　１足りません！　応急手当キットにしとけばよかったです！
+  </span>
+</div>
+
+<div style="color:#ff44ff;">
+  <span>天道恋花</span> :
+  <span>
+    財産点は…情報収集が控えてるからやめておこう、ターンエンド
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    どうせ社会低いしメタ読み博打してみようか！<br>
+    解毒剤買います！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    解毒剤だ！どうぞ！
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    1dx&gt;=6(1DX10&gt;=6) ＞ 8[8] ＞ 8 ＞ 成功
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    無事入手！
+  </span>
+</div>
+
+<div style="color:#8bc34a;">
+  <span>紡木 林檎</span> :
+  <span>
+    お守りということで！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    高性能医療キット狙います！買い増しじゃい！
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    2dx&gt;=9(2DX10&gt;=9) ＞ 2[1,2] ＞ 2 ＞ 失敗
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    出目が…低い！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    財産はいっぱいあるけど使わないかな？
+  </span>
+</div>
+
+<div style="color:#3f51b5;">
+  <span>R.O.S.A</span> :
+  <span>
+    今回はスルーで！
+  </span>
+</div>
+
+<div style="color:#222222;">
+  <span>GM</span> :
+  <span>
+    おけおけ！　では以上！
+  </span>
+</div>
+
+<p style="text-align: right">
+  <font color="#DD0000" size="5">To Be Continued...</font>
+</p>
+
+<br>
+
+<hr style="border:0;border-top:4px double #DD0000;">
+
+<center><b><u>CREDIT</u></b></center>
+<span class="gyo">
+<center>あめのちはる</center>
+<center>五百式立ち絵メーカー</center>
+<center>三二市</center>
+<center>みんちりえ</center>
+<center>HSNG</center>
+<center>Photock</center>
+
+</span>
+
+<br>
+<span class="gyo">
+<center>本作は「矢野俊策」「有限会社ファーイースト・アミューズメント・リサーチ」「株式会社 KADOKAWA」が権利を有する</center>
+<center>『ダブルクロス The 3rd Edition』の二次創作物です。</center>
+<center>©︎ 矢野俊策/F.E.A.R.</center>
+</span>
+
+<br>

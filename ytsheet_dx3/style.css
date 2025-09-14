@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/* ### 基本 ######################################### */
+* {
+	margin: 0px;
+	padding: 0px;
+	line-height:1;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+}
+
+body {
+	font-size:13px;
+	font-family:"メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro";
+}
+
+a       { text-decoration :none; }
+a:hover {  }
+
+input[type="text"],
+input[type="password"],
+select  {
+	border-width:1px;
+	border-style:solid;
+	border-radius:3px;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+select {
+	font-size:12px;
+}
+
+.menu   { margin:5px auto; padding: 0px; width:730px; border:1px solid #111111; }
+
+#base {
+	margin:0px auto;
+	padding:0px 10px;
+	max-width:960px;
+}
+
+#header {
+	position:relative;
+	z-index:1;
+	margin:0px 0px 0px -3px;
+	padding:5px 0px 0px 0px;
+	border-width:0px 0px 0px 12px;
+	border-style:solid;
+	text-align:center;
+}
+#header:before {
+	content:""; position:absolute; z-index:-1;
+	top:0px; right:0px; bottom:0px; left:6px;
+	border-width:0px 0px 0px 6px;
+	border-style:solid;
+}
+#header:after {
+	content:""; position:absolute; z-index:-1;
+	top:0px; right:0px; bottom:0px; left:17px;
+	border-width:0px 0px 0px 3px;
+	border-style:solid;
+}
+
+#header h1 {
+	margin:0px 6px;
+	padding:6px 4px 6px 20px;
+	background-color:transparent;
+	text-align:left;
+	font-size:22px;
+	font-weight:bold;
+}
+
+
+#sub {
+	position:relative;
+	z-index:1;
+	margin:-40px 0px 0px auto;
+	padding:20px 6px 4px 0px;
+	width:400px;
+}
+#sub:before {
+	content:""; position:absolute; z-index:-1;
+	top:5px; right:-10px; bottom:0px; left:-50px;
+	border-width:0px 0px 1px 0px;
+	border-style:solid;
+}
+#sub:after {
+	content:""; position:absolute; z-index:-1;
+	top:0px; right:0px; bottom:-15px; left:0px;
+	border-width:0px 1px 0px 0px;
+	border-style:solid;
+}
+#sub h1 {
+	position:relative;
+	z-index:1;
+	margin:0px;
+	padding:0px;
+	text-align:right;
+	font-size:18px;
+	font-weight:bold;
+}
+#sub h1:before {
+	content:""; position:absolute; z-index:-1;
+	top:0px; right:-12px; bottom:-6px; left:75px;
+	border-width:0px 0px 1px 0px;
+	border-style:solid;
+}
+#sub h1:after {
+	content:""; position:absolute; z-index:-1;
+	top:-5px; right:-8px; bottom:-12px; left:0px;
+	border-width:0px 1px 0px 0px;
+	border-style:solid;
+}
+
+.navi {
+	position:relative;
+	z-index:2;
+	margin:0px;
+	padding:5px 15px 2px 4px;
+	border-width:0px 0px 1px 0px;
+	border-style:solid;
+	text-align:right;
+	line-height:13px;
+	font-size:13px;
+}
+
+.navi form {
+	margin :0px;
+	padding:0px;
+	line-height:13px;
+	font-size:13px;
+	text-align:right;
+}
+.navi input {
+	height:19px;
+	margin :0px;
+	padding:0px 2px;
+	vertical-align:bottom;
+	font-family:"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic";
+}
+.navi input:-webkit-autofill { color:#000000 !important; }
+.navi select {
+	height:19px;
+	margin :0px;
+	padding:0px;
+	vertical-align:bottom;
+}
+
+.box h2 {
+	margin:0px;
+	padding:5px 10px;
+	font-size:16px;
+	text-align:left;
+	font-weight :bold;
+}
+
+.box h2 small { font-size:13px; font-weight :normal; }
+
+.box .allow {
+	display:block;
+	width:50px;
+	margin-top:-25px;
+	margin-left:auto;
+	text-align:right;
+}
+
+.sort {
+	margin:0px 0px 0px 0px;
+	padding: 5px 0px;
+	border-width:1px;
+	border-style:solid;
+	font-size:12px;
+  text-align:right;
+}
+.navi+.chara {
+	margin-top:10px;
+}
+
+/* ### 一覧(簡易) ################################### */
+.chara  { margin:auto; padding: 0px; max-width:800px; }
+
+.chara .box {
+	margin:15px 0px;
+	padding:0px;
+	border-width:1px;
+	border-style:solid;
+}
+
+.chara .box ul {
+	overflow:hidden;
+}
+
+.chara .box li {
+	float:left;
+	width:50%;
+	list-style-type:none;
+	text-align:left;
+	font-size:12px;
+	font-weight:normal;
+}
+.chara .box li a {
+	display:block;
+	margin :0px;
+	padding:3px 10px;
+	border-width:1px;
+	border-style:solid;
+	text-decoration :none;
+	overflow:hidden;
+}
+.chara .box li.dim a {
+	border-width:1px;
+	border-style:solid;
+}
+.chara .box li a small { float:right; margin-right:-5px;font-size:11px; font-weight:normal; white-space:nowrap; }
+.chara .box li a:hover {
+	border-width:1px;
+	border-style:solid;
+}
+
+/* ### 一覧(詳細) ################################### */
+table.group {
+	width:100%;
+	border-collapse:collapse;
+	border-width:1px 0px 0px;
+	border-style:solid hidden hidden;
+}
+.group th {
+	padding:0px 0px;
+	font-size:12px;
+	border-right-width :1px;
+	border-right-style :dotted;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+}
+.group td {
+	padding:5px 5px;
+	font-size:12px;
+	border-right-width :1px;
+	border-right-style :dotted;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+}
+.group td.name {
+	padding:0px;
+	text-align:center;
+}
+.group td a {
+	padding:5px 0px;
+	display:block;
+}
+.group th a {
+	padding:5px 0px;
+	display:block;
+}
+
+/* ### テキスト ##################################### */
+.text {
+	padding: 5px 10px 10px 15px;
+	font-size: 12px;
+}
+
+/* ### フッタ ####################################### */
+#footer {
+	margin:30px -10px 0px;
+	padding:8px 4px 8px;
+	color:#eeeeee;
+	text-align:center;
+	line-height:12px;
+	font-size:12px;
+	font-family:"メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic","ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro";
+}
+#foot a { color:#bbccff; }

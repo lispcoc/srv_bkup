@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+/* ref: http://kudakurage.hatenadiary.com/entry/20090427/1240815525 */
+.image-resize {
+	max-width: 500px;
+	max-height: 250px;
+}
+* html body .image-resize {
+	width: expression(this.width >= this.height ? "500px" : "auto");
+	height: expression(this.width <= this.height ? "250px" : "auto");
+}
+img {
+	border: none;
+	-ms-interpolation-mode: bicubic;
+}
+-->
+</style>
+
+<title>画像リンク</title>
+</head>
+<body>
+<div class="ta-c">
+<p>画像をクリックすると原寸大が表示されます。</p>
+
+<p class="resize">
+	<a href="!link!" target="_blank"><img src="!link!" class="image-resize" alt="" /></a>
+</p>
+
+<input type="button" value="閉じる" onclick="window.close()" class="btn" />
+
+</div>
+</body>
+</html>

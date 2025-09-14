@@ -1,0 +1,4684 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='ja'>
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<title>チャットログ：メイン</title>
+	<style type="text/css">
+		/* 全体 */
+		body {
+			overflow-wrap: break-word;
+		}
+
+		/* ログ本文 */
+		.mainLog {
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-top: 100px;
+			font-size: 1rem;
+		}
+
+		/* 吹き出し：本文 */
+		.infoBox {
+			width: 90%;
+			background-color: #ffffff;
+			border: double 3px #364549;
+			border-radius: 5px;
+			padding-left: 32px;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		/* 吹き出し：話者名 */
+		.infoBox>.title {
+			display: inline-block;
+			border: solid 3px #d3d3d3;
+			margin-left: -32px;
+			background-color: #ffffff;
+			padding: 4px 6px;
+			-webkit-transform: translateY(-1em);
+			transform: translateY(-1em);
+			word-break: break-all;
+		}
+
+		/* 各行 */
+		.infoBox>font {
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+
+		/* スマホ対応 */
+		@media only screen and (max-device-width : 480px) {
+
+			/* 全体 */
+			body {
+				font-size: 2rem !important;
+				font-size-adjust: 100%;
+			}
+
+			.infoBox {
+				width: auto;
+				padding-top: 2rem !important;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>【オープニング】</font><br>
+		<font color='#000000'><b></b>ふたりとも登場どうぞ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>1d10+32 うおー！<br><br>
+			<font color='#ff9900'><b></b> DoubleCross : (1D10+32) → 8[8]+32 → 40</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>1d10+35<br><br>
+			<font color='#3300cc'><b></b> DoubleCross : (1D10+35) → 1[1]+35 → 36</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>平日夕刻、御剣邸近くの大型スーパーにて。</font><br>
+		<font color='#000000'><b></b>君達は学校帰りの足で、夕食の食材を買いに来ている。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「えっと……久我さん、野菜ってこれでいいんだよね」　って買い物かごに入れて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「うんうん、あ、こっちの白菜のほうが鮮度がええよ！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>初雪こそまだだが、かなり冷え込んできた時期。陳列棚では北海道の物産フェアが目に付いたりする。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「え、そうなの？ごめん、じゃあそっちにしよう」戻し戻し</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「うんうん……しかし、すっかり鍋が美味しい季節やねぇ。センパイ、こんな日でも身体冷えるまで動いてるもんなぁ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「そうだね……センパイうっかり風邪引いたりするかもしれないし、ちゃんとあったかいもの用意しておかなきゃ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「うんうん（ウチにできることは限られてるけど、ちゃんとやらんとな……！）」生姜を籠に入れる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>じゃあ真白ちゃんはこの数日は何かのイリーガル任務でしばらく忙しそうにしているようです。（今回のシナリオには関わらないアピール）</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>またたらしてるおな…</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>今日も授業が終わるやバタバタとどこかに駆けて行っていた。君達の手を借りる事じゃないと言ってはいたけど……。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（最初会った頃はなんか警戒されてるような気がしてきたけど……最近はもう久我さんとも仲良くなったよな……。こうやって買い物にいっても気まずくないし）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ヴヴ。時無さんのスマホに通知が入る。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「（いきなりセンパイが連れ込んできたときは何事かと思ったけど……うまいことやれそうでよかったわぁ）」ほう</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>家主からのメッセージ……ではなく。見知らぬ相手からのメッセージだ。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（流石に僕が本当は男だったなんてバレたらまずいかもしれないけど……そんなの久我さんは気付かないだろうしな）……ん？」　</font><br>
+		<font color='#3300cc'><b></b>スマホを取り出してメッセージ確認します</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>送信者名には「WHITE」とある。本文はなく、数十秒の音声ファイルが添付されている。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「なんだこれ。誰からだ？」　音声ファイルを開いて見よう</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>そのまま再生する感じかな？では</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>します！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>甘ったるい女の子の声</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「にゃにゃにゃっ、照れますにゃあ～♪」突如として店内に響くアニメボイス！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「うわっ！？にゃ……にゃ！？！？」　びっくりしてスマホを落としそうになる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>甘ったるい女の子の声</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「エリはご主人様には……にゃ、っ……んー、こ"ほんっ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「！！！！？？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ちょ、ちょ、ちょ、ちょ、なんだこの声っ」　慌ててスマホの音声を下げようと</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>久我星来っぽい声</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「あー……んん、あかんな……ちょっとイメージがぶれてしもうた……んん"っ」咳払い</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「あーーーー！！！！　ストップストップ！！」慌ててスマホを奪い取って止めようとする</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>久我星来っぽい声</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「エリはご主人様とそういう関係になるつもりは……うにゃ」ブヂッ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……ん？え、これ……うわうわうわうわなんだよ何何何！！？」奪い取られ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「な、なんて音鳴らすねん！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>音声はなんか途中で止められてしまったが……知覚で判定を振るまでもなく、未来ちゃんは色々と察する事が可能！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「（う、うそやん！　あの頃の音声データはちゃんと消したはず…！）」挙動不審に周囲をきょろきょろしている</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「知らないよ！！なんか勝手に送られてきたんだから！！　……っていうか、今の声……」</font><br>
+		<font color='#3300cc'><b></b>「（久我さんに似てるような……いや、似てる声なんていくらでもあるだろうけど。でもこの慌て方……まさか）」　察し</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>そんなこんなしていると……少し遅れて、久我さんのスマホにも謎の通知が来る。ヴヴヴヴ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「久我さん……っぽい気がしたんだけど。ちょっともう一回聞いてみてもいい……？」　スマホを返してもらおうと手を伸ばし</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「はっ！？う、ウチのこと疑ってるんか？　だいたいあんな……えっ、なんや？」</font><br>
+		<font color='#ff9900'><b></b>とりあえず返しながらスマホ開いてみる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「いや疑うっていうか、そういうわけじゃないんだけど……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>こちらも本文はなく、動画ファイルが添付されている。</font><br>
+		<font color='#000000'><b></b>再生しても、先のようにいきなり変な声が鳴り響くという事はない。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「な、なんやろ……悪戯が流行ってんのかな…」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>家庭用ビデオで撮影されたもののようだ。中学校の正門前、学ランを着込んだ線の細い少年が立っている。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「何、そっちもメール？まさかまたさっきの声……じゃ……？」　覗き見</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#339999'>不機嫌な少年の声</font>
+		</div><br>
+
+		<font color='#339999'><b></b>「あ……ちょっ、母さん……！動画まで撮らなくてもいいだろ……！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「？　誰やろ……」ドッキリ映像を警戒</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#339999'>不機嫌な少年の声</font>
+		</div><br>
+
+		<font color='#339999'><b></b>「ほら、みんな見てるから……！やめろって、あー……もう！」カメラ目線で近付いてきて、がちゃがちゃと音を立て。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>そのまま映像は途切れる。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「えっ……え、え」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>星来ちゃんは気付く余地もないだろうが……時無さんは思い当たるはず！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「……何や…ビビらせるでもなく……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「…………」</font><br>
+		<font color='#3300cc'><b></b>「（僕じゃねーか！！！！！！！）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>数年前……中学校入学式の時のやつ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ん、どしたん未来ちゃん？なんか変なとこあった？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（いやなんでだよ！いつの動画だあれ！？中学校の入学式か！？いやまてまてなんでだよ！？誰だよこんなの送ってきた奴！！！）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>今みたいなやり取りをお母さんとした気がする……！非常にする！</font><br>
+		<font color='#000000'><b></b>差出人の名前はさっきと同じ「WHITE」となっています。もちろん知り合いではない</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「い、いや……べ、べつに、べべべつに、何も変ではないと思う……けど」　冷や汗だらだら掻いて目を逸らして</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「……！ふーん、そんならええけど……」</font><br>
+		<font color='#ff9900'><b></b>「（なんか怪しいな……もしかして……初恋の男？？）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（や、やばい……やばいだろこれ。誰が送って来た？っていうかどこから見つけて来たんだ？でもとにかく偶然送られてきたわけじゃねーのは分かる……）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>そう、明らかに何者かの悪意がある……少なくとも二人はそう思うはず！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>思います！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「（と、とにかくこれは話題を変えるチャンスや！）」</font><br>
+		<font color='#ff9900'><b></b>「な、なんやわからんけど……こんなメール回してるなんて怪しいわ！　ちょっと突き止めたほうがええと思わん？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ま、まあ……そうだな、怪しいよな……？っていうか、こういうのってプライバシーの侵害だし……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>じゃあ捜査するぜってなったところでカット、ミドルシーン入りましょう。ロイスとかは舞台裏で宣言しといてね</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「さっきの男子のことはマジで全く知らんやつだけど、他の人にもばらまかれて勝手に見られるのはかわいそうな気がするな。全く知らん奴だけどな」　深呼吸何度もしながら</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>あ、ロール続けててもいいよ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>OKOK!</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ミドルはＦＳ判定で進行していきます　内容は共有メモに貼った感じ！最大で4シーンで終わる</font><br>
+		<font color='#000000'><b></b>1シーンごとに秘密の漏洩具合が悪化していくようです。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「せ、せや…ウチもさっきの声の女の子は全然関係ないけど…！センパイに頼れん以上ウチらでなんとかせんと！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>何ということだ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>情報が弱いチーム！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ハプニングチャートはこんな感じ。邪悪だね</font><br>
+		<font color='#000000'><b></b>4シーンじゃない4ラウンドだ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>１でましが出てくるやつ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「そうだな……！こんなのUGNエージェントとして許せないことだもんな！（？）よ、よし！」　ってさっさと買い物を済ませて情報収集にいこう</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ＯＫ！ではミドル進行に入って行くぜ</font><br>
+		<font color='#000000'><b></b>　</font><br>
+		<font color='#000000'><b></b>【ミドルシーン】</font><br>
+		<font color='#000000'><b></b>二人とも改めて登場どうぞ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>1d10+40<br><br>
+			<font color='#ff9900'><b></b> DoubleCross : (1D10+40) → 9[9]+40 → 49</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>1d10+36<br><br>
+			<font color='#3300cc'><b></b> DoubleCross : (1D10+36) → 5[5]+36 → 41</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>高いぜ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>いま説明した通りここはＦＳ判定で進んでいくよ。せーら→未来ちゃんの順で最大4ラウンドやね</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>了解ですの</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>【ラウンド1】</font><br>
+		<font color='#000000'><b></b>まずはハプニングチャートの時間だ　フフフ</font><br>1d6<br><br>
+		<font color='#000000'><b></b> DoubleCross : (1D6) → 1</font><br></font><br>1：支部員など共通の知り合いに出くわす。GM・見学席等に知り合いのPCがいれば出演してもらうとよい<br><br>
+		<font color='#000000'><b></b> ラウンド中の使用技能を≪意志≫に変更する。</font><br></font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>いきなり1だあ！！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>し、知り合い！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#00aa00'>どどんとふ</font>
+		</div><br>
+
+		<font color='#00aa00'><b></b>「ふろずん」がログインしました。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>早速だがここからは意志で進行してもらおう。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>意思は……1ある！</font><br>
+		<font color='#ff9900'><b></b>先に振っていけばいいかな</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>おいおい意志０だわ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>そうね、ではセットアップなければイニシアチブでせーらちゃんへ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>ダイス増やすエフェクトとかも特にない！</font><br>2dx+1<br><br>
+		<font color='#ff9900'><b></b> DoubleCross : (2R10+1[10]) → 5[5,5]+1 → 6</font><br></font><br>
+		<font color='#ff9900'><b></b>いけた！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>やったわ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>君達は秘匿情報を散布する何者かを突き止めるための情報を求めて、最寄りのＵＧＮ支部へ向かった。</font><br>
+		<font color='#000000'><b></b>・進行値：1/4</font><br>
+		<font color='#000000'><b></b>ここの情報系統を扱っているオペレーターに事件の状況を説明すれば、市内のネット事情について大体の事は調べてくれたりするのだ。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「すいませーん！ な、なんか怪しいメールが出回ってるんやけど…！」支部の扉バタっと開ける</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「誰かいますかー？ちょっと調べて欲しいことが……」続いて入っていく</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「やや。どうされたんです、お二人とも」椅子をぐるんと回して振り返る。</font><br>
+		<font color='#6699cc'><b></b>「今は請け負っている任務もなかったかと思いますが……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「すみません任務とかじゃないんですけど、ついさっきこんなメールが来て。誰かが悪戯で流してるみたいだから、出所を突き止めたいんです」　自分のスマホに来たメールを見せようと</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「えっと、いきなり”WHITE”って人から怪しいメールが着て……！”誰か”（強調）のプライベートなところをバラまいてるみたいなんです、それで調べて貰えないかなって」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>では未来ちゃんのスマホにいつの間にか新着の動画が来ている。2本目。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「ふむ……？」ぽちり。再生する。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（……今誰かって強調したけど、やっぱり久我さんなのか……？）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>新着ー！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ん、あれ……いやそれじゃ……え？」　新着や！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>久我星来っぽい声</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「えへへっ、おにーちゃん♡ ね、どうかな、この格好……？ 似合ってる……？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「っ～～～～～！！！」慌ててスマホ奪い取って電源ボタンを押す</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>久我星来っぽい声</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「っ、あ、あー……！ む、無理無理無理！ マジの兄貴の顔がちらついてまう……！」</font><br>
+		<font color='#ff33cc'><b></b>「き、きっついわぁ……どうしよ、妹キャラができへんのとか致命的……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ちょちょちょちょちょ」　奪い取られ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「……え、えーと」流石に意表を突かれた様子。</font><br>
+		<font color='#6699cc'><b></b>「今の声は？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「だ、誰かの声ですぅ～～」</font><br>
+		<font color='#ff9900'><b></b>「（な、なんでや、なんで練習用に取ってたボイスがこんな出てくるんや！？）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「いや、えぇっと……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>ふたりが支部員にスマホの画面を見せていると、ふと背中に柔らかい感触。安心する匂い。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「久我さん……に似てる気がしたんだけど、やっぱり」　</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「誰かのって……心当たりはないのかい？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>キミたちは覚えがある。この状況にあっては、最悪の人物と出会ってしまったのだと……。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「と、とにかく！！　……え」振り向く</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ふわっ」　ビクッ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「最近、なかなかゆっくりできなくてゴメンね。……あ、なにか探してるの? 手伝うよ」抱き着きながら</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ふわっ……せ、センパイ！？　うそ、なんでここに！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「うわ、びっくりした！あれ、先輩、任務で別の場所にいたんじゃ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「ここの支部にしかない資料があってね。ふたりも何か探し物しに来たんでしょ? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「そうなんだ……ってそうじゃなくて！いやいやいいよ先輩いいって！別に手伝わなくて！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「（はっ……焦るな星来！　大丈夫や、センパイは鈍感やし黙ってればなんとっもないはずや…！）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「私の仕事もこれで一段落しそうだし、人手はあった方がいいでしょ? 」</font><br>
+		<font color='#ff0000'><b></b>「それにひとりで家にいるより、ふたりと過ごしたいしね」わらって</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ほんと、そんなセンパイの手まで借りなあかんようなことは……うっ……！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「で、でもいっぱい人手がいるような……ん、んぅ……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「いたわってくれるのはうれしいけど、すこしでもふたりのチカラになりたいな。」</font><br>
+		<font color='#ff0000'><b></b>「あ、支部員さんに何か見せてたよね? 見ればわかることがあるかも。見せて? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（い、いや駄目だろ！ばれないとはいえ流石に先輩にまで男の僕を見られるのは、なんか……なんか……っ）」</font><br>
+		<font color='#3300cc'><b></b>「あー……でも、えーっと……見ても分かる……かな……？」スマホを持ちながらせーらちゃんの方チラ見</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「そ、そうそう……センパイってこういう情報収集とか専門ちゃうし…！」</font><br>
+		<font color='#ff9900'><b></b>「っていうか、今も任務こなしてきたばっかりなんやし休まなあきませんよ…！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「確かに情報収集はトクイではないけど、人のことならわかるかもよ。『おにーちゃん』って聞こえたよ。」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（本当に久我さんだとして、やっぱり……聴かれたくないよな……？お、お兄ちゃん……だもんな？しかもめっちゃアニメ声だったし……）」</font><br>
+		<font color='#3300cc'><b></b>「って聴こえてたのかよ！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「え? うん、おにーちゃんってところだけだけど……。誰かのおにーちゃんを探してるのかなって。」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「！！！？？（なんでこんなときだけ敏感やねん！！！）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ま、まあ、そんな？感じ……かな？多分……いや、僕もよく分かってないんだけどさ……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>妹ボイスだったので、星来ちゃんだとはわかっていない様子で首をひねっている</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「（こ、こうなったら適当に話合わせるしかない！）」</font><br>
+		<font color='#ff9900'><b></b>「そ、そうかもしれませんね～～さすがセンパイ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「ふふん、私の推理では、星来に似ててかわいい声だったし、従妹……とかのおにいちゃんをさがしているのかな? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（だめだ、このままだとマジで手伝われるぞ……！しかもなんか変な方向に行ってる！！）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ん、え、ええ……そ、そうなのかも…！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「なのかも…? ちがったみたいかな」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「と、とにかく……疲れてるだろうし無理はいけないんで、もしそういう人を見かけたら教えてくれるだけで充分なんで……あとは私らでなんとかしますから！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「……そう? ありがと。そう言うなら、気持ちに甘えさせてもらうね。」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「そう、そうそう！すみません、やっぱり大丈夫です、あなたもそれっぽい人見つけたら連絡くれればって感じで！」　支部員さんに</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「あ、ああ……分かったよ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「は、はい…！ちょっと夕飯遅くなるかもしれませんけどゆっくり休んでてくださいね！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「ん、久しぶりに一緒のよるごはんだし、たのしみにして待ってるね? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>じゃあこの辺でカメラ切りましょうか。ロイスとかは舞台裏で</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>OKOK!</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>台詞とか続けたかったら続けてもいいぜ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>OK!</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ひとまず次は未来ちゃんの番になるます</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>おけます</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「はい、ウチも楽しみです……！　……はーっ……」ため息</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……別のとこで調べてもらうか」　退出</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>引き続き判定技能は《意志》だ。頑張っておくれ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>振ります！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>いけー</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>2dx <br><br>
+			<font color='#3300cc'><b></b> DoubleCross : (2R10[10]) → 4[3,4] → 4</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>あかん！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>ふふっ、失敗</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>にゃーん！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>じゃあさくっと描写。調査ははかどらず、どうしようかなと思っていた頃にまた追加のメッセージが。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「だめだ、よく分かんないなこういうの……」　せーらちゃんの方によね、隣でパソコンとにらめっこしてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>じゃあ流出度が高まって来てるし両方一気に来る</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>よくばりセットやん</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「！！」着信音に超反応</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>あ、今回の内容は未来ちゃんのだけね　それが両方に来る</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>あ、なるほど！</font><br>
+		<font color='#3300cc'><b></b>勘違いちごだった、了解</font><br>
+		<font color='#3300cc'><b></b>「うわっ！？そ、そんなびびんなくても……」　反応するせーらちゃんに反応しながら自分のスマホ見る</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>今度は画像！どうやらどこかの中学校の学生証のようだ。名前欄には「光 未来」くんとある</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「な、なんや今度は……うわ！　ガチなやつやん！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>年度付は数年前のもの。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……！！お、おぉ……光……未来くん……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>その顔写真には見覚えがある。さっきの入学式の少年だろう</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「け、結構前のだけど……今度は学生証かぁ……」　</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「この子、誰やろ……光…未来…んん？」何かに気付きかける</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>そういえば時無さんと顔立ちがちょっと似てる気もする。兄弟姉妹かな？なんて思うかもしれない</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（正直、予想はしてた……僕の方もなんかまだ来るんじゃないかって……）」手で目元を隠しながら</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>とかロールをやりつつ2ラウンド目のハプニングチャートを振っていくぞ。</font><br>
+		<font color='#000000'><b></b>・進行度：1/4</font><br>1d6 はぷにん<br><br>
+		<font color='#000000'><b></b> DoubleCross : (1D6) → 2</font><br></font><br>2：事態が深刻化する。状態変化の進行・周囲への拡大など<br><br>
+		<font color='#000000'><b></b> ラウンド中の判定難易度を8に変更する。</font><br></font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>ちぇ、ちぇぁあああ！！！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>高いぜ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>判定は情報技能に戻ります。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>噂話は2ある</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>後まああれだな　次からは1ラウンドに1シーンって感じでやっていこう</font><br>
+		<font color='#000000'><b></b>【ラウンド2】</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>OKOK</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>せーらちゃんから！</font><br>
+		<font color='#000000'><b></b>あともちろん財産点も使えるので覚えておこう</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>とりあえず振るぜ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>どうぞ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>1dx+1 確認したら1しかなかった<br><br>
+			<font color='#ff9900'><b></b> DoubleCross : (1R10+1[10]) → 10[10]+7[7]+1 → 18</font><br>
+		</font><br>
+		<font color='#ff9900'><b></b>いけたー！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>すごい</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>おお、では</font><br>
+		<font color='#000000'><b></b>財産2を使えば一気にクリアになるわね</font><br>
+		<font color='#000000'><b></b>あ、いや</font><br>
+		<font color='#000000'><b></b>最大達成値9点だった</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>そうだった！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>2/4か</font><br>
+		<font color='#000000'><b></b>これ今日で終わるの難しそうね！ミドルまでやって続きは次回やろっか</font><br>
+		<font color='#000000'><b></b>もちろんそれとは別で眠くなったらいつでも言っておくれ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>OKなのなの</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>了解ちぇちぇ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>少しずつ調査を進めていく……どうやら似たような被害に遭っているのは自分達だけではないようだ。ＵＧＮ関係者の身辺情報が無作為に拡散されている。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「僕達だけじゃなかったのか……。なんか思ってたよりやばいんじゃないか、これ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ヴヴ</font><br>
+		<font color='#000000'><b></b>そして、何度目かの着信音。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「な、なんかいろんなとこで同じように個人情報がばらまかれてるみたいや…！」</font><br>
+		<font color='#ff9900'><b></b>「！」反応</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>動画ファイル！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「うん、しかもUGN関係者ばっかり……うわ、また来た！」確認</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>中学生くらいの少女が映っている。すこし緊張した面持ちで、カメラ目線。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「（こ、今度はなんやーー！！）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>久我星来（中学生）</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「ん、んんっ……久我星来、です。よろしくお願いしますっ！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……く、久我……星来……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ヴッ！！！！」変な声が出る</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>久我星来（中学生）</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「この度は、パレス・プロダクションで声優を募集しているという事で……えっと、スクールには通っていなくて、独学、なんですけど」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「あ、あー……そっか、声優……声優かぁ……」　納得したように</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff33cc'>久我星来（中学生）</font>
+		</div><br>
+
+		<font color='#ff33cc'><b></b>「一般の人でも受け付けてるとあったので。常日頃より私は……」背後から物音。「あ、あ"っ！ちょっとおかーさん！入ってこんといてよ！！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「あーーー！！あーあー！！！！」大声でかき消そうとする</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ぶづっ。途切れる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ぶっ……ふ、ふふっ……ちょ、ちょっと待って……」　噴き出してからせーらちゃんから顔逸らす</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「……」顔真っ赤で俯いてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「お、おかーさん入ってこんといてって……ちょ、ちょっと……ご、ごめん……っ」　笑い堪えてぷるぷる震えてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「な……何わろてんねーん！」腕ブンブン振り回しながら怒る</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ごめん！！ご、ごめんってば！！でも無理でしょあれは面白すぎるでしょ！！」</font><br>
+		<font color='#3300cc'><b></b>「い、いや面白がっちゃダメだって分かってるんだけど……！ほ、本当ごめん……っ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「わ、笑わせようと思ってやってたんとちゃうのにー…！！　もうっ」ツンとして顔背ける</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>動画は停止しているが、サムネイルにはぎこちない作り笑顔を浮かべている久我星来ちゃんが今も映っている。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ごめんごめん……でも、声優かー……。ふふ、そっかそうだったのか」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「はーー……最悪やもう…せっかく高校入るときに頑張って消して回ったのに…」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「いや、でもさ。久我さんかわいい声出せてたし凄くない？最初本当にアニメの声だと思ったもん僕」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「んーー……ん……ま、まあ、そうかもしれんけど……ま、まあええわ…」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>適当なところで未来ちゃん判定おねしゃす。場面的には継続です</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ほんとこれ以上なんか出されたら困るわ！　早くこの原因突き止めよう！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「そうそう、先輩も前に星来って綺麗な声してるって言ってたし……こんなのそこまで気にすることじゃないって」</font><br>
+		<font color='#3300cc'><b></b>はい！</font><br>
+		<font color='#3300cc'><b></b>噂話で、噂好きの友人コネ使います</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「え、センパイが？　へ、へー……そ、そうかもしれんね」にやけ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>どうぞ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>3dx+1<br><br>
+			<font color='#3300cc'><b></b> DoubleCross : (3R10+1[10]) → 4[2,4,4]+1 → 5</font><br>
+		</font><br>
+		<font color='#3300cc'><b></b>だめだー！！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>財産ポイントがある！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>ポインツ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>た、足りませんの…２ポイントしかなくて…</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>あ、そうだ8になってるんじゃん！</font><br>
+		<font color='#000000'><b></b>ＧＭうっかり</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>うっかりーちぇ！とにかく失敗です！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>かなしみ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>・進行度：2/4</font><br>
+		<font color='#000000'><b></b>では今度はそうだな。未来ちゃんに、さっきの支部員さんからコールが</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>出る出る</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「も、もしもし。時無さんか」少し慌てた様子</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「あ……はい、時無です！もしかして何か分かりました？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「いや、というより……君、ちょっとマズい事になってるよ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「え？マズいって……な、何がですか？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「いや、あれだ、君の"アレ"に関する……研究資料？ アールラボ預かりになってたはずの内容なんだが……」</font><br>
+		<font color='#6699cc'><b></b>「どういうルートか分かってないけど、うん。流出してしまっている」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「はい」</font><br>
+		<font color='#3300cc'><b></b>「は……はい！？！？！？！？」</font><br>
+		<font color='#3300cc'><b></b>「え、え、流出って、え」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「うん、ひ……ひとまず、見つけた所から何とか統制処置を敷いてはいるんだけど」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「は、はひ……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>とかなんとか言っているうちに……星来ちゃんは自分の所に送られてきた怪しいファイルを既に開いて読み始めている！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「もし原因に心当たりがあれば、とも思ったんだけど……その様子だと、なさそうかな。うん」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「あ、また来た……今度はなんや…」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#6699cc'>支部員</font>
+		</div><br>
+
+		<font color='#6699cc'><b></b>「とにかく、こっちでもできる限りの対処はするけれど……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「な、無いですね……。すみません……」せーらちゃんの方にはまだ気付かず震え声</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>内容！オーヴァード覚醒時に性別が転換する現象に関する調査！禁持出！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>なんということだ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>被検体名が「光 未来」となっているが……添付されている写真はどうみても……</font><br>
+		<font color='#000000'><b></b>目の前でいま電話してる女の子に……一致！ベストマッチ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「なんやこれ…性別が転換？　光未来って……！？？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……ま、まあ……最悪先輩や久我さん達にバレなければ……」</font><br>
+		<font color='#3300cc'><b></b>「っ！？！？」ビクッ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>思わず二度見して固まってる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ちょ、ちょっと、久我さん、まさか」　スマホを覗き見して</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「け……け……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「…………」顔真っ青にして固まる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ケダモノーー！！！」持ってたシルクハットを投げつける</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「んぶっ！？」　顔面直撃</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「は……は……！？　マジで？　だって…あんたセンパイと……」お風呂とか入ってた</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「け、けだ…けだもの……。や、それ、それは……その……」　泣きそうになりかけて震えてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「えっ……っていうかウチも着替えの時とか……えっ！？」</font><br>
+		<font color='#ff9900'><b></b>顔真っ赤にして混乱</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ち、ちが……」　首ふるふるして</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「な、な……」</font><br>
+		<font color='#ff9900'><b></b>「何が違うねんこの変態ーー！！」</font><br>
+		<font color='#ff9900'><b></b>叫んでから走って逃げ出す</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ご、ご、ごめんなさい！！ごめんなさいぃぃ！！だ、だって、だってぇ……！！」</font><br>
+		<font color='#3300cc'><b></b>「うあぁあうぅあぅあぅばばばばか……ばかかよぉ……っ」　追いかけようとしかけるも力入らなくて泣き崩れてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ではこの場はカットで。</font><br>
+		<font color='#000000'><b></b>【3ラウンド】</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>うおー！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>1d6 ハプニング<br><br>
+			<font color='#000000'><b></b> DoubleCross : (1D6) → 1</font><br>
+		</font><br>
+		<font color='#000000'><b></b>マジか</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>ましろん再びか？</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>えええええええ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>とりあえず二人の判定やってからロール入りましょう</font><br>
+		<font color='#000000'><b></b>意志だ！星来ちゃんから</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>いくぞー</font><br>2dx+1<br><br>
+		<font color='#ff9900'><b></b> DoubleCross : (2R10+1[10]) → 9[8,9]+1 → 10</font><br></font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>成功！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>よしー</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>・進行度 3/4</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>あまりにも有能</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>未来ちゃんが成功すればクリアなのだ　ゆけい！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>うおおお！！！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>いけるいける～</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>2dx <br><br>
+			<font color='#3300cc'><b></b> DoubleCross : (2R10[10]) → 6[3,6] → 6</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>戦闘はきつくないのでジェネシフもありかもしれない</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>いけたー！！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>行けた！ＦＳ判定はクリアーです</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>やったぜ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>やったわ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ひとまず調査の成果、一連の現象の原因を突き止めることができた。</font><br>
+		<font color='#000000'><b></b>廃棄されたＦＨ研究施設に残っていた諜報プログラム"WHITE"がレネゲイドに感染、暴走した結果　無秩序に情報を集めては拡散するという行動ロジックを取っていたようだ。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>とんでもねえぜ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>という訳でそいつを叩き壊せばこの厄介な状況は止まるだろう。アールラボの資料がハックされたという背景もあり、君達イリーガル二人には正式に討伐指令が下った。</font><br>
+		<font color='#000000'><b></b>……のだが。</font><br>
+		<font color='#000000'><b></b>その前に、取り戻さなければならないものがある。わかるね。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>そうだよ</font><br>
+		<font color='#3300cc'><b></b>星来ちゃんに話させてってメール送って、支部で会おう…</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ＯＫ、真白ちゃんもそこに呼ばれてる感じで</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>ぶーたれながらも支部に行くぞー</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>ちぇいちぇいいこういう</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>いこう</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>支部行ったら未来が暗い顔で椅子に座ってる！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ＵＧＮ支部、会議室Ｆ。テーブルと数脚の椅子があるだけの簡素な部屋だが、この人数で話し合うには十分だ。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「……」無言</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「……? どうしたの? 探してる人が見つかったんじゃ? 」未来ちゃんみて</font><br>
+		<font color='#ff0000'><b></b>「(あれ、星来おこってる…? )」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……！く、久我さん……先輩……っ」　顔上げて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>むすーっとしてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「あ……あの、あの……」　震えながら床にぺたんって座り込む</font><br>
+		<font color='#3300cc'><b></b>「ほ、本当に……ごめんなさい……っ」　土下座します</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「え、え……!? どうしたの……!? ……星来……? 」事情を知っていそうな星来ちゃんを見る</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……あぇ！？せ、せんぱい……み、見てない……の……？も、もう先輩も知ってるんだと思って……っ」　慌てて顔上げて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「センパイ！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「?」きょとんとして</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>ずいっとスマホで例の資料を見せる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「…………」もう死にそうな顔してる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「光未来……未来は……男の子……!? ああ、……え、ええっ……!? ほ、ホントに……!?!?」驚いて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「そう！！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……ほ、本当、です……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「信じられます！？？？ センパイ、一緒にお風呂に…」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「……そんなことってあるんだね……。正直、見せられても信じがたいというか、実感がないけど……。」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>想像して顔真っ赤にしてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「で、でも本当なんです……僕は元は男なのに、それをずっと隠して先輩と一緒に生活していました……ご、ごめんなさい……っ」　また頭床につける</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「……うーん……」口元に手をあててなやむ仕草をして</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>眉間にしわ寄せてましろんの方を見てる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「私にとってはさ、やっぱり未来は『光未来』じゃなくて、『時無未来』なんだよね。」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……え？」　顔上げて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「だからさ、確かに驚いたけど、今更あんまり気にならないし、その……家族だって思ってるから、」</font><br>
+		<font color='#ff0000'><b></b>「後ろめたいからって、出ていくような事はしないでほしいな。」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「せ…センパイ、マジですか…！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「あ、ウソをつくのはダメだよ? もうウソとか隠し事とか、やめてね? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「せ、せんぱい……。そ、その……えっと……」</font><br>
+		<font color='#3300cc'><b></b>「は、はい……それは、もう嘘なんてつきません……けど、えっと……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「マジです! 」星来ちゃんに　「ん?」笑顔で未来ちゃんに</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「き……気にして！！！！！！！！！！！！！！！！！嬉しいけどもっと気にして！！？！？！？！？！？！？」</font><br>
+		<font color='#3300cc'><b></b>「お……お、男なの！！！僕！！！！男なの！！！！！！！！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ん……んん……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「あれ、なんか私、おかしいこと言ったかな……」首かしげ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「言ってるよばかかよ！！！！！！」</font><br>
+		<font color='#3300cc'><b></b>「せ、先輩、僕本当は駄目だって思ってるのに、先輩の誘惑に負けて一緒にお風呂入ってたんだよ！！？何度も裸見てるんだよ！？！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「ゆ、誘惑って」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ほ……本当は、せんぱいのこと、や……やらしい目で見たりとか、してたの！！！！！！！！！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「せ、せや……流されるとこやった！ 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「ほんとに隠し事しなくなったね!?」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「だ、だから、気にしてよ……！気にしなきゃだめだよ！！い、今は体は女でも男がそんなことしてたらだめだなのに！！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「気にして、って言われても、ほら、未来って女の子だし……。 そういうやらしいこと? されたことないし? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「我慢してたんだよ！！！！！分かれよ！！！！！！！」　</font><br>
+		<font color='#3300cc'><b></b>「え、えぇぇ……先輩、ほんと……そういうとこ……」　大声出し過ぎて疲れてきてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「……じゃあ、出ていくの? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……本当は、出ていかなきゃいけないと思ってる、けど……。でも先輩は嫌なんだよね……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「うん、一緒にいてほしいな。」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「はーー……センパイはほんまに……怒ってた自分がアホみたいや」苦笑い</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「僕も、一緒にいたい……。オーヴァードになってから一人になって、家族と離れ離れになって辛かったけど……先輩が一緒にいてくれたおかげで、寂しさなんて感じなくなったもん……」</font><br>
+		<font color='#3300cc'><b></b>「す、すごく幸せだったから……先輩と一緒にいるの。だから、これからもずっと一緒にいたい……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「そっか、よかった……。じゃあ、こたえはひとつだよね? 」膝をついて抱きしめて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ん……」　泣きそうな顔で頷いて、そのまま抱きしめられてる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「星来はわたしのために怒ってくれたの……かな? 」</font><br>
+		<font color='#ff0000'><b></b>抱きしめたまま星来ちゃんに聞く</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ま、まあそれもありますけど……」</font><br>
+		<font color='#ff9900'><b></b>「でも、センパイも怒ってないし……考えてみたらウチも今更そんな想像できんもんね」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「く、久我さん……。ごめんなさい……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ええよ、もう、考えてみたら兄貴と一緒に着替えてるのと大して変わらんし…」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「か、変わらんかなぁ！？」</font><br>
+		<font color='#3300cc'><b></b>「で、でも、ありがとう……許してくれて……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「あはは、すっかり毒気抜かれてしまったわ……それに、ウチらはこれからやらなあかんこともあるもんな」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「うんうん、よかったよかった……仲直りできたみたいで。」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「……そうだった。ＷＨＩＴＥをぶっ壊さなきゃ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「あ、そういえば……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「だから、この話はまた後で……今は急いでＷＨＩＴＥのとこに向かうよ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「ん、急がなきゃいけない事情があるみたいだね。 わたしは家で待ってるから。いってらっしゃい!」笑顔で</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「せやせや、はよこの馬鹿げた暴走を止めにいくで！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「うん。行ってきます……！絶対に止めよう……！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ではこの辺で！</font><br>
+		<font color='#000000'><b></b>次回はクライマックス戦闘とエンディングをやります。ロイスとかはまた適宜取って置いてね～</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>了解だぜ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>了解了解！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>という訳で今日はここまで！急なあれに付き合ってくれてありがとね、おつかれさま</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>ずんもおつおつ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>こちらこそありがとありがと！楽しいわおつおつ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>おつかれさまだぜ！　いろいろ絡めて楽しい！</font><br>
+		<font color='#ff9900'><b></b>本編で未来ちゃんと絡む機会なかったので新鮮だった</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>確かに確かに…ちょろっと話す程度だった</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#00aa00'>どどんとふ</font>
+		</div><br>
+
+		<font color='#00aa00'><b></b>「御剣真白@ずん」がログインしました。</font><br>
+		<font color='#00aa00'><b></b>「GM」がログインしました。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>参加者ずん！（違う</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#00aa00'>どどんとふ</font>
+		</div><br>
+
+		<font color='#00aa00'><b></b>「時無未来」がログインしました。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>ごめんなさい入れた！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>めめいっ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>わっしょい！</font><br>
+		<font color='#000000'><b></b>では大丈夫かな？次はクライマックスです</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>大丈夫！お願いします</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>いけるぜ～</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ロイスとか雑に埋めていいよ！埋めなくても生還できる気がするけどな！</font><br>
+		<font color='#000000'><b></b>ではいきます</font><br>
+		<font color='#000000'><b></b>　</font><br>
+		<font color='#000000'><b></b>【クライマックス】</font><br>
+		<font color='#000000'><b></b>登場どうぞ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>1d10+49<br><br>
+			<font color='#ff9900'><b></b> DoubleCross : (1D10+49) → 2[2]+49 → 51</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>1d10+41 <br><br>
+			<font color='#3300cc'><b></b> DoubleCross : (1D10+41) → 10[10]+41 → 51</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>揃った！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>仲良し</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ではでは</font><br>
+		<font color='#000000'><b></b>今回の情報散布事件の原因を突き止めた君達は、郊外にて廃棄されたＦＨの研究施設を訪れていた。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「……ここやな！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>警備能力は既にないが、この規模で活動を続けている本体は既にジャーム化しており、</font><br>
+		<font color='#000000'><b></b>高い侵食値ひいては自衛能力を有していると目されるぞ。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>ただのプログラムと侮れないぞ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>油断ならねえ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「うん……！探してすぐにぶったたこう……！」　中に入って行こう</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>では君達は問題なく奥へ、レネゲイド発生源へと向かっていく。</font><br>
+		<font color='#000000'><b></b>実験室の一つだ。乾いた血の臭いと、剥げ落ちた電線の中で、</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「こっちか……！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>怪しく赤色に輝く箱が一つ。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ccccff'>WHITE</font>
+		</div><br>
+
+		<font color='#ccccff'><b></b>ヂヂ　バヂッ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「あれ……か？」　立ち止まって警戒態勢</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>明滅。君らを目視したかのように閃光を焚くと同時、背後のシャッターが閉まる。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「うおっ！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>コォォ……</font><br>
+		<font color='#cc66cc'><b></b>ヒュ　ンッ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「こいつが……！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>突然の白色光線！</font><br>
+		<font color='#cc66cc'><b></b>かろうじて回避できるが、背後の壁が熱に焼けただれている様子がわかる！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「うわぁ！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「っ……！あっぶ……！」　高い知覚能力で攻撃を先に察知して、横に跳んでギリギリのとこで回避！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>とにかく……見るからに戦闘態勢！</font><br>
+		<font color='#000000'><b></b>という訳で、クライマックス戦闘を開始します。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>戦闘じゃ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>えっとまずは衝動判定なんですが</font><br>
+		<font color='#000000'><b></b>特殊ルール！</font><br>衝動判定時、通常の侵蝕増加でなく、侵蝕率を100%まで上昇してもよい。拒否可能。<br><br>
+		<font color='#000000'><b></b> この効果を受けた場合、戦闘終了時に侵蝕率が50%低下する。</font><br></font><br>
+		<font color='#000000'><b></b>そういうこと！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>なるほど…！親切設計だこれ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>存分に力を振り回すがよい！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>わぁい！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>改めて衝動判定！目標9！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>ありがたい～！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>2dx <br><br>
+			<font color='#3300cc'><b></b> DoubleCross : (2R10[10]) → 10[10,10]+6[6,6] → 16</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>2dx+1&gt;=9 いえー<br><br>
+			<font color='#ff9900'><b></b> DoubleCross : (2R10+1[10]&gt;=9) → 7[1,7]+1 → 8 → 失敗</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>何故か成功した、100％にあげます！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>暴走した！ 100に上げるぜー！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>挙げる人は宣言しておくれ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>あげますます！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>ガシュ　ガシュ　ガシャン</font><br>
+		<font color='#cc66cc'><b></b>たて続けに周囲の床が反転、キューブ状の発行体が出現する！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>おそらくはこれらも「砲台」なのだろう。叩き潰すべし！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「はぁー……こいつをぶっ壊せば終わりなんやな……！」闘気のような淡い光を発しながら</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ＷＨＩＴＥくんの行動値は10です。遅くはないが君ら速すぎる！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「これも防衛システムの一部か……！」</font><br>
+		<font color='#3300cc'><b></b>どっちもピュアエンハイだからな…！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>・エンゲージ：[時無、久我] -10m- [WHITE]</font><br>
+		<font color='#000000'><b></b>セットアップから！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>光の銃！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>《アクセル》行動値を+6。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>意味ない！！！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>草</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>光の銃！（同じ）　手元に光を集めて白く輝く剣を作り出します</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>いや移動力がちょっと上がったから完全な無駄ではない</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>そうだよ（？）</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>俺はアクセルの可能性を信じるぜ……！</font><br>
+		<font color='#000000'><b></b>イニシアチブ！</font><br>
+		<font color='#000000'><b></b>星来ちゃんから行動！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「やったるでぇー……！」玩具の銃に光が集まっていく！</font><br>
+		<font color='#ff9900'><b></b>マイナーで暴走を解除しつつ、メジャーで遊星からの物体X（コンセントレイト+天からの眼+マスヴィジョン）</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「久我さん、慎重に行くぞ……！」　暴走してるの察して呼びかけ</font><br>
+		<font color='#3300cc'><b></b>解除してたわ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>速攻で冷静になった</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「……ぁ、そうや、あかんあかん…こんな時こそ冷静にならな…！」</font><br>
+		<font color='#ff9900'><b></b>「ありがとうな！」命中判定するぞ！</font><br>12dx7+6<br><br>
+		<font color='#ff9900'><b></b> DoubleCross : (12R10+6[7]) → 10[1,3,3,3,4,4,4,5,5,6,7,8]+6[2,6]+6 → 22</font><br></font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>ドッジするわよ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>ウオー！！（ひくめ）</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>《神の眼》《御使いの声》</font><br>11dx 回避！<br><br>
+		<font color='#cc66cc'><b></b> DoubleCross : (11R10[10]) → 10[1,2,3,4,5,5,5,7,8,9,10]+4[4] → 14</font><br></font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>アカン！当たる！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>よしよし！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>避け…避け…当たった！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>3d10+34<br><br>
+			<font color='#ff9900'><b></b> DoubleCross : (3D10+34) → 13[2,3,8]+34 → 47</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>まだ無事！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「光へ消えろ……！！」銃からレーザー光線を照射！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>いや半壊してるので無事ではない</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>確かに</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>キューブ状の光源を回転、迎撃を試みるも単純出力に押し込まれる。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「今や……続けて頼むで！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>一つがコアと目される部分に直撃、火花が散る。刹那、他のキューブの動きにも硬直があった。</font><br>
+		<font color='#cc66cc'><b></b>あれを叩き潰せば止まるだろうと推測できる！</font><br>
+		<font color='#cc66cc'><b></b>それはそれとして……《鏡の盾》！40点HPダメージの反射！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「……なっ！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「うん……！っと、何！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>光線を受けたコア部分が赤色に熱を帯びたかと思えば、次の瞬間には白熱！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「うっ……キャァー！！」燃える！燃える！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>射撃直後の隙へ、君の弾道を遡るような軌道で光線が走る。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>光に飲まれて体が焦げる！WHITEのロイスをタイタスにして昇華し立ち上がります</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>復活処理とか……了解！</font><br>
+		<font color='#000000'><b></b>イニシアチブ！未来ちゃんへ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「このやろ……！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ま、まだや……！ここで倒れたら今度はどんな情報が拡散されるかわかったもんやない…！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>マイナーで戦闘移動！ＷＨＩＴＥにエンゲージします</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>受けたエネルギーを「吐き出し」て、再び変色。火花が弾けている。明らかに負荷が蓄積している。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>エンゲージじゃ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>特にデータ的には意味の無いエンゲージ、メジャーで希望の光（小さな塵＋マスヴィジョン＋コンセントレイト）！ＷＨＩＴＥに攻撃！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>剣使うからエンゲージ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>範囲攻撃に巻き込まれないし……</font><br>
+		<font color='#000000'><b></b>命中どうぞ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>それもそうだわ！</font><br>11dx+5@7 命中！<br><br>
+		<font color='#3300cc'><b></b> DoubleCross : (11R10+5[7]) → 10[1,1,3,5,6,7,9,9,9,10,10]+10[1,2,4,7,8,10]+10[6,6,9]+10[9]+5[5]+5 → 50</font><br></font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>つよい！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>うわつよい</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ひえ～</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>さっきと同じコンボで回避！</font><br>11dx<br><br>
+		<font color='#cc66cc'><b></b> DoubleCross : (11R10[10]) → 10[1,1,3,3,3,5,5,6,8,9,10]+8[8] → 18</font><br></font><br>
+		<font color='#cc66cc'><b></b>当然にダメ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>さすがにね！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>6d10+40 装甲は有効のダメージ！<br><br>
+			<font color='#3300cc'><b></b> DoubleCross : (6D10+40) → 30[7,5,2,2,5,9]+40 → 70</font><br>
+		</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>そのダメージは……戦闘不能！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「弱点はもう……分かってんだ、よっ！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>復活も持ってないわよ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>WHITEに一瞬で接近しながら、すれ違いざまに放った光の剣でコアを貫く！！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>勝ったー！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>一瞬遅れに、君の過ぎた後を光線が走り、防壁が展開されるが</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>持ってない！本当にゆるゆるだ勝った！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#cc66cc'>WHITE</font>
+		</div><br>
+
+		<font color='#cc66cc'><b></b>コアに亀裂が走り、爆砕！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>あわせて、一帯を覆っていたレネゲイド圧も消えていきます。もうここにオーヴァードはいないようだ。</font><br>
+		<font color='#000000'><b></b>うお～戦闘終了！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「わっ……！！　お、終わったんか……？？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「やった！」　振り向いて爆発を確認</font><br>
+		<font color='#3300cc'><b></b>「最初の攻撃で中枢部が分かったのが幸いだったね……とにかくこれで終わりだ！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>じゃあバックトラック！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「っは～～……ほんと、一時はどうなることかと思ったわ……夜ご飯には間に合いそうかな」</font><br>
+		<font color='#ff9900'><b></b>バックトラックだー！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>えっと50％低下するのよね……ということは今60％！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>そうなる！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>おなじく！ロイスは5個！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>適当にロイスを振るがいい　経験点はめんどくさいので一律5点配布でええやろ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>5d10 いけー<br><br>
+			<font color='#ff9900'><b></b> DoubleCross : (5D10) → 35[8,9,9,3,6] → 35</font><br>
+		</font><br>
+		<font color='#ff9900'><b></b>当然の帰還！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>万一にも事故がない親切設計マン</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>これで三倍ぶりしたら0％に出来るのでは…？（？？）　　六個あるわ振ります！</font><br>6d10 ちぇい<br><br>
+		<font color='#3300cc'><b></b> DoubleCross : (6D10) → 33[5,7,2,6,4,9] → 33</font><br></font><br>
+		<font color='#3300cc'><b></b>帰還からの帰還</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>0％ha</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>マイナスの世界を目指してもいいんじゃよ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>０％は草</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>うおおおお！！それもうオーヴァードか？</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>という訳で無事に帰還！5点配布！ＧＭは4点もらう！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>あげるーちぇ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>エンディングへＧＯ──！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>おつかれさまだぜ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>　</font><br>
+		<font color='#000000'><b></b>【エンディング】</font><br>
+		<font color='#000000'><b></b>廃棄された暴走ジャームによる無作為情報漏洩事件は無事終結した。</font><br>
+		<font color='#000000'><b></b>無事とは言い難いかもしれないが……とにかく終結したのだ。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「いやー……一時はどうなることかと思ったわぁ……」買い物袋を置く</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>君達はいつも通りの日常、すなわち御剣家での夕食の場へと。</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ただいまー……！ほんと何とかなって良かったよ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「さー、これからもう一仕事やで！　今日はお鍋や！」</font><br>
+		<font color='#ff9900'><b></b>台所に立ってエプロンを巻いていく</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「おかえり」「なにかタイヘンだったみたいだね。鍋でぱーっとしよ!」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「あ、センパイ！　もう帰ってたんですね。いや、ほんと大変やったんですからねぇ」</font><br>
+		<font color='#ff9900'><b></b>ため息をつき苦笑いする</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ほんとにね……うん、本当に……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「んー? どんなことがあったの?」コタツに脚をいれて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（本当に許して貰えてよかった……今考えてもこうやってこの家に帰ってこれるなんて嘘みたいだ……）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「えー、UGNの人のプライベートがジャームに流出させられちゃってぇ…」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「あー、なるほど。それで未来が男の子だったってわかったワケね」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「そうそう、久我さんなんかも結構やばい動画がこう……」　小さく笑いながら</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「そ、その話はええやんか！！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「結構ヤバい動画? 」興味ありそうに</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「あ、ごめん……！いや、やばいっていうか、どっちかというとかわいい感じだったっていうか……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「へー! カワイイ動画かー! 見せて見せて!! 」ずいと机に乗り出す</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「え！？！？いや、でも……」　せーらちゃんの方見て</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「いやいやいや！全然そんな見る価値ある動画ちゃいますって！」高速でネギ切りながら</font><br>
+		<font color='#ff9900'><b></b>せーらは首ブンブン振ってるぞ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「さ、流石に先輩には見られたくないよね、うん……。ごめん、消しとくよ」　って自分のスマホ取り出して動画削除しようとする</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「見る価値があるかどうかは、わたしで判断するからいーい」未来ちゃんのスマホを奪う</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「あ！ちょ、ちょっと先輩！」あっさり奪われ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「くふふ、センパイは星来のカワイイ動画を見ずに消されるような愚行はしないのだよ!」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「あ…！センパイ！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#000000'>GM</font>
+		</div><br>
+
+		<font color='#000000'><b></b>ではその場に響くアニメ声！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「や、や、でもそれは……あぁー……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff66cc'>久我星来</font>
+		</div><br>
+
+		<font color='#ff66cc'><b></b>「えへへっ、おにーちゃん♡ ね、どうかな、この格好……？ 似合ってる……？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「んぶふっ」　にやける口元手で押さえて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「わーーー！！！わーーー！！！」顔真っ赤で手で覆ってる</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「……?」困惑して星来ちゃんを見る</font><br>
+		<font color='#ff0000'><b></b>「えっと、これ……もしかして、星来? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「そ、そうですよぉ……あー恥ずかしい……！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ご、ごめんね……でもやっぱりこの声かなりかわいいな……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「そっかそっか、誰かのおにいちゃんを探してるのかと思ってたけど、そういうことね……」</font><br>
+		<font color='#ff0000'><b></b>「ね! カワイイよね! 恥ずかしがらなくていいと思うケド」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「もうっ……そんなん言われても誤魔化されませんからね！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「まあ、たしかに星来から『おにーちゃん❤』なんてちょっと想像できないけど」ふふって笑って</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>そんなこと言いながら鍋の準備を進めていく</font><br>
+		<font color='#ff9900'><b></b>「それは言わんといてくださいよー！！　あー、知り合いに見られてたらウチはどうしたらええんや…」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「多分見られてるんじゃないかな……。開き直ってもうまた声優目指すとかしたらどう？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「うんうん。ユメだったんでしょ? イイと思うな。わたしは応援するよ! 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「んん……そ、そうですかねぇ……そんな言うならちょっと考えてみても良いかもしれませんけど」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「じゃあさじゃあさ、センパイって呼んで? ね? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「わ、本当に？うん……アリだよ全然アリ」　笑って</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「えー？いつもセンパイって呼んでるやないですか？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「あの声でってことじゃないの？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「うんうん、あの声で言ってほしいなー」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「は、はぁ！？　今ですか！？」</font><br>
+		<font color='#ff9900'><b></b>「しょ、しょうがないですねぇ……ん”んっ……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「（やるんだ……）」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「……せんぱーい♡ 私の真心たっぷりの料理、しっかり味わって食べてくださいね～♡」アニメ声</font><br>
+		<font color='#ff9900'><b></b>言いながら鍋をコンロのところに置く</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「かわいい…( ˘ω˘ )」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「お、おぉ……素直にかわいい……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「もえもえきゅんもやっておく? 」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「何それ！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「（素に戻って）それはメイド喫茶やん！？やりませんよ！？」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「メイド喫茶で用いられているという料理魔術」</font><br>
+		<font color='#ff0000'><b></b>「ちぇっ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「へぇぇ……とりあえず恥ずかしそうなやつなんだろな、多分……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「はー、アホなことやってへんで食べましょう。いろいろあってすっかり遅くなったからお腹減ったわ」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「うんうん」コタツに隠した己のケータイの録音を止める</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「ふふっ、あほなことって。そうしようそうしよう」席について</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>は、謀ったなー！ましろんめ！</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「……でもさ、いつもの星来が一番かわいいな」あ、これたべられるよってとりわけながら</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「今日は胡麻豆乳鍋ですよ……あ、どうもどうも」とりわけてもらいつつ</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「さらっとそうやってかわいいっていうよね、先輩は……」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「え、だってかわいいから(?)」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「まあ分かるけどね……」　笑って</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ほんま、そういうの上手ですよねぇ……ま、そういうとこもセンパイのいいところですけど」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「でもまあ久我さんはいいけど、他の人にはそんなほいほい言わないで欲しいな……食べよっか」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「ん、せやね。はー、美味しそうに煮えてるわ」お箸持って</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「ん、気をつける(気を付けない)」「そうだね、それじゃあ……」手をあわせて</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff9900'>久我星来</font>
+		</div><br>
+
+		<font color='#ff9900'><b></b>「いただきます！」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#ff0000'>御剣真白@ずん</font>
+		</div><br>
+
+		<font color='#ff0000'><b></b>「いただきます!」</font><br>
+	</div>
+	<div class="infoBox">
+
+		<div class="title">
+			<font color='#3300cc'>時無未来</font>
+		</div><br>
+
+		<font color='#3300cc'><b></b>「いただきます！」</font><br>
+		<font color='#3300cc'><b></b></font><br>
+		<font color='#3300cc'><b></b>
+</body>
+</font><br>
+<font color='#3300cc'><b></b></font><br>
+<font color='#3300cc'><b></b>
+
+</html>
+</font><br>

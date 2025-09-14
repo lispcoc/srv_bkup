@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ゆとシート for DX3rd 取扱説明書</title>
+  <style type="text/css">
+  body { font-size:13px; background-color:#000000; color:#cccccc; line-height:1.2; font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Arial","Helvetica","Verdana","ＭＳ Ｐゴシック","MS PGothic","Osaka",sans-serif; }
+  h1   { background-color:#555555; color:#eeeeee; font-size:25px; margin:0px; padding:8px 10px; border-top:6px double #000000; border-bottom:6px double #000000; }
+  h2   { background-color:#222222; color:#dddddd; font-size:18px; margin:15px 0px 5px; padding:5px; border-top:3px solid #555555; border-left:10px solid #555555; }
+  h3   { background-color:#181818; color:#dddddd; font-size:14px; margin:10px 5px 5px; padding:0px 5px; border-left:5px solid #555555; }
+  input{ margin:1px; padding:2px 1px; border:1px solid #888888; vertical-align:bottom; font-size:13px; font-family:"ＭＳ Ｐゴシック",Osaka,sans-serif; }
+  select
+       { margin:1px; padding:1px 0px; border:1px solid #888888; vertical-align:bottom; font-size:13px; font-family:"ＭＳ Ｐゴシック",Osaka,sans-serif; font-size:13px; background-color:#ddddee; }
+  textarea
+       { margin:1px; padding:1px 1px; border:1px solid #888888; font-size:13px; line-height:13px; }
+  .dice{ border-color:#885555; background-color:#ccaaaa; margin-right:5px; }
+  .rate{ border-color:#887755; background-color:#ccbb99; margin-right:5px; }
+  .radi{ margin:0px 0px 2px 0px; padding:0px; border:0px; }
+  .cbox{ margin:0px 1px 2px 1px; padding:0px; border:0px; }
+  .text{ background-color:#ddddee; }
+  div.box
+       { margin:0px 0px 10px; padding:0px 10px 10px; border-bottom:1px dotted #888888; }
+  div.box p, div.box pre
+       { margin:3px 15px 5px; padding:0px 0px 0px; }
+  table.tags
+       { margin:1px 15px 10px 15px; border-collapse:collapse; border:2px solid #888888; }
+  table.tags td
+       { text-align:center; border:1px dotted #555555; }
+  a:link   { color:#8888ff; text-decoration:none; }
+  a:visited{ color:#aa88aa; text-decoration:none; }
+  a:hover  { color:#88ffff; }
+  table.comm     { margin:1px 15px 10px 15px; border-collapse:separate; border:2px solid #888888; }
+  table.comm th  { padding:2px 0; background-color:#111111; }
+  table.comm td  { padding:2px 0; text-align:center;  }
+  table.comm tr.th th  { width:50px; }
+  table.comm tr.t0 td  { padding:0px 0; height:1px; }
+  table.comm tr.t1 td  { background-color:#221111; }
+  table.comm tr.t2 td  { background-color:#403030; }
+  table.comm tr.t3 td  { background-color:#111122; }
+  table.comm tr.t4 td  { background-color:#303040; }
+  table.comm tr.t5 td  { background-color:#112211; }
+  table.comm tr.t6 td  { background-color:#304030; }
+  table.comm tr.t7 td  { background-color:#222222; }
+  table.comm tr.t8 td  { background-color:#333333; }
+  table.exp    { margin:1px 0px 10px 15px; border-collapse:separate; border:2px solid #888888; }
+  table.exp td { padding:2px 5px; text-align:right; }
+  table.exp tr.t7 td  { background-color:#222222; }
+  table.exp tr.t8 td  { background-color:#333333; }
+  </style>
+</head>
+<body>
+  <h1>ゆとシート for DX3rd 取扱説明書</h1>
+  <div class="box">
+    <h2 id="making">新規登録</h2>
+    <h3>ID</h3>
+      <p>使用可能な文字は「半角英数字」「.」「-」「_」のみです。</p>
+    <h3>パスワード</h3>
+      <p>使用可能な文字は「半角英数字」「.」「-」「/」のみです。</p>
+    <h3>メールアドレス</h3>
+      <p>架空のメールアドレスでの登録もできますが、その場合IDやパスワードを忘れた場合に困ります。</p>
+    <h3>登録キー</h3>
+      <p>管理人が設定している場合のみ必要。</p>
+  </div>
+  <div class="box">
+    <h2 id="tag">タグ</h2>
+    <p>
+      HTMLタグではありません。ニ○ニコ動画やP○xivなどで使われているアレです。<br>
+      タグをつけることで、同じタグのついたキャラクターを検索できます。<br>
+      複数のタグをつける場合はスペースで区切ってください。<br>
+      全角英数字は、自動的に半角に矯正されます。<br>
+      タグ検索は「完全一致」した結果のみ表示されます。<br>
+    </p>
+  </div>
+  <div class="box">
+    <h2 id="title">称号欄</h2>
+    <p>ルビを振りたい場合、rubyタグは使用せず「称号:ルビ」と入力してください。</p>
+  </div>
+  <div class="box">
+    <h2 id="image">キャラクター画像</h2>
+    <p>
+      「JPG」「PNG」「GIF」をアップロードできます。<br>
+      小画像（サムネイル）は自動的に横幅300pxに縮小されます。<br>
+      大画像は小画像をクリックした際に表示されます。<br>
+    </p>
+  </div>
+  <div class="box">
+    <h2 id="data">データ全般</h2>
+    <p>
+      経験点や基準値などは自動で計算される為、数値類の入力は<b>半角</b>文字を推奨。<br>
+      技能欄やエフェクト欄などは、「▼」で項目の追加、「▲」で削除ができます。
+    </p>
+    <h3 id="regulation">初期レギュレーション</h3>
+    <p>
+      作成時の経験点を記入する欄です。<br>
+    </p>
+    <h3 id="sheetcolor">シートカラー</h3>
+    <p>
+      90種類以上から選択できます。<br>
+      自分でカラーコードを入力する場合、指定できる色が限定されていることに注意してください（どぎつすぎる配色防止の為）。<br>
+      <tt>
+      フレーム色　　：20～d0以内、かつ、R,G,Bの一番高い数値と低い数値の差が16進数で「80」以下のもの限定。<br>
+      フレーム文字色：00～d0以内限定。<br>
+      セル色,セル色2：20～d0以内、かつ、R,G,Bの一番高い数値と低い数値の差が16進数で「50」以下のもの限定。<br>
+      セル文字色　　：00～d0以内、かつ、R,G,Bの一番高い数値と低い数値の差が16進数で「50」以下のもの限定。<br>
+      リンク色　　　：制限なし。
+      </tt>
+    </p>
+    <h3 id=""></h3>
+    <p></p>
+    <h3 id=""></h3>
+    <p></p>
+  </div>
+  <div class="box">
+    <h2 id="htmltag">文字の装飾</h2>
+    <p>HTMLタグの使用が許可されている場合、以下のタグが使えます。</p>
+    <table class="tags">
+      <tr>
+        <td title="太字">&lt;b&gt;&lt;/b&gt;</td>
+        <td title="斜体">&lt;i&gt;&lt;/i&gt;</td>
+        <td title="打ち消し線">&lt;s&gt;&lt;/s&gt;</td></tr>
+      <tr>
+        <td title="強調（太字）">&lt;strong&gt;&lt;/strong&gt;</td>
+        <td title="強調（斜体）">&lt;em&gt;&lt;/em&gt;</td>
+        <td title="打ち消し線">&lt;strike&gt;&lt;/strike&gt;</td>
+      </tr>
+      <tr>
+        <td title="下線">&lt;u&gt;&lt;/u&gt;</td>
+        <td title="等幅">&lt;tt&gt;&lt;/tt&gt;</td>
+        <td title="削除箇所（打ち消し線）">&lt;del&gt;&lt;/del&gt;</td>
+      </tr>
+      <tr>
+        <td title="一回り大きく">&lt;big&gt;&lt;/big&gt;</td>
+        <td title="一回り小さく">&lt;small&gt;&lt;/small&gt;</td>
+        <td title="文字サイズ指定（1～7または+1,+2..など）">&lt;font size=""&gt;&lt;/font&gt;</td>
+      </tr>
+      <tr>
+        <td title="文字色指定">&lt;font color=""&gt;&lt;/font&gt;</td>
+        <td title="中央寄せ">&lt;center&gt;&lt;/center&gt;</td>
+        <td title="ルビの範囲">&lt;ruby&gt;&lt;/ruby&gt;</td>
+      </tr>
+      <tr>
+        <td title="ルビをふる文字">&lt;rb&gt;&lt;/rb&gt;</td>
+        <td title="ルビを囲む記号">&lt;rp&gt;&lt;/rp&gt;</td>
+        <td title="ルビの内容">&lt;rt&gt;&lt;/rt&gt;</td>
+      </tr>
+      <tr>
+        <td title="テーブル">&lt;table&gt;&lt;/table&gt;</td>
+        <td title="テーブル">&lt;tr&gt;&lt;/tr&gt;</td>
+        <td title="テーブル">&lt;td&gt;&lt;/td&gt;</td>
+      </tr>
+      <tr><td title="テーブル">&lt;th&gt;&lt;/th&gt;</td><td title="改行">&lt;br&gt;</td><td></td></tr>
+    </table>
+    <p>また、一部のタグの代替・簡略化として、このCGI固有のタグが使えます。</p>
+    <table class="tags">
+      <tr><td>文字サイズ変更</td><td>&lt;fs:数字px&gt;&lt;/fs&gt;</td><td style="text-align:left;">フォントサイズを<u>ピクセル単位</u>で指定します。<br>100px以上は指定できません。</td></tr>
+      <tr><td>フォント変更</td><td>&lt;ff:フォント名&gt;&lt;/ff&gt;</td><td style="text-align:left;">フォントを指定します。</td></tr>
+      <tr><td>あぶりだし</td><td>&lt;inv&gt;&lt;/inv&gt;</td><td style="text-align:left;">文字色を背景色と同じにします（ドラッグ反転で見えます）。</td></tr>
+      <tr><td>文字を隠す</td><td>&lt;hide&gt;&lt;/hide&gt;</td><td style="text-align:left;">囲んだ内容を全く見えなくします。</td></tr>
+      <!-- 
+      <tr><td>文字色変更</td><td>&lt;c:"文字色"&gt;&lt;/c&gt;</td><td style="text-align:left;">&nbsp;</td></tr>
+      <tr><td>ルビ</td><td>&lt;rb:"ルビ"&gt;&lt;/rb&gt;</td><td style="text-align:left;">&nbsp;</td></tr>
+       -->
+      <tr><td>左寄せ</td><td>&lt;left&gt;内容&lt;/left&gt;</td><td style="text-align:left;">&nbsp;</td></tr>
+      <tr><td>右寄せ</td><td>&lt;right&gt;内容&lt;/right&gt;</td><td style="text-align:left;">&nbsp;</td></tr>
+      <tr><td>水平線(点線)</td><td>&lt;hr2&gt;</td><td style="text-align:left;">&nbsp;</td></tr>
+      <tr><td>水平線(破線)</td><td>&lt;hr3&gt;</td><td style="text-align:left;">&nbsp;</td></tr>
+      <tr><td>水平線(凹)</td><td>&lt;hr4&gt;</td><td style="text-align:left;">&nbsp;</td></tr>
+      <tr><td>水平線(凸)</td><td>&lt;hr5&gt;</td><td style="text-align:left;">&nbsp;</td></tr>
+      <tr><td>見出し(大)</td><td>&lt;*見出し&gt;</td><td style="text-align:left;">「所持品」欄、「容姿・経歴・その他メモ」欄、「履歴」欄でのみ使用可能。</td></tr>
+      <tr><td>見出し(中)</td><td>&lt;**見出し&gt;</td><td style="text-align:left;">「所持品」欄、「容姿・経歴・その他メモ」欄、「履歴」欄でのみ使用可能。</td></tr>
+      <tr><td>見出し(小)</td><td>&lt;***見出し&gt;</td><td style="text-align:left;">「所持品」欄、「容姿・経歴・その他メモ」欄、「履歴」欄でのみ使用可能。</td></tr>
+      <tr><td>ボックス</td><td>&lt;box(横幅px,縦幅px)&gt;&lt;/box&gt;</td><td style="text-align:left;"><div style="overflow-y:auto;height:4em;">こういうボックス。<br>(横幅px,縦幅px)は省略して、<br>&lt;box&gt;&lt;/box&gt;とだけ書いても良い。<br>単位は「px」以外に「%」と「em」も可<br><br><br></div></td></tr>
+      <tr><td>テーブル</td><td>&lt;table(横幅px,背景色)&gt;&lt;/table&gt;<br></td><td style="text-align:left;">テーブルの横幅、背景色を設定します。横幅は%やemでも構いません。<br>tdやthにも個別に設定可能です。</td></tr>
+    </table>
+    <p>
+      何れも、閉じタグが無い等、入力に不備がある場合は &lt; と &gt; が、&amp;lt; と &amp;gt; に置き換えられて表示されます。<br>
+      また、style=""などの、何らかの属性をつけた場合も不備があるとみなされます。
+    </p>
+  </div>
+  <div class="box">
+    <h2 id="update">更新履歴</h2>
+    <pre>
+ 2013/03/20(ver2.00) : リリース
+    </pre>
+  </div>
+  <p id="footer" style="text-align:center;font-size:13px">
+  <span style="font-size:11px">「ダブルクロス The 3rd Edition」は矢野俊策及び有限会社F.E.A.R.の著作物です。</span><br>
+  ゆとシート for DX3rd ver2.00 - <a href="http://yutorize.2-d.jp/">ゆとらいず工房</a><br>
+  </p>
+</body>
+</html>
