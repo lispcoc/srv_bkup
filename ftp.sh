@@ -13,6 +13,7 @@ open -u $USERNAME $HOST
 set ssl:check-hostname false
 mirror \
 --only-newer \
+--parallel=2 \
 $FROM \
 $TO \
 exit
