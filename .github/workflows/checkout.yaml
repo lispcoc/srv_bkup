@@ -10,7 +10,7 @@ jobs:
           ls -a
           echo "" 
           git branch -a
-      - uses: sokuhatiku/ftp-download-artifact
+      - uses: sokuhatiku/ftp-download-artifact@v1.0.0
         with:
           name: lisp-trpg
           host: lisp-trpg.sakura.ne.jp
