@@ -1,3 +1,5 @@
+00808<>2025/10/21-00:38<>image/png<>png<>DIYV6gIwQoPbe8DLvXuk<>冥界の空き家（赤）<>6tpQEq63ppJDM<><>598KB<>zaqd3877969.rev.zaq.ne.jp<>empty_house_red<>
+00807<>2025/10/21-00:37<>image/png<>png<>hEzqQBnod3ofKWi8Ke2y<>冥界の集落（赤）<>hYWXoBsE7WnB.<><>391KB<>zaqd3877969.rev.zaq.ne.jp<>village_red<>
 00806<>2025/10/17-00:23<>image/png<>png<>sZ3ijMsoNXugD4No788u<>冥界の空き家<>48ugtiYGYX21k<><>759KB<>zaqd3877969.rev.zaq.ne.jp<>empty_house<>
 00805<>2025/10/04-01:15<>image/png<>png<>VkotQ9oJLO39X6awan5a<>冥界のお茶会<>r5//yan/s5LjA<><>588KB<>zaqd3877969.rev.zaq.ne.jp<>rose_garden_tea_party<>
 00804<>2025/10/04-01:11<>image/png<>png<>lH5HYPhYR_FkVgeZ9CNM<>冥界の洋館<>MTqsELbB8n9hk<><>479KB<>zaqd3877969.rev.zaq.ne.jp<>western_style_house<>
