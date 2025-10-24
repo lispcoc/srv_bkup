@@ -1,0 +1,189 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=480" />
+    <title>ダブルクロス The 3rd Edition エフェクト一覧</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="advanced.js"></script>
+    <script src="ea.js"></script>
+    <script src="others.js"></script>
+</head>
+<body>
+    <p><a href=./>戻る</a></p>
+    <p id="reference">
+        掲載:
+    </p>
+    <p id="d-roise">
+        Dロイス:
+    </p>
+    <p id="syndromes">
+        シンドローム:
+    </p>
+    <hr>
+    <div id="table-holder">
+<script>
+        let d_roise_list = ['すべて'];
+        let syndrome_list = ['すべて']
+
+        const suffix_list = {
+            '新規': 'red',
+            '改定': 'blue',
+            '旧': 'gray',
+        }
+        const mode_list = {
+            'EA' : ea,
+            '上級' : advanced,
+            'その他' : others,
+        }
+
+        let url = new URL(window.location.href);
+        let params = url.searchParams;
+        let syndrome = params.get('syndrome') ? params.get('syndrome') : 'すべて';
+        let d_roise = params.get('d_roise') ? params.get('d_roise') : 'すべて';
+        let mode = params.get('mode') ? params.get('mode') : 'EA';
+
+        const dataArray = mode_list[mode];
+
+        dataArray.forEach((item) => {
+            if (item["Dロイス"] && !d_roise_list.includes(item["Dロイス"])) {
+                d_roise_list.push(item["Dロイス"]);
+            }
+            if (!d_roise || d_roise === 'すべて' || item["Dロイス"] === d_roise) {
+                if (!syndrome_list.includes(item["シンドローム"])) {
+                    syndrome_list.push(item["シンドローム"]);
+                }
+            }
+        });
+
+        reference_line = document.getElementById('reference');
+        for (key in mode_list) {
+            const link = document.createElement('a');
+            if (key !== mode) {
+                link.href = `?mode=${key}`;
+            } else {
+                link.style.fontWeight = 'bold';
+            }
+            link.textContent = key;
+            reference_line.appendChild(link);
+            reference_line.appendChild(document.createTextNode(' / '));
+        }
+
+        const d_roiseLine = document.getElementById('d-roise');
+        d_roise_list.forEach((d_roiseName, index) => {
+            if (index > 0) {
+                d_roiseLine.appendChild(document.createTextNode(' / '));
+            }
+            const link = document.createElement('a');
+            if (d_roiseName !== d_roise) {
+                link.href = `?mode=${mode}&syndrome=${syndrome}&d_roise=${d_roiseName}`;
+            } else {
+                link.style.fontWeight = 'bold';
+            }
+            link.textContent = d_roiseName;
+            d_roiseLine.appendChild(link);
+        });
+
+        const syndromesLine = document.getElementById('syndromes');
+        syndrome_list.forEach((syndromeName, index) => {
+            if (index > 0) {
+                syndromesLine.appendChild(document.createTextNode(' / '));
+            }
+            const link = document.createElement('a');
+            if (syndromeName !== syndrome) {
+                link.href = `?mode=${mode}&syndrome=${syndromeName}&&d_roise=${d_roise}`;
+            } else {
+                link.style.fontWeight = 'bold';
+            }
+            link.textContent = syndromeName;
+            syndromesLine.appendChild(link);
+        });
+
+        dataArray.forEach((item, index) => {
+            if (d_roise && d_roise !== 'すべて' && item["Dロイス"] !== d_roise) {
+                return;
+            }
+            if (syndrome && syndrome !== 'すべて' && item["シンドローム"] !== syndrome) {
+                return;
+            }
+            const reference = item["掲載"] ? item["掲載"] : '';
+
+            const table = document.createElement('table');
+            table.setAttribute('class', 'type02');
+            const tableBody = document.createElement('tbody');
+
+            const row_1 = document.createElement('tr');
+
+            const nameCell = document.createElement('th');
+            nameCell.setAttribute('rowspan', '6');
+            nameCell.setAttribute('bgcolor', '#eee');
+            if (item["種別"] === 'イージー') nameCell.setAttribute('bgcolor', 'lightgreen');
+            color = suffix_list[item["新規・改定"]] ? suffix_list[item["新規・改定"]] :  'black';
+            suffix = suffix_list[item["新規・改定"]] ? `(${item["新規・改定"]})` : '';
+            nameCell.innerHTML = [
+                `<font color=${color}>${item["エフェクト名"]}${suffix}</font>`,
+                "",
+                `<font size=-1>${item["シンドローム"]} / ${item["種別"]}</font>`,
+                "",
+                `<font size=-1>Dロイス: ${item["Dロイス"] ? item["Dロイス"] : 'なし'}</font>`,
+                "",
+                `<font size=-1>${reference}</font>`,
+            ].join('<br>');
+            
+            row_1.appendChild(nameCell);
+            const levelCell = document.createElement('td');
+            levelCell.setAttribute('colspan', '2');
+            levelCell.textContent = "最大Lv:" + item["最大Lv"];
+            row_1.appendChild(levelCell);
+
+            tableBody.appendChild(row_1);
+
+            const row_2 = document.createElement('tr');
+            const timingCell = document.createElement('td');
+            timingCell.setAttribute('colspan', '2');
+            timingCell.textContent = "タイミング:" + item["タイミング"];
+            row_2.appendChild(timingCell);
+            tableBody.appendChild(row_2);
+
+            const row_3 = document.createElement('tr');
+            const skillCell = document.createElement('td');
+            skillCell.textContent = "技能:" + item["技能"];
+            row_3.appendChild(skillCell);
+            const difficultyCell = document.createElement('td');
+            difficultyCell.textContent = "難易度:" + item["難易度"];
+            row_3.appendChild(difficultyCell);
+            tableBody.appendChild(row_3);
+
+            const row_4 = document.createElement('tr');
+            const targetCell = document.createElement('td');
+            targetCell.textContent = "対象:" + item["対象"];
+            row_4.appendChild(targetCell);
+            const rangeCell = document.createElement('td');
+            rangeCell.textContent = "射程:" + item["射程"];
+            row_4.appendChild(rangeCell);
+            tableBody.appendChild(row_4);
+
+            const row_5 = document.createElement('tr');
+            const costCell = document.createElement('td');
+            costCell.textContent = "侵蝕値:" + item["侵蝕値"];
+            row_5.appendChild(costCell);
+            const limitCell = document.createElement('td');
+            limitCell.textContent = "制限:" + item["制限"];
+            row_5.appendChild(limitCell);
+            tableBody.appendChild(row_5);
+
+            const row_6 = document.createElement('tr');
+            const descriptionCell = document.createElement('td');
+            descriptionCell.setAttribute('colspan', '2');
+            descriptionCell.textContent = decodeURIComponent(escape(window.atob( item["簡略効果"]  )));
+            row_6.appendChild(descriptionCell);
+            tableBody.appendChild(row_6);
+
+            table.appendChild(tableBody);
+
+            const tableHolder = document.getElementById('table-holder');
+            tableHolder.appendChild(table);
+        });
+    </script>
+
+</body>
+</html>
