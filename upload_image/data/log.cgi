@@ -1,3 +1,6 @@
+00817<>2025/10/25-02:05<>image/png<>png<>4OSTjMDLFq0ZqE4eVsSv<>iRiS（ルシフェラーゼ装備）<>XEkXGG3guXCIw<><>574KB<>zaqd3877969.rev.zaq.ne.jp<>iRiS_luciferase<>
+00816<>2025/10/25-01:53<>image/png<>png<>mF6fgM3oLVI6iyX8LJho<>iRiS（極夜一碧）<>GbKx2jLsWyUC6<><>547KB<>zaqd3877969.rev.zaq.ne.jp<>iRiS<>
+00815<>2025/10/25-00:56<>image/png<>png<>5VjqSwdFIBo9_EUFvHHy<>久能胡桃（戦闘）<>QGM5940QtThT2<><>138KB<>zaqd3877969.rev.zaq.ne.jp<>kurumi_mini_battle<>
 00814<>2025/10/24-02:55<>image/png<>png<>ueWJ7vMp9j1T1gLwz2Ny<>春兎ユメミ（戦闘）<>jwoWwOICkYsUs<><>79KB<>zaqd3877969.rev.zaq.ne.jp<>yumemi_mini_battle<>
 00813<>2025/10/24-02:38<>image/png<>png<>bxxg8WMYZq4jZkJw2HWa<>ルコ（戦闘）<>kXdPf42ZFJnsg<><>111KB<>zaqd3877969.rev.zaq.ne.jp<>ruko_mini_battle<>
 00812<>2025/10/24-02:26<>image/png<>png<>vxFdADBhZjczsuc9_Pbt<>iRiS（極夜一碧）<>0HmVE992gQFGU<><>310KB<>zaqd3877969.rev.zaq.ne.jp<>iRiS<>
