@@ -98,91 +98,48 @@
             syndromesLine.appendChild(link);
         });
 
-        dataArray.forEach((item, index) => {
-            if (d_roise && d_roise !== 'すべて' && item["Dロイス"] !== d_roise) {
-                return;
-            }
-            if (syndrome && syndrome !== 'すべて' && item["シンドローム"] !== syndrome) {
-                return;
-            }
-            const reference = item["掲載"] ? item["掲載"] : '';
-
-            const table = document.createElement('table');
-            table.setAttribute('class', 'type02');
-            const tableBody = document.createElement('tbody');
-
-            const row_1 = document.createElement('tr');
-
-            const nameCell = document.createElement('th');
-            nameCell.setAttribute('rowspan', '6');
-            nameCell.setAttribute('bgcolor', '#eee');
-            if (item["種別"] === 'イージー') nameCell.setAttribute('bgcolor', 'lightgreen');
-            color = suffix_list[item["新規・改定"]] ? suffix_list[item["新規・改定"]] :  'black';
-            suffix = suffix_list[item["新規・改定"]] ? `(${item["新規・改定"]})` : '';
-            nameCell.innerHTML = [
-                `<font color=${color}>${item["エフェクト名"]}${suffix}</font>`,
-                "",
-                `<font size=-1>${item["シンドローム"]} / ${item["種別"]}</font>`,
-                "",
-                `<font size=-1>Dロイス: ${item["Dロイス"] ? item["Dロイス"] : 'なし'}</font>`,
-                "",
-                `<font size=-1>${reference}</font>`,
-            ].join('<br>');
-            
-            row_1.appendChild(nameCell);
-            const levelCell = document.createElement('td');
-            levelCell.setAttribute('colspan', '2');
-            levelCell.textContent = "最大Lv:" + item["最大Lv"];
-            row_1.appendChild(levelCell);
-
-            tableBody.appendChild(row_1);
-
-            const row_2 = document.createElement('tr');
-            const timingCell = document.createElement('td');
-            timingCell.setAttribute('colspan', '2');
-            timingCell.textContent = "タイミング:" + item["タイミング"];
-            row_2.appendChild(timingCell);
-            tableBody.appendChild(row_2);
-
-            const row_3 = document.createElement('tr');
-            const skillCell = document.createElement('td');
-            skillCell.textContent = "技能:" + item["技能"];
-            row_3.appendChild(skillCell);
-            const difficultyCell = document.createElement('td');
-            difficultyCell.textContent = "難易度:" + item["難易度"];
-            row_3.appendChild(difficultyCell);
-            tableBody.appendChild(row_3);
-
-            const row_4 = document.createElement('tr');
-            const targetCell = document.createElement('td');
-            targetCell.textContent = "対象:" + item["対象"];
-            row_4.appendChild(targetCell);
-            const rangeCell = document.createElement('td');
-            rangeCell.textContent = "射程:" + item["射程"];
-            row_4.appendChild(rangeCell);
-            tableBody.appendChild(row_4);
-
-            const row_5 = document.createElement('tr');
-            const costCell = document.createElement('td');
-            costCell.textContent = "侵蝕値:" + item["侵蝕値"];
-            row_5.appendChild(costCell);
-            const limitCell = document.createElement('td');
-            limitCell.textContent = "制限:" + item["制限"];
-            row_5.appendChild(limitCell);
-            tableBody.appendChild(row_5);
-
-            const row_6 = document.createElement('tr');
-            const descriptionCell = document.createElement('td');
-            descriptionCell.setAttribute('colspan', '2');
-            descriptionCell.textContent = decodeURIComponent(escape(window.atob( item["簡略効果"]  )));
-            row_6.appendChild(descriptionCell);
-            tableBody.appendChild(row_6);
-
-            table.appendChild(tableBody);
-
-            const tableHolder = document.getElementById('table-holder');
-            tableHolder.appendChild(table);
+        const filteredData = dataArray.filter(item => {
+            return (!d_roise || d_roise === 'すべて' || item["Dロイス"] === d_roise) &&
+                (!syndrome || syndrome === 'すべて' || item["シンドローム"] === syndrome);
         });
+        var tableHTML = '';
+        filteredData.forEach((item, index) => {
+            tableHTML += `
+                <table class="type02">
+                    <tbody>
+                        <tr>
+                            <th rowspan="6" bgcolor="${item["種別"] === 'イージー' ? 'lightgreen' : '#eee'}">
+                                <font color="${suffix_list[item["新規・改定"]] || 'black'}">${item["エフェクト名"]}${suffix_list[item["新規・改定"]] ? `(${item["新規・改定"]})` : ''}</font><br><br>
+                                <font size="-1">${item["シンドローム"]} / ${item["種別"]}</font><br><br>
+                                <font size="-1">Dロイス: ${item["Dロイス"] || 'なし'}</font><br><br>
+                                <font size="-1">${item["掲載"] || ''}</font>
+                            </th>
+                            <td colspan="2">最大Lv: ${item["最大Lv"]}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">タイミング: ${item["タイミング"]}</td>
+                        </tr>
+                        <tr>
+                            <td>技能: ${item["技能"]}</td>
+                            <td>難易度: ${item["難易度"]}</td>
+                        </tr>
+                        <tr>
+                            <td>対象: ${item["対象"]}</td>
+                            <td>射程: ${item["射程"]}</td>
+                        </tr>
+                        <tr>
+                            <td>侵蝕値: ${item["侵蝕値"]}</td>
+                            <td>制限: ${item["制限"]}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">${decodeURIComponent(escape(window.atob(item["簡略効果"])))}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+        });
+        const tableHolder = document.getElementById('table-holder');
+        tableHolder.innerHTML = tableHTML;
     </script>
 
 </body>
