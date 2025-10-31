@@ -113,7 +113,7 @@
                                 <font color="${suffix_list[item["新規・改定"]] || 'black'}">${item["エフェクト名"]}${suffix_list[item["新規・改定"]] ? `(${item["新規・改定"]})` : ''}</font><br><br>
                                 <font size="-1">${item["シンドローム"]} / ${item["種別"]}</font><br><br>
                                 <font size="-1">Dロイス: ${item["Dロイス"] || 'なし'}</font><br><br>
-                                <font size="-1">${item["掲載"] || ''}</font>
+                                <font size="-1">${item["掲載"] || ''} ${item["ページ"] ? ("P." + item["ページ"]) : ''}</font>
                             </th>
                             <td colspan="2">最大Lv: ${item["最大Lv"]}</td>
                         </tr>
