@@ -1,3 +1,4 @@
+00859<>2025/11/23-01:20<>image/png<>png<>QUfMGJye8ToWcuFjPTBx<>モニタールーム<>GlPlyEteEOR96<><>440KB<>zaqd3877969.rev.zaq.ne.jp<>monitor_room<>
 00858<>2025/11/22-02:09<>image/png<>png<>PedtDxqCUD5uuQmZ2Uy4<>MAC-09Σ<>uZ.1y/5Ji/E7c<><>310KB<>zaqd3877969.rev.zaq.ne.jp<>MAC-09-sigma<>
 00857<>2025/11/22-02:06<>image/png<>png<>5jkyGu6kTJ6f69LHoutX<>モニタールーム（ルリコ）<>r9AME9OXHK7Lg<><>447KB<>zaqd3877969.rev.zaq.ne.jp<>monitor_ruriko<>
 00856<>2025/11/22-01:46<>image/png<>png<>ALy1zawD8JtqBbmMCvmf<>モニタールーム（破壊）<>EQD5tvNtbozQ2<><>818KB<>zaqd3877969.rev.zaq.ne.jp<>monitor_room_break<>
@@ -19,7 +20,6 @@
 00840<>2025/11/20-00:57<>image/png<>png<>AgeenWhfZ2qwusZah9k8<>トラウマ1<>LRgpDosVN1MGw<><>349KB<>zaqd3877969.rev.zaq.ne.jp<>trauma1<>
 00839<>2025/11/19-00:22<>image/png<>png<>NJDnWyRdvku766NGVOSU<>灰出司（戦闘）<>UOtaQaHx2.xg6<><>270KB<>zaqd3877969.rev.zaq.ne.jp<>hades_mini_battle<>
 00838<>2025/11/17-01:47<>image/png<>png<>VVHC1gF3XF632TwVs3Qh<>灰出司<>gCkNsI/q9egxE<><>355KB<>zaqd3877969.rev.zaq.ne.jp<>hades<>
-00837<>2025/11/17-01:42<>image/png<>png<>Gn0YHGmyoF8KheSq9Msc<>モニタールーム<>vCnbX1CAtkNlg<><>471KB<>zaqd3877969.rev.zaq.ne.jp<>monitor_room<>
 00836<>2025/11/17-01:37<>image/png<>png<>rVAbvlk8C4hE9L3HhIMi<>研究所 通路<>nV6P4XkefCegk<><>605KB<>zaqd3877969.rev.zaq.ne.jp<>laboratory_passage<>
 00834<>2025/11/17-01:23<>image/png<>png<>R1GxaDLvN7ptj1O6A6UM<>停泊所<>Hvw2DIEQ37cFY<><>867KB<>zaqd3877969.rev.zaq.ne.jp<>anchorage<>
 00833<>2025/11/16-02:34<>image/png<>png<>ozhfe4lC9iJoMw0vJ0wz<>深海<>IABPl1wc/3o1k<><>308KB<>zaqd3877969.rev.zaq.ne.jp<>deep_sea<>
