@@ -1,3 +1,8 @@
+00882<>2025/12/22-01:32<>image/png<>png<>a0XacumCiGM8UT_WYpMd<>NPC：泊里零一郎（鏡像のアステリズム）<>hQGhccSa2suyY<><>182KB<>zaqd3877969.rev.zaq.ne.jp<>reichiro<>
+00881<>2025/12/22-01:28<>image/jpeg<>jpg<>XfLKi4qjWEm3Hh_vG57c<>背景：街中の踏切（鏡像のアステリズム）<>tgvzguiYYg8/Y<><>480KB<>zaqd3877969.rev.zaq.ne.jp<>railroad_crossing<>
+00880<>2025/12/22-01:20<>image/png<>png<>0gu37efpdlfDhd_lYnyu<>背景：キッチン（鏡像のアステリズム）<>2pIXbBoPjZ.2c<><>279KB<>zaqd3877969.rev.zaq.ne.jp<>kitchen<>
+00879<>2025/12/22-01:17<>image/png<>png<>hUStPfmxCttiebhGUG0i<>NPC：江戸川洋子（鏡像のアステリズム）<>mUEx9qR71grf6<><>300KB<>zaqd3877969.rev.zaq.ne.jp<>yoko<>
+00878<>2025/12/22-01:15<>image/png<>png<>R9K3pUTGgs6ZYD2vTiij<>背景：廃墟（鏡像のアステリズム）<>qon.ITVryKSyY<><>464KB<>zaqd3877969.rev.zaq.ne.jp<>ruins<>
 00877<>2025/12/21-16:12<>image/png<>png<>FdHLk64_Uhu4kLSB8gZT<>PC：多々良那浅香（鏡像のアステリズム）<>qkNjIYGyrUt12<><>704KB<>zaqd3877969.rev.zaq.ne.jp<>asaka<>
 00876<>2025/12/21-02:23<>image/png<>png<>teRGns20OV_QjUt5poa3<>PC：蹄啼イバラ（鏡像のアステリズム）<>9dzmCBJigrm26<><>169KB<>zaqd3877969.rev.zaq.ne.jp<>ibara<>
 00875<>2025/12/21-02:22<>image/png<>png<>FnPglF240qBk4JrhdurM<>PC：ロッキー（鏡像のアステリズム）<>krOGgWmZxkmz.<><>122KB<>zaqd3877969.rev.zaq.ne.jp<>loki<>
