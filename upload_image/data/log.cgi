@@ -1,3 +1,5 @@
+00892<>2025/12/28-02:20<>image/png<>png<>TWiGnkeSK7iquy7FP0y4<>NPC：新藤亜里沙（鏡像のアステリズム）<>olBGj8P61q7t6<><>244KB<>zaqd3877969.rev.zaq.ne.jp<>arisa<>
+00891<>2025/12/27-22:26<>image/jpeg<>jpg<>wLsh45k2EXRL2h8B68Kh<>背景：面会室（鏡像のアステリズム）<>He4ufzAPtVg26<><>112KB<>zaqd3877969.rev.zaq.ne.jp<>visiting_room<>
 00890<>2025/12/27-01:53<>image/png<>png<>5yg2wIsJ33rRuRyXTv0J<>NPC：松本英里（鏡像のアステリズム）<>6d.NTAqC08ZFA<><>180KB<>zaqd3877969.rev.zaq.ne.jp<>eri_2<>
 00889<>2025/12/27-01:49<>image/png<>png<>sGcU07OcIL6i0vbrrH_x<>背景：表計算ソフトのウィンドウ（鏡像のアステリズム）<>tlcMVj3QOZen.<><>49KB<>zaqd3877969.rev.zaq.ne.jp<>pc_windows<>
 00888<>2025/12/27-01:44<>image/png<>png<>R5pVlUOcKqR2yPC3Pukc<>背景：配信画面（鏡像のアステリズム）<>e1jyly.3xYmzk<><>161KB<>zaqd3877969.rev.zaq.ne.jp<>distribution_screen<>
