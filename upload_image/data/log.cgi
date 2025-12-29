@@ -1,3 +1,4 @@
+00893<>2025/12/29-01:49<>image/png<>png<>B18JTdGrlRm9mx289u_r<>背景：ホテル（鏡像のアステリズム）<>WUD91RY3OuV52<><>490KB<>zaqd3877969.rev.zaq.ne.jp<>hotel<>
 00892<>2025/12/28-02:20<>image/png<>png<>TWiGnkeSK7iquy7FP0y4<>NPC：新藤亜里沙（鏡像のアステリズム）<>olBGj8P61q7t6<><>244KB<>zaqd3877969.rev.zaq.ne.jp<>arisa<>
 00891<>2025/12/27-22:26<>image/jpeg<>jpg<>wLsh45k2EXRL2h8B68Kh<>背景：面会室（鏡像のアステリズム）<>He4ufzAPtVg26<><>112KB<>zaqd3877969.rev.zaq.ne.jp<>visiting_room<>
 00890<>2025/12/27-01:53<>image/png<>png<>5yg2wIsJ33rRuRyXTv0J<>NPC：松本英里（鏡像のアステリズム）<>6d.NTAqC08ZFA<><>180KB<>zaqd3877969.rev.zaq.ne.jp<>eri_2<>
