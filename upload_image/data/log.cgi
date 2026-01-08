@@ -1,3 +1,5 @@
+00895<>2026/01/08-01:38<>image/png<>png<>aOKgXTXh_bi98N7mzvtU<>背景：メイドカフェ（鏡像のアステリズム）<>2AlYO0D3PMCe6<><>558KB<>zaqd3877969.rev.zaq.ne.jp<>cafe<>
+00894<>2026/01/08-01:35<>image/png<>png<>1s8QUh8cZld5KfHuI8CR<>PC：ロッキー メイド服（鏡像のアステリズム）<>Sow.TnGoDv1G.<><>43KB<>zaqd3877969.rev.zaq.ne.jp<>roki_maid<>
 00893<>2025/12/29-01:49<>image/png<>png<>B18JTdGrlRm9mx289u_r<>背景：ホテル（鏡像のアステリズム）<>WUD91RY3OuV52<><>490KB<>zaqd3877969.rev.zaq.ne.jp<>hotel<>
 00892<>2025/12/28-02:20<>image/png<>png<>TWiGnkeSK7iquy7FP0y4<>NPC：新藤亜里沙（鏡像のアステリズム）<>olBGj8P61q7t6<><>244KB<>zaqd3877969.rev.zaq.ne.jp<>arisa<>
 00891<>2025/12/27-22:26<>image/jpeg<>jpg<>wLsh45k2EXRL2h8B68Kh<>背景：面会室（鏡像のアステリズム）<>He4ufzAPtVg26<><>112KB<>zaqd3877969.rev.zaq.ne.jp<>visiting_room<>
