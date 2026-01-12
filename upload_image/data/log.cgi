@@ -1,3 +1,5 @@
+00899<>2026/01/12-01:43<>image/png<>png<>XliKZRlsrQdg5_OCyIVP<>背景：ライブステージ（鏡像のアステリズム）<>WWgFWnJKK37vc<><>609KB<>zaqd3877969.rev.zaq.ne.jp<>live_stage<>
+00898<>2026/01/11-23:37<>image/png<>png<>LpgpRSCnDreEXDlhKhx2<>PC：飴家真珠 アイドル衣装（鏡像のアステリズム）<>Ogp82cSit3Ruc<><>454KB<>zaqd3877969.rev.zaq.ne.jp<>shinjyu_idol<>
 00897<>2026/01/09-02:14<>image/png<>png<>B8AwxzBVPJAriJ0n5LxR<>NPC：オーメン相良（鏡像のアステリズム）<>G1seHcp6HNQkg<><>283KB<>zaqd3877969.rev.zaq.ne.jp<>omen<>
 00896<>2026/01/09-02:03<>image/jpeg<>jpg<>QlxzZ92aHAwx7BRE_CbO<>背景：防音室（鏡像のアステリズム）<>4Y2kiUhU7mK.s<><>57KB<>zaqd3877969.rev.zaq.ne.jp<>white_room<>
 00895<>2026/01/08-01:38<>image/png<>png<>aOKgXTXh_bi98N7mzvtU<>背景：メイドカフェ（鏡像のアステリズム）<>2AlYO0D3PMCe6<><>558KB<>zaqd3877969.rev.zaq.ne.jp<>cafe<>
