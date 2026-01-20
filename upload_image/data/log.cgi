@@ -1,3 +1,5 @@
+00907<>2026/01/20-01:26<>image/png<>png<>RHRRh0szJ9dGAdQocaAv<>NPC：朝霧ユラ 病院着（鏡像のアステリズム）<>19KMuuht/cZZA<><>222KB<>zaqd3877969.rev.zaq.ne.jp<>yura_hospital_gown<>
+00906<>2026/01/20-01:16<>image/jpeg<>jpg<>4FlUYSPLy1RHLBIvMB2e<>背景：病室（鏡像のアステリズム）<>06GHV2e8Bzj7M<><>303KB<>zaqd3877969.rev.zaq.ne.jp<>hospital_room<>
 00905<>2026/01/18-03:09<>image/png<>png<>ZVI0QW_qLnaReW8cbMj6<>PC：ロッキー アイドル衣装（鏡像のアステリズム）<>jqfPAWnPWQhHI<><>353KB<>zaqd3877969.rev.zaq.ne.jp<>roki_idol<>
 00904<>2026/01/18-01:55<>image/png<>png<>nTVMdeat5hq6vmLS1_PK<>NPC：？？？（鏡像のアステリズム）<>OOVymY0fFrlE.<><>29KB<>zaqd3877969.rev.zaq.ne.jp<>unknown<>
 00903<>2026/01/18-01:51<>image/png<>png<>2JoJ3kyGVsTnYyCUDRQP<>NPC：黒沢（鏡像のアステリズム）<>L9wT9Wz5edINQ<><>153KB<>zaqd3877969.rev.zaq.ne.jp<>kurosawa<>
