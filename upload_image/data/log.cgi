@@ -1,3 +1,4 @@
+00909<>2026/02/01-01:40<>image/png<>png<>Tc6zHWdL9Hsgjs_TJqQk<>NPC：的場啓吾（鏡像のアステリズム）<>jcN9Ttv.Rnlrk<><>134KB<>zaqd3877969.rev.zaq.ne.jp<>matoba<>
 00908<>2026/01/23-02:15<>image/png<>png<>1vbdz_a5gcz5xH332_s4<>PC：ロッキー プロメテウス（鏡像のアステリズム）<>D2IgMI6E3Wx9w<><>289KB<>zaqd3877969.rev.zaq.ne.jp<>roki_battle<>
 00907<>2026/01/20-01:26<>image/png<>png<>RHRRh0szJ9dGAdQocaAv<>NPC：朝霧ユラ 病院着（鏡像のアステリズム）<>19KMuuht/cZZA<><>222KB<>zaqd3877969.rev.zaq.ne.jp<>yura_hospital_gown<>
 00906<>2026/01/20-01:16<>image/jpeg<>jpg<>4FlUYSPLy1RHLBIvMB2e<>背景：病室（鏡像のアステリズム）<>06GHV2e8Bzj7M<><>303KB<>zaqd3877969.rev.zaq.ne.jp<>hospital_room<>
