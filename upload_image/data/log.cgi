@@ -1,3 +1,10 @@
+00938<>2026/07/27-12:51<>image/png<>png<>hU5Zru58BUXALeK2rsgY<>PC：白波響（HERO &amp; AchieVers）<>akezc1K3nPhas<><>211KB<>zaqd3877969.rev.zaq.ne.jp<>hibiki<>
+00937<>2026/07/27-12:50<>image/png<>png<>ZYvfRu0GPypAAWjkcPIy<>PC：暗夜走一（HERO &amp; AchieVers）<>wMUBG1HbrNNvs<><>231KB<>zaqd3877969.rev.zaq.ne.jp<>soichi<>
+00936<>2026/07/27-12:35<>image/png<>png<>xJpubD65wgnrvXq6G6Mt<>NPC：ローザ・バスカヴィル（HERO &amp; AchieVers）<>n2uhzBTLNDKaQ<><>105KB<>zaqd3877969.rev.zaq.ne.jp<>loza<>
+00935<>2026/07/27-12:35<>image/png<>png<>_F17hjsxH_lXInL99730<>NPC：謎の女（HERO &amp; AchieVers）<>/8YP0qe0pMvPM<><>185KB<>zaqd3877969.rev.zaq.ne.jp<>mysterious_woman<>
+00934<>2026/07/27-12:34<>image/png<>png<>n28VtatlE19L1hvxFErK<>NPC：謎の男（HERO &amp; AchieVers）<>Ztj8skSeLhMPI<><>122KB<>zaqd3877969.rev.zaq.ne.jp<>mysterious_man<>
+00933<>2026/07/27-12:34<>image/png<>png<>0yM_w5oLFeXqCqpnVplQ<>NPC：西堂和孝（HERO &amp; AchieVers）<>3bXq9UQA6wdaQ<><>256KB<>zaqd3877969.rev.zaq.ne.jp<>saido<>
+00932<>2026/07/27-12:33<>image/png<>png<>9JfCGWgJcDyORaYWsIV9<>NPC：ライオネル・トラボルト（HERO &amp; AchieVers）<>qz/z520u8kHDs<><>115KB<>zaqd3877969.rev.zaq.ne.jp<>lionel<>
 00931<>2026/03/21-23:43<>image/png<>png<>SrmZ9Es31ZmlC50Wr9vj<>背景：ステージ（鏡像のアステリズム）<>lwL9cgaYeZjHI<><>671KB<>zaqd3877969.rev.zaq.ne.jp<>stage<>
 00930<>2026/03/21-22:57<>image/png<>png<>V0jpTDTx4wjPLDzQKpmo<>背景：空港（鏡像のアステリズム）<>29AiKgpCUytNM<><>413KB<>zaqd3877969.rev.zaq.ne.jp<>airport<>
 00929<>2026/03/11-01:24<>image/png<>png<>7cKyHeT8QKazZJ5U8Sbn<>PC：蹄啼イバラ ナーブジャック（鏡像のアステリズム）<>9XOa3.L59DBmw<><>258KB<>zaqd3877969.rev.zaq.ne.jp<>ibara_eye<>
