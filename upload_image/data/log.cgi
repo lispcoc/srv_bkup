@@ -1,3 +1,5 @@
+00946<>2026/07/30-00:14<>image/jpeg<>jpg<>1VplIDIOxgk7wgRZs_fw<>背景：商店街、晴天（HERO &amp; AchieVers）<>c0c1hvqVEW0FM<><>424KB<>zaqd3877969.rev.zaq.ne.jp<>shopping_street<>
+00945<>2026/07/29-23:00<>image/png<>png<>AzwKAiaaKl8MWUQSh8ze<>NPC：霧谷雄吾（HERO &amp; AchieVers）<>DOrGSz0KdzLIE<><>347KB<>zaqd3877969.rev.zaq.ne.jp<>kiritani<>
 00944<>2026/07/29-01:24<>image/png<>png<>yEdSA_4lOp3SwniWsc4N<>背景：元FH施設（HERO &amp; AchieVers）<>mJGjLNEK8hd/w<><>533KB<>zaqd3877969.rev.zaq.ne.jp<>facility<>
 00943<>2026/07/29-00:00<>image/png<>png<>FV5HwDiJqs09opY5YFeU<>NPC：ライオネル・トラボルト、鎧（HERO &amp; AchieVers）<>U.e4BJYo6jink<><>82KB<>zaqd3877969.rev.zaq.ne.jp<>lionel_armor<>
 00942<>2026/07/28-23:58<>image/png<>png<>qPOfcC3bIbts6ZXLiaKo<>NPC：黒龍（HERO &amp; AchieVers）<>pYmiTl40dg50A<><>175KB<>zaqd3877969.rev.zaq.ne.jp<>black_dragon<>
