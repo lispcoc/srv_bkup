@@ -1,3 +1,5 @@
+00956<>2026/08/27-00:26<>image/jpeg<>jpg<>p_4ONgNDmId_6fp77OyZ<>背景：廃墟ビル（HERO &amp; AchieVers）<>Sgz1SdWydHwZ6<><>175KB<>zaqd3877969.rev.zaq.ne.jp<>ruined_building<>
+00955<>2026/08/27-00:06<>image/png<>png<>_QJYAt3H0cloZ7E6deUf<>NPC：神の右手セルリーダー（HERO &amp; AchieVers）<>s75l.WSy29dYI<><>93KB<>zaqd3877969.rev.zaq.ne.jp<>right_hand_of_god<>
 00954<>2026/08/19-01:35<>image/png<>png<>GSloqjJsmB7cAuwdWVGY<>NPC：ライオネル・トラボルト、鎧3（HERO &amp; AchieVers）<>nv1V3xlpzO82E<><>68KB<>zaqd3877969.rev.zaq.ne.jp<>lionel_armor3<>
 00953<>2026/08/19-01:12<>image/jpeg<>jpg<>wE_b7Bxf9R_xfCmYnbnS<>背景：街、夜（HERO &amp; AchieVers）<>7R4rEuFagCJvs<><>694KB<>zaqd3877969.rev.zaq.ne.jp<>city_night_view<>
 00951<>2026/08/19-01:04<>image/png<>png<>smUCULie09_lKuoVh8MW<>NPC：ライオネル・トラボルト、鎧2（HERO &amp; AchieVers）<>7WwTojHvQwFds<><>60KB<>zaqd3877969.rev.zaq.ne.jp<>lionel_armor2<>
